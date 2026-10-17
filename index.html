@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1021">
+<title>NMS Companion</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+  :root { --bg:#0d1021; --panel:#171b33; --line:#2a3058; --text:#e8eaf6; --dim:#9aa0c3; --accent:#ffb347; --ok:#5ad19a; --bad:#ff6b6b; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.45 system-ui, sans-serif; padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+  header { padding:16px 16px 8px; }
+  h1 { font-size:18px; margin:0 0 8px; }
+  .bar { height:8px; background:var(--panel); border-radius:4px; overflow:hidden; }
+  .bar > div { height:100%; background:var(--accent); }
+  .small { font-size:13px; color:var(--dim); }
+  main { padding:8px 16px; max-width:640px; margin:0 auto; }
+  section[hidden] { display:none; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; margin:12px 0; }
+  .card h2 { font-size:20px; margin:8px 0; }
+  .chips span { display:inline-block; font-size:12px; padding:2px 8px; border-radius:10px; background:var(--line); margin:0 4px 4px 0; }
+  .how { border-left:3px solid var(--accent); padding-left:10px; }
+  button, select, input { font:inherit; color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  button { cursor:pointer; }
+  button.primary { background:var(--accent); color:#1b1b1b; border:0; font-weight:600; }
+  .row { display:flex; gap:8px; flex-wrap:wrap; }
+  .row > * { flex:1; min-width:0; }
+  a { color:var(--accent); }
+  nav { position:fixed; bottom:0; left:0; right:0; display:flex; background:var(--panel); border-top:1px solid var(--line); padding-bottom:env(safe-area-inset-bottom); }
+  nav button { flex:1; border:0; border-radius:0; background:none; padding:14px 0; color:var(--dim); }
+  nav button.on { color:var(--accent); }
+  details { border-bottom:1px solid var(--line); padding:10px 0; }
+  summary { cursor:pointer; }
+  .done { color:var(--ok); } .locked { color:var(--dim); }
+  label.check { display:flex; gap:10px; align-items:flex-start; padding:8px 0; border-bottom:1px solid var(--line); }
+  label.check input { margin-top:4px; }
+  .grid { display:grid; grid-template-columns: 1fr auto; gap:4px 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>NMS Companion</h1>
+  <div class="bar"><div id="totalBar"></div></div>
+  <div class="small" id="totalText"></div>
+</header>
+<main>
+  <section id="now">
+    <div class="row">
+      <select id="fEffort" aria-label="Duración">
+        <option value="">Cualquier duración</option>
+        <option value="short">Corto (&lt;20 min)</option>
+        <option value="medium">Medio (20–90 min)</option>
+        <option value="long">Largo</option>
+      </select>
+      <select id="fCategory" aria-label="Categoría"></select>
+    </div>
+    <div id="current"></div>
+  </section>
+
+  <section id="library" hidden>
+    <input id="search" type="search" placeholder="Buscar…" aria-label="Buscar" style="width:100%">
+    <div class="row" style="margin-top:8px">
+      <select id="lStatus" aria-label="Estado">
+        <option value="available">Disponibles</option>
+        <option value="locked">Bloqueados</option>
+        <option value="done">Hechos</option>
+        <option value="">Todos</option>
+      </select>
+      <select id="lCategory" aria-label="Categoría"></select>
+    </div>
+    <div class="small" id="libCount" style="margin-top:8px"></div>
+    <div id="libList"></div>
+  </section>
+
+  <section id="me" hidden>
+    <div class="card">
+      <h2>Tu billetera</h2>
+      <p class="small">Valores aproximados alcanzan. Actualizalos de vez en cuando: desbloquean objetivos con costo.</p>
+      <div class="grid">
+        <label for="m-units">Units</label><input id="m-units" type="number" min="0" inputmode="numeric">
+        <label for="m-nanites">Nanites</label><input id="m-nanites" type="number" min="0" inputmode="numeric">
+        <label for="m-quicksilver">Quicksilver</label><input id="m-quicksilver" type="number" min="0" inputmode="numeric">
+      </div>
+    </div>
+    <div class="card">
+      <h2>Progreso por categoría</h2>
+      <div id="catProgress" class="grid"></div>
+    </div>
+    <div class="card">
+      <h2>¿Qué ya hiciste?</h2>
+      <p class="small">Marcá los hitos clave que ya tenés. Al marcar algo, sus requisitos se dan por hechos.</p>
+      <div id="onboarding"></div>
+    </div>
+    <div class="card">
+      <h2>Errores reportados</h2>
+      <div id="reports" class="small"></div>
+      <div class="row" style="margin-top:8px"><button id="copyReports">Copiar reportes</button></div>
+    </div>
+    <div class="card">
+      <h2>Backup</h2>
+      <p class="small">El progreso vive en este navegador. Exportalo cada tanto.</p>
+      <div class="row">
+        <button id="export">Exportar</button>
+        <button id="import">Importar</button>
+      </div>
+      <input id="importFile" type="file" accept="application/json" hidden>
+    </div>
+  </section>
+</main>
+<nav>
+  <button data-tab="now" class="on">Ahora</button>
+  <button data-tab="library">Biblioteca</button>
+  <button data-tab="me">Yo</button>
+</nav>
+<script type="module" src="app.mjs"></script>
+</body>
+</html>

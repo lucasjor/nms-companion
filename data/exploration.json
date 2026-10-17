@@ -1,0 +1,3866 @@
+{
+ "objectives": [
+  {
+   "id": "visit_biome_lush",
+   "name": "Aterrizar en un planeta Exuberante",
+   "description": "Bioma con vegetación densa y fauna abundante; sus tormentas son raras y el clima suele ser benigno.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome"
+  },
+  {
+   "id": "visit_biome_barren",
+   "name": "Aterrizar en un planeta Yermo",
+   "description": "Bioma de desierto: de día es habitable, de noche puede ser muy frío; en clima extremo hace falta protección térmica doble.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome"
+  },
+  {
+   "id": "visit_biome_scorched",
+   "name": "Aterrizar en un planeta Ardiente",
+   "description": "Bioma de calor extremo: la protección contra peligros siempre está activa.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome"
+  },
+  {
+   "id": "visit_biome_frozen",
+   "name": "Aterrizar en un planeta Congelado",
+   "description": "Bioma de hielo y nieve donde la protección contra el frío es imprescindible.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome"
+  },
+  {
+   "id": "visit_biome_toxic",
+   "name": "Aterrizar en un planeta Tóxico",
+   "description": "Bioma con atmósfera tóxica y lluvias nocivas; con peligro tóxico constante.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome"
+  },
+  {
+   "id": "visit_biome_irradiated",
+   "name": "Aterrizar en un planeta Irradiado (radiactivo)",
+   "description": "Mundos con superficie rocosa en espiral, gases radiactivos y flora mutada; ofrecen Uranio, Raíz gamma y Radón.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Irradiated"
+  },
+  {
+   "id": "visit_biome_dead",
+   "name": "Aterrizar en un planeta Muerto",
+   "description": "Planetas y lunas con gravedad reducida y casi sin vida; solo se encuentran Horrores biológicos.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Dead"
+  },
+  {
+   "id": "visit_biome_marsh",
+   "name": "Aterrizar en un planeta Pantanoso",
+   "description": "Bioma de ciénagas y aguas poco profundas, relativamente poco común.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Marsh"
+  },
+  {
+   "id": "visit_biome_volcanic",
+   "name": "Aterrizar en un planeta Volcánico",
+   "description": "Bioma de lava y calor extremo con erupciones.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Volcanic"
+  },
+  {
+   "id": "visit_biome_waterworld",
+   "name": "Aterrizar en un planeta Mundo acuático",
+   "description": "Planeta cubierto casi por completo de océano.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Waterworld"
+  },
+  {
+   "id": "visit_biome_exotic",
+   "name": "Aterrizar en un planeta Exótico (Weird)",
+   "description": "Mundos con estructuras extrañas y sin vida común; hay más posibilidades en estrellas rojas.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Exotic"
+  },
+  {
+   "id": "visit_biome_mega_exotic_red",
+   "name": "Aterrizar en un planeta Mega exótico (rojo)",
+   "description": "Mundos con versiones gigantes de rocas y flora, y atmósfera de color; el subtipo rojo aparece en sistemas de estrella roja.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "warp_red"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Mega_Exotic"
+  },
+  {
+   "id": "visit_biome_mega_exotic_green",
+   "name": "Aterrizar en un planeta Mega exótico (verde)",
+   "description": "Subtipo verde del bioma Mega exótico, propio de sistemas de estrella verde.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "warp_green"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Mega_Exotic"
+  },
+  {
+   "id": "visit_biome_mega_exotic_blue",
+   "name": "Aterrizar en un planeta Mega exótico (azul)",
+   "description": "Subtipo azul del bioma Mega exótico, propio de sistemas de estrella azul.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "warp_blue"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Mega_Exotic"
+  },
+  {
+   "id": "visit_biome_gas_giant",
+   "name": "Aterrizar en un planeta Gigante gaseoso",
+   "description": "Bioma añadido en Worlds Parte II: tormentas constantes, calor extremo, sin fauna y con Cristales de tormenta comunes. Los planetas gigantes solo aparecen en sistemas púrpura.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "warp_purple"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Gas_Giant"
+  },
+  {
+   "id": "visit_biome_reliquary",
+   "name": "Aterrizar en un planeta Reliquia (planeta en ruinas)",
+   "description": "Bioma de Worlds Parte II: planetas con Estructuras en ruinas de una civilización antigua y Piedras de memoria.",
+   "how": "Escaneá el sistema con el escáner de la nave (el bioma aparece en la descripción del planeta) y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_The_Reliquary"
+  },
+  {
+   "id": "visit_infested_planet",
+   "name": "Aterrizar en un planeta infestado",
+   "description": "Subtipo de bioma con flora retorcida, Huevos susurrantes y Horrores biológicos; puede superponerse a otros biomas.",
+   "how": "Buscá planetas con descripción de infestación al escanear el sistema; el filtro cromático y la música glitch delatan el bioma.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet",
+    "biome",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_Subtype_-_Infested"
+  },
+  {
+   "id": "visit_dissonant_planet",
+   "name": "Aterrizar en un planeta disonante",
+   "description": "Los planetas con 'Disonancia detectada' están en sistemas disonantes y albergan campamentos armónicos y ecos de sentiencia.",
+   "how": "Buscá un sistema disonante habitado y escaneá hasta ver centinelas con disonancia.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "planet",
+    "dissonance"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Interface"
+  },
+  {
+   "id": "find_stabilised_reality_glitch",
+   "name": "Encontrar un fallo de realidad estabilizada",
+   "description": "Cada bioma exótico tiene un único fallo de realidad estabilizada.",
+   "how": "Explorá un planeta exótico en busca del fallo.",
+   "requires": [
+    "visit_biome_exotic"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "poi",
+    "exotic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_-_Exotic"
+  },
+  {
+   "id": "visit_giant_planet",
+   "name": "Visitar un planeta gigante",
+   "description": "Los planetas gigantes miden unas 5 veces un planeta grande y solo se generan en sistemas púrpura; tienen de 1 a 5 lunas.",
+   "how": "Viajá a un sistema púrpura y buscá un planeta 'Gigante' en el mapa del sistema.",
+   "requires": [
+    "warp_purple"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "planet",
+    "purple"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Giant_planet"
+  },
+  {
+   "id": "visit_moon",
+   "name": "Aterrizar en una luna",
+   "description": "Cada luna tiene su propio bioma; en sistemas púrpura pueden tener océanos.",
+   "how": "Elegí una luna en el mapa del sistema y aterrizá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "planet"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome"
+  },
+  {
+   "id": "scan_all_fauna_lush",
+   "name": "Descubrir toda la fauna de un planeta Exuberante",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_lush"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_lush",
+   "name": "Descubrir toda la flora de un planeta Exuberante",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_lush"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_barren",
+   "name": "Descubrir toda la fauna de un planeta Yermo",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_barren"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_barren",
+   "name": "Descubrir toda la flora de un planeta Yermo",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_barren"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_scorched",
+   "name": "Descubrir toda la fauna de un planeta Ardiente",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_scorched"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_scorched",
+   "name": "Descubrir toda la flora de un planeta Ardiente",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_scorched"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_frozen",
+   "name": "Descubrir toda la fauna de un planeta Congelado",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_frozen"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_frozen",
+   "name": "Descubrir toda la flora de un planeta Congelado",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_frozen"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_toxic",
+   "name": "Descubrir toda la fauna de un planeta Tóxico",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_toxic"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_toxic",
+   "name": "Descubrir toda la flora de un planeta Tóxico",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_toxic"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_irradiated",
+   "name": "Descubrir toda la fauna de un planeta Irradiado",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_irradiated"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_irradiated",
+   "name": "Descubrir toda la flora de un planeta Irradiado",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_irradiated"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_marsh",
+   "name": "Descubrir toda la fauna de un planeta Pantanoso",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_marsh"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_marsh",
+   "name": "Descubrir toda la flora de un planeta Pantanoso",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_marsh"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_volcanic",
+   "name": "Descubrir toda la fauna de un planeta Volcánico",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_volcanic"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_volcanic",
+   "name": "Descubrir toda la flora de un planeta Volcánico",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_volcanic"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_waterworld",
+   "name": "Descubrir toda la fauna de un planeta Mundo acuático",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_waterworld",
+    [
+     "tech_aeration_membrane",
+     "own_nautilon"
+    ]
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_waterworld",
+   "name": "Descubrir toda la flora de un planeta Mundo acuático",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_waterworld",
+    [
+     "tech_aeration_membrane",
+     "own_nautilon"
+    ]
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_fauna_exotic",
+   "name": "Descubrir toda la fauna de un planeta Exótico",
+   "description": "Completá el registro de todas las especies de fauna de un planeta de este bioma (cuenta para el hito Zoología planetaria).",
+   "how": "Escaneá cada criatura con el Visor de análisis hasta ver todas descubiertas; subí los descubrimientos.",
+   "requires": [
+    "visit_biome_exotic"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_flora_exotic",
+   "name": "Descubrir toda la flora de un planeta Exótico",
+   "description": "Registrá todas las plantas de un planeta de este bioma.",
+   "how": "Escaneá cada planta con el Visor de análisis y subí los descubrimientos.",
+   "requires": [
+    "visit_biome_exotic"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "flora",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "scan_all_minerals_planet",
+   "name": "Descubrir todos los minerales de un planeta",
+   "description": "Registrá todos los minerales de un planeta.",
+   "how": "Escaneá cada mineral con el Visor de análisis.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "scan",
+    "minerals",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "upload_first_discovery",
+   "name": "Subir tu primer descubrimiento",
+   "description": "Los descubrimientos se suben a los servidores de Hello Games; cada subida da Cúmulos de nanodos.",
+   "how": "Abrí el menú de Descubrimientos y subí el hallazgo.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "discovery"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "name_discovery",
+   "name": "Nombrar un descubrimiento",
+   "description": "Al subir manualmente podés ponerle tu propio nombre a un sistema, planeta, criatura, planta o mineral.",
+   "how": "Subí cada descubrimiento uno a uno (la subida masiva no deja nombrar).",
+   "requires": [
+    "upload_first_discovery"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "discovery",
+    "naming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "upload_all_discoveries_bulk",
+   "name": "Subir todos los descubrimientos pendientes de una vez",
+   "description": "La flecha de subida masiva sube sistemas, planetas, fauna, minerales, flora y puntos de ruta pendientes.",
+   "how": "En el menú de Descubrimientos, tocá la flecha de subida junto a la lista de sistemas.",
+   "requires": [
+    "upload_first_discovery"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "discovery"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "claim_unnamed_discovery",
+   "name": "Reclamar un descubrimiento ajeno no subido",
+   "description": "Si otro jugador no subió su hallazgo, podés reclamarlo escaneándolo y subiéndolo vos.",
+   "how": "Escaneá algo cuya descripción no tenga descubridor y subilo.",
+   "requires": [
+    "upload_first_discovery"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "discovery"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Discoveries"
+  },
+  {
+   "id": "milestone_walk_8000",
+   "name": "Caminar 8,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_10000",
+   "name": "Caminar 10,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_8000"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_15000",
+   "name": "Caminar 15,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_10000"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_20000",
+   "name": "Caminar 20,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_15000"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_25000",
+   "name": "Caminar 25,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_20000"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_30000",
+   "name": "Caminar 30,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_25000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_40000",
+   "name": "Caminar 40,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_30000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_50000",
+   "name": "Caminar 50,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_40000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_75000",
+   "name": "Caminar 75,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_50000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_walk_100000",
+   "name": "Caminar 100,000 u a pie",
+   "description": "Hito de viaje 'Exploración a pie': la distancia recorrida a pie suma (los exovehículos no cuentan).",
+   "how": "Explorá a pie; el progreso se ve en Hitos del viaje del menú.",
+   "requires": [
+    "milestone_walk_75000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "walking"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_10",
+   "name": "Conocer a 10 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_20",
+   "name": "Conocer a 20 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_10"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_30",
+   "name": "Conocer a 30 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_20"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_35",
+   "name": "Conocer a 35 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_30"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_40",
+   "name": "Conocer a 40 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_35"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_45",
+   "name": "Conocer a 45 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_40"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_50",
+   "name": "Conocer a 50 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_45"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_60",
+   "name": "Conocer a 60 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_50"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_70",
+   "name": "Conocer a 70 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_60"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_aliens_80",
+   "name": "Conocer a 80 alienígenas distintos",
+   "description": "Hito 'Encuentros alienígenas': cuenta Gek, Korvax o Vy'keen únicos con quienes iniciaste conversación.",
+   "how": "Hablá con distintos NPC en estaciones, asentamientos y puestos (basta iniciar la conversación).",
+   "requires": [
+    "milestone_aliens_70"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_5",
+   "name": "Aprender 5 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_8",
+   "name": "Aprender 8 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_5"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_10",
+   "name": "Aprender 10 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_8"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_20",
+   "name": "Aprender 20 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_10"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_30",
+   "name": "Aprender 30 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_20"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_50",
+   "name": "Aprender 50 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_30"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_80",
+   "name": "Aprender 80 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_50"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_100",
+   "name": "Aprender 100 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_80"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_words_150",
+   "name": "Aprender 150 palabras alienígenas en total",
+   "description": "Hito 'Palabras recolectadas': suma las palabras Gek, Korvax y Vy'keen.",
+   "how": "Aprendé palabras con Monolitos, Placas, Piedras del conocimiento y NPC.",
+   "requires": [
+    "milestone_words_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_3",
+   "name": "Hacer 3 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_5",
+   "name": "Hacer 5 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_3"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_7",
+   "name": "Hacer 7 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_5"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_9",
+   "name": "Hacer 9 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_7"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_15",
+   "name": "Hacer 15 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_9"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_30",
+   "name": "Hacer 30 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_15"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_40",
+   "name": "Hacer 40 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_30"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_50",
+   "name": "Hacer 50 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_40"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_60",
+   "name": "Hacer 60 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_50"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_warps_75",
+   "name": "Hacer 75 saltos de hiperimpulsor",
+   "description": "Hito 'Exploración espacial': cuenta cada salto de hiperimpulsor.",
+   "how": "Saltá entre sistemas; el progreso aparece en Hitos del viaje.",
+   "requires": [
+    "milestone_warps_60"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "warp",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_1",
+   "name": "Descubrir toda la fauna de 1 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_2",
+   "name": "Descubrir toda la fauna de 2 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_3",
+   "name": "Descubrir toda la fauna de 3 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_4",
+   "name": "Descubrir toda la fauna de 4 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_5",
+   "name": "Descubrir toda la fauna de 5 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_6",
+   "name": "Descubrir toda la fauna de 6 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_7",
+   "name": "Descubrir toda la fauna de 7 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_8",
+   "name": "Descubrir toda la fauna de 8 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_9",
+   "name": "Descubrir toda la fauna de 9 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_8"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_zoology_10",
+   "name": "Descubrir toda la fauna de 10 planeta(s)",
+   "description": "Hito 'Zoología planetaria': planetas en los que descubriste todas las especies.",
+   "how": "Escaneá toda la fauna de un planeta; repetilo en más planetas.",
+   "requires": [
+    "milestone_zoology_9"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_5",
+   "name": "Completar 5 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_10",
+   "name": "Completar 10 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_15",
+   "name": "Completar 15 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_20",
+   "name": "Completar 20 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_25",
+   "name": "Completar 25 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_30",
+   "name": "Completar 30 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_35",
+   "name": "Completar 35 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_40",
+   "name": "Completar 40 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_45",
+   "name": "Completar 45 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_50",
+   "name": "Completar 50 hitos del viaje",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "milestone_title_55",
+   "name": "Alcanzar 55 hitos del viaje (título Galileo)",
+   "description": "Los títulos de hitos se otorgan por la cantidad total de hitos del viaje alcanzados y algunos desbloquean objetos.",
+   "how": "Avanzá en cualquier categoría de Hitos del viaje.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "learn_gek_first",
+   "name": "Aprender tu primera palabra en Gek",
+   "description": "Empezá a entender el idioma Gek.",
+   "how": "Sitios de sistemas Gek: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_gek_100",
+   "name": "Aprender 100 palabras en Gek",
+   "description": "Meta personal de vocabulario: 100 de unas 921 palabras aprendibles en Gek.",
+   "how": "Sitios de sistemas Gek: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "learn_gek_first"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_gek_500",
+   "name": "Aprender 500 palabras en Gek",
+   "description": "Meta personal de vocabulario: 500 de unas 921 palabras aprendibles en Gek.",
+   "how": "Sitios de sistemas Gek: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "learn_gek_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_gek_all",
+   "name": "Aprender todas las palabras en Gek",
+   "description": "El juego tiene unas 921 palabras aprendibles en Gek (en Worlds Parte I).",
+   "how": "Seguí visitando sitios de ese idioma: las palabras se aprenden en un orden fijo.",
+   "requires": [
+    "learn_gek_500"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language",
+    "completionist"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_korvax_first",
+   "name": "Aprender tu primera palabra en Korvax",
+   "description": "Empezá a entender el idioma Korvax.",
+   "how": "Sitios de sistemas Korvax: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_korvax_100",
+   "name": "Aprender 100 palabras en Korvax",
+   "description": "Meta personal de vocabulario: 100 de unas 858 palabras aprendibles en Korvax.",
+   "how": "Sitios de sistemas Korvax: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "learn_korvax_first"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_korvax_500",
+   "name": "Aprender 500 palabras en Korvax",
+   "description": "Meta personal de vocabulario: 500 de unas 858 palabras aprendibles en Korvax.",
+   "how": "Sitios de sistemas Korvax: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "learn_korvax_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_korvax_all",
+   "name": "Aprender todas las palabras en Korvax",
+   "description": "El juego tiene unas 858 palabras aprendibles en Korvax (en Worlds Parte I).",
+   "how": "Seguí visitando sitios de ese idioma: las palabras se aprenden en un orden fijo.",
+   "requires": [
+    "learn_korvax_500"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language",
+    "completionist"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_vykeen_first",
+   "name": "Aprender tu primera palabra en Vy'keen",
+   "description": "Empezá a entender el idioma Vy'keen.",
+   "how": "Sitios de sistemas Vy'keen: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_vykeen_100",
+   "name": "Aprender 100 palabras en Vy'keen",
+   "description": "Meta personal de vocabulario: 100 de unas 930 palabras aprendibles en Vy'keen.",
+   "how": "Sitios de sistemas Vy'keen: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "learn_vykeen_first"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_vykeen_500",
+   "name": "Aprender 500 palabras en Vy'keen",
+   "description": "Meta personal de vocabulario: 500 de unas 930 palabras aprendibles en Vy'keen.",
+   "how": "Sitios de sistemas Vy'keen: Monolitos, Placas, Piedras del conocimiento, Ruinas y NPC.",
+   "requires": [
+    "learn_vykeen_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_vykeen_all",
+   "name": "Aprender todas las palabras en Vy'keen",
+   "description": "El juego tiene unas 930 palabras aprendibles en Vy'keen (en Worlds Parte I).",
+   "how": "Seguí visitando sitios de ese idioma: las palabras se aprenden en un orden fijo.",
+   "requires": [
+    "learn_vykeen_500"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language",
+    "completionist"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_autophage_first",
+   "name": "Aprender tu primera palabra en Autófago",
+   "description": "Empezá a entender el idioma Autófago.",
+   "how": "Hablá con Autófagos en Campamentos autófagos, Chatarra armónica y Ruinas; también por misiones.",
+   "requires": [
+    "visit_dissonant_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_autophage_100",
+   "name": "Aprender 100 palabras en Autófago",
+   "description": "Meta personal de vocabulario: 100 de unas 889 palabras aprendibles en Autófago.",
+   "how": "Hablá con Autófagos en Campamentos autófagos, Chatarra armónica y Ruinas; también por misiones.",
+   "requires": [
+    "learn_autophage_first"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_autophage_500",
+   "name": "Aprender 500 palabras en Autófago",
+   "description": "Meta personal de vocabulario: 500 de unas 889 palabras aprendibles en Autófago.",
+   "how": "Hablá con Autófagos en Campamentos autófagos, Chatarra armónica y Ruinas; también por misiones.",
+   "requires": [
+    "learn_autophage_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_autophage_all",
+   "name": "Aprender todas las palabras en Autófago",
+   "description": "El juego tiene unas 889 palabras aprendibles en Autófago (en Worlds Parte I).",
+   "how": "Seguí visitando sitios de ese idioma: las palabras se aprenden en un orden fijo.",
+   "requires": [
+    "learn_autophage_500",
+    "start_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language",
+    "completionist"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_atlas_first",
+   "name": "Aprender tu primera palabra en Atlas",
+   "description": "Empezá a entender el idioma Atlas.",
+   "how": "Acercate a las Cuentas de curiosidad dentro de una Interfaz Atlas o resolvé un Monolito alienígena.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_atlas_100",
+   "name": "Aprender 100 palabras en Atlas",
+   "description": "Meta personal de vocabulario: 100 de unas 222 palabras aprendibles en Atlas.",
+   "how": "Acercate a las Cuentas de curiosidad dentro de una Interfaz Atlas o resolvé un Monolito alienígena.",
+   "requires": [
+    "learn_atlas_first"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_atlas_500",
+   "name": "Aprender 500 palabras en Atlas",
+   "description": "Meta personal de vocabulario: 500 de unas 222 palabras aprendibles en Atlas.",
+   "how": "Acercate a las Cuentas de curiosidad dentro de una Interfaz Atlas o resolvé un Monolito alienígena.",
+   "requires": [
+    "learn_atlas_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_atlas_all",
+   "name": "Aprender todas las palabras en Atlas",
+   "description": "El juego tiene unas 222 palabras aprendibles en Atlas (en Worlds Parte I).",
+   "how": "Seguí visitando sitios de ese idioma: las palabras se aprenden en un orden fijo.",
+   "requires": [
+    "learn_atlas_100"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "language",
+    "completionist"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "learn_words_ruins_batch",
+   "name": "Aprender 6-9 palabras en unas ruinas",
+   "description": "Una Ruina antigua suele tener 2-5 Piedras del conocimiento cercanas más 3 en la propia ruina.",
+   "how": "Buscá Ruinas antiguas (no placas) y activá cada piedra.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "language",
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Language"
+  },
+  {
+   "id": "find_ancient_ruin",
+   "name": "Encontrar: Ruina antigua",
+   "description": "Reliquia de una especie sensible; suele tener Piedras del conocimiento y permite desenterrar un artefacto.",
+   "how": "Se localizan descifrando datos de un Observatorio, con un Amplificador de señal o explorando; un Mapa de artefactos las señala.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ancient_Ruin"
+  },
+  {
+   "id": "explore_more_ancient_ruin",
+   "name": "Explorar otro punto: Ruina antigua",
+   "description": "Visitá otra ruina antigua para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_ancient_ruin"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ancient_Ruin"
+  },
+  {
+   "id": "find_monolith",
+   "name": "Encontrar: Monolito",
+   "description": "Estructura alienígena que plantea un problema; acertar da vocabulario, reputación, tecnologías o multiherramientas.",
+   "how": "Usá el Amplificador de señal o explorá; hablá con el monolito y elegí la respuesta correcta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Monolith"
+  },
+  {
+   "id": "explore_more_monolith",
+   "name": "Explorar otro punto: Monolito",
+   "description": "Visitá otra monolito para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_monolith"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Monolith"
+  },
+  {
+   "id": "find_plaque",
+   "name": "Encontrar: Placa antigua",
+   "description": "Placa que cuenta la historia de la especie; permite ayuda con el idioma o conocer la ubicación de una ruina.",
+   "how": "Buscala en el planeta con el Amplificador de señal y elegí 'Pedir ayuda con el idioma'.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Plaque"
+  },
+  {
+   "id": "explore_more_plaque",
+   "name": "Explorar otro punto: Placa antigua",
+   "description": "Visitá otra placa antigua para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_plaque"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Plaque"
+  },
+  {
+   "id": "find_knowledge_stone",
+   "name": "Encontrar: Piedra del conocimiento",
+   "description": "Enseña una palabra del idioma de la especie del sistema.",
+   "how": "Aparece cerca de monolitos y ruinas; el Visor de análisis la marca.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Knowledge_Stone"
+  },
+  {
+   "id": "explore_more_knowledge_stone",
+   "name": "Explorar otro punto: Piedra del conocimiento",
+   "description": "Visitá otra piedra del conocimiento para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_knowledge_stone"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Knowledge_Stone"
+  },
+  {
+   "id": "find_abandoned_building",
+   "name": "Encontrar: Edificio abandonado",
+   "description": "Edificio infestado con terminal que da registros de un viajero y Cúmulos de nanodos; rodeado de Huevos susurrantes.",
+   "how": "Se revela al escanear el sistema o con un Mapa planetario de señal de socorro.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Abandoned_Building"
+  },
+  {
+   "id": "explore_more_abandoned_building",
+   "name": "Explorar otro punto: Edificio abandonado",
+   "description": "Visitá otra edificio abandonado para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_abandoned_building"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Abandoned_Building"
+  },
+  {
+   "id": "find_crashed_freighter",
+   "name": "Encontrar: Carguero estrellado",
+   "description": "Carguero en un planeta con seis cápsulas de carga con botín.",
+   "how": "Resolvé el puzzle de una Torre de transmisión, usá un Mapa planetario o explorá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Crashed_Freighter"
+  },
+  {
+   "id": "explore_more_crashed_freighter",
+   "name": "Explorar otro punto: Carguero estrellado",
+   "description": "Visitá otra carguero estrellado para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_crashed_freighter"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Crashed_Freighter"
+  },
+  {
+   "id": "find_crashed_ship",
+   "name": "Encontrar: Nave estrellada",
+   "description": "Nave averiada que podés reclamar y reparar; la baliza de socorro da recompensas.",
+   "how": "Seguí una Baliza de socorro o un Mapa planetario de socorro.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Crashed_Ship"
+  },
+  {
+   "id": "explore_more_crashed_ship",
+   "name": "Explorar otro punto: Nave estrellada",
+   "description": "Visitá otra nave estrellada para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_crashed_ship"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Crashed_Ship"
+  },
+  {
+   "id": "find_drop_pod",
+   "name": "Encontrar: Cápsula de salvamento",
+   "description": "Mejora gratis de inventario del exotraje (general, de carga o tecnología).",
+   "how": "Usá un Amplificador de señal con un Mapa de mejora del exotraje.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Drop_Pod"
+  },
+  {
+   "id": "explore_more_drop_pod",
+   "name": "Explorar otro punto: Cápsula de salvamento",
+   "description": "Visitá otra cápsula de salvamento para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_drop_pod"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Drop_Pod"
+  },
+  {
+   "id": "find_sentinel_pillar",
+   "name": "Encontrar: Pilar centinela",
+   "description": "Puesto de control centinela con registros, apagado temporal de centinelas y multiherramienta Royal.",
+   "how": "Se localiza derrotando centinelas de nivel 5, con mapas del Gremio de mercenarios o explorando.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "explore_more_sentinel_pillar",
+   "name": "Explorar otro punto: Pilar centinela",
+   "description": "Visitá otra pilar centinela para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_sentinel_pillar"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "find_boundary_failure",
+   "name": "Encontrar: Fallo de límite",
+   "description": "Gran estructura en planetas exóticos e infestados con 31 entradas de lore sobre Telamón y el Atlas.",
+   "how": "Explorá planetas exóticos o infestados.",
+   "requires": [
+    [
+     "visit_biome_exotic",
+     "visit_infested_planet"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Boundary_Failure"
+  },
+  {
+   "id": "find_observatory",
+   "name": "Encontrar: Observatorio",
+   "description": "Puzzle numérico que marca una ruina cercana.",
+   "how": "Se encuentra con un Mapa planetario de puesto habitado o siguiendo marcadores de edificio desconocido.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Observatory"
+  },
+  {
+   "id": "explore_more_observatory",
+   "name": "Explorar otro punto: Observatorio",
+   "description": "Visitá otra observatorio para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_observatory"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Observatory"
+  },
+  {
+   "id": "find_transmission_tower",
+   "name": "Encontrar: Torre de transmisión",
+   "description": "Resolvé un puzzle para obtener coordenadas de una nave o carguero estrellado.",
+   "how": "Usá el Amplificador de señal.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Transmission_Tower"
+  },
+  {
+   "id": "explore_more_transmission_tower",
+   "name": "Explorar otro punto: Torre de transmisión",
+   "description": "Visitá otra torre de transmisión para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_transmission_tower"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Transmission_Tower"
+  },
+  {
+   "id": "find_trade_outpost",
+   "name": "Encontrar: Puesto de comercio",
+   "description": "Estructura con Terminal de comercio galáctico, 7 plataformas de aterrizaje y NPC.",
+   "how": "Usá el Escáner de economía de la nave, un Amplificador de señal o preguntá a un NPC.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Trade_Outpost"
+  },
+  {
+   "id": "explore_more_trade_outpost",
+   "name": "Explorar otro punto: Puesto de comercio",
+   "description": "Visitá otra puesto de comercio para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_trade_outpost"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Trade_Outpost"
+  },
+  {
+   "id": "find_minor_settlement",
+   "name": "Encontrar: Asentamiento menor",
+   "description": "Pequeño comercio con mercader, terminal y a veces multiherramientas.",
+   "how": "Usá una baliza (Beacon), Amplificador de señal o explorá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minor_Settlement"
+  },
+  {
+   "id": "explore_more_minor_settlement",
+   "name": "Explorar otro punto: Asentamiento menor",
+   "description": "Visitá otra asentamiento menor para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_minor_settlement"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minor_Settlement"
+  },
+  {
+   "id": "find_colossal_archive",
+   "name": "Encontrar: Archivo colosal",
+   "description": "Enorme edificio con repositorios de datos, tesoros y 6 plataformas de aterrizaje.",
+   "how": "Resolvé pistas, usá Mapa planetario de puesto habitado o explorá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossal_Archive"
+  },
+  {
+   "id": "explore_more_colossal_archive",
+   "name": "Explorar otro punto: Archivo colosal",
+   "description": "Visitá otra archivo colosal para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_colossal_archive"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossal_Archive"
+  },
+  {
+   "id": "find_harmonic_camp",
+   "name": "Encontrar: Campamento armónico",
+   "description": "Campamento abandonado en mundos con centinelas corruptos; da multiherramienta centinela y ubicaciones de interceptores.",
+   "how": "Usá un Localizador de ecos para revelar su ubicación en un planeta disonante habitado y resolvé el puzzle de la interfaz.",
+   "requires": [
+    "visit_dissonant_planet",
+    "tech_echo_locator"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Interface"
+  },
+  {
+   "id": "find_paleontological_dig",
+   "name": "Encontrar: Excavación paleontológica",
+   "description": "Sitio habitado con un fósil enterrado y un archivo para intercambiar huesos.",
+   "how": "Buscalo en planetas de sistemas con civilización.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Paleontological_Dig"
+  },
+  {
+   "id": "explore_more_paleontological_dig",
+   "name": "Explorar otro punto: Excavación paleontológica",
+   "description": "Visitá otra excavación paleontológica para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_paleontological_dig"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Paleontological_Dig"
+  },
+  {
+   "id": "find_unknown_grave",
+   "name": "Encontrar: Tumba desconocida",
+   "description": "Tumba de un viajero: da un glifo de portal y un plano en forma de Fragmentos de memoria.",
+   "how": "Un viajero te da su ubicación por 100 Cúmulos de nanodos.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Unknown_Grave"
+  },
+  {
+   "id": "explore_more_unknown_grave",
+   "name": "Explorar otro punto: Tumba desconocida",
+   "description": "Visitá otra tumba desconocida para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_unknown_grave"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Unknown_Grave"
+  },
+  {
+   "id": "find_submerged_ruins",
+   "name": "Encontrar: Ruinas sumergidas",
+   "description": "Ruinas submarinas con una Llave de tridente y tres Cofres marinos sellados.",
+   "how": "Localizalas con el Sonar de alta potencia del Nautilon.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Submerged_Ruins"
+  },
+  {
+   "id": "explore_more_submerged_ruins",
+   "name": "Explorar otro punto: Ruinas sumergidas",
+   "description": "Visitá otra ruinas sumergidas para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_submerged_ruins"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Submerged_Ruins"
+  },
+  {
+   "id": "find_sunken_building",
+   "name": "Encontrar: Edificio hundido",
+   "description": "Edificio abandonado bajo el agua con terminal de un viajero.",
+   "how": "Localizalo con el Sonar de alta potencia del Nautilon.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sunken_Building"
+  },
+  {
+   "id": "explore_more_sunken_building",
+   "name": "Explorar otro punto: Edificio hundido",
+   "description": "Visitá otra edificio hundido para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_sunken_building"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sunken_Building"
+  },
+  {
+   "id": "find_buried_tech_module",
+   "name": "Encontrar: Módulo de tecnología enterrado",
+   "description": "Cápsula bajo la superficie que se cosecha por Datos recuperados.",
+   "how": "Marcado en el Visor de análisis; excavá con el manipulador de terreno.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_buried_tech_module",
+   "name": "Explorar otro punto: Módulo de tecnología enterrado",
+   "description": "Visitá otra módulo de tecnología enterrado para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_buried_tech_module"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_natural_burial_site",
+   "name": "Encontrar: Sitio de enterramiento natural",
+   "description": "Marca un contenedor de Huesos antiguos enterrados.",
+   "how": "Marcado en el Visor de análisis; excavalo.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_natural_burial_site",
+   "name": "Explorar otro punto: Sitio de enterramiento natural",
+   "description": "Visitá otra sitio de enterramiento natural para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_natural_burial_site"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_gravitino_ball",
+   "name": "Encontrar: Bola de gravitino",
+   "description": "Esfera de partículas supersimétricas; recogerla en estado silvestre da 3 estrellas de búsqueda.",
+   "how": "Aparecen en planetas con centinelas hostiles o corruptos y en algunas ruinas.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gravitino_Ball"
+  },
+  {
+   "id": "explore_more_gravitino_ball",
+   "name": "Explorar otro punto: Bola de gravitino",
+   "description": "Visitá otra bola de gravitino para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_gravitino_ball"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gravitino_Ball"
+  },
+  {
+   "id": "find_storm_crystal",
+   "name": "Encontrar: Cristal de tormenta",
+   "description": "Cúmulo muy valioso que solo se cosecha durante tormentas extremas.",
+   "how": "Buscalo en planetas de clima extremo (o gigantes gaseosos) durante una tormenta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm_Crystal"
+  },
+  {
+   "id": "explore_more_storm_crystal",
+   "name": "Explorar otro punto: Cristal de tormenta",
+   "description": "Visitá otra cristal de tormenta para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_storm_crystal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm_Crystal"
+  },
+  {
+   "id": "find_manufacturing_facility",
+   "name": "Encontrar: Instalación de fabricación",
+   "description": "Fábrica custodiada por centinelas con planos avanzados.",
+   "how": "Localizala con el Amplificador de señal en frecuencias seguras.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_manufacturing_facility",
+   "name": "Explorar otro punto: Instalación de fabricación",
+   "description": "Visitá otra instalación de fabricación para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_manufacturing_facility"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_operations_centre",
+   "name": "Encontrar: Centro de operaciones",
+   "description": "Instalación muy custodiada con módulos de mejora y planos.",
+   "how": "Usá el Amplificador de señal.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Operations_Centre"
+  },
+  {
+   "id": "explore_more_operations_centre",
+   "name": "Explorar otro punto: Centro de operaciones",
+   "description": "Visitá otra centro de operaciones para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_operations_centre"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Operations_Centre"
+  },
+  {
+   "id": "find_resource_depot",
+   "name": "Encontrar: Depósito de recursos",
+   "description": "Depósito con recursos que se rompe para obtener planos.",
+   "how": "Marcado con el Amplificador de señal.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Resource_Depot"
+  },
+  {
+   "id": "explore_more_resource_depot",
+   "name": "Explorar otro punto: Depósito de recursos",
+   "description": "Visitá otra depósito de recursos para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_resource_depot"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Resource_Depot"
+  },
+  {
+   "id": "find_shelter",
+   "name": "Encontrar: Refugio",
+   "description": "Edificio deshabitado con waypoint, útil contra el clima.",
+   "how": "Usá el Amplificador de señal.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_shelter",
+   "name": "Explorar otro punto: Refugio",
+   "description": "Visitá otra refugio para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_shelter"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_autophage_camp",
+   "name": "Encontrar: Campamento autófago",
+   "description": "Campamento oculto de Autófagos con terminales de síntesis.",
+   "how": "Requiere avanzar en la misión They Who Returned; el Núcleo polifónico los ubica y el Armonizador de escaneo los revela.",
+   "requires": [
+    "progress_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autophage_Camp"
+  },
+  {
+   "id": "explore_more_autophage_camp",
+   "name": "Explorar otro punto: Campamento autófago",
+   "description": "Visitá otra campamento autófago para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_autophage_camp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autophage_Camp"
+  },
+  {
+   "id": "find_sentience_echo",
+   "name": "Encontrar: Eco de sentiencia",
+   "description": "Cristal púrpura de planetas disonantes que da una Semilla de eco.",
+   "how": "Visor de análisis con Armonizador de escaneo, Núcleo polifónico o Amplificador de resonancia; minalo con el Láser de minería avanzado.",
+   "requires": [
+    "visit_dissonant_planet",
+    "tech_scan_harmoniser"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentience_Echo"
+  },
+  {
+   "id": "explore_more_sentience_echo",
+   "name": "Explorar otro punto: Eco de sentiencia",
+   "description": "Visitá otra eco de sentiencia para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_sentience_echo"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentience_Echo"
+  },
+  {
+   "id": "find_memory_stone",
+   "name": "Encontrar: Piedra de memoria",
+   "description": "En planetas Reliquia: da planos de reliquias constructibles o nanodos.",
+   "how": "Buscala cerca de Estructuras en ruinas.",
+   "requires": [
+    "visit_biome_reliquary"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Memory_Stone"
+  },
+  {
+   "id": "explore_more_memory_stone",
+   "name": "Explorar otro punto: Piedra de memoria",
+   "description": "Visitá otra piedra de memoria para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_memory_stone"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Memory_Stone"
+  },
+  {
+   "id": "find_salvageable_scrap",
+   "name": "Encontrar: Chatarra recuperable",
+   "description": "Resto de satélite caído: rompé las cubiertas para sacar el contenedor.",
+   "how": "Marcado en el Visor de análisis.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_salvageable_scrap",
+   "name": "Explorar otro punto: Chatarra recuperable",
+   "description": "Visitá otra chatarra recuperable para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_salvageable_scrap"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_waste_processing_plant",
+   "name": "Encontrar: Planta de procesamiento de residuos",
+   "description": "Recicla Residuos industriales y paga Nanodos.",
+   "how": "Se halla en planetas con Chatarra recuperable.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Waste_Processing_Plant"
+  },
+  {
+   "id": "explore_more_waste_processing_plant",
+   "name": "Explorar otro punto: Planta de procesamiento de residuos",
+   "description": "Visitá otra planta de procesamiento de residuos para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_waste_processing_plant"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Waste_Processing_Plant"
+  },
+  {
+   "id": "find_cargo_drop",
+   "name": "Encontrar: Contenedor de carga caído",
+   "description": "Contenedores con botín; algunos piden AtlasPass v1.",
+   "how": "Marcado en el Visor de análisis.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_cargo_drop",
+   "name": "Explorar otro punto: Contenedor de carga caído",
+   "description": "Visitá otra contenedor de carga caído para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_cargo_drop"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_damaged_machinery",
+   "name": "Encontrar: Maquinaria dañada",
+   "description": "Reparar su componente da Cúmulos de nanodos o un módulo de mejora.",
+   "how": "Marcada en el Visor de análisis.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "explore_more_damaged_machinery",
+   "name": "Explorar otro punto: Maquinaria dañada",
+   "description": "Visitá otra maquinaria dañada para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_damaged_machinery"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_artifact_exchange_vault",
+   "name": "Encontrar: Cámara de intercambio de artefactos",
+   "description": "Terminal en Archivos colosales para intercambiar artefactos por otros de igual o mayor calidad.",
+   "how": "Entrá a un Archivo colosal con un artefacto.",
+   "requires": [
+    "find_colossal_archive"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Artifact_Exchange_Vault"
+  },
+  {
+   "id": "explore_more_artifact_exchange_vault",
+   "name": "Explorar otro punto: Cámara de intercambio de artefactos",
+   "description": "Visitá otra cámara de intercambio de artefactos para botín y descubrimientos extra.",
+   "how": "Repetí la búsqueda en otros planetas.",
+   "requires": [
+    "find_artifact_exchange_vault"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Artifact_Exchange_Vault"
+  },
+  {
+   "id": "find_planetary_chart",
+   "name": "Usar un Mapa planetario",
+   "description": "Cuatro tipos: sitio seguro, señal de socorro, puesto habitado y sitio de artefactos; uno puede estar vacío.",
+   "how": "Se compran al cartógrafo de las estaciones espaciales.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Chart"
+  },
+  {
+   "id": "find_derelict_freighter",
+   "name": "Explorar un carguero abandonado",
+   "description": "Encuentro espacial procedural con diario de la tripulación y botín (a veces Cristales de tormenta).",
+   "how": "Usá un Escáner de señal de emergencia del Chatarrero de la estación o encontralo al viajar.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "poi"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "explore_more_derelict_freighter",
+   "name": "Explorar otro carguero abandonado",
+   "description": "Cada uno tiene su propia historia.",
+   "how": "Comprá otro Escáner de señal de emergencia.",
+   "requires": [
+    "find_derelict_freighter"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "poi",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "use_signal_booster",
+   "name": "Usar un Amplificador de señal",
+   "description": "Revela edificios, ruinas y señales cercanas según la frecuencia.",
+   "how": "Construí el Amplificador de señal y escaneá.",
+   "requires": [
+    "tech_signal_booster"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Point_of_Interest"
+  },
+  {
+   "id": "find_atlas_interface",
+   "name": "Visitar una Interfaz Atlas",
+   "description": "Hay 11 interfaces en el camino del Atlas; cuentas de curiosidad dan palabras Atlas.",
+   "how": "Seguí la misión El Camino del Atlas: la interfaz aparece junto a la estación al saltar.",
+   "requires": [
+    "first_warp",
+    "complete_awakenings"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Atlas_Interface"
+  },
+  {
+   "id": "find_black_hole",
+   "name": "Encontrar un agujero negro",
+   "description": "Llevan a un sistema fijo unos 7.000 años luz más cerca del centro galáctico.",
+   "how": "Tras el Camino del Atlas aparecen en el mapa galáctico.",
+   "requires": [
+    "complete_atlas_path"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Black_Hole"
+  },
+  {
+   "id": "use_black_hole",
+   "name": "Atravesar un agujero negro",
+   "description": "Viaje rápido hacia el centro de la galaxia; ya no daña la nave.",
+   "how": "Acercate con el hiperimpulsor y entrá.",
+   "requires": [
+    "find_black_hole"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Black_Hole"
+  },
+  {
+   "id": "reach_galactic_core",
+   "name": "Llegar al Núcleo galáctico",
+   "description": "Región con sistemas en el centro de las 256 galaxias.",
+   "how": "Viajá con agujeros negros y saltos hacia el centro.",
+   "requires": [
+    "find_black_hole"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "space",
+    "journey"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galactic_Core"
+  },
+  {
+   "id": "reach_new_galaxy",
+   "name": "Llegar a una nueva galaxia",
+   "description": "Hay 256 galaxias; se avanza por el Núcleo galáctico o con la misión Nuevos comienzos.",
+   "how": "Alcanzá el Núcleo y cruzalo.",
+   "requires": [
+    "reach_galactic_core"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "journey",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_galaxy_lush",
+   "name": "Visitar una galaxia Exuberante",
+   "description": "Las galaxias exuberantes cambian la frecuencia de ciertos biomas y estrellas.",
+   "how": "Viajá de galaxia en galaxia (las galaxias siguen ciclos de tipo).",
+   "requires": [
+    "reach_new_galaxy"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "journey"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_galaxy_harsh",
+   "name": "Visitar una galaxia Hostil",
+   "description": "Las galaxias hostils cambian la frecuencia de ciertos biomas y estrellas.",
+   "how": "Viajá de galaxia en galaxia (las galaxias siguen ciclos de tipo).",
+   "requires": [
+    "reach_new_galaxy"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "journey"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_galaxy_empty",
+   "name": "Visitar una galaxia Vacía",
+   "description": "Las galaxias vacías cambian la frecuencia de ciertos biomas y estrellas.",
+   "how": "Viajá de galaxia en galaxia (las galaxias siguen ciclos de tipo).",
+   "requires": [
+    "reach_new_galaxy"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "journey"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_galaxy_norm",
+   "name": "Visitar una galaxia Normal",
+   "description": "Las galaxias normals cambian la frecuencia de ciertos biomas y estrellas.",
+   "how": "Viajá de galaxia en galaxia (las galaxias siguen ciclos de tipo).",
+   "requires": [
+    "reach_new_galaxy"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "journey"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "experience_storm_blizzard",
+   "name": "Vivir una Ventisca",
+   "description": "Tormenta planetaria que drena la protección; beneficio: menor calentamiento del láser de minería.",
+   "how": "Buscá un planeta con ese clima y refugiate en una cueva o nave si hace falta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "weather",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm"
+  },
+  {
+   "id": "experience_storm_firestorm",
+   "name": "Vivir una Tormenta de fuego",
+   "description": "Tormenta planetaria que drena la protección; beneficio: mayor duración del jetpack.",
+   "how": "Buscá un planeta con ese clima y refugiate en una cueva o nave si hace falta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "weather",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm"
+  },
+  {
+   "id": "experience_storm_radioactive_supercell",
+   "name": "Vivir una Supercélula radiactiva",
+   "description": "Tormenta planetaria que drena la protección; beneficio: mayor rendimiento del manipulador de terreno.",
+   "how": "Buscá un planeta con ese clima y refugiate en una cueva o nave si hace falta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "weather",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm"
+  },
+  {
+   "id": "experience_storm_toxic_rainstorm",
+   "name": "Vivir una Lluvia tóxica",
+   "description": "Tormenta planetaria que drena la protección; beneficio: mayor duración del esprint.",
+   "how": "Buscá un planeta con ese clima y refugiate en una cueva o nave si hace falta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "weather",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm"
+  },
+  {
+   "id": "experience_gravitational_anomaly",
+   "name": "Vivir una anomalía gravitatoria",
+   "description": "Tormenta en planetas disonantes exuberantes o anómalos que debilita la gravedad.",
+   "how": "Planetas disonantes con tormentas.",
+   "requires": [
+    "visit_dissonant_planet"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "weather",
+    "dissonance"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm"
+  },
+  {
+   "id": "survive_extreme_storm",
+   "name": "Sobrevivir a una tormenta extrema",
+   "description": "Las tormentas duran unos 5 minutos y drenan mucha protección.",
+   "how": "Refugiate en cuevas, nave o estructuras con techo; Sodio o Nitrato de sodio recargan.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "weather",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm"
+  },
+  {
+   "id": "endure_extreme_toxic",
+   "name": "Explorar un planeta tóxico extremo",
+   "description": "Clima extremo drena la protección más rápido.",
+   "how": "Instalá el Supresor de toxinas.",
+   "requires": [
+    "visit_biome_toxic",
+    "tech_toxin_suppressor"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hazard_Protection"
+  },
+  {
+   "id": "endure_extreme_radiation",
+   "name": "Explorar un planeta irradiado extremo",
+   "description": "Clima extremo irradiado.",
+   "how": "Instalá el Deflector de radiación.",
+   "requires": [
+    "visit_biome_irradiated",
+    "tech_radiation_deflector"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hazard_Protection"
+  },
+  {
+   "id": "endure_extreme_heat",
+   "name": "Explorar un planeta ardiente extremo",
+   "description": "Calor extremo.",
+   "how": "Instalá la Red refrigerante.",
+   "requires": [
+    "visit_biome_scorched",
+    "tech_coolant_network"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hazard_Protection"
+  },
+  {
+   "id": "endure_extreme_cold",
+   "name": "Explorar un planeta congelado extremo",
+   "description": "Frío extremo.",
+   "how": "Instalá la Capa térmica.",
+   "requires": [
+    "visit_biome_frozen",
+    "tech_thermic_layer"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hazard_Protection"
+  },
+  {
+   "id": "see_shaihuluda",
+   "name": "Ver un gusano de arena (Shaihuluda)",
+   "description": "Criatura gigante inmortal que se desplaza bajo tierra; no se puede escanear como la fauna.",
+   "how": "Pasá el Visor sobre uno para ver sus estadísticas.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna",
+    "rare"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sandworm"
+  },
+  {
+   "id": "see_biological_horror",
+   "name": "Ver a un Horror biológico",
+   "description": "Monstruo excavador de planetas muertos e infestados; sale al romper Huevos susurrantes.",
+   "how": "Visitá un Edificio abandonado o un planeta muerto/infestado.",
+   "requires": [
+    "visit_infested_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biological_Horror"
+  },
+  {
+   "id": "find_abyssal_horror",
+   "name": "Encontrar un Horror abisal",
+   "description": "Tres variantes: rape (pez abisal), medusa y estacionario.",
+   "how": "Aparece al cosechar un Espécimen seductor o minar flora/minerales submarinos, o en Edificios hundidos.",
+   "requires": [
+    [
+     "tech_aeration_membrane",
+     "own_nautilon"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "underwater",
+    "fauna",
+    "hazard"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Abyssal_Horror"
+  },
+  {
+   "id": "explore_underwater",
+   "name": "Explorar el fondo del mar",
+   "description": "Los océanos tienen fauna y flora propias.",
+   "how": "Con Membrana de aireación o Nautilon.",
+   "requires": [
+    [
+     "tech_aeration_membrane",
+     "own_nautilon"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biome_Subtype_-_Underwater"
+  },
+  {
+   "id": "explore_cave",
+   "name": "Explorar una cueva",
+   "description": "Las cuevas protegen del clima y tienen recursos (Cobalto, Ferrita pura, Oro...) y especies subterráneas.",
+   "how": "Entrá a una cueva en cualquier planeta.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cave"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cave"
+  },
+  {
+   "id": "find_subterranean_relic",
+   "name": "Encontrar una Reliquia subterránea",
+   "description": "Da un Cubo de vórtice.",
+   "how": "Explorá cuevas.",
+   "requires": [
+    "explore_cave"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "cave"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cave"
+  },
+  {
+   "id": "find_humming_sac",
+   "name": "Encontrar un Saco zumbante",
+   "description": "Contiene una Perla de albúmina.",
+   "how": "Explorá cuevas.",
+   "requires": [
+    "explore_cave"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "cave"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cave"
+  },
+  {
+   "id": "catch_fish",
+   "name": "Pescar con el equipo de pesca",
+   "description": "Pesca desde cualquier masa de agua.",
+   "how": "Equipá un equipo de pesca (Fishing Rig) en la multiherramienta y lanzá la línea al agua.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fishing"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Fishing"
+  },
+  {
+   "id": "take_photo",
+   "name": "Sacar una foto con el Modo foto",
+   "description": "Ajustá hora, niebla, filtros y lente.",
+   "how": "Menú rápido > cámara.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "photo"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Photo_Mode"
+  },
+  {
+   "id": "take_photo_portal_glyphs",
+   "name": "Capturar los glifos del portal en una captura",
+   "description": "Las capturas de la consola incluyen los glifos si se hacen con la función del sistema.",
+   "how": "Usá el botón de captura de la consola (no el obturador del juego).",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "photo",
+    "portal"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Photo_Mode"
+  },
+  {
+   "id": "find_portal",
+   "name": "Encontrar un portal",
+   "description": "Hay exactamente uno en cada cuerpo celeste.",
+   "how": "Se ubica con Monolitos o explorando.",
+   "requires": [
+    "unlock_portals"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "portal",
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Portal"
+  },
+  {
+   "id": "collect_portal_glyph",
+   "name": "Obtener un glifo de portal",
+   "description": "Los glifos se hallan en Tumbas de viajeros.",
+   "how": "Activá una Tumba desconocida.",
+   "requires": [
+    "find_unknown_grave"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "portal"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Unknown_Grave"
+  },
+  {
+   "id": "dial_portal_address",
+   "name": "Marcar una dirección de portal",
+   "description": "Viajá instantáneamente.",
+   "how": "Ingresá los glifos y cruzá.",
+   "requires": [
+    "unlock_portals"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "portal",
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Portal"
+  },
+  {
+   "id": "use_planetary_chart_poi",
+   "name": "Usar un Mapa planetario de ubicaciones",
+   "description": "Revela coordenadas del tipo elegido.",
+   "how": "Comprá en la estación; usalo en el planeta.",
+   "requires": [
+    "find_planetary_chart"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "navigation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Chart"
+  },
+  {
+   "id": "visit_yellow_star",
+   "name": "Visitar un sistema de estrella amarilla",
+   "description": "Cada color cambia el tipo de planetas y recursos.",
+   "how": "Elegí una estrella de ese color en el mapa galáctico.",
+   "requires": [
+    "first_warp",
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "system"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_red_star",
+   "name": "Visitar un sistema de estrella roja",
+   "description": "Cada color cambia el tipo de planetas y recursos.",
+   "how": "Elegí una estrella de ese color en el mapa galáctico.",
+   "requires": [
+    "first_warp",
+    "warp_red"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "system"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_green_star",
+   "name": "Visitar un sistema de estrella verde",
+   "description": "Cada color cambia el tipo de planetas y recursos.",
+   "how": "Elegí una estrella de ese color en el mapa galáctico.",
+   "requires": [
+    "first_warp",
+    "warp_green"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "system"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_blue_star",
+   "name": "Visitar un sistema de estrella azul",
+   "description": "Cada color cambia el tipo de planetas y recursos.",
+   "how": "Elegí una estrella de ese color en el mapa galáctico.",
+   "requires": [
+    "first_warp",
+    "warp_blue"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "system"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_purple_star",
+   "name": "Visitar un sistema de estrella púrpura",
+   "description": "Cada color cambia el tipo de planetas y recursos.",
+   "how": "Elegí una estrella de ese color en el mapa galáctico.",
+   "requires": [
+    "first_warp",
+    "warp_purple"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "system"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  },
+  {
+   "id": "visit_new_system",
+   "name": "Visitar un sistema nuevo",
+   "description": "Cada sistema puede traer descubrimientos.",
+   "how": "Saltá a un sistema no visitado.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "system",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galaxy"
+  }
+ ],
+ "needs": [
+  {
+   "id": "tech_signal_booster",
+   "name": "Instalar el Amplificador de señal",
+   "why": "Revela edificios, ruinas y señales."
+  },
+  {
+   "id": "tech_toxin_suppressor",
+   "name": "Instalar el Supresor de toxinas",
+   "why": "Protección en clima tóxico extremo."
+  },
+  {
+   "id": "tech_radiation_deflector",
+   "name": "Instalar el Deflector de radiación",
+   "why": "Protección en clima radiactivo extremo."
+  },
+  {
+   "id": "tech_coolant_network",
+   "name": "Instalar la Red refrigerante",
+   "why": "Protección contra calor."
+  },
+  {
+   "id": "tech_thermic_layer",
+   "name": "Instalar la Capa térmica",
+   "why": "Protección contra frío."
+  },
+  {
+   "id": "progress_they_who_returned",
+   "name": "Avanzar en They Who Returned",
+   "why": "Habilita detectar y tratar con los Autófagos."
+  },
+  {
+   "id": "tech_echo_locator",
+   "name": "Obtener el Localizador de ecos",
+   "why": "Revela Campamentos armónicos."
+  },
+  {
+   "id": "tech_scan_harmoniser",
+   "name": "Obtener el Armonizador de escaneo",
+   "why": "Revela ecos y campamentos camuflados."
+  },
+  {
+   "id": "complete_atlas_path",
+   "name": "Completar El Camino del Atlas",
+   "why": "Revela agujeros negros en el mapa."
+  }
+ ]
+}

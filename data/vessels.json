@@ -1,0 +1,4639 @@
+{
+ "objectives": [
+  {
+   "id": "own_shuttle_ship",
+   "name": "Comprar una nave tipo Lanzadera (Shuttle)",
+   "description": "Equilibrada, sin gran bonus de clase; barata y con buen inventario inicial. No tiene tamaño grande.",
+   "how": "Visitá una estación espacial (o puesto comercial), esperá a que aterrice una nave del tipo y negociá con su dueño; podés entregar tu nave actual (vale el 70% de su precio de tabla).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_shuttle_s_class",
+   "name": "Conseguir una nave Lanzadera (Shuttle) de clase S",
+   "description": "Una nave S tiene bonus de clase de 50% o más y más ranuras. Las clase S aparecen más en economías ricas.",
+   "how": "Comprala ya en clase S en una estación (podés recargar el sistema guardando/recargando para que cambien las naves) o subí la clase de una nave que ya tengas en la Terminal de equipamiento de naves (cuesta Nanites).",
+   "requires": [
+    "own_shuttle_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_shuttle_inventory",
+   "name": "Ampliar al máximo el inventario de una nave Lanzadera (Shuttle)",
+   "description": "El límite de carga de este tipo es 110 ranuras y el de tecnología es 60 en clase S.",
+   "how": "En la Terminal de equipamiento de naves ampliá ranuras con Unidades (de 3M a 75M por ranura) o con Aumentos de almacenamiento (una ranura cada uno).",
+   "requires": [
+    "own_shuttle_s_class",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_fighter_ship",
+   "name": "Comprar una nave tipo Caza (Fighter)",
+   "description": "Bonus de daño y gran maniobrabilidad; es la nave típica de los piratas. Más común en sistemas Vy'keen.",
+   "how": "Visitá una estación espacial (o puesto comercial), esperá a que aterrice una nave del tipo y negociá con su dueño; podés entregar tu nave actual (vale el 70% de su precio de tabla).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_fighter_s_class",
+   "name": "Conseguir una nave Caza (Fighter) de clase S",
+   "description": "Una nave S tiene bonus de clase de 50% o más y más ranuras. Las clase S aparecen más en economías ricas.",
+   "how": "Comprala ya en clase S en una estación (podés recargar el sistema guardando/recargando para que cambien las naves) o subí la clase de una nave que ya tengas en la Terminal de equipamiento de naves (cuesta Nanites).",
+   "requires": [
+    "own_fighter_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_fighter_inventory",
+   "name": "Ampliar al máximo el inventario de una nave Caza (Fighter)",
+   "description": "El límite de carga de este tipo es 100 ranuras y el de tecnología es 60 en clase S.",
+   "how": "En la Terminal de equipamiento de naves ampliá ranuras con Unidades (de 3M a 75M por ranura) o con Aumentos de almacenamiento (una ranura cada uno).",
+   "requires": [
+    "own_fighter_s_class",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_explorer_ship",
+   "name": "Comprar una nave tipo Explorador (Explorer)",
+   "description": "Bonus de alcance del hiperimpulsor y el menor costo de lanzamiento. Más común en sistemas Korvax.",
+   "how": "Visitá una estación espacial (o puesto comercial), esperá a que aterrice una nave del tipo y negociá con su dueño; podés entregar tu nave actual (vale el 70% de su precio de tabla).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_explorer_s_class",
+   "name": "Conseguir una nave Explorador (Explorer) de clase S",
+   "description": "Una nave S tiene bonus de clase de 50% o más y más ranuras. Las clase S aparecen más en economías ricas.",
+   "how": "Comprala ya en clase S en una estación (podés recargar el sistema guardando/recargando para que cambien las naves) o subí la clase de una nave que ya tengas en la Terminal de equipamiento de naves (cuesta Nanites).",
+   "requires": [
+    "own_explorer_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_explorer_inventory",
+   "name": "Ampliar al máximo el inventario de una nave Explorador (Explorer)",
+   "description": "El límite de carga de este tipo es 110 ranuras y el de tecnología es 60 en clase S.",
+   "how": "En la Terminal de equipamiento de naves ampliá ranuras con Unidades (de 3M a 75M por ranura) o con Aumentos de almacenamiento (una ranura cada uno).",
+   "requires": [
+    "own_explorer_s_class",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_hauler_ship",
+   "name": "Comprar una nave tipo Hauler (transporte)",
+   "description": "Bonus de escudo y mucho inventario; las más grandes y lentas. Más comunes en sistemas Gek.",
+   "how": "Visitá una estación espacial (o puesto comercial), esperá a que aterrice una nave del tipo y negociá con su dueño; podés entregar tu nave actual (vale el 70% de su precio de tabla).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_hauler_s_class",
+   "name": "Conseguir una nave Hauler (transporte) de clase S",
+   "description": "Una nave S tiene bonus de clase de 50% o más y más ranuras. Las clase S aparecen más en economías ricas.",
+   "how": "Comprala ya en clase S en una estación (podés recargar el sistema guardando/recargando para que cambien las naves) o subí la clase de una nave que ya tengas en la Terminal de equipamiento de naves (cuesta Nanites).",
+   "requires": [
+    "own_hauler_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_hauler_inventory",
+   "name": "Ampliar al máximo el inventario de una nave Hauler (transporte)",
+   "description": "El límite de carga de este tipo es 120 ranuras y el de tecnología es 60 en clase S.",
+   "how": "En la Terminal de equipamiento de naves ampliá ranuras con Unidades (de 3M a 75M por ranura) o con Aumentos de almacenamiento (una ranura cada uno).",
+   "requires": [
+    "own_hauler_s_class",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_solar_ship",
+   "name": "Comprar una nave tipo Solar (vela solar)",
+   "description": "Lleva la Vesper Sail, exclusiva de esta clase, que mejora el motor de pulso y recarga los propulsores de despegue. Frecuente en sistemas fuera de la ley.",
+   "how": "Visitá una estación espacial (o puesto comercial), esperá a que aterrice una nave del tipo y negociá con su dueño; podés entregar tu nave actual (vale el 70% de su precio de tabla). Aparecen más en sistemas fuera de la ley (85% de reemplazar a una lanzadera).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Ship"
+  },
+  {
+   "id": "own_solar_s_class",
+   "name": "Conseguir una nave Solar (vela solar) de clase S",
+   "description": "Una nave S tiene bonus de clase de 50% o más y más ranuras. Las clase S aparecen más en economías ricas.",
+   "how": "Comprala ya en clase S en una estación (podés recargar el sistema guardando/recargando para que cambien las naves) o subí la clase de una nave que ya tengas en la Terminal de equipamiento de naves (cuesta Nanites).",
+   "requires": [
+    "own_solar_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Ship"
+  },
+  {
+   "id": "max_solar_inventory",
+   "name": "Ampliar al máximo el inventario de una nave Solar (vela solar)",
+   "description": "El límite de carga de este tipo es 110 ranuras y el de tecnología es 60 en clase S.",
+   "how": "En la Terminal de equipamiento de naves ampliá ranuras con Unidades (de 3M a 75M por ranura) o con Aumentos de almacenamiento (una ranura cada uno).",
+   "requires": [
+    "own_solar_s_class",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Ship"
+  },
+  {
+   "id": "own_exotic_ship",
+   "name": "Conseguir una nave exótica (Exotic)",
+   "description": "Siempre son clase S, con bonus altos y balanceados; vienen en variantes de bola o calamar. Cuestan mucho para su tamaño.",
+   "how": "Aparecen con 1% de probabilidad en cualquier sistema habitado (una por sistema) y también en batallas de carguero en sistemas abandonados. Si un sistema genera una exótica en su primera oleada, la repetirá al recargar.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_exotic_inventory",
+   "name": "Ampliar al máximo el inventario de una nave exótica",
+   "description": "El límite de carga de las exóticas es 105 ranuras.",
+   "how": "Usá la Terminal de equipamiento de naves con Unidades o Aumentos de almacenamiento.",
+   "requires": [
+    "own_exotic_ship",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_interceptor_inventory",
+   "name": "Ampliar al máximo el inventario de una nave interceptora centinela",
+   "description": "Las naves recuperadas (salvaged) llegan a 120 ranuras de carga.",
+   "how": "Terminal de equipamiento de naves, con Unidades o Aumentos de almacenamiento.",
+   "requires": [
+    "own_sentinel_interceptor",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "max_living_inventory",
+   "name": "Ampliar al máximo el inventario de una nave viviente",
+   "description": "Las naves vivientes llegan a 120 ranuras de carga; sus ranuras se amplían también con sacos de desove (de expediciones de fragatas vivientes y de cargueros a la deriva).",
+   "how": "Usá la Terminal de equipamiento de naves y los sacos de desove.",
+   "requires": [
+    "own_living_ship",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_s_class_interceptor",
+   "name": "Conseguir una interceptora centinela de clase S",
+   "description": "Cada sistema tiene un estilo de interceptora y puede encontrarse en cualquier clase.",
+   "how": "Encontrá interceptoras estrelladas (planetas disonantes o fragmentos de IA portadora) hasta dar con una clase S, o subí la clase de una en la Terminal de equipamiento.",
+   "requires": [
+    "own_sentinel_interceptor"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "own_s_class_living",
+   "name": "Conseguir una nave viviente de clase S",
+   "description": "Los nodos de la nave viviente se pueden mutar para subir su clase.",
+   "how": "Instalá o mutá nodos orgánicos de clase superior; las naves vivientes adicionales cuestan 10.000 Nanites.",
+   "requires": [
+    "own_living_ship",
+    "nanites>=10000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "own_s_class_corvette",
+   "name": "Subir una corbeta a clase S",
+   "description": "Las corbetas también suben de clase en la Terminal de equipamiento de naves.",
+   "how": "Finalizá una corbeta y mejorala C a B, B a A y A a S con Nanites.",
+   "requires": [
+    "own_corvette",
+    "upgrade_ship_to_s"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "buy_first_other_ship",
+   "name": "Cambiar tu nave por otra en una estación",
+   "description": "Entregar tu nave vale el 70% del precio de tabla de la nueva.",
+   "how": "Hablá con el dueño de una nave aterrizada, mirá sus estadísticas y aceptá el trato.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "upgrade_ship_to_b",
+   "name": "Subir una nave de clase C a B",
+   "description": "Mejora de clase en la Terminal de equipamiento de naves.",
+   "how": "Hablá con la terminal (cerca del Modificador de apariencia en la estación), elegí subir clase. Cuesta Nanites y el precio depende de la clase destino y la dificultad de compras.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Outfitting_Terminal"
+  },
+  {
+   "id": "upgrade_ship_to_a",
+   "name": "Subir una nave a clase A",
+   "description": "Segundo escalón de mejora de clase.",
+   "how": "En la Terminal de equipamiento de naves, mejorá una nave B a A pagando Nanites.",
+   "requires": [
+    "upgrade_ship_to_b"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Outfitting_Terminal"
+  },
+  {
+   "id": "upgrade_ship_to_s",
+   "name": "Subir una nave a clase S",
+   "description": "Tercer escalón; las S llegan a 60 ranuras de tecnología.",
+   "how": "En la Terminal de equipamiento de naves, mejorá una A a S pagando Nanites.",
+   "requires": [
+    "upgrade_ship_to_a"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Outfitting_Terminal"
+  },
+  {
+   "id": "buy_ship_slot_units",
+   "name": "Comprar una ranura de inventario de nave con Unidades",
+   "description": "Cada ranura cuesta desde 3M y sube hasta 75M.",
+   "how": "Terminal de equipamiento de naves, opción de ampliar ranuras de carga o tecnología.",
+   "requires": [
+    "visit_space_station",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Outfitting_Terminal"
+  },
+  {
+   "id": "use_storage_augmentation",
+   "name": "Usar un Aumento de almacenamiento",
+   "description": "Cada uno añade gratis una ranura de carga o tecnología a una nave (hasta su límite).",
+   "how": "Se obtienen al desguazar naves, en expediciones de fragatas, en cargueros estrellados o a la deriva y en observatorios; canjealo en la Terminal de equipamiento.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storage_Augmentation"
+  },
+  {
+   "id": "scrap_ship",
+   "name": "Desguazar una nave en la estación",
+   "description": "Devuelve ~70% del valor en materiales y a veces Aumentos de almacenamiento (más probables con clases altas y haulers). Se pierde toda la carga.",
+   "how": "Terminal de equipamiento de naves, opción Desguazar, confirmá dos veces. Necesitás espacio libre en el exotraje.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Outfitting_Terminal"
+  },
+  {
+   "id": "find_crashed_ship",
+   "name": "Encontrar una nave estrellada",
+   "description": "Podés comprarla por 0 Unidades y quedarte con las dos naves.",
+   "how": "Seguí señales de socorro o explorá; interactuá con la nave estrellada y aceptá.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "repair_crashed_ship",
+   "name": "Reparar todas las ranuras dañadas de una nave estrellada",
+   "description": "Las ranuras de inventario dañadas requieren recursos; una nave grande y de clase alta puede valer la pena.",
+   "how": "Reparalas una por una en el inventario de la nave; la tecnología dañada también necesita reparación.",
+   "requires": [
+    "find_crashed_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "rename_ship",
+   "name": "Ponerle nombre a una nave",
+   "description": "Las naves se renombran como los planetas o estrellas.",
+   "how": "Abrí el inventario de la nave y editá su nombre.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "summon_ship_quick_menu",
+   "name": "Convocar una nave de tu colección con el menú rápido",
+   "description": "Permite acceder a todas tus naves sin tener carguero.",
+   "how": "Menú rápido, opción de llamar nave.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "buy_ship_customisation_qsc",
+   "name": "Comprar una pieza de personalización de nave con Quicksilver",
+   "description": "El Sintetizador de Quicksilver vende piezas cosméticas de nave; no se consiguen de otra forma.",
+   "how": "Hablá con el Sintetizador de Quicksilver (QSC) en la Anomalía Espacial.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "cosmetic",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "visit_outlaw_station_solar",
+   "name": "Buscar naves solares en una estación fuera de la ley",
+   "description": "Las naves solares son mucho más comunes en estaciones pirata.",
+   "how": "Viajá a un sistema fuera de la ley y revisá las naves que aterrizan.",
+   "requires": [
+    "own_solar_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Ship"
+  },
+  {
+   "id": "use_vesper_sail",
+   "name": "Usar la Vesper Sail de una nave solar",
+   "description": "Mejora el motor de pulso y recarga los propulsores de lanzamiento lentamente.",
+   "how": "Volá con una nave solar con la vela desplegada.",
+   "requires": [
+    "own_solar_ship"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Vesper_Sail"
+  },
+  {
+   "id": "find_dissonant_system",
+   "name": "Encontrar un sistema disonante",
+   "description": "Allí están los planetas disonantes con interceptoras estrelladas y Campamentos Armónicos.",
+   "how": "En el mapa galáctico buscá la etiqueta Disonante en el sistema.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exploration",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "find_crashed_interceptor",
+   "name": "Encontrar una interceptora centinela estrellada",
+   "description": "Primer paso para obtener una nave salvaged.",
+   "how": "Derrotá la última oleada de centinelas espaciales o terrestres en un planeta disonante, o seguí los Fragmentos de IA portadora (desde 5.00).",
+   "requires": [
+    "find_dissonant_system"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "add_interceptor_cockpit",
+   "name": "Agregar una cabina a una interceptora centinela",
+   "description": "Hay que modificarla para volarla manualmente; tiene hiperimpulsor base de 601 años luz.",
+   "how": "Interactuá con la nave estrellada y reparala/instalá la cabina con los materiales pedidos.",
+   "requires": [
+    "find_crashed_interceptor"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "use_carrier_ai_fragment",
+   "name": "Usar un Fragmento de IA portadora",
+   "description": "Te guía directo al sitio de una interceptora estrellada.",
+   "how": "Obtenelo derrotando centinelas y seguí la marca.",
+   "requires": [
+    "find_crashed_interceptor"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Carrier_AI_Fragment"
+  },
+  {
+   "id": "hover_interceptor",
+   "name": "Usar el vuelo estacionario de una interceptora",
+   "description": "Las naves salvaged pueden flotar en el aire, a diferencia de casi todas las demás.",
+   "how": "Volá una interceptora y mantenela en estacionario.",
+   "requires": [
+    "own_sentinel_interceptor"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "find_harmonic_camp",
+   "name": "Encontrar un Campamento Armónico",
+   "description": "POI de planetas disonantes con interfaz armónica, carretillas de chatarra armónica (con ranuras de expansión) y multiherramienta centinela.",
+   "how": "Localizalo con un Localizador de eco (cae de cuadrúpedos centinela corruptos y Resonadores de disonancia) o explorando.",
+   "requires": [
+    "find_dissonant_system"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exploration",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Camp"
+  },
+  {
+   "id": "unlock_harmonic_interface",
+   "name": "Desbloquear una interfaz armónica",
+   "description": "La primera vez otorga el Aeron Turbojet (personalización de mochila). También da acceso al gabinete del multiherramienta y localiza una interceptora estrellada.",
+   "how": "Elegí Escanear registros de memoria y resolvé las 3 ecuaciones sencillas con los glifos.",
+   "requires": [
+    "find_harmonic_camp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "sentinel",
+    "puzzle"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Camp"
+  },
+  {
+   "id": "collect_harmonic_scrap",
+   "name": "Recoger chatarra armónica de un campamento",
+   "description": "Cada carretilla da objetos varios, incluidas ranuras de expansión.",
+   "how": "Recogé las 7 carretillas de un Campamento Armónico.",
+   "requires": [
+    "find_harmonic_camp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "sentinel",
+    "loot"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Camp"
+  },
+  {
+   "id": "buy_void_egg",
+   "name": "Comprar un Huevo del Vacío (Void Egg)",
+   "description": "Único modo de iniciar la misión Starbirth; cuesta Quicksilver.",
+   "how": "Hablá con el Sintetizador de Quicksilver en la Anomalía y comprá el huevo (3200 Quicksilver).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Void_Egg"
+  },
+  {
+   "id": "trigger_starbirth",
+   "name": "Activar la misión Starbirth",
+   "description": "Con el huevo en el inventario, al usar el motor de pulso recibirás un encuentro espacial con una nave extraña.",
+   "how": "Volá con motor de pulso entre planetas (un sistema con estrella azul acelera el encuentro) y respondé la transmisión.",
+   "requires": [
+    "buy_void_egg"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_neural_stem",
+   "name": "Madurar el tallo neural",
+   "description": "Seguí las coordenadas a una placa Korvax y repetí el proceso para obtener la pieza. Cada órgano necesita unas 24 horas para madurar.",
+   "how": "Seguí el objetivo de misión de Starbirth tras cada encuentro espacial.",
+   "requires": [
+    "trigger_starbirth"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_heart_node",
+   "name": "Madurar el nodo del corazón",
+   "description": "Segundo encuentro: un planeta barren extremo con otra placa Korvax. Cada órgano necesita unas 24 horas para madurar.",
+   "how": "Seguí el objetivo de misión de Starbirth tras cada encuentro espacial.",
+   "requires": [
+    "starbirth_neural_stem"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_hardened_shell",
+   "name": "Endurecer el caparazón",
+   "description": "Tercer encuentro: un planeta lush extremo, quizá en un sistema abandonado. Cada órgano necesita unas 24 horas para madurar.",
+   "how": "Seguí el objetivo de misión de Starbirth tras cada encuentro espacial.",
+   "requires": [
+    "starbirth_heart_node"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_singularity_core",
+   "name": "Formar el núcleo de singularidad",
+   "description": "Cuarto encuentro: un planeta Hydro Garden (jardín hidropónico). Cada órgano necesita unas 24 horas para madurar.",
+   "how": "Seguí el objetivo de misión de Starbirth tras cada encuentro espacial.",
+   "requires": [
+    "starbirth_hardened_shell"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_soul_chamber",
+   "name": "Llenar la cámara del alma",
+   "description": "Quinto encuentro: portal en Euclid y visita a tumbas de Viajeros para reunir 3 almas; exige haber reunido 12 de los 16 glifos. Cada órgano necesita unas 24 horas para madurar.",
+   "how": "Seguí el objetivo de misión de Starbirth tras cada encuentro espacial.",
+   "requires": [
+    "starbirth_singularity_core"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_fallen_host",
+   "name": "Eclosionar el huésped caído y reclamar la nave viviente",
+   "description": "Se elige el sitio de la nave estrellada; tras Biogénesis (cerebro, corazón, caparazón, núcleo y alma) es tuya gratis. Conviene guardar manualmente para repetir hasta ver una nave a gusto.",
+   "how": "Volvé a tu nave, aceptá eclosionar el huevo, viajá al sitio y realizá la Biogénesis con todos los órganos en inventario activo.",
+   "requires": [
+    "starbirth_soul_chamber"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "hatch_extra_living_ship",
+   "name": "Obtener otra nave viviente",
+   "description": "Una vez completada Starbirth, cada nueva nave viviente cuesta 10.000 Nanites y requiere otro Huevo del Vacío.",
+   "how": "Comprá otro huevo (3200 Quicksilver), seguí el encuentro espacial hasta el huésped caído y pagá 10.000 Nanites.",
+   "requires": [
+    "starbirth_fallen_host",
+    "quicksilver>=3200",
+    "nanites>=10000"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "find_living_space_encounter",
+   "name": "Resolver un encuentro espacial que mejore tu nave viviente",
+   "description": "Las mejoras orgánicas se obtienen en encuentros espaciales, no se instalan como tecnología normal.",
+   "how": "Volá con el motor de pulso, salí del pulso ante objetos extraños y seguí los rewards.",
+   "requires": [
+    "own_living_ship"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Living_Ship"
+  },
+  {
+   "id": "mutate_living_node",
+   "name": "Mutar un nodo orgánico para subir su clase",
+   "description": "Dar un nodo de clase inferior produce un nodo aleatorio de clase superior.",
+   "how": "Instalá el nodo especificado y mutalo en tu nave viviente.",
+   "requires": [
+    "own_living_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "find_corvette_workshop",
+   "name": "Encontrar el Taller de corbetas",
+   "description": "Se encuentra en cualquier estación espacial poblada (también fuera de la ley o abandonada).",
+   "how": "Cruzá los puntos de teletransporte de la izquierda hacia las plataformas de corbetas cerca de la salida de la estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "buy_basic_corvette_modules",
+   "name": "Comprar módulos básicos de corbeta",
+   "description": "Opción cara pero fácil para la primera.",
+   "how": "Consola del Taller de corbetas.",
+   "requires": [
+    "find_corvette_workshop"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "trade_corvette_modules",
+   "name": "Intercambiar módulos de corbeta",
+   "description": "Elegís cuál recibir, pero necesitás 1 a 3 repuestos por módulo; los básicos no se pueden intercambiar.",
+   "how": "Taller de corbetas, opción de intercambio.",
+   "requires": [
+    "find_corvette_workshop"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "salvage_corvette_modules",
+   "name": "Obtener módulos de corbeta de chatarra recuperada",
+   "description": "Un contenedor de chatarra garantiza un módulo; también caen de piratas, expediciones de fragatas, misiones y cargueros.",
+   "how": "Visitá planetas con Chatarra recuperable y destruí contenedores.",
+   "requires": [
+    "find_corvette_workshop"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "loot"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "finalise_first_corvette",
+   "name": "Finalizar tu primera corbeta",
+   "description": "Requiere tren de aterrizaje, módulo de habitación, acceso, cabina, reactor, motor principal y sistema de armas.",
+   "how": "Crear nueva corbeta en el Taller y colocar las piezas con la tecla de construcción; luego aplicar cambios.",
+   "requires": [
+    "find_corvette_workshop",
+    "buy_basic_corvette_modules"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "build_thunderbird_corvette",
+   "name": "Construir una corbeta estilo Thunderbird (práctico y áspero)",
+   "description": "Los estilos cambian el aspecto, no la función de los módulos.",
+   "how": "Conseguí módulos del estilo (intercambio, chatarra, botín) y armá una corbeta.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "build_ambassador_corvette",
+   "name": "Construir una corbeta estilo Ambassador (redondeado y retrofuturista)",
+   "description": "Los estilos cambian el aspecto, no la función de los módulos.",
+   "how": "Conseguí módulos del estilo (intercambio, chatarra, botín) y armá una corbeta.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "build_titan_corvette",
+   "name": "Construir una corbeta estilo Titan (militarista)",
+   "description": "Los estilos cambian el aspecto, no la función de los módulos.",
+   "how": "Conseguí módulos del estilo (intercambio, chatarra, botín) y armá una corbeta.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "decorate_corvette_interior",
+   "name": "Decorar el interior de una corbeta",
+   "description": "Hay módulos propios (cama, refinador, contenedores, ventanas) y casi todo lo de una base.",
+   "how": "Entrá a la corbeta estacionada y abrí el menú de construcción; las piezas gastan materiales.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "corvette_three_reactors",
+   "name": "Equipar 3 reactores en una corbeta",
+   "description": "Hasta 3 de cada tipo aparecen como tecnología; los reactores y la cabina afectan la maniobrabilidad.",
+   "how": "Colocá los reactores antes de la cabina en una construcción nueva.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "corvette_beam_down",
+   "name": "Usar el teletransporte de la corbeta",
+   "description": "Permite bajar a la superficie sin aterrizar, evitando costo de lanzamiento.",
+   "how": "En la bahía de aterrizaje usá el botón izquierdo de teletransporte.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "use_corvette_workshop_cache",
+   "name": "Guardar módulos en la reserva del Taller de corbetas",
+   "description": "Disponible desde la versión 6.03.",
+   "how": "Taller de corbetas, almacén de módulos.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "max_corvette_inventory",
+   "name": "Ampliar al máximo el inventario de una corbeta",
+   "description": "Límite de carga: 120 ranuras.",
+   "how": "Terminal de equipamiento de naves.",
+   "requires": [
+    "own_corvette",
+    "units>=3000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship"
+  },
+  {
+   "id": "equip_tractor_beam",
+   "name": "Instalar un rayo tractor en una corbeta",
+   "description": "Necesario para recoger botín de chatarra espacial profunda (Cosmos).",
+   "how": "Construí/instalá el componente Rayo tractor en el Taller de corbetas.",
+   "requires": [
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Tractor_Beam"
+  },
+  {
+   "id": "salvage_space_hulk",
+   "name": "Recoger chatarra de un casco espacial",
+   "description": "Con Bobina de gravitino y corbeta con rayo tractor; tenés 3 min 30 s tras salir del asiento.",
+   "how": "Hallalo en el mapa del sistema, bajá de la nave y recogé materiales de contratos de salvamento.",
+   "requires": [
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "salvage"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Hulk"
+  },
+  {
+   "id": "rescue_freighter_pirates",
+   "name": "Rescatar un carguero de piratas",
+   "description": "Batalla de distress o post-salto: destruí a los piratas y el capitán te invita. Mientras no tengas carguero, los rescatados son gratis; los dos primeros son normales y desde el tercero capitales.",
+   "how": "Seguí una señal de socorro o saltá hasta que aparezca una batalla; después de ganar hablá con el capitán en el puente.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "combat",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Rescue"
+  },
+  {
+   "id": "buy_roaming_freighter",
+   "name": "Comprar un carguero que no esté siendo atacado",
+   "description": "Se compra al capitán; el precio depende de clase y ranuras (un S grande ronda 170M).",
+   "how": "Buscá el icono morado en el radar, aterrizá y hablá con el capitán.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "trade_in_freighter",
+   "name": "Cambiar tu carguero por otro",
+   "description": "Recibís 2/3 del valor del actual; la base interior se transfiere (pero se pierden mejoras tecnológicas).",
+   "how": "Hablá con el capitán de otro carguero y aceptá el intercambio.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "find_s_class_freighter",
+   "name": "Conseguir un carguero clase S",
+   "description": "La clase determina bonus de precio y alcance de hiperimpulsor y cuán cerca del máximo estás de ranuras. No se puede subir la clase.",
+   "how": "Recargá batallas de carguero o buscá en sistemas fuera de la ley (5% cada clase B–S).",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_call_quick_menu",
+   "name": "Llamar al carguero con el menú rápido",
+   "description": "Permite tenerlo en el sistema donde exploras.",
+   "how": "Menú rápido, Llamar carguero, elegir destino.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_warp",
+   "name": "Hacer saltar tu carguero a otro sistema",
+   "description": "Usá el mapa de curvatura del puente (lado estribor). Se recarga con Células de curvatura (25%) o Hipernúcleos.",
+   "how": "Hablá con el holograma de globo en el puente.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_teleport_destination",
+   "name": "Teletransportarte a tu carguero",
+   "description": "Es un destino del teletransporte, base avanzada.",
+   "how": "Menú de teletransporte.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_inspect_ship_terminal",
+   "name": "Guardar o convocar una nave desde la terminal del puente",
+   "description": "Aumenta de facto tu límite de naves.",
+   "how": "Terminal del puente.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_matter_beam",
+   "name": "Instalar el Rayo de materia",
+   "description": "Acceso al inventario del carguero desde lejos; transfiere materia al exotraje.",
+   "how": "Investigalo en el Control de mejoras por 5 Módulos de fragata recuperados; luego fabricalo (Antimateria x5, Resonador magnético x3, Cableado x10).",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "tech"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Matter_Beam"
+  },
+  {
+   "id": "freighter_hyperdrive_lvl1",
+   "name": "Mejorar el hiperimpulsor del carguero (nivel 1)",
+   "description": "Seis niveles de mejora de alcance de salto para el carguero; los hiperimpulsores de nave no sirven.",
+   "how": "Comprá la mejora en el Control de mejoras del puente (usa Módulos de fragata recuperados).",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_hyperdrive_lvl2",
+   "name": "Mejorar el hiperimpulsor del carguero (nivel 2)",
+   "description": "Seis niveles de mejora de alcance de salto para el carguero; los hiperimpulsores de nave no sirven.",
+   "how": "Comprá la mejora en el Control de mejoras del puente (usa Módulos de fragata recuperados).",
+   "requires": [
+    "own_freighter",
+    "freighter_hyperdrive_lvl1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_hyperdrive_lvl3",
+   "name": "Mejorar el hiperimpulsor del carguero (nivel 3)",
+   "description": "Seis niveles de mejora de alcance de salto para el carguero; los hiperimpulsores de nave no sirven.",
+   "how": "Comprá la mejora en el Control de mejoras del puente (usa Módulos de fragata recuperados).",
+   "requires": [
+    "own_freighter",
+    "freighter_hyperdrive_lvl2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_hyperdrive_lvl4",
+   "name": "Mejorar el hiperimpulsor del carguero (nivel 4)",
+   "description": "Seis niveles de mejora de alcance de salto para el carguero; los hiperimpulsores de nave no sirven.",
+   "how": "Comprá la mejora en el Control de mejoras del puente (usa Módulos de fragata recuperados).",
+   "requires": [
+    "own_freighter",
+    "freighter_hyperdrive_lvl3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_hyperdrive_lvl5",
+   "name": "Mejorar el hiperimpulsor del carguero (nivel 5)",
+   "description": "Seis niveles de mejora de alcance de salto para el carguero; los hiperimpulsores de nave no sirven.",
+   "how": "Comprá la mejora en el Control de mejoras del puente (usa Módulos de fragata recuperados).",
+   "requires": [
+    "own_freighter",
+    "freighter_hyperdrive_lvl4"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_hyperdrive_lvl6",
+   "name": "Mejorar el hiperimpulsor del carguero (nivel 6)",
+   "description": "Seis niveles de mejora de alcance de salto para el carguero; los hiperimpulsores de nave no sirven.",
+   "how": "Comprá la mejora en el Control de mejoras del puente (usa Módulos de fragata recuperados).",
+   "requires": [
+    "own_freighter",
+    "freighter_hyperdrive_lvl5"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "install_salvaged_fleet_unit",
+   "name": "Instalar una Unidad de flota recuperada",
+   "description": "Es una de 7 mejoras fijas que aumentan el alcance del hiperimpulsor o los parámetros de tus fragatas.",
+   "how": "Obtenela en cargueros a la deriva o destruyendo un Dreadnought pirata e instalala en el inventario tecnológico.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "use_cargo_bulkhead",
+   "name": "Usar un Mamparo de carga",
+   "description": "Añade una ranura al inventario de carga o tecnología del carguero.",
+   "how": "Canjealo en el Control de mejoras.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cargo_Bulkhead"
+  },
+  {
+   "id": "cargo_bulkhead_derelict",
+   "name": "Obtener un Mamparo de carga de un carguero a la deriva",
+   "description": "Recompensa final del 100% en cada carguero a la deriva.",
+   "how": "Completá un carguero a la deriva.",
+   "requires": [
+    "complete_derelict_freighter"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "loot"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cargo_Bulkhead"
+  },
+  {
+   "id": "cargo_bulkhead_envoy",
+   "name": "Obtener un Mamparo de carga de un Enviado del Gremio de Mercaderes",
+   "description": "Recompensa gratuita con rango 8 (Exaltado) según la página del mamparo (otra página dice nivel 9).",
+   "how": "Habla con el Enviado del Gremio en la estación.",
+   "requires": [
+    "own_freighter",
+    "merchants_guild_exalted"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cargo_Bulkhead"
+  },
+  {
+   "id": "destroy_npc_freighter",
+   "name": "Destruir un carguero no jugable de una flota",
+   "description": "Desde Echoes: da 3 mamparos o un módulo S de mejora; baja 1 la reputación del sistema.",
+   "how": "Atacá el carguero sin entrada de una flota civil.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_red",
+   "name": "Desbloquear el color Rojo para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_orange",
+   "name": "Desbloquear el color Naranja para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_yellow",
+   "name": "Desbloquear el color Amarillo para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_green",
+   "name": "Desbloquear el color Verde para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_turquoise",
+   "name": "Desbloquear el color Turquesa para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_blue",
+   "name": "Desbloquear el color Azul para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_purple",
+   "name": "Desbloquear el color Púrpura para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_pink",
+   "name": "Desbloquear el color Rosa para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_white",
+   "name": "Desbloquear el color Blanco para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_paint_black",
+   "name": "Desbloquear el color Negro para el carguero",
+   "description": "Pinta permanente para la nave nodriza (5000 Nanites cada color).",
+   "how": "Control de mejoras: comprar y luego aplicar color.",
+   "requires": [
+    "own_freighter",
+    "nanites>=5000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "build_freighter_storage_room",
+   "name": "Construir una sala de almacenamiento en el carguero",
+   "description": "Cada una suma 50 ranuras y se enlaza con los contenedores de base (hasta 10).",
+   "how": "Menú de construcción dentro del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter_Base_Building"
+  },
+  {
+   "id": "build_ten_freighter_storage",
+   "name": "Construir las 10 salas de almacenamiento del carguero",
+   "description": "Máximo de 10 unidades enlazadas con los contenedores 0-9 de la base.",
+   "how": "Menú de construcción en el carguero.",
+   "requires": [
+    "build_freighter_storage_room"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "build_galactic_trade_room",
+   "name": "Construir una Sala de comercio galáctico",
+   "description": "Funciona como un Terminal de comercio galáctico dentro del carguero.",
+   "how": "Menú de construcción del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galactic_Trade_Room"
+  },
+  {
+   "id": "build_freighter_teleport_chamber",
+   "name": "Construir una Cámara de teletransporte en el carguero",
+   "description": "Funciona como un módulo de teletransporte de base.",
+   "how": "Menú de construcción del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Teleport_Chamber"
+  },
+  {
+   "id": "build_orbital_exocraft_materialiser",
+   "name": "Construir el Materializador orbital de exovehículos",
+   "description": "Convoca cualquier exovehículo en el mismo sistema que el carguero.",
+   "how": "Blueprint en la Estación de investigación de construcción de la Anomalía (1 Datos recuperados); costo Oro x60, Cobalto ionizado x50, Célula de curvatura x3.",
+   "requires": [
+    "own_freighter",
+    "access_space_anomaly",
+    "collect_salvaged_data"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Orbital_Exocraft_Materialiser"
+  },
+  {
+   "id": "build_stellar_extractor_room",
+   "name": "Construir una sala del Extractor estelar",
+   "description": "Recolecta recursos automáticamente según el sistema donde esté el carguero.",
+   "how": "Menú de construcción del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Stellar_Extractor_Room"
+  },
+  {
+   "id": "build_scanner_room",
+   "name": "Construir una Sala de escáner",
+   "description": "Escanea todos los planetas del sistema a la vez.",
+   "how": "Menú de construcción del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scanner_Room"
+  },
+  {
+   "id": "build_freighter_appearance_modifier",
+   "name": "Construir un Modificador de apariencia en el carguero",
+   "description": "Cuesta Polvo de ferrita x10 y se puede desmantelar.",
+   "how": "Menú de construcción del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "build_fleet_command_room",
+   "name": "Construir una Sala de mando de flota",
+   "description": "Controla las expediciones de fragatas; cada sala permite una expedición simultánea.",
+   "how": "Misión Freighter Command; menú de construcción del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Fleet_Command_Room"
+  },
+  {
+   "id": "build_six_fleet_command_rooms",
+   "name": "Construir 6 Salas de mando de flota",
+   "description": "Se pueden hacer hasta 10 pero casi nunca hacen falta más de 6.",
+   "how": "Menú de construcción.",
+   "requires": [
+    "build_fleet_command_room"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_base_reset",
+   "name": "Reiniciar la base del carguero",
+   "description": "Útil antes de cambiar de carguero; se pierden los materiales.",
+   "how": "Control de mejoras, Reiniciar base del carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "freighter_farm_refine",
+   "name": "Usar refinería o granja en el carguero",
+   "description": "El carguero tiene todas las funciones de una base planetaria.",
+   "how": "Construí refinador, plantador o procesador de nutrientes.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "get_emergency_signal_scanner",
+   "name": "Comprar un Escáner de señal de emergencia",
+   "description": "Fuerza la aparición de un carguero a la deriva.",
+   "how": "Compralo al Chatarrero de la estación (5M, 10M, 20M hasta tope de 30M por compra diaria).",
+   "requires": [
+    "visit_space_station",
+    "units>=5000000"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "complete_derelict_freighter",
+   "name": "Completar un carguero a la deriva",
+   "description": "Terminal de aire, calentadores, enemigos y registros hasta la sala del capitán. Desde Cosmos es un POI fijo, una vez por sistema, y los premios son únicos por sistema y galaxia.",
+   "how": "Abordá, reuní el diario del capitán y elegí el premio final (mamparo, Unidad de flota o nanites). No se puede guardar dentro.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "exploration",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "derelict_corvette_modules",
+   "name": "Elegir módulos de corbeta como premio de un carguero a la deriva",
+   "description": "Se puede fabricar Corvette Construction Parts en vez de otros premios.",
+   "how": "Premio final del carguero a la deriva.",
+   "requires": [
+    "complete_derelict_freighter",
+    "finalise_first_corvette"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "derelict_starship_reactor",
+   "name": "Obtener un Reactor de nave del Centro de control de ingeniería de un carguero a la deriva",
+   "description": "Desde Orbital puede ser premio, de clase distinta a la Unidad de flota.",
+   "how": "Sala de ingeniería del carguero a la deriva.",
+   "requires": [
+    "complete_derelict_freighter"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "sell_derelict_logs",
+   "name": "Vender el manifiesto de tripulación y el diario del capitán",
+   "description": "El Enviado da reputación con el gremio dominante; el Chatarrero da Metal contaminado.",
+   "how": "Estación espacial.",
+   "requires": [
+    "complete_derelict_freighter"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "pirate_dreadnought_battle",
+   "name": "Vencer un Dreadnought pirata",
+   "description": "Solo ocurre si ya tenés carguero. Podés destruirlo (Unidad de flota S), forzar rendición (mamparo y poder reclamar la nave) o ahuyentarlo.",
+   "how": "Tras saltar a un sistema, ayudá al carguero civil contra el Dreadnought y sus fragatas.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pirate_Dreadnought"
+  },
+  {
+   "id": "hire_combat_frigate",
+   "name": "Contratar una fragata de Combate",
+   "description": "Puede asistir en combate espacial si tu carguero está en el sistema: se teletransporta y envía naves aliadas.",
+   "how": "Acercate a una fragata con icono verde (alrededor de un carguero), hablá con su capitán por intercomunicador y contratala (aprox. 1,5M a 12,5M Unidades según clase).",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "collect_combat_frigate_output",
+   "name": "Usar la habilidad de una fragata de Combate",
+   "description": "Puede asistir en combate espacial si tu carguero está en el sistema: se teletransporta y envía naves aliadas.",
+   "how": "Con tu carguero en el sistema y la fragata fuera de expedición.",
+   "requires": [
+    "hire_combat_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "hire_exploration_frigate",
+   "name": "Contratar una fragata de Exploración",
+   "description": "Su escáner de artefactos revela una Ruina antigua del sistema.",
+   "how": "Acercate a una fragata con icono verde (alrededor de un carguero), hablá con su capitán por intercomunicador y contratala (aprox. 1,5M a 12,5M Unidades según clase).",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "collect_exploration_frigate_output",
+   "name": "Usar la habilidad de una fragata de Exploración",
+   "description": "Su escáner de artefactos revela una Ruina antigua del sistema.",
+   "how": "Con tu carguero en el sistema y la fragata fuera de expedición.",
+   "requires": [
+    "hire_exploration_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "hire_industrial_frigate",
+   "name": "Contratar una fragata Industrial",
+   "description": "Produce 2 Ferrita magnetizada cada 30 s (hasta 100) que recogés a bordo.",
+   "how": "Acercate a una fragata con icono verde (alrededor de un carguero), hablá con su capitán por intercomunicador y contratala (aprox. 1,5M a 12,5M Unidades según clase).",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "collect_industrial_frigate_output",
+   "name": "Recoger la producción de una fragata Industrial",
+   "description": "Produce 2 Ferrita magnetizada cada 30 s (hasta 100) que recogés a bordo.",
+   "how": "Aterrizá a bordo cuando no esté en expedición.",
+   "requires": [
+    "hire_industrial_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "hire_trade_frigate",
+   "name": "Contratar una fragata Comercial",
+   "description": "Produce 1000 Unidades cada 30 s (hasta 125.000) que recogés a bordo.",
+   "how": "Acercate a una fragata con icono verde (alrededor de un carguero), hablá con su capitán por intercomunicador y contratala (aprox. 1,5M a 12,5M Unidades según clase).",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "collect_trade_frigate_output",
+   "name": "Recoger la producción de una fragata Comercial",
+   "description": "Produce 1000 Unidades cada 30 s (hasta 125.000) que recogés a bordo.",
+   "how": "Aterrizá a bordo cuando no esté en expedición.",
+   "requires": [
+    "hire_trade_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "hire_support_frigate",
+   "name": "Contratar una fragata de Apoyo",
+   "description": "Reduce el gasto de combustible de expediciones cortas y produce 2 Carbono condensado cada 30 s (hasta 100).",
+   "how": "Acercate a una fragata con icono verde (alrededor de un carguero), hablá con su capitán por intercomunicador y contratala (aprox. 1,5M a 12,5M Unidades según clase).",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "collect_support_frigate_output",
+   "name": "Recoger la producción de una fragata de Apoyo",
+   "description": "Reduce el gasto de combustible de expediciones cortas y produce 2 Carbono condensado cada 30 s (hasta 100).",
+   "how": "Aterrizá a bordo cuando no esté en expedición.",
+   "requires": [
+    "hire_support_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "complete_freighter_command",
+   "name": "Completar la misión Freighter Command",
+   "description": "Tutorial de expediciones; da los planos de Combustible de fragata de 50, 100 y 200 toneladas. No se puede reiniciar si la salteás.",
+   "how": "Construí una Sala de mando de flota y enviá una expedición.",
+   "requires": [
+    "own_frigate",
+    "build_fleet_command_room"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter_Command"
+  },
+  {
+   "id": "craft_frigate_fuel_50",
+   "name": "Fabricar Combustible de fragata (50 toneladas)",
+   "description": "Se hace con Dihidrógeno y Tritio; se usa primero lo más chico.",
+   "how": "Fabricalo y guardalo en el inventario del carguero.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "craft_frigate_fuel_100",
+   "name": "Fabricar Combustible de fragata (100 toneladas)",
+   "description": "Se hace con Dihidrógeno y Tritio; se usa primero lo más chico.",
+   "how": "Fabricalo y guardalo en el inventario del carguero.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "craft_frigate_fuel_200",
+   "name": "Fabricar Combustible de fragata (200 toneladas)",
+   "description": "Se hace con Dihidrógeno y Tritio; se usa primero lo más chico.",
+   "how": "Fabricalo y guardalo en el inventario del carguero.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "send_combat_expedition",
+   "name": "Enviar una expedición de fragatas de combate",
+   "description": "Cada día (0:00 UTC) hay 5 nuevas expediciones; las de combate traen recompensas de ese tipo.",
+   "how": "Hablá con el Navegante del puente con una Sala de mando de flota libre y elegí la misión; debriefing al volver.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "send_exploration_expedition",
+   "name": "Enviar una expedición de fragatas de exploración",
+   "description": "Cada día (0:00 UTC) hay 5 nuevas expediciones; las de exploración traen recompensas de ese tipo.",
+   "how": "Hablá con el Navegante del puente con una Sala de mando de flota libre y elegí la misión; debriefing al volver.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "send_industrial_expedition",
+   "name": "Enviar una expedición de fragatas de industrial",
+   "description": "Cada día (0:00 UTC) hay 5 nuevas expediciones; las de industrial traen recompensas de ese tipo.",
+   "how": "Hablá con el Navegante del puente con una Sala de mando de flota libre y elegí la misión; debriefing al volver.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "send_trade_expedition",
+   "name": "Enviar una expedición de fragatas de comercio",
+   "description": "Cada día (0:00 UTC) hay 5 nuevas expediciones; las de comercio traen recompensas de ese tipo.",
+   "how": "Hablá con el Navegante del puente con una Sala de mando de flota libre y elegí la misión; debriefing al volver.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "send_balanced_expedition",
+   "name": "Enviar una expedición de fragatas de equilibrada",
+   "description": "Cada día (0:00 UTC) hay 5 nuevas expediciones; las de equilibrada traen recompensas de ese tipo.",
+   "how": "Hablá con el Navegante del puente con una Sala de mando de flota libre y elegí la misión; debriefing al volver.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "fleet_rating_two_stars",
+   "name": "Enviar una flota con puntaje 2 estrellas por encima de la dificultad",
+   "description": "Así vuelven sin daños; no uses flotas que apenas igualan la dificultad.",
+   "how": "Combiná fragatas hasta superar la dificultad de la expedición.",
+   "requires": [
+    "send_balanced_expedition"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "use_explosive_drones",
+   "name": "Usar Drones explosivos (combate) en una expedición",
+   "description": "Hay 3 ranuras de consumibles por expedición, de un solo uso.",
+   "how": "Desde el Control de mejoras fabricá/comprá el consumible y asignalo al enviar la flota.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "use_fuel_oxidiser",
+   "name": "Usar Oxidante de combustible (reduce duración) en una expedición",
+   "description": "Hay 3 ranuras de consumibles por expedición, de un solo uso.",
+   "how": "Desde el Control de mejoras fabricá/comprá el consumible y asignalo al enviar la flota.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "use_holographic_analyser",
+   "name": "Usar Analizador holográfico (exploración) en una expedición",
+   "description": "Hay 3 ranuras de consumibles por expedición, de un solo uso.",
+   "how": "Desde el Control de mejoras fabricá/comprá el consumible y asignalo al enviar la flota.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "use_mind_control_device",
+   "name": "Usar Dispositivo de control mental (comercio) en una expedición",
+   "description": "Hay 3 ranuras de consumibles por expedición, de un solo uso.",
+   "how": "Desde el Control de mejoras fabricá/comprá el consumible y asignalo al enviar la flota.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "use_mineral_compressor",
+   "name": "Usar Compresor de minerales (industrial) en una expedición",
+   "description": "Hay 3 ranuras de consumibles por expedición, de un solo uso.",
+   "how": "Desde el Control de mejoras fabricá/comprá el consumible y asignalo al enviar la flota.",
+   "requires": [
+    "complete_freighter_command"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "fleet_five_frigates",
+   "name": "Reunir 5 fragatas",
+   "description": "Con 4 o más las expediciones suben de dificultad y recompensa.",
+   "how": "Contratá fragatas en las flotas de otros cargueros.",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate_Expedition"
+  },
+  {
+   "id": "fleet_thirty_frigates",
+   "name": "Tener 30 fragatas (título de Almirante)",
+   "description": "Es el máximo; da el título Admiral.",
+   "how": "Seguí contratando fragatas.",
+   "requires": [
+    "fleet_five_frigates"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "frigate",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "frigate_first_rank_up",
+   "name": "Subir de rango una fragata",
+   "description": "Cada rango sube estadísticas (+6 puntos) y quita un rasgo negativo o da uno positivo; se sube cada 4–5 expediciones.",
+   "how": "Enviá la fragata a expediciones.",
+   "requires": [
+    "send_balanced_expedition"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "frigate_s_class",
+   "name": "Hacer subir una fragata a clase S",
+   "description": "La clase sube con la cantidad de rasgos positivos.",
+   "how": "Enviala a muchas expediciones.",
+   "requires": [
+    "frigate_first_rank_up"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "frigate",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "frigate_max_stats",
+   "name": "Llevar una fragata a estadísticas máximas (55 expediciones)",
+   "description": "Después de S sigue mejorando hasta 55 expediciones.",
+   "how": "Seguí enviándola.",
+   "requires": [
+    "frigate_s_class"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "frigate",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "repair_frigate",
+   "name": "Reparar una fragata dañada",
+   "description": "Marcada en rojo; volar con daño aumenta el riesgo de perderla.",
+   "how": "Aterrizá en la fragata y seguí las marcas rojas, o usá el Teletransportador de fragata desde Administrar flota.",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "squadron_unlock_slot",
+   "name": "Desbloquear un puesto de escuadrón",
+   "description": "Hasta 4 naves NPC te siguen en combates con piratas.",
+   "how": "Terminal Administrar flota > Administrar escuadrón, pagando el costo indicado.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "squadron_upgrade_s",
+   "name": "Subir un piloto del escuadrón a clase S",
+   "description": "Mejora por pasos C-B, B-A, A-S.",
+   "how": "Terminal Administrar escuadrón.",
+   "requires": [
+    "squadron_unlock_slot"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "get_dream_aerial_blueprint",
+   "name": "Obtener el plano de la Antena de ensueño",
+   "description": "Se consigue al azar en expediciones de fragatas; una de 3 estrellas puede tener un registro corrupto que lo da.",
+   "how": "Enviá expediciones de dificultad 3 estrellas y debriefeá.",
+   "requires": [
+    "send_exploration_expedition"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "frigate",
+    "luck"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dream_Aerial"
+  },
+  {
+   "id": "build_dream_aerial",
+   "name": "Fabricar una Antena de ensueño",
+   "description": "Cuesta Vidrio vivo x3 y Espejo solar x1.",
+   "how": "Fabricala con el plano.",
+   "requires": [
+    "get_dream_aerial_blueprint"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dream_Aerial"
+  },
+  {
+   "id": "recruit_organic_frigate",
+   "name": "Reclutar una fragata orgánica",
+   "description": "Gratis (salvo la antena); una por sistema. Las respuestas a sus preguntas definen su rasgo principal.",
+   "how": "Usá la Antena de ensueño en el espacio profundo (Relay Song) y hablá con la criatura.",
+   "requires": [
+    "build_dream_aerial"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Organic_Frigate"
+  },
+  {
+   "id": "feed_organic_frigate",
+   "name": "Alimentar a una fragata orgánica",
+   "description": "La comida cambia sus modificadores.",
+   "how": "Dale alimentos desde su interfaz.",
+   "requires": [
+    "recruit_organic_frigate"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Organic_Frigate"
+  },
+  {
+   "id": "get_psionic_egg",
+   "name": "Obtener un Huevo psiónico de una expedición orgánica",
+   "description": "Se convierten en módulos de mejora para naves vivientes.",
+   "how": "Incluí una fragata orgánica en expediciones.",
+   "requires": [
+    "recruit_organic_frigate",
+    "own_living_ship"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "frigate",
+    "ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Organic_Frigate"
+  },
+  {
+   "id": "summon_nomad_first_time",
+   "name": "Convocar el Nomad por primera vez",
+   "description": "Invocalo en su base de lanzamiento (hovercraft rápido que flota en el agua).",
+   "how": "Colocá el geobay y usá el panel azul, o el menú rápido.",
+   "requires": [
+    "own_nomad"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nomad"
+  },
+  {
+   "id": "customise_nomad",
+   "name": "Personalizar la pintura del Nomad",
+   "description": "Pintura, calcomanías y partículas de impulso.",
+   "how": "Panel naranja del geobay.",
+   "requires": [
+    "own_nomad"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "nomad_fully_upgraded",
+   "name": "Mejorar el Nomad con módulos adyacentes",
+   "description": "Colocá hasta 3 módulos de mejora junto al sistema principal (cuadro 2x2 o línea).",
+   "how": "Comprá módulos con Nanites al Técnico de exovehículos tras su misión, o fabricá planos.",
+   "requires": [
+    "own_nomad"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nomad"
+  },
+  {
+   "id": "summon_roamer_first_time",
+   "name": "Convocar el Roamer por primera vez",
+   "description": "Invocalo en su base de lanzamiento (vehículo todoterreno de 40 ranuras de carga).",
+   "how": "Colocá el geobay y usá el panel azul, o el menú rápido.",
+   "requires": [
+    "own_roamer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Roamer"
+  },
+  {
+   "id": "customise_roamer",
+   "name": "Personalizar la pintura del Roamer",
+   "description": "Pintura, calcomanías y partículas de impulso.",
+   "how": "Panel naranja del geobay.",
+   "requires": [
+    "own_roamer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "roamer_fully_upgraded",
+   "name": "Mejorar el Roamer con módulos adyacentes",
+   "description": "Colocá hasta 3 módulos de mejora junto al sistema principal (cuadro 2x2 o línea).",
+   "how": "Comprá módulos con Nanites al Técnico de exovehículos tras su misión, o fabricá planos.",
+   "requires": [
+    "own_roamer"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Roamer"
+  },
+  {
+   "id": "summon_pilgrim_first_time",
+   "name": "Convocar el Pilgrim por primera vez",
+   "description": "Invocalo en su base de lanzamiento (moto, la más rápida).",
+   "how": "Colocá el geobay y usá el panel azul, o el menú rápido.",
+   "requires": [
+    "own_pilgrim"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pilgrim"
+  },
+  {
+   "id": "customise_pilgrim",
+   "name": "Personalizar la pintura del Pilgrim",
+   "description": "Pintura, calcomanías y partículas de impulso.",
+   "how": "Panel naranja del geobay.",
+   "requires": [
+    "own_pilgrim"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "pilgrim_fully_upgraded",
+   "name": "Mejorar el Pilgrim con módulos adyacentes",
+   "description": "Colocá hasta 3 módulos de mejora junto al sistema principal (cuadro 2x2 o línea).",
+   "how": "Comprá módulos con Nanites al Técnico de exovehículos tras su misión, o fabricá planos.",
+   "requires": [
+    "own_pilgrim"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pilgrim"
+  },
+  {
+   "id": "summon_colossus_first_time",
+   "name": "Convocar el Colossus por primera vez",
+   "description": "Invocalo en su base de lanzamiento (camión de 8 ruedas con más inventario).",
+   "how": "Colocá el geobay y usá el panel azul, o el menú rápido.",
+   "requires": [
+    "own_colossus"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossus"
+  },
+  {
+   "id": "customise_colossus",
+   "name": "Personalizar la pintura del Colossus",
+   "description": "Pintura, calcomanías y partículas de impulso.",
+   "how": "Panel naranja del geobay.",
+   "requires": [
+    "own_colossus"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "colossus_fully_upgraded",
+   "name": "Mejorar el Colossus con módulos adyacentes",
+   "description": "Colocá hasta 3 módulos de mejora junto al sistema principal (cuadro 2x2 o línea).",
+   "how": "Comprá módulos con Nanites al Técnico de exovehículos tras su misión, o fabricá planos.",
+   "requires": [
+    "own_colossus"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossus"
+  },
+  {
+   "id": "summon_nautilon_first_time",
+   "name": "Convocar el Nautilon por primera vez",
+   "description": "Invocalo en su base de lanzamiento (submarino).",
+   "how": "Colocá el geobay y usá el panel azul, o el menú rápido.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon"
+  },
+  {
+   "id": "customise_nautilon",
+   "name": "Personalizar la pintura del Nautilon",
+   "description": "Pintura, calcomanías y partículas de impulso.",
+   "how": "Panel naranja del geobay.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "nautilon_fully_upgraded",
+   "name": "Mejorar el Nautilon con módulos adyacentes",
+   "description": "Colocá hasta 3 módulos de mejora junto al sistema principal (cuadro 2x2 o línea).",
+   "how": "Comprá módulos con Nanites al Técnico de exovehículos tras su misión, o fabricá planos.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon"
+  },
+  {
+   "id": "summon_minotaur_first_time",
+   "name": "Convocar el Minotaur por primera vez",
+   "description": "Invocalo en su base de lanzamiento (mecha bípedo con vuelo corto).",
+   "how": "Colocá el geobay y usá el panel azul, o el menú rápido.",
+   "requires": [
+    "own_minotaur"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minotaur"
+  },
+  {
+   "id": "customise_minotaur",
+   "name": "Personalizar la pintura del Minotaur",
+   "description": "Pintura, calcomanías y partículas de impulso.",
+   "how": "Panel naranja del geobay.",
+   "requires": [
+    "own_minotaur"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "minotaur_fully_upgraded",
+   "name": "Mejorar el Minotaur con módulos adyacentes",
+   "description": "Colocá hasta 3 módulos de mejora junto al sistema principal (cuadro 2x2 o línea).",
+   "how": "Comprá módulos con Nanites al Técnico de exovehículos tras su misión, o fabricá planos.",
+   "requires": [
+    "own_minotaur"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minotaur"
+  },
+  {
+   "id": "complete_exocraft_technician",
+   "name": "Completar la misión Exocraft Technician",
+   "description": "Da el plano del geobay del Roamer, Signal Booster, Cañón montado, módulo de aceleración y Láser minero, y el del Nomad Geobay.",
+   "how": "Viajá al sistema Vy'keen marcado, contratá al Técnico y sigue la cadena.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "complete_dreams_of_the_deep",
+   "name": "Completar Dreams of the Deep",
+   "description": "Introduce el Nautilon, da el plano de la Cámara del Nautilon, Sonar de alta potencia y la personalización Lost Bathysphere.",
+   "how": "Empieza al terminar la historia 16/16 o al alcanzar el hito Pioneer y warpear.",
+   "requires": [
+    "story_main_missions_done"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "underwater",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dreams_of_the_Deep"
+  },
+  {
+   "id": "complete_trace_of_metal",
+   "name": "Completar A Trace of Metal",
+   "description": "Crea tu compañero centinela y mejora el Minotaur con tecnología centinela.",
+   "how": "Con un asentamiento propio y sin objetivos pendientes, alejate y saltá dos veces.",
+   "requires": [
+    "own_settlement",
+    "own_minotaur"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Trace_of_Metal"
+  },
+  {
+   "id": "build_exocraft_summoning_station",
+   "name": "Construir una Estación de convocatoria de exovehículos",
+   "description": "Convoca desde cualquier punto del sistema; se desmonta y devuelve materiales.",
+   "how": "Menú de construcción.",
+   "requires": [
+    "build_exocraft_geobay"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Summoning_Station"
+  },
+  {
+   "id": "get_exocraft_summoning_unit",
+   "name": "Conseguir la Unidad de convocatoria de exovehículos",
+   "description": "Tecnología de exotraje que los convoca desde cualquier punto de la galaxia; requiere Cuarzo activado y Helio cristalizado de sistemas púrpura.",
+   "how": "Investigala en la Anomalía.",
+   "requires": [
+    "access_space_anomaly",
+    "warp_purple"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exocraft",
+    "tech"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "get_humboldt_drive",
+   "name": "Instalar el Motor Humboldt del Nautilon",
+   "description": "Motor propio del Nautilon, usa Celdas de combustible hidrotérmico.",
+   "how": "Desbloquealo en la Anomalía.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon"
+  },
+  {
+   "id": "craft_hydrothermal_fuel_cell",
+   "name": "Fabricar una Celda de combustible hidrotérmico",
+   "description": "Sal, Cito-fosfato y Carbono, todo bajo el agua.",
+   "how": "Fabricala bajo el agua.",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon"
+  },
+  {
+   "id": "install_dredging_laser",
+   "name": "Instalar el Láser de dragado del Nautilon",
+   "description": "Da capacidades de terraformador bajo el agua.",
+   "how": "Conseguí el plano de mejora del Nautilon (confirmá en el juego dónde se vende; la página no lo detalla).",
+   "requires": [
+    "own_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon"
+  },
+  {
+   "id": "install_minotaur_ai_pilot",
+   "name": "Instalar el Piloto IA del Minotaur",
+   "description": "Permite que el Minotaur lo siga y combata.",
+   "how": "Plano en la Anomalía; fabricalo con Computadora cuántica, Antimateria y Cableado.",
+   "requires": [
+    "own_minotaur",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minotaur_AI_Pilot"
+  },
+  {
+   "id": "install_minotaur_bore",
+   "name": "Instalar el Taladro del Minotaur",
+   "description": "Da capacidad de terraformador.",
+   "how": "Conseguí el plano de mejora del Minotaur (confirmá dónde se vende; la página no lo detalla).",
+   "requires": [
+    "own_minotaur"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minotaur"
+  },
+  {
+   "id": "install_colossus_mineral_rig",
+   "name": "Instalar el Procesador mineral en el Colossus",
+   "description": "Lo convierte en refinador grande móvil.",
+   "how": "Conseguí el plano de la mejora del Colossus (confirmá dónde se vende; la página no lo detalla).",
+   "requires": [
+    "own_colossus"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossus"
+  },
+  {
+   "id": "colossus_flatbed_waste",
+   "name": "Usar la plataforma del Colossus para transportar residuos industriales",
+   "description": "Con Bobina de gravitino se lleva chatarra industrial a una Planta de procesamiento.",
+   "how": "Instalá la plataforma, procesá un desecho y llevalo a la planta.",
+   "requires": [
+    "own_colossus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossus"
+  },
+  {
+   "id": "exocraft_boost_supercharged",
+   "name": "Asignar ranuras sobrealimentadas del exovehículo al motor",
+   "description": "Se pueden usar de inmediato; el motor sobrealimentado y el impulso suben la velocidad (p. ej. Pilgrim 55 u/s).",
+   "how": "Colocá el motor en una ranura sobrealimentada.",
+   "requires": [
+    "own_roamer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft"
+  },
+  {
+   "id": "own_mt_rifle",
+   "name": "Conseguir un multiherramienta Rifle",
+   "description": "Tipo de combate, con alto bonus de balas; es de los más fáciles de conseguir.",
+   "how": "Comprala en el mercader de multiherramientas de una estación, en la Anomalía o en un asentamiento menor.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_rifle_s",
+   "name": "Conseguir un multiherramienta Rifle de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Comprá o intercambiá por uno S en los mercaderes, o mejorá la ranura.",
+   "requires": [
+    "own_mt_rifle"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_experimental",
+   "name": "Conseguir un multiherramienta Experimental",
+   "description": "Tipo de rango de escaneo, raro.",
+   "how": "Comprala a los mercaderes o ganala en un Monolito Gek/Korvax/Vy'keen.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_experimental_s",
+   "name": "Conseguir un multiherramienta Experimental de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Comprá o intercambiá por uno S en los mercaderes, o mejorá la ranura.",
+   "requires": [
+    "own_mt_experimental"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_alien",
+   "name": "Conseguir un multiherramienta Alien",
+   "description": "Híbrido de combate y escaneo, raro.",
+   "how": "Comprala a los mercaderes o ganala en un Monolito.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_alien_s",
+   "name": "Conseguir un multiherramienta Alien de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Comprá o intercambiá por uno S en los mercaderes, o mejorá la ranura.",
+   "requires": [
+    "own_mt_alien"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_royal",
+   "name": "Conseguir un multiherramienta Exótico (Royal)",
+   "description": "Rango de escaneo, de bajo número de variantes.",
+   "how": "Se consigue en un Pilar centinela (opción Extraer tecnología de armas; ranuras casi todas rotas) o en monolitos.",
+   "requires": [
+    "find_sentinel_pillar"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "own_mt_royal_s",
+   "name": "Conseguir un multiherramienta Exótico (Royal) de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Comprá o intercambiá por uno S en los mercaderes, o mejorá la ranura.",
+   "requires": [
+    "own_mt_royal"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "own_mt_sentinel",
+   "name": "Conseguir un multiherramienta Centinela",
+   "description": "Combate, bonus de balas máximo; trae un Láser secuestrado.",
+   "how": "Abrí el gabinete de un Campamento Armónico resolviendo la ecuación (ranuras dañadas).",
+   "requires": [
+    "unlock_harmonic_interface"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Camp"
+  },
+  {
+   "id": "own_mt_sentinel_s",
+   "name": "Conseguir un multiherramienta Centinela de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Comprá o intercambiá por uno S en los mercaderes, o mejorá la ranura.",
+   "requires": [
+    "own_mt_sentinel"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Harmonic_Camp"
+  },
+  {
+   "id": "own_mt_atlantid",
+   "name": "Conseguir un multiherramienta Atlantida (Atlantid)",
+   "description": "Minería, trae la tecnología Runic Lens (rayo de minería + camuflaje).",
+   "how": "Se gana en un Monolito de un sistema Korvax (la página no detalla el requisito previo).",
+   "requires": [
+    "visit_korvax_monolith"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_atlantid_s",
+   "name": "Conseguir un multiherramienta Atlantida (Atlantid) de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Conseguí el multiherramienta Atlantid en un Monolito de un sistema Korvax (tras avanzar 'Los que regresaron') y subí su clase a S en la Estación de mejora de multiherramientas de una estación espacial (cuesta nanites).",
+   "requires": [
+    "own_mt_atlantid"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "own_mt_voltaic_staff",
+   "name": "Conseguir un multiherramienta Báculo voltaico (Voltaic Staff)",
+   "description": "Combate, armable por piezas, 17 a 30 ranuras.",
+   "how": "Armala en un Terminal de síntesis Autófago con piezas compradas con Motas del vacío.",
+   "requires": [
+    "complete_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Voltaic_Staff"
+  },
+  {
+   "id": "own_mt_voltaic_staff_s",
+   "name": "Conseguir un multiherramienta Báculo voltaico (Voltaic Staff) de clase S",
+   "description": "La clase S da el mayor bonus de clase y hasta 60 ranuras.",
+   "how": "Comprá o intercambiá por uno S en los mercaderes, o mejorá la ranura.",
+   "requires": [
+    "own_mt_voltaic_staff"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Voltaic_Staff"
+  },
+  {
+   "id": "own_mt_pistol_s",
+   "name": "Conseguir un multiherramienta Pistola de clase S",
+   "description": "El tipo del multiherramienta inicial: alta velocidad de minería.",
+   "how": "Mercaderes de multiherramientas.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "find_sentinel_pillar",
+   "name": "Encontrar un Pilar centinela",
+   "description": "Puesto de control centinela; permite apagar centinelas, leer registros y extraer un arma.",
+   "how": "Se localiza derrotando centinelas en nivel 5, con Vidrio recuperado, Mapas de límite centinela, chatarra o exploración.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exploration",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "sentinel_pillar_extract",
+   "name": "Extraer tecnología de armas de un Pilar centinela",
+   "description": "Ofrece un multiherramienta que podés comprar o cambiar.",
+   "how": "Interactuá con el pilar, tercera opción.",
+   "requires": [
+    "find_sentinel_pillar"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "read_sentinel_pillar_logs",
+   "name": "Leer los registros de un Pilar centinela",
+   "description": "23 entradas con la voz de la colmena.",
+   "how": "Interactuá con pilares y elegí Acceder a registros.",
+   "requires": [
+    "find_sentinel_pillar"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "sentinel",
+    "lore"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "visit_korvax_monolith",
+   "name": "Resolver el acertijo de un Monolito Korvax",
+   "description": "Puede dar multiherramientas, planos, reputación y vocabulario.",
+   "how": "Hablá con el monolito y elegí la solución correcta.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "puzzle"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Monolith"
+  },
+  {
+   "id": "monolith_multitool_reward",
+   "name": "Ganar un multiherramienta en un Monolito",
+   "description": "Los monolitos de Gek, Korvax y Vy'keen pueden dar estándar, rifle compacto, rifle, royal, experimental o alien.",
+   "how": "Resolvé el acertijo.",
+   "requires": [
+    "visit_korvax_monolith"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "puzzle"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Monolith"
+  },
+  {
+   "id": "complete_weapons_research",
+   "name": "Completar Weapons Research",
+   "description": "Presenta al Armero y puede regalar un multiherramienta; también da el visor de combate.",
+   "how": "Contratá al Armero en un sistema Vy'keen.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "mt_slot_expansion_item",
+   "name": "Usar una Ranura de expansión de multiherramienta",
+   "description": "Añade una ranura gratis.",
+   "how": "Obtenela por el acertijo de una Instalación de fabricación, cofres de carguero estrellado o misiones; instalala en la Estación de mejora de la estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool_Expansion_Slot"
+  },
+  {
+   "id": "mt_buy_slot_units",
+   "name": "Comprar una ranura de multiherramienta con Unidades",
+   "description": "El precio sube por tramos y se estabiliza desde la ranura 48.",
+   "how": "Estación espacial, consola de mejora de multiherramienta.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "upgrade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "mt_max_slots",
+   "name": "Llevar un multiherramienta a 60 ranuras",
+   "description": "Máximo en clase S, incluyendo 4 ranuras sobrealimentadas.",
+   "how": "Combiná compras de ranuras y expansiones.",
+   "requires": [
+    "own_mt_pistol_s",
+    "units>=1000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "multitool",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "trade_multitool",
+   "name": "Cambiar de multiherramienta",
+   "description": "Al cambiar perdés la tecnología instalada (guardala antes).",
+   "how": "Mercader de multiherramientas, aceptá cambio.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "shopping"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "build_voltaic_staff_custom",
+   "name": "Armar un Báculo voltaico a medida",
+   "description": "Elegís cabeza, corazón y estructura; el color lo define el terminal.",
+   "how": "Comprá piezas con Motas del vacío y ensamblá en el Terminal de síntesis.",
+   "requires": [
+    "own_mt_voltaic_staff"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "multitool",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autophage_Synthesis_Terminal"
+  },
+  {
+   "id": "find_crashed_ship_multitool",
+   "name": "Hallar un multiherramienta en una nave estrellada",
+   "description": "Puede venir en una nave estrellada.",
+   "how": "Inspeccioná naves estrelladas.",
+   "requires": [
+    "find_crashed_ship"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool"
+  },
+  {
+   "id": "craft_creature_pellets",
+   "name": "Fabricar Bolitas de criatura",
+   "description": "Con ellas domesticás criaturas normales (se aprenden al terminar Awakenings).",
+   "how": "Menú de construcción.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Creature_Pellets"
+  },
+  {
+   "id": "tame_mechanical_creature",
+   "name": "Domesticar una criatura mecánica",
+   "description": "Se doman con una batería de iones.",
+   "how": "Alimentá con batería a un robot.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "tame_flying_creature",
+   "name": "Domesticar una criatura voladora baja",
+   "description": "Desde Prisms se pueden alimentar criaturas de vuelo bajo; planean al montarlas.",
+   "how": "Alimentala y adoptala.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "ride_creature",
+   "name": "Montar una criatura",
+   "description": "Cualquier criatura alimentada puede montarse; no recibe daño de la fauna hostil ni de centinelas.",
+   "how": "Alimentala y elegí Montar.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "ride_giant_creature",
+   "name": "Montar una criatura gigante",
+   "description": "Desde Companions se pueden montar gigantes.",
+   "how": "Alimentala y elegí Montar.",
+   "requires": [
+    "ride_creature"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "ride_companion_scan",
+   "name": "Montar a un compañero y usar el visor de análisis",
+   "description": "Se puede usar menú rápido y visor mientras se monta.",
+   "how": "Montá a tu compañero.",
+   "requires": [
+    "ride_creature"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slot_2",
+   "name": "Desbloquear el puesto 2 de compañeros",
+   "description": "Registro de compañeros: puesto 2.",
+   "how": "Registro de compañeros, comprar puesto con Nanites.",
+   "requires": [
+    "adopt_companion",
+    "nanites>=500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slot_3",
+   "name": "Desbloquear el puesto 3 de compañeros",
+   "description": "Registro de compañeros: puesto 3.",
+   "how": "Registro de compañeros, comprar puesto con Nanites.",
+   "requires": [
+    "adopt_companion",
+    "nanites>=1000",
+    "companion_slot_2"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slot_4",
+   "name": "Desbloquear el puesto 4 de compañeros",
+   "description": "Registro de compañeros: puesto 4.",
+   "how": "Registro de compañeros, comprar puesto con Nanites.",
+   "requires": [
+    "adopt_companion",
+    "companion_slot_3"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slot_5",
+   "name": "Desbloquear el puesto 5 de compañeros",
+   "description": "Registro de compañeros: puesto 5.",
+   "how": "Registro de compañeros, comprar puesto con Nanites.",
+   "requires": [
+    "adopt_companion",
+    "nanites>=5000",
+    "companion_slot_4"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slot_6",
+   "name": "Desbloquear el puesto 6 de compañeros",
+   "description": "Registro de compañeros: puesto 6.",
+   "how": "Registro de compañeros, comprar puesto con Nanites.",
+   "requires": [
+    "adopt_companion",
+    "nanites>=10000",
+    "companion_slot_5"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slots_18",
+   "name": "Tener 18 puestos de compañeros",
+   "description": "Desde Sentinel el máximo era 18; desbloqueables de a uno (20.000 Nanites del 7 al 18).",
+   "how": "Comprá puestos hasta 18.",
+   "requires": [
+    "companion_slot_6",
+    "nanites>=20000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_slots_30",
+   "name": "Tener 30 puestos de compañeros",
+   "description": "Xeno Arena subió el máximo a 30.",
+   "how": "Comprá puestos hasta 30 (costo no confirmado en la fuente).",
+   "requires": [
+    "companion_slots_18"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "adopt_airless_companion",
+   "name": "Adoptar una criatura de clima Sin aire",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_barren_companion",
+   "name": "Adoptar una criatura de clima Árido",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_frozen_companion",
+   "name": "Adoptar una criatura de clima Congelado",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_gaseous_companion",
+   "name": "Adoptar una criatura de clima Gaseoso",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_scorched_companion",
+   "name": "Adoptar una criatura de clima Calcinado",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_volcanic_companion",
+   "name": "Adoptar una criatura de clima Volcánico",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_verdant_companion",
+   "name": "Adoptar una criatura de clima Verde",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_radioactive_companion",
+   "name": "Adoptar una criatura de clima Radiactivo",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_swamp_companion",
+   "name": "Adoptar una criatura de clima Pantano",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_toxic_companion",
+   "name": "Adoptar una criatura de clima Tóxico",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_waterbound_companion",
+   "name": "Adoptar una criatura de clima Acuático",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "adopt_unusual_companion",
+   "name": "Adoptar una criatura de clima Inusual",
+   "description": "El clima nativo define sus movimientos de batalla y dónde pone huevos.",
+   "how": "Alimentá y adoptá una criatura de un planeta de ese tipo.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_personality_diligent",
+   "name": "Tener un compañero de personalidad laborioso/juguetón (amarillo)",
+   "description": "La personalidad dominante cambia sus comentarios y conductas.",
+   "how": "Mirá el Registro de compañeros.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_personality_calm",
+   "name": "Tener un compañero de personalidad tranquilo/leal (verde)",
+   "description": "La personalidad dominante cambia sus comentarios y conductas.",
+   "how": "Mirá el Registro de compañeros.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_personality_aggressive",
+   "name": "Tener un compañero de personalidad agresivo (rojo)",
+   "description": "La personalidad dominante cambia sus comentarios y conductas.",
+   "how": "Mirá el Registro de compañeros.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_personality_independent",
+   "name": "Tener un compañero de personalidad independiente (azul)",
+   "description": "La personalidad dominante cambia sus comentarios y conductas.",
+   "how": "Mirá el Registro de compañeros.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_feed_bond",
+   "name": "Aumentar la confianza de un compañero",
+   "description": "Sube alimentándolo y jugando; pasa de ~50-65% al registrarlo.",
+   "how": "Acariciá/alimentá una vez por día.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_find_building",
+   "name": "Hacer que un compañero encuentre una estructura",
+   "description": "Una de las habilidades del compañero.",
+   "how": "Mantenelo bien cuidado y explorá.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_dig_treasure",
+   "name": "Hacer que un compañero desentierre un tesoro",
+   "description": "Puede excavar minerales y objetos especiales.",
+   "how": "Explorá con él.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "companion_hunt",
+   "name": "Hacer que un compañero ataque a un depredador",
+   "description": "Si te atacan, mata de un golpe.",
+   "how": "Dejalo actuar.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "equip_companion_accessory",
+   "name": "Equipar un accesorio funcional al compañero",
+   "description": "Linterna o láser minero que usa mientras explora.",
+   "how": "Menú de accesorios.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "decal_companion",
+   "name": "Recolorear un accesorio con calcomanías",
+   "description": "Colores y calcomanías personalizables.",
+   "how": "Menú del compañero.",
+   "requires": [
+    "equip_companion_accessory"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "rename_companion",
+   "name": "Renombrar un compañero",
+   "description": "Los compañeros se renombran desde su registro.",
+   "how": "Registro de compañeros, ícono de lápiz.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Pets"
+  },
+  {
+   "id": "get_companion_egg",
+   "name": "Conseguir un huevo de compañero",
+   "description": "Una por 24 h si está alimentado y contento y en su clima nativo; máximo 18 huevos.",
+   "how": "Llevá a tu compañero a su entorno natural.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Egg"
+  },
+  {
+   "id": "hatch_companion_egg",
+   "name": "Incubar y abrir un huevo",
+   "description": "Incubá en el exotraje hasta que eclosione.",
+   "how": "Esperá y abrilo.",
+   "requires": [
+    "get_companion_egg"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "raise_baby_creature",
+   "name": "Criar un bebé hasta su adultez",
+   "description": "Hereda rasgos pero no es idéntico.",
+   "how": "Cuidalo mientras crece.",
+   "requires": [
+    "hatch_companion_egg"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "trade_companion_egg",
+   "name": "Intercambiar un huevo con otro jugador",
+   "description": "Entre jugadores.",
+   "how": "Entregá un huevo en multijugador.",
+   "requires": [
+    "get_companion_egg"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "use_egg_sequencer",
+   "name": "Usar el Secuenciador de huevos",
+   "description": "Cuatro ajustes: tamaño/peso, color, temperamento y empalme genético; sobredosis produce cambios radicales.",
+   "how": "Anomalía Espacial; desde 6.30 también accede a huevos del carguero.",
+   "requires": [
+    "get_companion_egg",
+    "access_space_anomaly"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Egg_Sequencer"
+  },
+  {
+   "id": "sequencer_growth_hormone",
+   "name": "Modificar tamaño/peso (Hormona de crecimiento)",
+   "description": "Cambia tamaño/peso (Hormona de crecimiento) de un huevo con el Secuenciador.",
+   "how": "Anomalía Espacial.",
+   "requires": [
+    "use_egg_sequencer"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Egg_Sequencer"
+  },
+  {
+   "id": "sequencer_dye_injector",
+   "name": "Modificar color (Inyector de tinte)",
+   "description": "Cambia color (Inyector de tinte) de un huevo con el Secuenciador.",
+   "how": "Anomalía Espacial.",
+   "requires": [
+    "use_egg_sequencer"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Egg_Sequencer"
+  },
+  {
+   "id": "sequencer_neural_calibrator",
+   "name": "Modificar temperamento (Calibrador neuronal)",
+   "description": "Cambia temperamento (Calibrador neuronal) de un huevo con el Secuenciador.",
+   "how": "Anomalía Espacial.",
+   "requires": [
+    "use_egg_sequencer"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Egg_Sequencer"
+  },
+  {
+   "id": "sequencer_gene_splitter",
+   "name": "Modificar empalme genético (Divisor de genes)",
+   "description": "Cambia empalme genético (Divisor de genes) de un huevo con el Secuenciador.",
+   "how": "Anomalía Espacial.",
+   "requires": [
+    "use_egg_sequencer"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Egg_Sequencer"
+  },
+  {
+   "id": "max_personality_egg",
+   "name": "Poner una personalidad al 100% en un huevo",
+   "description": "Permite alcanzar atributos máximos más rápido.",
+   "how": "Calibrador neuronal.",
+   "requires": [
+    "sequencer_neural_calibrator"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companion_Egg"
+  },
+  {
+   "id": "meet_oceanus",
+   "name": "Hablar con Iteration: Oceanus",
+   "description": "Presenta las Batallas de criaturas.",
+   "how": "Anomalía Espacial.",
+   "requires": [
+    "adopt_companion",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "first_creature_battle",
+   "name": "Ganar tu primera Batalla de criaturas",
+   "description": "Por turnos, con equipos de compañeros.",
+   "how": "Holo-Arena.",
+   "requires": [
+    "meet_oceanus"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "battle_system_champion",
+   "name": "Derrotar a un campeón de sistema en una estación",
+   "description": "Rivales más difíciles con mejores premios.",
+   "how": "Holo-Arena de estación.",
+   "requires": [
+    "first_creature_battle"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "battle_daily",
+   "name": "Completar el desafío diario de Oceanus",
+   "description": "Misma batalla para todos.",
+   "how": "Hablá con Oceanus.",
+   "requires": [
+    "meet_oceanus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "battle_player",
+   "name": "Desafiar a otro Viajero en la Anomalía",
+   "description": "Mesas Holo-Arena multijugador.",
+   "how": "Anomalía Espacial.",
+   "requires": [
+    "first_creature_battle"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "fauna",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "morphogenetics_unlock",
+   "name": "Mejorar rasgos con Morfogenética",
+   "description": "Gana experiencia para mejorar agilidad, salud y combate usando Bolitas retrovirales.",
+   "how": "Ganá batallas y abrí la interfaz.",
+   "requires": [
+    "first_creature_battle"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "arena_league_progress",
+   "name": "Ascender en la Liga de la Arena",
+   "description": "5 variedades de medallas con misiones guía.",
+   "how": "Fijá medallas en Catálogo y Guía.",
+   "requires": [
+    "first_creature_battle"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "arena_prize_corrupted_quadruped",
+   "name": "Ganar de premio a: Cuadrúpedo corrupto",
+   "description": "Compañero de la colección de Oceanus.",
+   "how": "Impresioná a Oceanus con logros de la Liga.",
+   "requires": [
+    "arena_league_progress"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "arena_prize_geno_prawn",
+   "name": "Ganar de premio a: Geno-Camarón",
+   "description": "Compañero de la colección de Oceanus.",
+   "how": "Impresioná a Oceanus con logros de la Liga.",
+   "requires": [
+    "arena_league_progress"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "arena_prize_wandering_shrimp_tank",
+   "name": "Ganar de premio a: Tanque de camarones errante",
+   "description": "Compañero de la colección de Oceanus.",
+   "how": "Impresioná a Oceanus con logros de la Liga.",
+   "requires": [
+    "arena_league_progress"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "arena_prize_boundary_horror",
+   "name": "Ganar de premio a: Horror de límite",
+   "description": "Compañero de la colección de Oceanus.",
+   "how": "Impresioná a Oceanus con logros de la Liga.",
+   "requires": [
+    "arena_league_progress"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "arena_prize_aeron_crab",
+   "name": "Ganar de premio a: Cangrejo Aeron",
+   "description": "Compañero de la colección de Oceanus.",
+   "how": "Impresioná a Oceanus con logros de la Liga.",
+   "requires": [
+    "arena_league_progress"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "fauna",
+    "collection"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "use_creature_survey_mode",
+   "name": "Usar el modo Estudio de criaturas",
+   "description": "Muestra rasgos de batalla de fauna salvaje.",
+   "how": "Visor de análisis.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Xeno_Arena"
+  },
+  {
+   "id": "repair_drop_pod",
+   "name": "Reparar una cápsula de descenso",
+   "description": "Da un espacio de inventario gratis por cápsula (general, carga o tecnología); hasta 14 mejoras.",
+   "how": "Usá Carta de mejora del exotraje + Amplificador de señal, reparar 3 componentes dañados.",
+   "requires": [
+    "leave_first_planet",
+    "craft_signal_booster"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "exosuit"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Drop_Pod"
+  },
+  {
+   "id": "exosuit_upgrade_station",
+   "name": "Ampliar el exotraje en la Estación de mejoras",
+   "description": "Cargo desde 5.000 Unidades hasta 200.000; tecnología desde 1.000 hasta 125.000.",
+   "how": "Estación espacial o Anomalía, elegir carga o tecnología.",
+   "requires": [
+    "visit_space_station",
+    "units>=5000"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "exosuit"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exosuit_Upgrade_Station"
+  },
+  {
+   "id": "exosuit_120_cargo",
+   "name": "Llegar a 120 ranuras de carga en el exotraje",
+   "description": "Máximo de carga.",
+   "how": "Cápsulas, Nexus y estación.",
+   "requires": [
+    "exosuit_upgrade_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exosuit",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exosuit"
+  },
+  {
+   "id": "exosuit_60_tech",
+   "name": "Llegar a 60 ranuras de tecnología en el exotraje",
+   "description": "Máximo tecnológico.",
+   "how": "Cápsulas, Nexus y estación.",
+   "requires": [
+    "exosuit_upgrade_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "exosuit",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exosuit"
+  },
+  {
+   "id": "use_appearance_modifier",
+   "name": "Usar el Modificador de apariencia",
+   "description": "Cambia raza, cuerpo, ropa y colores del avatar (neutral al género).",
+   "how": "En estaciones (parte baja) o la Anomalía.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "appearance_gek",
+   "name": "Vestir la apariencia Gek",
+   "description": "Preset de la raza.",
+   "how": "Modificador de apariencia.",
+   "requires": [
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "appearance_vykeen",
+   "name": "Vestir la apariencia Vy'keen",
+   "description": "Preset de la raza.",
+   "how": "Modificador de apariencia.",
+   "requires": [
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "appearance_korvax",
+   "name": "Vestir la apariencia Korvax",
+   "description": "Preset de la raza.",
+   "how": "Modificador de apariencia.",
+   "requires": [
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "appearance_traveller",
+   "name": "Vestir la apariencia Viajero",
+   "description": "Preset de la raza.",
+   "how": "Modificador de apariencia.",
+   "requires": [
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "appearance_anomaly",
+   "name": "Vestir la apariencia Anomalía",
+   "description": "Preset de la raza.",
+   "how": "Modificador de apariencia.",
+   "requires": [
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "appearance_autophage",
+   "name": "Desbloquear la apariencia Autófago",
+   "description": "Se desbloquea con una cadena de misiones.",
+   "how": "Misión They Who Returned.",
+   "requires": [
+    "complete_they_who_returned",
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "set_banner_title",
+   "name": "Cambiar banner y título",
+   "description": "Ícono, colores y título.",
+   "how": "Sección Banner del modificador.",
+   "requires": [
+    "use_appearance_modifier"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "build_appearance_modifier_base",
+   "name": "Construir un Modificador de apariencia",
+   "description": "Plano; Polvo de ferrita x10.",
+   "how": "Menú de construcción.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "buy_visage_helmet",
+   "name": "Comprar un casco Visage",
+   "description": "Cada uno cuesta 3200 Quicksilver.",
+   "how": "Sintetizador de Quicksilver.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3200"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "cosmetic",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  },
+  {
+   "id": "unlock_aeron_turbojet",
+   "name": "Desbloquear la mochila Aeron Turbojet",
+   "description": "Primera interfaz armónica.",
+   "how": "Campamentos en planetas corruptos.",
+   "requires": [
+    "find_harmonic_camp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cosmetic"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Appearance_Modifier"
+  }
+ ],
+ "needs": [
+  {
+   "id": "story_main_missions_done",
+   "name": "Terminar las misiones principales iniciales (16/16) o alcanzar el hito Pioneer",
+   "why": "Dreams of the Deep empieza al concluir ese tramo (categoría historia)."
+  },
+  {
+   "id": "merchants_guild_exalted",
+   "name": "Alcanzar rango Exaltado con el Gremio de Mercaderes",
+   "why": "Los Enviados regalan Mamparos de carga a rango 8 (categoría gremios/economía)."
+  },
+  {
+   "id": "collect_salvaged_data",
+   "name": "Conseguir Datos recuperados",
+   "why": "Moneda de investigación de la Anomalía para planos (categoría exploración/tecnología)."
+  },
+  {
+   "id": "complete_they_who_returned",
+   "name": "Completar la misión They Who Returned",
+   "why": "Cadena Autófaga: terminales de síntesis, Báculo voltaico, apariencia Autófago (categoría historia)."
+  },
+  {
+   "id": "craft_signal_booster",
+   "name": "Fabricar un Amplificador de señal",
+   "why": "Para localizar cápsulas de descenso (categoría tecnología/crafteo)."
+  }
+ ]
+}

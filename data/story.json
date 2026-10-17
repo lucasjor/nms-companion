@@ -1,0 +1,4346 @@
+{
+ "objectives": [
+  {
+   "id": "repair_scanner_survive_start",
+   "name": "Reparar el escáner y sobrevivir al arranque",
+   "description": "Primeros minutos de Despertares (Awakenings): reparar el escáner del multiherramienta para poder encontrar recursos y proteger tu traje.",
+   "how": "Es lo primero que ocurre en una partida nueva: minás 75 de Polvo de ferrita para reparar el escáner y juntás sodio de las plantas amarillas para la protección contra peligros. Refugiate en cuevas durante las tormentas.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "find_hermetic_seal_and_visor",
+   "name": "Conseguir el Sello hermético y el Visor de análisis",
+   "description": "Seguir la señal de tu nave siniestrada y obtener el plano del Sello hermético y luego instalar el Visor de análisis.",
+   "how": "Con el escáner reparado, fabricá una Placa de metal (50 Polvo de ferrita) para empezar a reparar la nave. Después seguí la Carta planetaria de la baliza de socorro hasta un refugio donde está el Sello hermético (aprendé su plano aquí, no hay otra oportunidad) y completá la misión 'Ampliación del multiherramienta: Visor de análisis'. Una tormenta es segura durante el viaje.",
+   "requires": [
+    "repair_scanner_survive_start"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Repair:_Critical_Maintenance"
+  },
+  {
+   "id": "follow_signal_to_second_planet",
+   "name": "Seguir la señal hasta el segundo planeta",
+   "description": "Tras salir al espacio, seguir la transmisión hasta un planeta vecino del sistema inicial y examinar la maquinaria dañada.",
+   "how": "Desde el espacio, tras la transmisión misteriosa, viajá a las coordenadas del planeta vecino y seguí la señal hasta la 'Maquinaria dañada': te da los planos del Manipulador de terreno y de la Computadora de base. Ojo: aparecen los Centinelas (no cosechés ante ellos).",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "craft_terrain_manipulator",
+   "name": "Instalar el Manipulador de terreno",
+   "description": "Instalar el Manipulador de terreno y usarlo para sacar cobre y refinar Metal cromático.",
+   "how": "El plano se obtiene gratis al examinar la Maquinaria dañada junto con el del Ordenador de base. La misión secundaria 'Manipulación del terreno' te hace instalar la herramienta; con ella extraé Cobre de un depósito y refinalo a Metal cromático.",
+   "requires": [
+    "follow_signal_to_second_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "build_basic_shelter",
+   "name": "Construir un refugio básico",
+   "description": "Aprender los planos de madera y levantar un refugio antes de una tormenta garantizada.",
+   "how": "Al construir y reclamar el Ordenador de base recibís los planos de madera (piso, marco de puerta, pared, techo). Poco después llega una tormenta aunque el planeta no suela tenerlas: construí el refugio básico y esperá adentro; después volvé al Ordenador de base para revisar sus archivos.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "build_construction_research_unit",
+   "name": "Construir la Unidad de investigación de construcción",
+   "description": "Colocar la Unidad de investigación de construcción y gastar Datos recuperados para aprender planos.",
+   "how": "Con el refugio hecho, revisá los archivos del Ordenador de base: un plan del dueño anterior desbloquea el plano de la Unidad de investigación de construcción. Requiere 20 Ferrita magnetizada y 1 Nanotubos de carbono. Desenterrá Módulos tecnológicos enterrados para obtener Datos recuperados y gastalos en la unidad en un plano de construcción.",
+   "requires": [
+    "build_base_computer",
+    "build_basic_shelter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "build_base_teleporter_and_power",
+   "name": "Construir el Módulo de teletransporte y dar energía a la base",
+   "description": "Renombrar la base, construir el Módulo de teletransporte de base y alimentarlo con un Reactor de biocombustible.",
+   "how": "Con la Computadora de base renombrá la base, aprendé y construí el Módulo de teletransporte de base. La misión secundaria 'Powering the Base' te pide un Reactor de biocombustible, cableado eléctrico y combustible para el reactor.",
+   "requires": [
+    "build_construction_research_unit"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "decode_message_16_at_station",
+   "name": "Preguntar en la estación por el mensaje '16'",
+   "description": "Descifrar el misterioso mensaje con el número 16 hablando con los alienígenas de la estación espacial del sistema.",
+   "how": "Después de energizar la base, el Ordenador de base se interrumpe con un mensaje sobre el número 16. Viajá a la estación espacial y hablá con varios alienígenas: casi todos huyen asustados, uno recibe el mismo mensaje y te da coordenadas cifradas. Volvé a tu Ordenador de base para decodificarlas (idealmente con el teletransportador de la estación); revelan un Carguero estrellado.",
+   "requires": [
+    "visit_space_station",
+    "build_base_teleporter_and_power"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "get_hyperdrive_blueprint_freighter",
+   "name": "Obtener el plano del hiperimpulsor en el carguero estrellado",
+   "description": "Visitar el Carguero estrellado marcado y leer la baliza de socorro para obtener el plano del hiperimpulsor.",
+   "how": "Viajá a las coordenadas, abrí los registros de la baliza y aprendé el plano. Necesitás 125 Metal cromático (refinar Cobre 2:1) y 5 Microprocesadores para construirlo (se pueden comprar en la estación).",
+   "requires": [
+    "decode_message_16_at_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "craft_warp_cell_from_antimatter",
+   "name": "Fabricar una Célula de curvatura con antimateria",
+   "description": "Conseguir Antimateria en un edificio abandonado, craftear la Carcasa de antimateria y combinar ambas para obtener combustible de salto.",
+   "how": "Escaneá planetas con el escáner de la nave para revelar una señal; en el Edificio abandonado usá la terminal infestada (cuidado). Carcasa de antimateria: 30 Oxígeno + 50 Polvo de ferrita. Cargá el hiperimpulsor al 20 %. Si perdés la antimateria se activa 'Replacement Antimatter'.",
+   "requires": [
+    "get_hyperdrive_blueprint_freighter",
+    "build_hyperdrive"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "consult_monolith_first_system",
+   "name": "Consultar el Monolito tras el primer salto",
+   "description": "En el nuevo sistema, seguir el aviso de la nave hasta un Monolito que te enseña a viajar entre estrellas.",
+   "how": "Tras el primer salto el guiado se interrumpe con un mensaje. Seguí el nuevo marcador a un Monolito, interactuá con él y recibirás una Célula de curvatura. Al volver al espacio arranca 'Base Computer Archives'.",
+   "requires": [
+    "first_warp",
+    "craft_warp_cell_from_antimatter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "complete_awakenings",
+   "name": "Completar Despertares",
+   "description": "Segundo salto, responder una transmisión desconocida y extraer un plano de una baliza de socorro: fin de Despertares y comienzo de Solo Entre las Estrellas.",
+   "how": "Saltá a otro sistema amarillo y atendé la transmisión. Visitá la nave estrellada de las coordenadas y accedé a la baliza de socorro (puede requerir repararla) para obtener el plano del Láser de minería avanzado (u otra tecnología del multiherramienta).",
+   "requires": [
+    "consult_monolith_first_system"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "start"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "trigger_replacement_antimatter",
+   "name": "Recuperar antimateria de reemplazo (si te trabás)",
+   "description": "Misión de rescate que aparece si perdés la antimateria o te quedás sin combustible de salto en Despertares.",
+   "how": "Se activa sola si perdiste la antimateria antes de craftear la Célula de curvatura o si el hiperimpulsor quedó sin combustible. Buscá otra fuente de antimateria y repetí la fabricación.",
+   "requires": [
+    "build_hyperdrive"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "fallback"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Replacement_Antimatter"
+  },
+  {
+   "id": "complete_space_anomaly_first_contact",
+   "name": "Aceptar la invitación de Nada y subir a la Anomalía",
+   "description": "Primera visita a la Anomalía Espacial invitado por el Ente Sacerdote Nada.",
+   "how": "Al salir del planeta del Distress Beacon recibís el llamado de Nada; elegí 'decir la verdad' o 'mentir' (sólo cambia el diálogo). Acercate a la Anomalía, abordala, explorá y hablá con Nada.",
+   "requires": [
+    "complete_awakenings",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "space-anomaly"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Space_Anomaly"
+  },
+  {
+   "id": "report_story_progress_to_nada_polo",
+   "name": "Informar tus avances a Nada y Polo",
+   "description": "La misión 'La Anomalía Espacial' se actualiza tras cada misión de la historia: volvé a hablar con Nada y Polo.",
+   "how": "Después de cada misión principal (Solo entre las estrellas, Un salto en la oscuridad, El primer viajero, Patrones en el tiempo, 16/16, La Purga) invocá la Anomalía desde el Menú rápido y conversá con Nada y Polo para avanzar la misión y recibir recompensas.",
+   "requires": [
+    "complete_space_anomaly_first_contact"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "space-anomaly",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Space_Anomaly"
+  },
+  {
+   "id": "ask_polo_for_atlas_interface_coords",
+   "name": "Pedirle a Polo coordenadas de una Interfaz Atlas",
+   "description": "Polo puede darte las coordenadas de una estación Atlas o de agujeros negros para iniciar o seguir el Camino del Atlas.",
+   "how": "En la Anomalía Espacial hablá con el Especialista Polo y pedile la ubicación de una estación Atlas (o de un agujero negro).",
+   "requires": [
+    "complete_space_anomaly_first_contact"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "space-anomaly",
+    "atlas"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Anomaly"
+  },
+  {
+   "id": "contact_artemis_holo_terminus",
+   "name": "Contactar a Artemis con un Holo-Terminus",
+   "description": "Localizar un Holo-Terminus, cargar su Condensador de energía con Sodio y hablar con Artemis.",
+   "how": "Escaneá con la nave en el espacio para encontrar un Holo-Terminus; cargalo con Sodio (2 %/unidad) o Nitrato de sodio y hablá con Artemis, que está varada en un mundo sin sol.",
+   "requires": [
+    "complete_space_anomaly_first_contact"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Alone_Amidst_the_Stars"
+  },
+  {
+   "id": "place_triangulation_beacons",
+   "name": "Colocar las 3 balizas de triangulación",
+   "description": "Artemis pide triangular su posición colocando tres balizas.",
+   "how": "Misión 'Triangulate Your Position': colocá la primera, segunda y tercera baliza en lugares distintos según indique la misión y volvé al espacio a contactar a Artemis.",
+   "requires": [
+    "contact_artemis_holo_terminus"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Alone_Amidst_the_Stars"
+  },
+  {
+   "id": "calibrate_translator_and_standing",
+   "name": "Calibrar el traductor y subir tu reputación",
+   "description": "Activar otro Holo-Terminus, calibrar el traductor y mejorar tu reputación con los alienígenas.",
+   "how": "Hablá con Artemis, visitá a la forma de vida indicada para ubicarte en el mapa estelar y aumentá tu reputación (misiones del tablón o regalos) hasta que la misión avance.",
+   "requires": [
+    "place_triangulation_beacons"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Alone_Amidst_the_Stars"
+  },
+  {
+   "id": "complete_alone_amidst_the_stars",
+   "name": "Completar 'Solo Entre las Estrellas'",
+   "description": "Fin del primer capítulo del Camino de Artemis: volver al espacio y contactar a Artemis.",
+   "how": "Cerrá la misión volviendo al espacio y contactando a Artemis; informá a Nada y Polo en la Anomalía.",
+   "requires": [
+    "calibrate_translator_and_standing"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Alone_Amidst_the_Stars"
+  },
+  {
+   "id": "contact_apollo_holo_terminus",
+   "name": "Contactar a Apolo desde un Holo-Terminus",
+   "description": "Tras perder a Artemis, hablar con Apolo y aceptar trabajar juntos en el misterio de los Portales y los Centinelas.",
+   "how": "Usá el escáner de la nave para ubicar un Holo-Terminus, activalo y conversá con Apolo. Entregale tus registros de datos y acepta cooperar.",
+   "requires": [
+    "complete_alone_amidst_the_stars"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "visit_apollo_contact_station",
+   "name": "Visitar la estación del contacto de Apolo",
+   "description": "Apolo te manda a la estación de otro sistema para reclamar un módulo de protección ambiental; al llegar aparecen las flotas espaciales y la batalla del carguero gratuito.",
+   "how": "Apolo te refiere a una forma de vida en la estación de otro sistema. Reclamá el módulo de mejora de protección ambiental (te da también 15 Datos recuperados y los planos de Sala cilíndrica, Puerta y Cámara de aguas profundas). Al llegar al sistema aparecen las flotas espaciales y se dispara una batalla espacial: ganarla te da tu primer carguero gratis (empieza 'Comando de carguero'). Después viajá a tu base: al llegar aprendés el plano de la Terminal de construcción.",
+   "requires": [
+    "contact_apollo_holo_terminus",
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "freighter",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "expand_base_hire_overseer_scientist",
+   "name": "Ampliar la base y contratar Supervisor y Científico",
+   "description": "Apolo te manda a una base (la tuya u otra) para ampliarla y dotarla de personal.",
+   "how": "En una base, construí la Terminal de construcción (su plano se aprende al llegar a la base tras la visita) y la Terminal de ciencia, y contratá a un Supervisor y a un Científico korvax ('Expandiendo la base' y 'Investigación científica'; el Científico te da los planos de Lubricante y Ácido). Después volvé al espacio y contactá a Apolo para recibir el plano del Campo de fuerza personal.",
+   "requires": [
+    "hire_base_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "base"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "install_forcefield_buy_upgrades",
+   "name": "Instalar el Campo de fuerza personal y comprar mejoras",
+   "description": "Apolo te da el plano del Campo de fuerza personal y te pide conseguir nanites y visitar a un vendedor de tecnología de multiherramienta vy'keen.",
+   "how": "Volvé al espacio y contactá a Apolo; instalá el Campo de fuerza personal (puede requerir cambiar de multiherramienta por espacio). Conseguí Cúmulos de nanites en la terminal de un Edificio abandonado (hay que visitar uno exactamente) y cambiá 60 nanites por un módulo de mejora del multiherramienta al vendedor marcado de la estación (aunque diga sistema vy'keen, sirve uno korvax o gek).",
+   "requires": [
+    "expand_base_hire_overseer_scientist",
+    "nanites>=60"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "infiltrate_korvax_facility_for_apollo",
+   "name": "Irrumpir en una Fábrica korvax como cebo",
+   "description": "Apolo quiere estudiar a los Centinelas: forzar la puerta de una Instalación de fabricación korvax para atraer su atención.",
+   "how": "Destruí el refuerzo de la puerta de la Fábrica korvax con un arma del multiherramienta (el láser del exovehículo no avanza la misión). Reparar la terminal cuesta 20 Sodio, 8 Metal cromático y 50 Ferrita pura; te da el plano del Guantelete Haz-Mat (o nanites si ya lo tenés). Luego decidí qué hacer con la criatura peluda condenada (alimentarla requiere 15 Carbono) y prepárate para la alerta de Centinelas (3 estrellas).",
+   "requires": [
+    "install_forcefield_buy_upgrades"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "complete_ghosts_in_the_machine",
+   "name": "Completar 'Fantasmas en la Máquina'",
+   "description": "Tercera misión de la ruta de Artemis (segundo capítulo propiamente dicho): ayudás a Apolo y entrás a la fábrica korvax.",
+   "how": "La misión va del Holo-Terminus y el contacto de Apolo, pasando por la base (Supervisor y Científico), el Campo de fuerza personal y 60 nanites para un módulo de multiherramienta, hasta la incursión a la Fábrica korvax (reparar la terminal y decidir sobre la criatura). Termina con 3 estrellas de búsqueda y empieza 'Un salto en la oscuridad'.",
+   "requires": [
+    "infiltrate_korvax_facility_for_apollo"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "follow_portal_leylines_glyphs",
+   "name": "Seguir el rastro de energía y reunir los glifos",
+   "description": "Escanear con la nave y activar Placas, ruinas y un Monolito para recibir el final de la historia del Viajero y los glifos del Portal.",
+   "how": "Reportá a Apolo; después escaneá con la nave tres veces: activá la primera placa (1 estrella de búsqueda), la segunda y finalmente un Monolito. Un tercer escaneo revela el Portal del planeta.",
+   "requires": [
+    "complete_ghosts_in_the_machine"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Leap_in_the_Dark"
+  },
+  {
+   "id": "meet_atlas_first_portal_leap",
+   "name": "Atravesar el Portal y hablar con el Atlas",
+   "description": "El Portal te lleva a una Interfaz Atlas donde elegís entre diagnosticar o borrar el sistema.",
+   "how": "Activá el Portal sin ingresar glifos. Caminarás brevemente por un planeta exótico y serás teletransportado a una Interfaz Atlas. Cualquiera de las dos opciones te deja en un planeta lejano con la nave a ~500 u. Recibís 2 Células de curvatura.",
+   "requires": [
+    "follow_portal_leylines_glyphs"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "atlas"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Leap_in_the_Dark"
+  },
+  {
+   "id": "repair_ship_visit_artemis_grave",
+   "name": "Reparar la nave y visitar la tumba de Artemis",
+   "description": "Reencontrar tu nave, reparar el propulsor y seguir la señal hasta la tumba de Artemis.",
+   "how": "Reparar el Propulsor de despegue; al subir a la nave recibís una transmisión que lleva a la Tumba de Viajero de Artemis en otro planeta.",
+   "requires": [
+    "meet_atlas_first_portal_leap"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Leap_in_the_Dark"
+  },
+  {
+   "id": "complete_a_leap_in_the_dark",
+   "name": "Completar 'Un Salto en la Oscuridad'",
+   "description": "Fin del tercer capítulo; compartí la experiencia del portal en la Anomalía.",
+   "how": "Tras reparar la nave, al salir de la atmósfera la misión 'La Anomalía Espacial' se actualiza para hablar con Nada y Polo.",
+   "requires": [
+    "repair_ship_visit_artemis_grave"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Leap_in_the_Dark"
+  },
+  {
+   "id": "meet_null_holo_terminus",
+   "name": "Conocer a -nulo-",
+   "description": "Un Holo-Terminus conecta con una entidad aberrante, -nulo-, que ofrece guardar la mente de Artemis.",
+   "how": "Buscá un Holo-Terminus e intentá contactar a Apolo; la anulación manual te conecta con -nulo-. Informá la aparición a Nada y Polo en la Anomalía.",
+   "requires": [
+    "complete_a_leap_in_the_dark"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_First_Traveller"
+  },
+  {
+   "id": "craft_soul_engine",
+   "name": "Fabricar el Motor del alma",
+   "description": "Minar 120 Cadmio en un sistema rojo, obtener una Perla viva y craftear el Motor del alma.",
+   "how": "Instalá un Motor de cadmio en la nave (plano en la Anomalía, 80 nanites; los cargueros no sirven para saltear este paso). Minar 120 de Cadmio en un sistema de estrella roja, recolectá una Perla viva de una almeja acorazada y fabricá el Motor del alma (120 Cadmio, 1 Perla viva y 3 Placas de metal).",
+   "requires": [
+    "meet_null_holo_terminus",
+    "warp_red"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_First_Traveller"
+  },
+  {
+   "id": "craft_mind_ark",
+   "name": "Fabricar el Arca mental",
+   "description": "Reunir Motor del alma, Cristal y Telares de cableado para fabricar el Mind Ark.",
+   "how": "Mind Ark = 1 Motor del alma + 3 Cristal + 3 Telares de cableado. Comprá los telares y refiná vidrio a partir de Polvo de silicato (o craftealo con Cristales de escarcha).",
+   "requires": [
+    "craft_soul_engine"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "crafting"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_First_Traveller"
+  },
+  {
+   "id": "decide_artemis_fate",
+   "name": "Decidir el destino de Artemis",
+   "description": "Usar el Arca mental sobre Artemis y elegir si transferir su conciencia a la simulación korvax de la Anomalía.",
+   "how": "Activá un Holo-Terminus, volvé al primero y usá el Arca. Luego abordá la Anomalía y hablá con Polo cuando estés listo para decidir (podés transferir a Artemis a la Terminal de simulación korvax o dejarla ir).",
+   "requires": [
+    "craft_mind_ark"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "choice"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_First_Traveller"
+  },
+  {
+   "id": "complete_the_first_traveller",
+   "name": "Completar 'El Primer Viajero'",
+   "description": "Cierre del cuarto capítulo: aprender la secuencia de glifos del planeta, hablar otra vez con -nulo- y activar el Holo-Terminus.",
+   "how": "Tras decidir el destino de Artemis, contactá a Apolo en un Holo-Terminus, escaneá un Monolito y cargá el Portal con 16 glifos para conocer su dirección (decidí si se la transmitís a Apolo). Luego hablá con -nulo-, localizá el Carguero estrellado y activá el Holo-Terminus final.",
+   "requires": [
+    "decide_artemis_fate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_First_Traveller"
+  },
+  {
+   "id": "learn_from_vykeen_cartographer",
+   "name": "Ganarte la confianza del Cartógrafo vy'keen",
+   "description": "Demostrar tu honor a los vy'keen para que el Cartógrafo comparta lo que sabe.",
+   "how": "Hablá con el Cartógrafo vy'keen junto al teletransportador de la estación; se niega hasta que cumplas la prueba de honor que te pide, luego volvé a hablarle.",
+   "requires": [
+    "complete_the_first_traveller",
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Patterns_in_Time"
+  },
+  {
+   "id": "learn_from_korvax_cartographer",
+   "name": "Obtener el Cubo de divergencia para el Cartógrafo korvax",
+   "description": "Conseguir un Cubo de divergencia de un Edificio abandonado cercano y mostrárselo al Cartógrafo korvax.",
+   "how": "Hablá con el Cartógrafo en una estación korvax, ve al Edificio abandonado marcado, recuperá el Cubo de divergencia y mostráselo.",
+   "requires": [
+    "learn_from_vykeen_cartographer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Patterns_in_Time"
+  },
+  {
+   "id": "learn_from_gek_cartographer",
+   "name": "Completar 2 contratos gek para el Cartógrafo gek",
+   "description": "Probar tu valor a los gek con dos misiones del tablón que suben tu reputación gek.",
+   "how": "En una estación gek hablá con el Cartógrafo; completá dos misiones gek del Tablón de misiones y volvé con él.",
+   "requires": [
+    "learn_from_korvax_cartographer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Patterns_in_Time"
+  },
+  {
+   "id": "complete_patterns_in_time",
+   "name": "Completar 'Patrones en el Tiempo'",
+   "description": "Fin del quinto capítulo: tres razas, tres secretos.",
+   "how": "Después de hablar con los tres Cartógrafos, informá a Nada y Polo en la Anomalía.",
+   "requires": [
+    "learn_from_gek_cartographer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Patterns_in_Time"
+  },
+  {
+   "id": "speak_null_apollo_16_16",
+   "name": "Hablar con -nulo- y con Apolo sobre lo aprendido",
+   "description": "Compartir lo que supiste con -nulo- y confrontar con Apolo la decisión de los glifos.",
+   "how": "En un Holo-Terminus contá a -nulo- lo averiguado y después hablá con Apolo. Luego actualizá la misión 'La Anomalía Espacial'.",
+   "requires": [
+    "complete_patterns_in_time"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/16_/_16"
+  },
+  {
+   "id": "investigate_apollo_distress_signal",
+   "name": "Investigar la señal de socorro con la firma de Apolo",
+   "description": "Seguir la señal hasta el mismo Distress Beacon, activar un Portal y encontrar tu nave.",
+   "how": "Viajá a la señal; activá el Portal que lleva al Atlas y luego localizá tu nave.",
+   "requires": [
+    "speak_null_apollo_16_16"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/16_/_16"
+  },
+  {
+   "id": "complete_16_16",
+   "name": "Completar '16 / 16'",
+   "description": "Advertir a los demás Viajeros del destino del Atlas.",
+   "how": "Avisá a los Viajeros en la Anomalía Espacial para cerrar el capítulo.",
+   "requires": [
+    "investigate_apollo_distress_signal"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/16_/_16"
+  },
+  {
+   "id": "warp_to_galaxy_core_glyph_race",
+   "name": "Saltar hacia el centro galáctico (16 saltos)",
+   "description": "Cada salto con el hiperimpulsor te da un glifo; se disparan eventos en saltos específicos.",
+   "how": "Antes del primer salto elegí (o no) otra misión: Camino del Atlas, explorar o Purga. Con los saltos 1, 3, 6 y 9 llegan transmisiones (Sueños de las profundidades, Apolo, Artemis, -nulo-). Tras el 16.º glifo cargá el Portal marcado.",
+   "requires": [
+    "complete_16_16"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Purge"
+  },
+  {
+   "id": "choose_atlas_final_decision",
+   "name": "Elegir: Reiniciar la simulación o Rechazar al Atlas",
+   "description": "En la Interfaz Atlas final, gritar seis veces y decidir entre reiniciar la simulación o rechazar al Atlas.",
+   "how": "Entrá al Portal final (no hay vuelta atrás salvo cargar un punto de restauración). En la conversación elegí 'Reset Simulation' (título 'The Last' y elegís el tipo de galaxia: exuberante, hostil, vacía o normal) o 'Refuse the Atlas'. Ambas dan el plano 'Remembrance'.",
+   "requires": [
+    "warp_to_galaxy_core_glyph_race"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "choice"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Purge"
+  },
+  {
+   "id": "complete_the_purge",
+   "name": "Completar 'La Purga' (historia principal)",
+   "description": "Fin del Camino de Artemis. Desbloquea misiones posteriores (Autófagos, etc.).",
+   "how": "Tras la decisión final, la misión 'La Anomalía Espacial' se actualiza para reunirte con Nada y Polo.",
+   "requires": [
+    "choose_atlas_final_decision"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Purge"
+  },
+  {
+   "id": "complete_new_beginnings",
+   "name": "Completar 'Nuevos Comienzos' (epílogo)",
+   "description": "Epílogo del Camino de Artemis: si reiniciaste, elegís una nueva galaxia; si rechazaste, quedás libre para explorar.",
+   "how": "Aparece en el Registro después de La Purga. Con 'reiniciar', elegí en el mapa galáctico la nueva galaxia (según el tipo elegido); con 'rechazar', el Atlas queda esperando por si cambiás de opinión.",
+   "requires": [
+    "complete_the_purge"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "main",
+    "artemis-path"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/New_Beginnings"
+  },
+  {
+   "id": "start_atlas_path_first_station",
+   "name": "Entrar a una estación Atlas por primera vez",
+   "description": "Inicio real del Camino del Atlas: usar la Interfaz Atlas y elegir continuar.",
+   "how": "Terminado Despertares la misión no tiene objetivo; empieza al pedirle a Polo en la Anomalía que te señale una Estación Atlas, o al entrar por casualidad a un sistema que la tenga. Usá la Interfaz Atlas y elegí continuar (la opción exige el título 'Pathfinder', 5 hitos); eso te da el plano de la primera Semilla del Atlas.",
+   "requires": [
+    "complete_awakenings",
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_captured_nanode",
+   "name": "Obtener el plano de la Semilla del Atlas: Captured Nanode",
+   "description": "Plano de Atlas Seed 'Captured Nanode' en una Interfaz Atlas; exige el hito 'Pathfinder' (5 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 5 Hitos del viaje (hito 'Pathfinder'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "start_atlas_path_first_station",
+    "reach_journey_milestones_5"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_englobed_shade",
+   "name": "Obtener el plano de la Semilla del Atlas: Englobed Shade",
+   "description": "Plano de Atlas Seed 'Englobed Shade' en una Interfaz Atlas; exige el hito 'Juno' (10 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 10 Hitos del viaje (hito 'Juno'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_captured_nanode",
+    "reach_journey_milestones_10"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_noospheric_orb",
+   "name": "Obtener el plano de la Semilla del Atlas: Noospheric Orb",
+   "description": "Plano de Atlas Seed 'Noospheric Orb' en una Interfaz Atlas; exige el hito 'Rosetta' (15 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 15 Hitos del viaje (hito 'Rosetta'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_englobed_shade",
+    "reach_journey_milestones_15"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_dark_matter",
+   "name": "Obtener el plano de la Semilla del Atlas: Dark Matter",
+   "description": "Plano de Atlas Seed 'Dark Matter' en una Interfaz Atlas; exige el hito 'Cassini' (20 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 20 Hitos del viaje (hito 'Cassini'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_noospheric_orb",
+    "reach_journey_milestones_20"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_dawns_end",
+   "name": "Obtener el plano de la Semilla del Atlas: Dawn's End",
+   "description": "Plano de Atlas Seed 'Dawn's End' en una Interfaz Atlas; exige el hito 'Kepler' (25 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 25 Hitos del viaje (hito 'Kepler'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_dark_matter",
+    "reach_journey_milestones_25"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_photic_jade",
+   "name": "Obtener el plano de la Semilla del Atlas: Photic Jade",
+   "description": "Plano de Atlas Seed 'Photic Jade' en una Interfaz Atlas; exige el hito 'Dawn' (30 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 30 Hitos del viaje (hito 'Dawn'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_dawns_end",
+    "reach_journey_milestones_30"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_state_phasure",
+   "name": "Obtener el plano de la Semilla del Atlas: State Phasure",
+   "description": "Plano de Atlas Seed 'State Phasure' en una Interfaz Atlas; exige el hito 'Curiosity' (35 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 35 Hitos del viaje (hito 'Curiosity'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_photic_jade",
+    "reach_journey_milestones_35"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_novae_reclaiment",
+   "name": "Obtener el plano de la Semilla del Atlas: Novae Reclaiment",
+   "description": "Plano de Atlas Seed 'Novae Reclaiment' en una Interfaz Atlas; exige el hito 'Hubble' (40 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 40 Hitos del viaje (hito 'Hubble'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_state_phasure",
+    "reach_journey_milestones_40"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_modified_quanta",
+   "name": "Obtener el plano de la Semilla del Atlas: Modified Quanta",
+   "description": "Plano de Atlas Seed 'Modified Quanta' en una Interfaz Atlas; exige el hito 'Viking' (45 hitos completados en total).",
+   "how": "Usá la Interfaz Atlas de la estación que te indica la misión una vez alcanzado el total de 45 Hitos del viaje (hito 'Viking'). Te marca la siguiente estación Atlas.",
+   "requires": [
+    "learn_atlas_seed_novae_reclaiment",
+    "reach_journey_milestones_45"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "learn_atlas_seed_heart_of_the_sun",
+   "name": "Obtener el plano del Corazón del sol",
+   "description": "Último plano de Atlas Seed, requiere 50 hitos del viaje (hito 'Magellan').",
+   "how": "En la siguiente Interfaz Atlas con 50 hitos completados.",
+   "requires": [
+    "learn_atlas_seed_modified_quanta",
+    "reach_journey_milestones_50"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "craft_atlas_seeds_and_heart_of_the_sun",
+   "name": "Fabricar las Semillas del Atlas y el Corazón del sol",
+   "description": "Craftear todas las semillas en orden para poder fabricar el Corazón del sol.",
+   "how": "Fabricá cada Semilla del Atlas en orden (el Corazón del sol exige haber fabricado todas las anteriores). Es una tarea larga de recursos.",
+   "requires": [
+    "learn_atlas_seed_heart_of_the_sun"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "atlas-path",
+    "crafting",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "complete_atlas_path",
+   "name": "Completar el Camino del Atlas",
+   "description": "Llevar el Corazón del sol a una undécima estación Atlas, interactuar con 9 cámaras y elegir si nacer una estrella nueva.",
+   "how": "Con el Corazón del sol, activá la última Interfaz Atlas (se pierde el objeto), interactuá con las 9 cámaras de semilla y elegí 'dar a luz una estrella' (plano Star Seed) o irte. Desde entonces los agujeros negros se ven siempre en el mapa galáctico.",
+   "requires": [
+    "craft_atlas_seeds_and_heart_of_the_sun"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "main",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Atlas_Path"
+  },
+  {
+   "id": "complete_atlas_eternal_repeat",
+   "name": "Misión repetible del Atlas (Atlas Eternal)",
+   "description": "Tras completar el Camino del Atlas hay una misión repetible que da nanites y palabras del idioma del Atlas.",
+   "how": "Se ofrece al terminar el Camino del Atlas (actualización 4.50): repetila para nanites y vocabulario del Atlas.",
+   "requires": [
+    "complete_atlas_path"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "atlas-path",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_4.50"
+  },
+  {
+   "id": "break_harmonic_camp_seal",
+   "name": "Romper el sello de un Campamento armónico",
+   "description": "Usar un Localizador de eco en un planeta disonante y descifrar la Interfaz armónica de un campamento.",
+   "how": "Andá a un sistema 'Disonante' y a un planeta con 'Disonancia detectada'; derrotá Resonadores de disonancia hasta que suelte un Localizador de eco, usalo, llegá al campamento y resolvé el acertijo de la Interfaz armónica (escaneá registros de memoria y respondé las 3 sumas con runas). Otorga el jetpack Aeron Turbojet.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "autophage",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "start_they_who_returned",
+   "name": "Iniciar 'They Who Returned' (Los que regresaron)",
+   "description": "Tras La Purga y el sello roto, saltar a otro sistema desencadena la comunicación de tu nave.",
+   "how": "Hay que haber completado La Purga (aparece 'Nuevos comienzos') y haber levantado el sello de un Campamento armónico con un Localizador de eco. Saltá con tu nave (no el carguero) a cualquier sistema; si hay batalla de carguero, saltá otra vez. Respondé el diálogo de la nave (no hay forma de fallar).",
+   "requires": [
+    "complete_the_purge",
+    "break_harmonic_camp_seal"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "autophage",
+    "main"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "meet_damaged_autophage_atlantideum",
+   "name": "Hablar con el Autófago dañado y ofrecer Atlantideum",
+   "description": "Visitar el campamento y elegir Atlantideum entre los regalos para avanzar.",
+   "how": "Analizá los errores del sistema de la nave, llegá al campamento y hablá con la cabeza del Autófago dañado; de las ofertas (Nanites/Pugneum/Atlantideum) sólo el Atlantideum avanza.",
+   "requires": [
+    "start_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "infuse_monolith_with_atlantideum",
+   "name": "Infundir un Monolito korvax con Atlantideum",
+   "description": "Obtener coordenadas de un Monolito korvax y usar la Interfaz discordante.",
+   "how": "Interactuá con la Interfaz discordante del Monolito, ofrecé el regalo correcto y resolvé el desafío. Desde entonces podés pedir un multiherramienta Atlantid en cualquier Monolito korvax infundido.",
+   "requires": [
+    "meet_damaged_autophage_atlantideum"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "unlock_autophage_translator",
+   "name": "Volver al campamento y activar el traductor",
+   "description": "Ingresar las runas correctas en el robot para recibir el Armonizador de escaneo.",
+   "how": "En la cabeza del Autófago tocá la opción de tocarla y escribí las runas para los 3 números; instalá el Scan Harmoniser y presioná el botón de escaneo para decodificar a los Autófagos cercanos.",
+   "requires": [
+    "infuse_monolith_with_atlantideum"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "autophage"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "tell_nada_about_autophage",
+   "name": "Contarle a Nada sobre los Autófagos",
+   "description": "Informar en la Anomalía; Nada abre dos misiones paralelas.",
+   "how": "Hablá dos veces con Nada: te da 'Prayers of the Machine' y 'Audience with the Autophage'.",
+   "requires": [
+    "unlock_autophage_translator",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "autophage",
+    "space-anomaly"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "complete_prayers_of_the_machine",
+   "name": "Completar 'Prayers of the Machine'",
+   "description": "Presentar Atlantideum a cuatro computadoras y buscar un fragmento de Nuevo Atlantid.",
+   "how": "Escaneá y mostrá Atlantideum a: Terminal Prime en el Nexus, la computadora de una Fábrica planetaria, el Núcleo de la estación y la computadora de tu nave. Luego usá el pulso para encontrar el encuentro espacial especial.",
+   "requires": [
+    "tell_nada_about_autophage"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "complete_audience_with_autophage",
+   "name": "Completar 'Audience with the Autophage'",
+   "description": "Construir el Núcleo polifónico y ganar el favor de tres Autófagos en distintos sistemas.",
+   "how": "Construí e instalá el Núcleo polifónico (plano del Constructo Ensamblado) y activalo en tres sistemas para ubicar un campamento y conversar con un Autófago en cada uno. Cada uno te da un encargo; al completarlo recibís el plano de una pieza del Báculo voltaico. Con las tres armá el Báculo en un Terminal de síntesis autófaga.",
+   "requires": [
+    "tell_nada_about_autophage",
+    "meet_assembled_construct"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "reach_hidden_galaxy_atlas_atlantideum",
+   "name": "Llegar a la galaxia oculta y corromper al Atlas con Atlantideum",
+   "description": "Con Atlantideum, báculo voltaico y la palabra 'Atlas', activar un Portal que te lleva ante el Atlas.",
+   "how": "Escaneá para ubicar un Portal; presentale Atlantideum, mostrá el Báculo voltaico y decí 'Atlas' (en cualquier orden). Hablá con el Atlas y ofrecele Atlantideum.",
+   "requires": [
+    "complete_prayers_of_the_machine",
+    "complete_audience_with_autophage"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "atlas"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "complete_they_who_returned",
+   "name": "Completar 'They Who Returned'",
+   "description": "Informar a Nada y entregarle Atlantideum. Recompensas: Scan Harmoniser, Polyphonic Core y 3 planos del Báculo voltaico.",
+   "how": "Salí del planeta y consultá con Nada en la Anomalía; también te permite conocer al Constructo Ensamblado y a los Autófagos.",
+   "requires": [
+    "reach_hidden_galaxy_atlas_atlantideum"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "autophage",
+    "main",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/They_Who_Returned"
+  },
+  {
+   "id": "build_voltaic_staff",
+   "name": "Construir un Báculo voltaico",
+   "description": "Armar tu propio multiherramienta Báculo voltaico con cabeza, corazón y estructura.",
+   "how": "Comprá las piezas con Void Motes en el Autophage Synthesis Terminal de un campamento (cada terminal ofrece piezas distintas) y ensamblalas ahí. Trae un Polyphonic Core preinstalado.",
+   "requires": [
+    "complete_audience_with_autophage"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "autophage",
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Voltaic_Staff"
+  },
+  {
+   "id": "do_autophage_missions_void_motes",
+   "name": "Hacer misiones procedurales de Autófagos",
+   "description": "Ganar Void Motes, palabras y reputación con los Autófagos.",
+   "how": "Una vez en buenos términos con la facción, cada Autófago de un campamento ofrece misiones procedurales según tu planeta. Los campamentos se ubican con el Polyphonic Core.",
+   "requires": [
+    "complete_they_who_returned"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autophage"
+  },
+  {
+   "id": "learn_autophage_language",
+   "name": "Aprender el idioma Autófago",
+   "description": "Palabras aprendidas en la misión, monolitos infundidos, recompensas y práctica con los Autófagos.",
+   "how": "Hablá con Autófagos, hacé sus misiones e infundí Monolitos korvax con Atlantideum para revelar historias y vocabulario.",
+   "requires": [
+    "complete_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "autophage",
+    "lore"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autophage"
+  },
+  {
+   "id": "meet_assembled_construct",
+   "name": "Conocer al Constructo Ensamblado",
+   "description": "NPC de la Anomalía vinculado a la historia Autófaga.",
+   "how": "Tras hablarle a Nada sobre los Autófagos, hablá con el Constructo Ensamblado (cerca de Iteration: Tethys en la Anomalía) y mostrale Atlantideum; te da el plano del Núcleo polifónico.",
+   "requires": [
+    "tell_nada_about_autophage"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "autophage",
+    "space-anomaly"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Assembled_Construct"
+  },
+  {
+   "id": "visit_autophage_settlement",
+   "name": "Visitar un asentamiento planetario Autófago",
+   "description": "Asentamientos con estructuras de Atlantideum añadidos en la actualización Beacon.",
+   "how": "Comprá una carta en una Autophage Synthesis Terminal para ubicar un asentamiento Autófago y reclamarlo.",
+   "requires": [
+    "complete_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autophage"
+  },
+  {
+   "id": "start_in_stellar_multitudes",
+   "name": "Iniciar 'In Stellar Multitudes'",
+   "description": "Misión del final de la historia: tras They Who Returned y el Camino del Atlas, un Fragmento de divergencia aparece al activar el pulso.",
+   "how": "Activá el motor de pulso; el motor se desactiva y aparece un Fragmento de divergencia. Abrí las comunicaciones para arrancar la misión.",
+   "requires": [
+    "complete_they_who_returned",
+    "complete_atlas_path"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "autophage",
+    "worlds-part-2"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/In_Stellar_Multitudes"
+  },
+  {
+   "id": "collect_echo_seeds_memories_of_atlantid",
+   "name": "Reunir 3 Semillas de eco y compilar 'Memories of Atlantid'",
+   "description": "Ir a un mundo disonante, escanear Semillas de eco y compilarlas.",
+   "how": "Entrá a un sistema con mundos disonantes, aterrizá y usá el Modo de barrido del Visor para escanear Semillas de eco. Usá el Scan Harmoniser o el Núcleo polifónico para minar. Luego buscá el fragmento con el pulso.",
+   "requires": [
+    "start_in_stellar_multitudes"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "worlds-part-2"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/In_Stellar_Multitudes"
+  },
+  {
+   "id": "sideload_memories_create_purple_system",
+   "name": "Cargar los recuerdos en el Atlas y crear un sistema púrpura",
+   "description": "En una Interfaz Atlas elegir cargas α, β y γ y bloquear el sistema a restaurar.",
+   "how": "En la Interfaz Atlas cargá los recuerdos: α (raza principal), β (cuerpo celeste principal), γ (cuerpo secundario). Al confirmar se restaura un sistema púrpura eliminado.",
+   "requires": [
+    "collect_echo_seeds_memories_of_atlantid"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "worlds-part-2"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/In_Stellar_Multitudes"
+  },
+  {
+   "id": "craft_atlantid_drive_and_travel",
+   "name": "Fabricar el Atlantid Drive y viajar al sistema restaurado",
+   "description": "Con el plano del Constructo, fabricar el Atlantid Drive y llegar al sistema púrpura.",
+   "how": "El Constructo Ensamblado te da el plano del Motor Atlantid. Construilo (250 Indio, 200 Atlantideum y 1 Vidrio vivo, cuyo plano da el Científico en 'Investigación científica'), viajá al sistema restaurado, invocá la Anomalía y avisale al Constructo.",
+   "requires": [
+    "sideload_memories_create_purple_system",
+    "visit_observatory_for_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "worlds-part-2"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/In_Stellar_Multitudes"
+  },
+  {
+   "id": "craft_reality_anchor",
+   "name": "Fabricar el Ancla de realidad",
+   "description": "Mostrarla a Polo y Nada.",
+   "how": "Hablá con Polo y Nada sobre dejar entrar a los Autófagos; recibís el plano del Reality Anchor; construilo y mostráselo.",
+   "requires": [
+    "craft_atlantid_drive_and_travel"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "worlds-part-2"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/In_Stellar_Multitudes"
+  },
+  {
+   "id": "complete_in_stellar_multitudes",
+   "name": "Completar 'In Stellar Multitudes'",
+   "description": "Anclar el sistema a la realidad con la Terminal de simulación korvax y despedirse del Fragmento de divergencia.",
+   "how": "Mostrá el ancla en la Terminal de simulación korvax, construí el Anomalous Scaffold, continúa en la Anomalía y despedite del Fragmento. Recompensas: planos Atlantid Drive, Reality Anchor, Anomalous Scaffold, título 'Manifestation of' y acceso a sistemas púrpura.",
+   "requires": [
+    "craft_reality_anchor"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "autophage",
+    "worlds-part-2",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/In_Stellar_Multitudes"
+  },
+  {
+   "id": "start_base_computer_archives",
+   "name": "Iniciar 'Base Computer Archives' (Archivos informáticos básicos)",
+   "description": "Comienza tras hablar con Artemis por primera vez; desbloquea planos de base.",
+   "how": "Se activa al terminar la primera conversación con Artemis en 'Solo Entre las Estrellas'. Volvé a la Computadora de base seleccionando la misión.",
+   "requires": [
+    "contact_artemis_holo_terminus",
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "archives"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_Computer_Archives"
+  },
+  {
+   "id": "complete_base_computer_archives_part1",
+   "name": "Archivos, parte I: 10 planos de base",
+   "description": "Descifrar contraseñas con palabras alienígenas aprendidas y desbloquear 10 planos (hasta el Landing Pad).",
+   "how": "Interactuá con el Ordenador de base con la misión activa (un ciclo cada ~90 min reales): usá la contraseña correcta (se aprende con palabras alienígenas nuevas), extraé el registro y el plano, y construí lo que indica. Planos en orden: Contenedor de almacenamiento [0], Batería y Panel solar, Receptor de teletransporte, Estimulador neuronal, Propulsores eficientes, Retícula de escudo, Luces de colores, Modificador de apariencia, Roamer Geobay y Plataforma de aterrizaje. Si ya tenías un plano recibís un Módulo de soporte vital B.",
+   "requires": [
+    "start_base_computer_archives"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "base",
+    "archives"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_Computer_Archives"
+  },
+  {
+   "id": "complete_base_computer_archives_part2",
+   "name": "Archivos, parte II: 10 registros",
+   "description": "Visitar edificios abandonados para extraer 10 registros de otros archivos.",
+   "how": "Con la misión activa, el Ordenador de base te manda a un Edificio abandonado de otro sistema por ciclo (planos de tecnología de base o módulos de mejora). Tras 2 ciclos hay una espera de 6 h reales; al llegar a 10 registros volvé a un Ordenador de base y recibís Datos recuperados.",
+   "requires": [
+    "complete_base_computer_archives_part1"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "base",
+    "archives"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_Computer_Archives"
+  },
+  {
+   "id": "hire_base_overseer",
+   "name": "Contratar a un Supervisor para tu base",
+   "description": "Colocá una Terminal de construcción y contratá a un Supervisor en una estación espacial.",
+   "how": "Al llegar a tu base tras visitar la estación del contacto de Apolo aprendés el plano de la Terminal de construcción; al colocarla, 'Expandiendo la base' te marca una estación. Contratá al Supervisor gek (está en una sala detrás de los comerciantes de tecnología) y volvé a la base; te da el plano de Vidrio y luego pide Metal cromático para la Terminal de ciencia.",
+   "requires": [
+    "visit_apollo_contact_station",
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Expanding_the_Base"
+  },
+  {
+   "id": "hire_base_scientist",
+   "name": "Contratar al Científico korvax",
+   "description": "Construir una Terminal de ciencia y contratar a un Científico en un sistema korvax.",
+   "how": "Reunir Metal cromático para la Terminal de ciencia, conseguir los planos de Contenedores de almacenamiento 1-9 en la terminal de un Edificio abandonado, colocar la Terminal en una sala y viajar al sistema korvax marcado para contratar al NPC. Al volver a la base el Científico te da los planos de Lubricante y Ácido.",
+   "requires": [
+    "hire_base_overseer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientific_Research"
+  },
+  {
+   "id": "gather_marrow_bulb_cobalt_scientist",
+   "name": "Científico: juntar Bulbo de médula y Cobalto",
+   "description": "Entrega por los planos de Microprocesadores y Refinador grande, y reconectar el núcleo en la torre de transmisión.",
+   "how": "Hablá con el Científico, entregá Bulbo de médula y Cobalto (a cambio recibís los planos de Microprocesadores y Refinería grande), y llevá su núcleo a la torre de transmisión marcada. Después hay una espera de 1,5 h reales.",
+   "requires": [
+    "hire_base_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientific_Research"
+  },
+  {
+   "id": "visit_observatory_for_scientist",
+   "name": "Científico: visitar el observatorio y colocar una baliza",
+   "description": "Esperar ~1,5 h de tiempo real, visitar un Observatorio, colocar una Baliza y escanear 4 fauna sin descubrir.",
+   "how": "Ve al Observatorio marcado y volvé con el Científico: te da los planos de Vidrio vivo y Baliza de guardado. Luego colocá una Baliza (Minero autónomo y Cosechador de atmósfera) y escaneá cuatro faunas sin descubrir (Gel inestable).",
+   "requires": [
+    "gather_marrow_bulb_cobalt_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientific_Research"
+  },
+  {
+   "id": "deliver_ion_batteries_scientist",
+   "name": "Científico: entregar 3 Baterías de iones",
+   "description": "Obtener el plano de Fibra polimérica (Poly Fibre).",
+   "how": "Fabricá 3 Baterías de iones y entregáselas (plano de Fibra polimérica); luego hay otra espera de 1,5 h reales.",
+   "requires": [
+    "visit_observatory_for_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientific_Research"
+  },
+  {
+   "id": "complete_scientific_research",
+   "name": "Completar 'Investigación Científica'",
+   "description": "Llevar el núcleo del Científico a un Monolito (Cubo de Convergencia korvax) y obtener el plano de Circuitos.",
+   "how": "Seguir el marcador al Monolito, volver y recibir el plano de Circuit Boards.",
+   "requires": [
+    "deliver_ion_batteries_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "korvax",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientific_Research"
+  },
+  {
+   "id": "transfer_discoveries_to_scientist",
+   "name": "Entregar descubrimientos al Científico",
+   "description": "Cobrar 5 nanites por cada descubrimiento del tipo pedido (planetas, fauna, flora, minerales).",
+   "how": "Hablá con el Científico en tu base; se puede repetir cada 24 h reales con otro tipo de dato.",
+   "requires": [
+    "complete_scientific_research"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "nanites"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientific_Research"
+  },
+  {
+   "id": "hire_base_armourer",
+   "name": "Contratar al Armero vy'keen",
+   "description": "Construir una Terminal de armas (necesitás Pugneum) y contratar a un vy'keen.",
+   "how": "El Supervisor pide 2 Microprocesadores (plano del Científico) y Pugneum para la Terminal de armas. Construila, viajá al sistema vy'keen marcado y contratá al Armero. Desbloquea 'Investigación de armas'.",
+   "requires": [
+    "gather_marrow_bulb_cobalt_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "raid_illegal_weapons_facility_armourer",
+   "name": "Armero: cerrar una fábrica ilegal de armas",
+   "description": "Irrumpir en una Instalación de fabricación y detener la producción.",
+   "how": "Seguir el marcador, abrir la puerta y apagar la fábrica; volver al Armero.",
+   "requires": [
+    "hire_base_armourer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "defeat_pirates_for_armourer",
+   "name": "Armero: derrotar piratas",
+   "description": "Combate espacial contra una nave pirata marcada.",
+   "how": "Volar al espacio, seguir el marcador y destruir la nave.",
+   "requires": [
+    "raid_illegal_weapons_facility_armourer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "combat",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "destroy_depot_daggers_armourer",
+   "name": "Armero: destruir un Depósito de recursos y traer 2 Dagas vy'keen",
+   "description": "Obtener el plano de Mira de combate.",
+   "how": "Destruí el depósito marcado y consegui dos Dagas vy'keen (compradas en estaciones o halladas).",
+   "requires": [
+    "defeat_pirates_for_armourer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "sentinel_waves_for_armourer",
+   "name": "Armero: sobrevivir a oleadas de Centinelas",
+   "description": "Pelear oleadas de Centinelas (se activa búsqueda 2 estrellas) y regresar al Armero.",
+   "how": "La misión es algo problemática: hay dos métodos (matar 8 drones o llegar a 5 estrellas con dos Caminantes). Tras 8/8 retírate.",
+   "requires": [
+    "destroy_depot_daggers_armourer"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "complete_weapons_research",
+   "name": "Completar 'Investigación de Armas'",
+   "description": "Planos: Guante antihazmat, Unidad de cadmio, Batería de iones avanzada, Lanzador de plasma.",
+   "how": "El Armero pasa a fabricar un multiherramienta gratuito por cada 24 h reales.",
+   "requires": [
+    "sentinel_waves_for_armourer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "combat",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "claim_armourer_free_multitool",
+   "name": "Reclamar el multiherramienta diario del Armero",
+   "description": "Un multiherramienta gratis cada 24 h reales tras completar Weapons Research.",
+   "how": "Hablá con el Armero en tu base.",
+   "requires": [
+    "complete_weapons_research"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Weapons_Research"
+  },
+  {
+   "id": "hire_base_farmer",
+   "name": "Contratar al Granjero gek",
+   "description": "Construir una Terminal agrícola (45 Solanio) y contratar a un gek.",
+   "how": "Tras contratar al Armero, el Supervisor pide 45 Solanio (aterrizá en un planeta abrasado) y te da el plano de la Terminal agrícola. Construila y viajá al sistema gek marcado para contratar al Granjero.",
+   "requires": [
+    "hire_base_armourer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "gek",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Research"
+  },
+  {
+   "id": "grow_frostwort_solar_vine",
+   "name": "Granjero: cultivar Frostwort y Solar Vine",
+   "description": "Plantas de 1 h de crecimiento.",
+   "how": "Plantá las muestras que te da el Granjero y volvé con la cosecha.",
+   "requires": [
+    "hire_base_farmer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Research"
+  },
+  {
+   "id": "grow_fungal_cluster_gamma_weed",
+   "name": "Granjero: cultivar Fungal Cluster (4 h) y Gamma Weed",
+   "description": "Segundo tramo de la investigación agrícola.",
+   "how": "Plantá, esperá el crecimiento real y entregá.",
+   "requires": [
+    "grow_frostwort_solar_vine"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Research"
+  },
+  {
+   "id": "grow_gravitino_albumen_venom",
+   "name": "Granjero: cultivar Gravitino Host (2 h), Albumen Pearl Orb y Venom Urchin",
+   "description": "Tercer tramo.",
+   "how": "Plantá, esperá y entregá.",
+   "requires": [
+    "grow_fungal_cluster_gamma_weed"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Research"
+  },
+  {
+   "id": "grow_echinocactus_star_bramble",
+   "name": "Granjero: cultivar Echinocactus (16 h) y Star Bramble (4 h)",
+   "description": "Cuarto tramo.",
+   "how": "Plantá, esperá y entregá.",
+   "requires": [
+    "grow_gravitino_albumen_venom"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Research"
+  },
+  {
+   "id": "complete_agricultural_research",
+   "name": "Completar 'Investigación Agrícola' (Mordite Root)",
+   "description": "Última planta: Mordite Root (8 h).",
+   "how": "Entregá la cosecha para terminar; desbloquea 'Muestras florales adicionales'.",
+   "requires": [
+    "grow_echinocactus_star_bramble"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "farming",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Research"
+  },
+  {
+   "id": "additional_floral_samples",
+   "name": "Muestras florales adicionales (diaria)",
+   "description": "Entregar 50 unidades de un producto agrícola pedido a cambio de una Flora delicada.",
+   "how": "Hablá con el Granjero cada 24 h reales; la primera vez da el plano de NipNip.",
+   "requires": [
+    "complete_agricultural_research"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Additional_Floral_Samples"
+  },
+  {
+   "id": "hire_base_technician",
+   "name": "Contratar al Técnico de exovehículos vy'keen",
+   "description": "Con 'Exocraft Technician' activa, contratar al técnico en el sistema marcado.",
+   "how": "Tras la Terminal de comercio galáctico el Supervisor pide una Bola de gravitino (se obtiene de los Gravitino Host de la Granja; da el Escáner de conflictos) y 100 Mordita; a cambio recibís el plano de la Terminal de exovehículos y el Cañón geológico. Construí la terminal y viajá a la estación vy'keen marcada para contratar al Técnico.",
+   "requires": [
+    "build_galactic_trade_terminal_overseer",
+    "grow_gravitino_albumen_venom"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "vykeen",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "technician_geobay_signal_booster",
+   "name": "Técnico: Roamer Geobay y Exocraft Signal Booster",
+   "description": "Construir el geobay Roamer y el Potenciador de señal.",
+   "how": "Colocá el Roamer Geobay y luego instalá el Exocraft Signal Booster.",
+   "requires": [
+    "hire_base_technician",
+    "build_exocraft_geobay"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "technician_encrypted_terminal",
+   "name": "Técnico: llegar a la terminal cifrada a tiempo",
+   "description": "Alcanzar una terminal antes de que los vy'keen borren los datos; luego decidir qué contarle al técnico.",
+   "how": "Hay un temporizador; si fallás podés hablar con el técnico y reintentar. Mentir o decir la verdad sólo cambia el diálogo.",
+   "requires": [
+    "technician_geobay_signal_booster"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "exocraft",
+    "choice"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "technician_mining_laser_nomad_geobay",
+   "name": "Técnico: Láser de minería de exovehículo y geobay Nomad",
+   "description": "Craftear el Exocraft Mining Laser, entregar Ferrita magnetizada y recibir cañón y Advanced Signal Booster.",
+   "how": "Obtenés el plano del Nomad Geobay y luego el cañón montado en exovehículo.",
+   "requires": [
+    "technician_encrypted_terminal"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "technician_monolith_nal_trip",
+   "name": "Técnico: llegar a un Monolito con el exovehículo a tiempo",
+   "description": "Tras entregar 100 Cúmulos de nanites, viajar con tiempo limitado al Monolito (la verdad sobre Nal).",
+   "how": "Instalá la mejora, llevá combustible suficiente y alcanzá el Monolito marcado dentro del tiempo.",
+   "requires": [
+    "technician_mining_laser_nomad_geobay"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "complete_exocraft_technician",
+   "name": "Completar 'Técnico de Exovehículos'",
+   "description": "Colossus Geobay, mejora del láser y Signal Booster Tau.",
+   "how": "Construí el Colossus Geobay (plano del Técnico), entregá otros 100 nanites (Edificio abandonado si te faltan) y recibís el Signal Booster Tau; volvé una última vez por el módulo de aceleración. La misión pide por error construir el Nomad Geobay: en realidad es el Signal Booster Tau.",
+   "requires": [
+    "technician_monolith_nal_trip"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "exocraft",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "technician_terminal_hack_units",
+   "name": "Técnico: misión de hackeo repetible por Unidades",
+   "description": "Usar el exovehículo para llegar a una terminal que el técnico está hackeando.",
+   "how": "Se repite incluso más de una vez por día real. No se permite nave salvo que se indique.",
+   "requires": [
+    "complete_exocraft_technician"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "exocraft",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft_Technician"
+  },
+  {
+   "id": "build_galactic_trade_terminal_overseer",
+   "name": "Supervisor: Terminal de comercio galáctico",
+   "description": "El Supervisor te pide un Circuito para desbloquear el comercio galáctico.",
+   "how": "Después de la Terminal agrícola el Supervisor pide una Placa de circuito (plano del Científico, que se aprende en el paso del Monolito de 'Investigación científica'); al entregarla recibís el plano de la Terminal de comercio galáctico.",
+   "requires": [
+    "complete_scientific_research",
+    "hire_base_farmer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "trade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Expanding_the_Base"
+  },
+  {
+   "id": "complete_expanding_the_base",
+   "name": "Completar 'Expandiendo la Base'",
+   "description": "La rama del Supervisor se cierra tras desbloquear las otras ramas.",
+   "how": "Seguí las instrucciones del Supervisor hasta cerrar la misión.",
+   "requires": [
+    "build_galactic_trade_terminal_overseer",
+    "complete_weapons_research",
+    "complete_agricultural_research",
+    "complete_exocraft_technician"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Expanding_the_Base"
+  },
+  {
+   "id": "overseers_tour_photo",
+   "name": "La Gira del Supervisor (foto diaria)",
+   "description": "Sacar una foto en un bioma pedido con el Modo foto a cambio de un Artefacto perdido.",
+   "how": "Hablá con el Supervisor en una Terminal de construcción cada 24 h reales. La foto se saca a pie o dentro de la atmósfera.",
+   "requires": [
+    "complete_expanding_the_base"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "story",
+    "base",
+    "specialists",
+    "photo"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Overseer's_Tour"
+  },
+  {
+   "id": "answer_settlement_emergency_broadcast",
+   "name": "Responder la transmisión de emergencia de un asentamiento",
+   "description": "Inicio de 'Los colonos': una raza del sistema pide ayuda desde un asentamiento planetario.",
+   "how": "Atendé la transmisión de emergencia en el comunicador de la nave; te da coordenadas de un asentamiento planetario.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Settlers"
+  },
+  {
+   "id": "defend_settlement_corrupted_drones",
+   "name": "Defender el asentamiento de los drones corruptos",
+   "description": "Hablar con el sobreviviente y derrotar al enjambre de drones Centinela corruptos.",
+   "how": "Tras el diálogo aparece un enjambre; destruilo antes de continuar.",
+   "requires": [
+    "answer_settlement_emergency_broadcast"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Settlers"
+  },
+  {
+   "id": "build_settlement_overseer_office",
+   "name": "Construir la Oficina del Supervisor",
+   "description": "Después de pasar a ser Supervisor (Interfaz del asentamiento), construir la oficina.",
+   "how": "En la Terminal de construcción: 3 pasos secuenciales (~210 Polvo de silicato/ferrita, 5 Chapas de metal, 3 Microprocesadores) con 90 s de espera cada uno. Dentro hay Terminal de administración y Módulo de teletransporte.",
+   "requires": [
+    "own_settlement",
+    "defend_settlement_corrupted_drones"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Settlement"
+  },
+  {
+   "id": "complete_the_settlers",
+   "name": "Completar 'Los colonos'",
+   "description": "El asentamiento queda en 'libre para explorar' y habilita 'Un Rastro de Metal'.",
+   "how": "Seguí las tareas de la misión hasta que el registro diga 'free to explore'.",
+   "requires": [
+    "build_settlement_overseer_office"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "settlement",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Settlers"
+  },
+  {
+   "id": "resolve_settlement_decisions",
+   "name": "Gestionar decisiones del asentamiento",
+   "description": "Resolver disputas, solicitudes de ciudadanos y construcciones desde la Terminal de administración.",
+   "how": "Cada asentamiento tiene su propia misión de gestión (actualización Beacon 5.70). Todas las construcciones arrancan en clase C: mejorá granjas y almacenes para volver positiva la productividad.",
+   "requires": [
+    "build_settlement_overseer_office"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_5.70"
+  },
+  {
+   "id": "defend_settlement_sentinel_attack",
+   "name": "Repeler ataques centinela al asentamiento",
+   "description": "Defender el asentamiento cuando sube la alerta de Centinelas.",
+   "how": "Revisá la alerta centinela en la interfaz de gestión; cuando ataquen, peleá.",
+   "requires": [
+    "build_settlement_overseer_office"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Settlement"
+  },
+  {
+   "id": "start_trace_of_metal_drone",
+   "name": "Un Rastro de Metal: reconstruir el dron Centinela",
+   "description": "Un ataque centinela masivo en tu asentamiento inicia la creación de tu compañero centinela y mejoras del Minotaur.",
+   "how": "Con un asentamiento propio, 'Los colonos' en 'libre para explorar' y estando en otro sistema, la misión llega sola (si no, hacé 2 saltos). Volvé, derrotá a los Centinelas (incluyendo un Hardframe), y llevá a Tethys en la Anomalía Portal Phylactery, Nanite Filament y Beads of Glass.",
+   "requires": [
+    "complete_the_settlers",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "settlement",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Trace_of_Metal"
+  },
+  {
+   "id": "trace_hardframe_right_arm",
+   "name": "Rastro de Metal: Hardframe Right Arm",
+   "description": "Destruir 3 nodos del Pilar centinela para el plano del brazo derecho e instalarlo en el Minotaur.",
+   "how": "Seguí las coordenadas al Pilar Centinela, destruí los 3 nodos de control y vencé a los guardianes; instalá el plano en tu Minotaur.",
+   "requires": [
+    "start_trace_of_metal_drone",
+    "own_minotaur"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "sentinel",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Trace_of_Metal"
+  },
+  {
+   "id": "trace_hardframe_legs",
+   "name": "Rastro de Metal: Hardframe Legs",
+   "description": "Irrumpir en una Instalación de fabricación para extraer el plano de las piernas.",
+   "how": "Tras la expedición ciudadana, seguí las coordenadas a la Manufacturing Facility e interactuá con la terminal.",
+   "requires": [
+    "trace_hardframe_right_arm"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Trace_of_Metal"
+  },
+  {
+   "id": "trace_hardframe_left_arm",
+   "name": "Rastro de Metal: Hardframe Left Arm",
+   "description": "Recibir a la expedición ciudadana y decidir si liberar o poner en cuarentena a los exploradores.",
+   "how": "Liberar da 'Creeping, Spreading Glass' (productividad); cuarentena reduce 4 % la alerta centinela.",
+   "requires": [
+    "trace_hardframe_legs"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "settlement",
+    "sentinel",
+    "choice"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Trace_of_Metal"
+  },
+  {
+   "id": "complete_trace_of_metal",
+   "name": "Completar 'Un Rastro de Metal' (Hardframe Body)",
+   "description": "Destruir un Caminante Centinela para el cerebro prístino y terminar la transformación del Minotaur.",
+   "how": "Tras el Brazo izquierdo, Laylaps te da el plano del Mortero de parálisis y coordenadas a una Placa: destruí un Caminante centinela para recuperar un Cerebro prístino y el plano Hardframe Body. Llevá el cerebro a Tethys, contactá al Mensajero del Atlas (Cerebro radiante) y desconectá a Laylaps de la red centinela en otro Pilar centinela.",
+   "requires": [
+    "trace_hardframe_left_arm"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "settlement",
+    "sentinel",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/A_Trace_of_Metal"
+  },
+  {
+   "id": "dreams_deep_strange_signal",
+   "name": "Sueños de las Profundidades: señal extraña",
+   "description": "Interceptar una señal submarina en el espacio y llegar a una Torre de transmisión con un Módulo submarino clase S.",
+   "how": "Empieza al terminar '16 / 16' (o al saltar tras alcanzar el hito Pionero, 40 saltos). Interceptá la señal en el espacio hasta una Torre de transmisión: te da un Módulo de protección submarina clase S que debés instalar de inmediato.",
+   "requires": [
+    "complete_16_16"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dreams_of_the_Deep"
+  },
+  {
+   "id": "dreams_deep_outfit_nautilon",
+   "name": "Sueños de las Profundidades: equipar el Nautilon",
+   "description": "Construir la Cámara del Nautilon, fabricar la Celda de combustible hidrotermal y probar el submarino.",
+   "how": "Seguí la baliza de la nave estrellada submarina y aprendé los planos de la Cámara del Nautilon y el Refugio marino. Construí la Cámara (5 Placas de metal, 4 Sulfuro cristalino, 100 Sal), fabricá una Célula de combustible hidrotérmica y probá el Nautilon; seguí la señal a una Estructura sumergida para extraer los planos de Sonar de alta potencia y Espejo solar.",
+   "requires": [
+    "dreams_deep_strange_signal"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "underwater",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dreams_of_the_Deep"
+  },
+  {
+   "id": "dreams_deep_find_freighter_buildings",
+   "name": "Sueños de las Profundidades: Sonar de alta potencia y edificios sumergidos",
+   "description": "Con el Sonar de alta potencia, ubicar Carguero estrellado en el océano y edificios.",
+   "how": "Usá el sonar en el Menú rápido para escanear naves/cargueros/edificios sumergidos; usá la terminal del tercer edificio.",
+   "requires": [
+    "dreams_deep_outfit_nautilon"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dreams_of_the_Deep"
+  },
+  {
+   "id": "complete_dreams_of_the_deep",
+   "name": "Completar 'Sueños de las Profundidades'",
+   "description": "Tres escaneos separados 100+ u para encontrar los restos de la tripulación.",
+   "how": "Usá escaneos rápidos en un planeta con océano; recompensas: Módulo submarino clase S, nave dañada reclamable, Marine Shelter.",
+   "requires": [
+    "dreams_deep_find_freighter_buildings"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "underwater",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dreams_of_the_Deep"
+  },
+  {
+   "id": "learn_fossil_display_blueprint",
+   "name": "Fósiles: aprender un plano de Fossil Display",
+   "description": "Aprender el plano en la Estación de investigación de construcción de la Anomalía.",
+   "how": "La misión empieza al excavar tu primer Hueso antiguo (usá el Dispositivo de estudio) y recibir la alerta de la Computadora de base.",
+   "requires": [
+    "build_base_computer",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "fossils",
+    "relics"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Collecting_Fossils"
+  },
+  {
+   "id": "assemble_fossil_exhibit",
+   "name": "Fósiles: armar y empacar una exhibición",
+   "description": "Reunir cráneo, caja torácica, cola y extremidades y armar un fósil.",
+   "how": "Excavá huesos en yacimientos y usá el Fossil Display.",
+   "requires": [
+    "learn_fossil_display_blueprint"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "fossils",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Collecting_Fossils"
+  },
+  {
+   "id": "visit_fossil_collector",
+   "name": "Visitar a un Coleccionista de fósiles",
+   "description": "NPC de estaciones que intercambia fósiles.",
+   "how": "Hablá con el coleccionista en un stall de estación.",
+   "requires": [
+    "assemble_fossil_exhibit",
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "fossils"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Fossil_Collector"
+  },
+  {
+   "id": "trade_fossils_collector",
+   "name": "Intercambiar fósiles con el Coleccionista",
+   "description": "Ofrecer hasta 3 fósiles propios para obtener otro (probabilidad de aceptación).",
+   "how": "Negociación 'Trade Negotiations'.",
+   "requires": [
+    "visit_fossil_collector"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "story",
+    "fossils",
+    "trade"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Fossil_Collector"
+  },
+  {
+   "id": "buy_void_egg",
+   "name": "Comprar un Huevo del Vacío",
+   "description": "Inicia 'Nacimiento Estelar' (Starbirth) para conseguir una nave viviente.",
+   "how": "Comprá un Void Egg al Quicksilver Synthesis Companion en la Anomalía (3.200 Quicksilver según la wiki). Luego usá el motor de pulso hasta tener un encuentro espacial con una nave extraña.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3200"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "living-ship",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_mature_neural_stem",
+   "name": "Starbirth: Tallo neural maduro",
+   "description": "Primer componente: viajá a un mundo de terreno extraño y recogé el brote.",
+   "how": "Tras el encuentro espacial con la nave extraña, seguí las coordenadas hasta una placa korvax: entregá un Puente de conciencia (plano ahí; el Hexite sale de un Carguero estrellado). Recibís un Tallo neural frágil que madura 18-25,5 h reales.",
+   "requires": [
+    "buy_void_egg"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "living-ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_mature_heart_node",
+   "name": "Starbirth: Nodo del corazón maduro",
+   "description": "Segundo componente en un planeta Barren extremo (polvo, fuego, hielo).",
+   "how": "Nuevo encuentro espacial: placa korvax en un planeta Árido extremo; entregá un Núcleo pulsante (Líquido solar minado con el Rayo solar que te da la placa). Recibís un Corazón frágil que madura 19-25 h.",
+   "requires": [
+    "starbirth_mature_neural_stem"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "living-ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_hardened_shell",
+   "name": "Starbirth: Caparazón endurecido",
+   "description": "Tercer componente en un planeta Lush extremo.",
+   "how": "Nuevo encuentro espacial: placa en un planeta Exuberante extremo; entregá una Membrana imposible (Ojo hipnótico de un Edificio abandonado submarino y Agua viva de un Hijo de Helios). Recibís un Caparazón frágil que madura 20-24 h.",
+   "requires": [
+    "starbirth_mature_heart_node"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "living-ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_singularity_core",
+   "name": "Starbirth: Núcleo de singularidad",
+   "description": "Cuarto componente en un planeta Hydro Garden.",
+   "how": "Nuevo encuentro espacial: Falla de límites (planeta Jardín hídrico); entregá Semillas de vidrio (Qualia fragmentada obtenida con el Rayo de ánimo). Recibís una Singularidad creciente que madura 18-26 h.",
+   "requires": [
+    "starbirth_hardened_shell"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "living-ship"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "starbirth_soul_chamber",
+   "name": "Starbirth: Cámara del alma",
+   "description": "Viajar por Portal a Euclid y llenar la cámara con 3 almas de Viajeros caídos.",
+   "how": "Último encuentro espacial: coordenadas de un Portal en Euclid (si no estás en Euclid, viajá allí primero); usá al menos 12 de los 16 glifos (tumbas de viajeros o La Purga). En el Edificio abandonado de Axentha Sigma recibís la Cámara del alma: llenala con 3 almas de tumbas de viajeros y volvé por el mismo Portal. Guardá manualmente antes de reingresar a la nave.",
+   "requires": [
+    "starbirth_singularity_core",
+    "unlock_portals"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "living-ship",
+    "portal"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "complete_starbirth_biogenesis",
+   "name": "Starbirth: nacimiento (Biogénesis) de la nave viviente",
+   "description": "Elegir incubar el huevo, ubicar el Fallen Host y aplicar Biogénesis con cerebro, corazón, caparazón, núcleo y alma.",
+   "how": "Guardá manualmente antes de elegir; podés recargar hasta que la nave sea de tu agrado. Sólo se puede una vez por partida (otro huevo exige 10.000 nanites).",
+   "requires": [
+    "starbirth_soul_chamber"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "living-ship",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "rebel_star_distress_beacon",
+   "name": "Bajo una Estrella Rebelde: baliza y Centinelas corruptos",
+   "description": "Un encuentro espacial con una nave abandonada lleva a una nave estrellada con Distress Beacon.",
+   "how": "Usá el motor de pulso hasta que reciba una emergencia; desactivalo para que aparezca la nave. Seguí las coordenadas con el Barrido.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "outlaws",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Under_a_Rebel_Star"
+  },
+  {
+   "id": "rebel_star_promised_star",
+   "name": "Bajo una Estrella Rebelde: invitación y Estación Fuera de la Ley",
+   "description": "Derrotar piratas en un carguero abandonado y visitar un sistema pirata para recibir la Capa de la Libertad.",
+   "how": "Activá la Rendezvous Beacon, vencé a los piratas del Carguero abandonado, aceptá la invitación (ticket) y atracá en la Estación Fuera de la Ley.",
+   "requires": [
+    "rebel_star_distress_beacon"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "outlaws",
+    "combat",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Under_a_Rebel_Star"
+  },
+  {
+   "id": "complete_under_a_rebel_star",
+   "name": "Completar 'Bajo una Estrella Rebelde'",
+   "description": "Llevar el pasaporte a un sistema vecino y decidir si denunciar o ayudar.",
+   "how": "Entregá el Forged Passport al Núcleo de la estación marcada; el título 'Reached the Promised Star' cierra la misión.",
+   "requires": [
+    "rebel_star_promised_star"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "outlaws",
+    "choice",
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Under_a_Rebel_Star"
+  },
+  {
+   "id": "complete_freighter_command",
+   "name": "Comando de Carguero: primera expedición de fragatas",
+   "description": "Tutorial de expediciones de fragatas desde el carguero.",
+   "how": "Empieza al conseguir tu primer carguero. Mirá la flota en la consola central del puente, construí una Sala de mando de flota, usá su terminal para aprender los planos de Combustible de fragata (50, 100 y 200 t) y recibí 1 unidad de 200 t; ponela en el inventario del carguero y mandá la flota de expedición con el Navegante. Se completa al terminar la expedición y reclamar las recompensas. Si la salteás no se puede reiniciar.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter_Command"
+  },
+  {
+   "id": "do_fleet_missions_intervention",
+   "name": "Responder misiones de flota de fragatas",
+   "description": "Las fragatas piden consejo o tu presencia durante expediciones.",
+   "how": "Atendé los mensajes del comandante de la flota o saltá al sistema para defenderlos (4.60).",
+   "requires": [
+    "own_frigate"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "freighter",
+    "frigate"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_4.60"
+  },
+  {
+   "id": "do_space_rescue_mission",
+   "name": "Rescate espacial: socorrer un carguero",
+   "description": "Una señal de socorro de un carguero atacado por piratas.",
+   "how": "Se activa tras una señal de emergencia (Outlaws).",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "space",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Rescue"
+  },
+  {
+   "id": "explore_derelict_freighter",
+   "name": "Explorar un carguero abandonado (Lost in Space)",
+   "description": "Abordar un carguero a la deriva, leer registros y recuperar objetos hasta el diario del capitán.",
+   "how": "Se fuerza con un Emergency Signal Scanner (se compra al Scrap Dealer en la estación). El juego no guarda dentro. Calentate con calentadores y llevá Dioxita/Oxígeno y Sodio.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "space",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "do_mission_board_collect_item",
+   "name": "Misión del tablón: reunir y entregar un objeto",
+   "description": "Juntar 250 de un elemento terrestre o 50 de una sustancia agrícola (rango bajo) o 1 producto (rango alto) y entregarlo en la Terminal de comercio galáctico del Puesto comercial.",
+   "how": "Hablá con el Agente en el Tablón de misiones de cualquier estación espacial. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_delivery",
+   "name": "Misión del tablón: entrega a otro sistema",
+   "description": "Llevar un producto comerciable a una Terminal de comercio galáctico de otro sistema. Te dan un Chit de defensa por si hay piratas.",
+   "how": "Aceptá en el tablón; abandonarla baja tu reputación. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_destroy_sentinels",
+   "name": "Misión del tablón: destruir Centinelas",
+   "description": "Destruir unidades Centinela (rango alto: Cuádruples). Se acumula entre misiones del mismo tipo.",
+   "how": "Aceptá en el tablón y matá Centinelas en cualquier planeta. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_kill_creatures",
+   "name": "Misión del tablón: matar criaturas",
+   "description": "Matar fauna (rango alto: depredadores). Se acumula con otras del mismo tipo.",
+   "how": "Aceptá en el tablón. Matar Horrores biológicos en Edificios abandonados cuenta como fauna. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_feed_creatures",
+   "name": "Misión del tablón: alimentar criaturas",
+   "description": "Alimentar fauna para el cliente. Se acumula.",
+   "how": "Aceptá en el tablón y usá Pellets para criaturas. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_find_missing_person",
+   "name": "Misión del tablón: encontrar a una persona desaparecida",
+   "description": "Rango bajo: Nave estrellada con waypoint aproximado. Rango alto: un alienígena en un Puesto comercial (a veces con soborno o cronómetro).",
+   "how": "Aceptá en el tablón y usá el Barrido de objetivo. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_hunt_pirates",
+   "name": "Misión del tablón: cazar piratas",
+   "description": "Viajar con pulso a la base pirata marcada y derrotar todas las oleadas (piratas de 100.000, 200.000 o 300.000 de recompensa).",
+   "how": "Aceptá en el tablón. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_take_photo",
+   "name": "Misión del tablón: sacar una foto",
+   "description": "Foto en Modo foto a pie, en un bioma, edificio o criatura pedida.",
+   "how": "Aceptá en el tablón. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_raid_facility",
+   "name": "Misión del tablón: asaltar una instalación",
+   "description": "Destruir un Depósito o forzar un Centro de operaciones y usar su terminal. Se acumula hasta 6.",
+   "how": "Aceptá en el tablón. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_assault_freighter",
+   "name": "Misión del tablón: asaltar un carguero",
+   "description": "Atacar un carguero de una Flota espacial y destruir sus contenedores.",
+   "how": "Aceptá en el tablón; usá el pulso para escanear la flota. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_defend_freighter",
+   "name": "Misión del tablón: defender un carguero",
+   "description": "Destruir a los piratas que atacan a un carguero.",
+   "how": "Aceptá en el tablón. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_repair_item",
+   "name": "Misión del tablón: reparar un objeto dañado",
+   "description": "Reparar la terminal de un Observatorio o Torre de transmisión (3 componentes dañados) y transmitir el diagnóstico.",
+   "how": "Aceptá en el tablón. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_scan_objects",
+   "name": "Misión del tablón: escanear objetos",
+   "description": "Escanear flora/fauna/minerales únicos en un waypoint aproximado.",
+   "how": "Aceptá en el tablón. Si no hay agente, buscá en otra estación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "repeatable",
+    "space-station"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "do_mission_board_fishing",
+   "name": "Misión del tablón: pesca",
+   "description": "Misión procedural de pesca (actualización 5.50) para el agente de la estación.",
+   "how": "Hablá con el agente de misiones en una estación y aceptá un desafío de pesca.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "fishing",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_5.50"
+  },
+  {
+   "id": "buy_cartographer_planetary_charts",
+   "name": "Comprar cartas planetarias al Cartógrafo",
+   "description": "El Cartógrafo (escritorio más cercano al teletransportador) vende Cartas planetarias.",
+   "how": "Pagá con Datos de navegación o 15 nanites: sitios seguros, señales de socorro, puestos habitados, artefactos, mejoras de traje.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "cartographer",
+    "exploration",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cartographer"
+  },
+  {
+   "id": "buy_settlement_chart",
+   "name": "Comprar una Carta de asentamiento",
+   "description": "Cinco Datos de navegación por una carta que ubica un asentamiento.",
+   "how": "Hablá con el Cartógrafo y comprá la carta.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "cartographer",
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "donate_to_guild_envoy",
+   "name": "Donar a un Enviado de gremio",
+   "description": "Subí tu reputación con el gremio donando objetos al Enviado de la estación.",
+   "how": "Cada estación aloja un Guild Envoy.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "mission-board",
+    "standing",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild"
+  },
+  {
+   "id": "reach_explorers_guild_rank_1",
+   "name": "Alcanzar el rango 1 con Gremio de Exploradores",
+   "description": "Acumular 3 puntos de reputación para acceder a misiones de rango 1.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_2",
+   "name": "Alcanzar el rango 2 con Gremio de Exploradores",
+   "description": "Acumular 8 puntos de reputación para acceder a misiones de rango 2.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_3",
+   "name": "Alcanzar el rango 3 con Gremio de Exploradores",
+   "description": "Acumular 14 puntos de reputación para acceder a misiones de rango 3.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_4",
+   "name": "Alcanzar el rango 4 con Gremio de Exploradores",
+   "description": "Acumular 21 puntos de reputación para acceder a misiones de rango 4.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_5",
+   "name": "Alcanzar el rango 5 con Gremio de Exploradores",
+   "description": "Acumular 30 puntos de reputación para acceder a misiones de rango 5.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_6",
+   "name": "Alcanzar el rango 6 con Gremio de Exploradores",
+   "description": "Acumular 40 puntos de reputación para acceder a misiones de rango 6.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_7",
+   "name": "Alcanzar el rango 7 con Gremio de Exploradores",
+   "description": "Acumular 60 puntos de reputación para acceder a misiones de rango 7.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_explorers_guild_rank_8",
+   "name": "Alcanzar el rango 8 con Gremio de Exploradores",
+   "description": "Acumular 100 puntos de reputación para acceder a misiones de rango 8.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_explorers_guild_rank_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "explorers_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_1",
+   "name": "Alcanzar el rango 1 con Gremio de Mercaderes",
+   "description": "Acumular 3 puntos de reputación para acceder a misiones de rango 1.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_2",
+   "name": "Alcanzar el rango 2 con Gremio de Mercaderes",
+   "description": "Acumular 8 puntos de reputación para acceder a misiones de rango 2.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_3",
+   "name": "Alcanzar el rango 3 con Gremio de Mercaderes",
+   "description": "Acumular 14 puntos de reputación para acceder a misiones de rango 3.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_4",
+   "name": "Alcanzar el rango 4 con Gremio de Mercaderes",
+   "description": "Acumular 21 puntos de reputación para acceder a misiones de rango 4.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_5",
+   "name": "Alcanzar el rango 5 con Gremio de Mercaderes",
+   "description": "Acumular 30 puntos de reputación para acceder a misiones de rango 5.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_6",
+   "name": "Alcanzar el rango 6 con Gremio de Mercaderes",
+   "description": "Acumular 40 puntos de reputación para acceder a misiones de rango 6.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_7",
+   "name": "Alcanzar el rango 7 con Gremio de Mercaderes",
+   "description": "Acumular 60 puntos de reputación para acceder a misiones de rango 7.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_merchants_guild_rank_8",
+   "name": "Alcanzar el rango 8 con Gremio de Mercaderes",
+   "description": "Acumular 100 puntos de reputación para acceder a misiones de rango 8.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_merchants_guild_rank_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "merchants_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_1",
+   "name": "Alcanzar el rango 1 con Gremio de Mercenarios",
+   "description": "Acumular 3 puntos de reputación para acceder a misiones de rango 1.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_2",
+   "name": "Alcanzar el rango 2 con Gremio de Mercenarios",
+   "description": "Acumular 8 puntos de reputación para acceder a misiones de rango 2.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_3",
+   "name": "Alcanzar el rango 3 con Gremio de Mercenarios",
+   "description": "Acumular 14 puntos de reputación para acceder a misiones de rango 3.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_4",
+   "name": "Alcanzar el rango 4 con Gremio de Mercenarios",
+   "description": "Acumular 21 puntos de reputación para acceder a misiones de rango 4.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_5",
+   "name": "Alcanzar el rango 5 con Gremio de Mercenarios",
+   "description": "Acumular 30 puntos de reputación para acceder a misiones de rango 5.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_6",
+   "name": "Alcanzar el rango 6 con Gremio de Mercenarios",
+   "description": "Acumular 40 puntos de reputación para acceder a misiones de rango 6.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_7",
+   "name": "Alcanzar el rango 7 con Gremio de Mercenarios",
+   "description": "Acumular 60 puntos de reputación para acceder a misiones de rango 7.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_mercenaries_guild_rank_8",
+   "name": "Alcanzar el rango 8 con Gremio de Mercenarios",
+   "description": "Acumular 100 puntos de reputación para acceder a misiones de rango 8.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_mercenaries_guild_rank_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "mercenaries_guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_1",
+   "name": "Alcanzar el rango 1 con los Gek",
+   "description": "Acumular 3 puntos de reputación para acceder a misiones de rango 1.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_2",
+   "name": "Alcanzar el rango 2 con los Gek",
+   "description": "Acumular 8 puntos de reputación para acceder a misiones de rango 2.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_3",
+   "name": "Alcanzar el rango 3 con los Gek",
+   "description": "Acumular 14 puntos de reputación para acceder a misiones de rango 3.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_4",
+   "name": "Alcanzar el rango 4 con los Gek",
+   "description": "Acumular 21 puntos de reputación para acceder a misiones de rango 4.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_5",
+   "name": "Alcanzar el rango 5 con los Gek",
+   "description": "Acumular 30 puntos de reputación para acceder a misiones de rango 5.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_6",
+   "name": "Alcanzar el rango 6 con los Gek",
+   "description": "Acumular 40 puntos de reputación para acceder a misiones de rango 6.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_7",
+   "name": "Alcanzar el rango 7 con los Gek",
+   "description": "Acumular 60 puntos de reputación para acceder a misiones de rango 7.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_gek_rank_8",
+   "name": "Alcanzar el rango 8 con los Gek",
+   "description": "Acumular 100 puntos de reputación para acceder a misiones de rango 8.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_gek_rank_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "gek"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_1",
+   "name": "Alcanzar el rango 1 con los Korvax",
+   "description": "Acumular 3 puntos de reputación para acceder a misiones de rango 1.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_2",
+   "name": "Alcanzar el rango 2 con los Korvax",
+   "description": "Acumular 8 puntos de reputación para acceder a misiones de rango 2.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_3",
+   "name": "Alcanzar el rango 3 con los Korvax",
+   "description": "Acumular 14 puntos de reputación para acceder a misiones de rango 3.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_4",
+   "name": "Alcanzar el rango 4 con los Korvax",
+   "description": "Acumular 21 puntos de reputación para acceder a misiones de rango 4.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_5",
+   "name": "Alcanzar el rango 5 con los Korvax",
+   "description": "Acumular 30 puntos de reputación para acceder a misiones de rango 5.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_6",
+   "name": "Alcanzar el rango 6 con los Korvax",
+   "description": "Acumular 40 puntos de reputación para acceder a misiones de rango 6.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_7",
+   "name": "Alcanzar el rango 7 con los Korvax",
+   "description": "Acumular 60 puntos de reputación para acceder a misiones de rango 7.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_korvax_rank_8",
+   "name": "Alcanzar el rango 8 con los Korvax",
+   "description": "Acumular 100 puntos de reputación para acceder a misiones de rango 8.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_korvax_rank_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "korvax"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_1",
+   "name": "Alcanzar el rango 1 con los Vy'keen",
+   "description": "Acumular 3 puntos de reputación para acceder a misiones de rango 1.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_2",
+   "name": "Alcanzar el rango 2 con los Vy'keen",
+   "description": "Acumular 8 puntos de reputación para acceder a misiones de rango 2.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_1"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_3",
+   "name": "Alcanzar el rango 3 con los Vy'keen",
+   "description": "Acumular 14 puntos de reputación para acceder a misiones de rango 3.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_2"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_4",
+   "name": "Alcanzar el rango 4 con los Vy'keen",
+   "description": "Acumular 21 puntos de reputación para acceder a misiones de rango 4.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_3"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_5",
+   "name": "Alcanzar el rango 5 con los Vy'keen",
+   "description": "Acumular 30 puntos de reputación para acceder a misiones de rango 5.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_4"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_6",
+   "name": "Alcanzar el rango 6 con los Vy'keen",
+   "description": "Acumular 40 puntos de reputación para acceder a misiones de rango 6.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_7",
+   "name": "Alcanzar el rango 7 con los Vy'keen",
+   "description": "Acumular 60 puntos de reputación para acceder a misiones de rango 7.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_6"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "reach_vykeen_rank_8",
+   "name": "Alcanzar el rango 8 con los Vy'keen",
+   "description": "Acumular 100 puntos de reputación para acceder a misiones de rango 8.",
+   "how": "Completá misiones del tablón de ese gremio/raza (cada una suele dar +1; algunas de rango 7-8, +2) o donaciones. Abandonar una entrega resta 1.",
+   "requires": [
+    "reach_vykeen_rank_7"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "standing",
+    "grind",
+    "vykeen"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "complete_first_nexus_mission",
+   "name": "Completar tu primera misión del Nexus",
+   "description": "Aceptá una misión multijugador (se puede hacer en solitario) en el Nexus de la Anomalía.",
+   "how": "Con el Nexus desbloqueado, usá el tablero; hasta 4 jugadores por misión (8 en consolas por instancia). Todas se completan en solitario aunque estés offline. Reportá el resultado en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_daily_quicksilver_mission",
+   "name": "Misión diaria de Quicksilver del Nexus",
+   "description": "Una misión por día real que da 400 Quicksilver (se acumulan hasta 3 sin usar).",
+   "how": "Cuando haya un holograma amarillo de Quicksilver en el Nexus, aceptala. Contribuye a la Investigación comunitaria.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "nexus",
+    "quicksilver",
+    "daily"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_weekend_mission",
+   "name": "Misión de fin de semana del Nexus (1.800 Quicksilver)",
+   "description": "Evento semanal de viernes a lunes con 1.800 Quicksilver (una vez por evento).",
+   "how": "Requiere estar conectado al Online Discovery Service. Se ve un holograma hexagonal turquesa. En Switch es de un solo jugador con menos objetivos.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "quicksilver",
+    "weekend"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_encrypted_mission",
+   "name": "Misión cifrada del Nexus",
+   "description": "Misiones raras con título y descripción ilegibles hasta empezar; mejor recompensa.",
+   "how": "Aparecen cuando hay un signo de pregunta púrpura en el holograma izquierdo del Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "encrypted"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_collect_item",
+   "name": "Misión del Nexus: reunir un objeto",
+   "description": "'Collect an Item': juntar un número de productos exóticos pedidos por un Iteration. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_construct_outpost",
+   "name": "Misión del Nexus: construir un puesto avanzado",
+   "description": "'Construct an Outpost': construcción de base en un lugar dado. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_construct_underwater_outpost",
+   "name": "Misión del Nexus: construir un puesto submarino",
+   "description": "'Construct an Underwater Outpost'. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_raid_planetary_depot",
+   "name": "Misión del Nexus: asaltar un depósito planetario",
+   "description": "'Raid a Planetary Depot': destruir robots/instalaciones. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_unearth_ancient_bones",
+   "name": "Misión del Nexus: desenterrar huesos antiguos",
+   "description": "'Unearth Ancient Bones': excavar con el Visor y el Manipulador. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_survey_planet",
+   "name": "Misión del Nexus: estudiar un planeta",
+   "description": "'Survey a Planet': analizar minerales, flora y fauna no descubiertos. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_tame_wild_creatures",
+   "name": "Misión del Nexus: domar criaturas salvajes",
+   "description": "'Tame Wild Creatures': alimentar fauna con Pellets (60 Carbono). Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_eliminate_monstrosities",
+   "name": "Misión del Nexus: eliminar monstruosidades planetarias",
+   "description": "'Eliminate Planetary Monstrosities' (Horrores biológicos). Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_eliminate_hazardous_flora",
+   "name": "Misión del Nexus: eliminar flora peligrosa",
+   "description": "'Eliminate Hazardous Flora'. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_rescue_stranded_lifeform",
+   "name": "Misión del Nexus: rescatar a una forma de vida varada",
+   "description": "'Rescue Stranded Lifeform': buscar con el Barrido, recoger piezas y hacer combates con Centinelas corruptos. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_hunt_dangerous_pirates",
+   "name": "Misión del Nexus: cazar piratas peligrosos",
+   "description": "'Hunt Dangerous Pirates'. Tipo de misión repetible del Nexus.",
+   "how": "Aceptala en el Nexus de la Anomalía (grupo de hasta 4); al volver reportá en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "do_nexus_investigate_anomalous_region",
+   "name": "Misión del Nexus: investigar región anómala (fin de semana)",
+   "description": "Hablar con un Viajero, reunir 3 glifos de Piedras de conocimiento, cruzar un portal y ofrecer un recurso al POI.",
+   "how": "Sólo viernes a lunes.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "weekend"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Investigate_Anomalous_Region"
+  },
+  {
+   "id": "do_nexus_corrupted_world",
+   "name": "Misión del Nexus: mundo corrupto",
+   "description": "Multijugador: destruir a los Centinelas corruptos y su maquinaria en un mundo corrupto (4.20).",
+   "how": "Aceptala en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_4.20"
+  },
+  {
+   "id": "do_nexus_vile_brood",
+   "name": "Misión del Nexus: eliminar el nido de la prole vil",
+   "description": "Multijugador: cazar a la Vile Brood (5.00).",
+   "how": "Aceptala en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_5.00"
+  },
+  {
+   "id": "do_nexus_fishing",
+   "name": "Misión del Nexus: pesca multijugador",
+   "description": "Misión de pesca cooperativa (5.50).",
+   "how": "Aceptala en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "multiplayer",
+    "fishing"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_5.50"
+  },
+  {
+   "id": "contribute_community_research_unlocks",
+   "name": "Contribuir a la Investigación comunitaria (Nexus)",
+   "description": "Cada misión del Nexus aporta progreso a objetos exóticos que Polo/el Quicksilver Synthesis Companion desbloquea para todos.",
+   "how": "Los hitos permanentes recientes: Capa geométrica (4.30), esculturas de hielo (4.70), calcomanías Pawprints y To the Stars (4.70), fuegos artificiales azul/púrpura/teal (5.20). Comprá lo desbloqueado con Quicksilver.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "community",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_5.20"
+  },
+  {
+   "id": "buy_quicksilver_synthesis_items",
+   "name": "Comprar objetos en el Quicksilver Synthesis Companion",
+   "description": "Gastar Quicksilver en cosméticos, posters, naves vistas desbloqueadas por la comunidad.",
+   "how": "El puesto está junto al Nexus en la Anomalía.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "cosmetics"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "do_corvette_mission_board",
+   "name": "Misiones de corbeta (tablón de la tripulación)",
+   "description": "Registrate como tripulante en una corbeta para completar objetivos cooperativos locales.",
+   "how": "Con una Corbeta habitable, usá su tablón de misiones a bordo (Voyagers 6.00).",
+   "requires": [
+    "own_corvette"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "multiplayer",
+    "corvette",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.00"
+  },
+  {
+   "id": "complete_scrap_hunter_tutorial",
+   "name": "Tutorial del cazador de chatarra (Remnant)",
+   "description": "Misión corta que enseña a recolectar residuo industrial con la Bobina de gravitinos.",
+   "how": "Aparece al jugar Remnant 6.20; la Bobina de gravitinos se consigue en la Anomalía o en una Planta de procesamiento de residuos.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story",
+    "remnant",
+    "industrial"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.20"
+  },
+  {
+   "id": "deliver_waste_processing_plant",
+   "name": "Entregar residuos a una Planta de procesamiento",
+   "description": "Depositar residuos en las 4 unidades por color para ganar nanites y recursos.",
+   "how": "Llevá chatarra con la Bobina de gravitinos o con el Colossus con volquete a una Waste Processing Plant en un mundo con chatarra salvable.",
+   "requires": [
+    "complete_scrap_hunter_tutorial"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "industrial",
+    "nanites",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Waste_Processing_Plant"
+  },
+  {
+   "id": "meet_oceanus_arena_tutorial",
+   "name": "Conocer a Oceanus y aprender las Batallas de criaturas",
+   "description": "Iteration: Oceanus llegó a la Anomalía con un tutorial ligero del Holo-Arena.",
+   "how": "Hablá con Oceanus en la Anomalía; necesitás compañeros adoptados.",
+   "requires": [
+    "adopt_companion",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "arena",
+    "xeno-arena",
+    "companion"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.30"
+  },
+  {
+   "id": "win_creature_battle_alien",
+   "name": "Ganar una Batalla de criaturas contra un alienígena",
+   "description": "Mesas Holo-Arena en edificios planetarios, estaciones, asentamientos y la Anomalía.",
+   "how": "Armá un equipo; los campeones de sistema en estaciones son más difíciles pero dan más recompensas.",
+   "requires": [
+    "meet_oceanus_arena_tutorial"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "arena",
+    "combat",
+    "companion",
+    "repeatable"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.30"
+  },
+  {
+   "id": "do_oceanus_daily_challenge",
+   "name": "Desafío diario de Oceanus",
+   "description": "Batalla fija diaria igual para todos los Viajeros.",
+   "how": "Aceptala en la Anomalía.",
+   "requires": [
+    "meet_oceanus_arena_tutorial"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "arena",
+    "daily",
+    "companion"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.30"
+  },
+  {
+   "id": "rise_arena_league_medals",
+   "name": "Subir en la Arena League (medallas y misiones guía)",
+   "description": "Nueva facción en el Catálogo con 5 tipos de medallas clasificadas y misiones guía.",
+   "how": "Fijá una medalla de la Arena League en el Catálogo y seguí la guía del Registro de misiones.",
+   "requires": [
+    "win_creature_battle_alien"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "arena",
+    "grind",
+    "medals"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.30"
+  },
+  {
+   "id": "claim_arena_unique_companions",
+   "name": "Ganar los compañeros únicos de la Arena League",
+   "description": "Premios: Corrupted Quadruped, Geno-Prawn, Wandering Shrimp Tank, Boundary Horror y Aeron Crab.",
+   "how": "Impresioná a Oceanus con logros en la Arena League.",
+   "requires": [
+    "rise_arena_league_medals"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "arena",
+    "companion",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Update_6.30"
+  },
+  {
+   "id": "complete_signals_tutorial_cosmos",
+   "name": "Tutorial 'Signals' (Cosmos 7.0)",
+   "description": "Misión ligera que presenta el nuevo mapa del sistema local y los puntos de interés de espacio profundo.",
+   "how": "Los POI aparecen en el mapa cuando tu partida llegó a la Anomalía. Fuente: reseña de la 7.0 (verificar disponibilidad en tu consola).",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "cosmos",
+    "deep-space"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/"
+  },
+  {
+   "id": "do_deep_space_outpost_contracts",
+   "name": "Contratos en puestos avanzados de espacio profundo",
+   "description": "Puestos alienígenas con intendente, intercambio de mapas y materiales y terminal de salvamento y entregas.",
+   "how": "Volá a un puesto de espacio profundo (marcado en el mapa del sistema).",
+   "requires": [
+    "complete_signals_tutorial_cosmos"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "cosmos",
+    "deep-space",
+    "contracts",
+    "repeatable"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/"
+  },
+  {
+   "id": "salvage_derelict_hulk",
+   "name": "Desguazar un casco abandonado de espacio profundo",
+   "description": "Cascos con objetos valiosos que pueden fundirse y explotar si extraés demasiado.",
+   "how": "Usá el rayo tractor de la Corbeta o la Bobina de gravitinos.",
+   "requires": [
+    "complete_signals_tutorial_cosmos"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "cosmos",
+    "deep-space",
+    "salvage",
+    "repeatable"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/"
+  },
+  {
+   "id": "become_station_director",
+   "name": "Convertirte en director de una estación espacial",
+   "description": "Cosmos 7.0: director con derechos para decorar la estación.",
+   "how": "La fuente dice 'demostrar tu valía ante las autoridades locales'; el requisito exacto no está confirmado.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "cosmos",
+    "station",
+    "building"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/"
+  },
+  {
+   "id": "found_galactic_alliance",
+   "name": "Fundar una Alianza galáctica",
+   "description": "Los directores pueden fundar una alianza con nombre y estandarte y reclutar viajeros.",
+   "how": "Hasta tres alianzas por jugador; ranking en el núcleo de la estación.",
+   "requires": [
+    "become_station_director"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "cosmos",
+    "social"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/"
+  }
+ ],
+ "needs": [
+  {
+   "id": "reach_journey_milestones_5",
+   "name": "Completar 5 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_10",
+   "name": "Completar 10 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_15",
+   "name": "Completar 15 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_20",
+   "name": "Completar 20 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_25",
+   "name": "Completar 25 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_30",
+   "name": "Completar 30 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_35",
+   "name": "Completar 35 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_40",
+   "name": "Completar 40 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_45",
+   "name": "Completar 45 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  },
+  {
+   "id": "reach_journey_milestones_50",
+   "name": "Completar 50 Hitos del viaje en total",
+   "why": "Requisito de cada Semilla del Atlas en el Camino del Atlas."
+  }
+ ]
+}

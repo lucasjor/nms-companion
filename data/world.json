@@ -1,0 +1,4291 @@
+{
+ "objectives": [
+  {
+   "id": "collect_salvaged_data",
+   "name": "Reunir Datos recuperados (Salvaged Data)",
+   "description": "Los Datos recuperados son la moneda para aprender planos de construcción nuevos.",
+   "how": "Escaneá con el Visor de análisis para hallar Tecnología enterrada, desenterrala con el Manipulador de terreno y ábrela: da entre 1 y 5 Datos recuperados.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "building",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Salvaged_Data"
+  },
+  {
+   "id": "build_construction_research_unit",
+   "name": "Construir una Unidad de investigación de construcción",
+   "description": "Tecnología portátil que vende en tu base el conjunto básico de planos (reactor de biocombustible, panel solar, teletransportador de base, baliza de guardado...).",
+   "how": "Abrí el menú de construcción, pestaña Tecnología/Portátil, y colocala dentro de tu base.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Construction_Research_Unit"
+  },
+  {
+   "id": "use_construction_research_station",
+   "name": "Comprar planos en la Estación de investigación de construcción",
+   "description": "En la Anomalía Espacial está la gama completa de planos de construcción, que se compran con Datos recuperados.",
+   "how": "Entrá a la Anomalía Espacial y usá la Estación de investigación de construcción; cada plano cuesta Datos recuperados (por ej. batería 3, panel solar 8, generador electromagnético 10).",
+   "requires": [
+    "access_space_anomaly",
+    "collect_salvaged_data"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "customise_base_materials",
+   "name": "Cambiar el material y el color de tu base",
+   "description": "Podés recolorear y cambiar la textura (madera, hormigón, óxido, piedra) de las piezas ya colocadas sin costo.",
+   "how": "Abrí el menú de construcción, mantené el botón de edición (Ctrl izquierdo en PC; equivalente en consola) y elegí la función Material.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_save_beacon",
+   "name": "Colocar una Baliza de guardado",
+   "description": "Marca permanente en el planeta que además permite guardar la partida (máximo 5 por planeta).",
+   "how": "Construí la Baliza de guardado desde el menú de construcción (plano en la Unidad de investigación de construcción).",
+   "requires": [
+    "build_construction_research_unit"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Save_Beacon"
+  },
+  {
+   "id": "extend_base_radius",
+   "name": "Ampliar el radio de tu base",
+   "description": "El área inicial es de 300u; colocando piezas de estructura o tecnología en el borde se amplía de a 50u hasta unos 1000u, para alcanzar más puntos calientes.",
+   "how": "Colocá una Baliza de guardado en la base, recargá la partida y luego poné estructuras o tecnología (almacén, depósito, suelo) en el borde del radio, encadenando burbujas.",
+   "requires": [
+    "build_save_beacon"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_storage_container",
+   "name": "Construir un Contenedor de almacenamiento",
+   "description": "Cada contenedor da 50 casillas de gran capacidad; hasta 10 por base, compartidos con tu base, carguero y demás bases.",
+   "how": "Obtené el plano con las misiones del Supervisor (Overseer) y construilo en tu base.",
+   "requires": [
+    "hire_overseer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_ten_storage_containers",
+   "name": "Construir los 10 Contenedores de almacenamiento",
+   "description": "Hasta 500 casillas extra accesibles desde cualquier base o carguero con contenedores.",
+   "how": "Construí un contenedor de cada número (0 a 9) en tu base y/o carguero.",
+   "requires": [
+    "build_storage_container"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "upload_base",
+   "name": "Subir tu base para que otros jugadores la vean",
+   "description": "Subir la base guarda cambios de terreno y la hace visible a otros viajeros (máximo 3000 piezas; se ve solo la última subida por planeta).",
+   "how": "Interactuá con el Ordenador de base y elegí la opción de subir la base.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "visit_other_player_base",
+   "name": "Visitar la base de otro jugador",
+   "description": "Explorá el trabajo de otros viajeros: bases subidas aparecen en los planetas y se pueden hallar con coordenadas o portales.",
+   "how": "Viajá a un planeta con base subida (catálogo de bases / sitios comunitarios con coordenadas y portal) y recorrela. Con la opción de reportar base si algo está mal.",
+   "requires": [
+    "unlock_portals"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_with_friends",
+   "name": "Construir una base junto a otro jugador",
+   "description": "La configuración de red permite que los compañeros del grupo coloquen piezas y editen el terreno en tu base.",
+   "how": "Activá la opción de construcción de bases en Ajustes > Red, unite a un grupo (requiere suscripción en línea de tu consola) y construí juntos.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multiplayer"
+  },
+  {
+   "id": "build_racetrack",
+   "name": "Crear una pista de carreras de exovehículo",
+   "description": "Una vez construida la base podés trazar un circuito en el planeta y dejar un mejor tiempo que otros puedan intentar batir.",
+   "how": "Con una base establecida, usá la opción de pista de carreras del menú de construcción y recorré el circuito con un exovehículo.",
+   "requires": [
+    "build_base_computer",
+    "build_exocraft_geobay"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "exocraft",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multiplayer"
+  },
+  {
+   "id": "build_second_base",
+   "name": "Fundar una segunda base",
+   "description": "Podés tener muchas bases (el límite técnico es de unas 400 por partida): útil para granjas, almacenamiento y recarga de protección.",
+   "how": "Colocá otro Ordenador de base lejos (más de 300u) de otras bases subidas por jugadores.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_third_base",
+   "name": "Fundar tres bases en total",
+   "description": "Tener bases en varios planetas o sistemas facilita el viaje con teletransporte y la producción.",
+   "how": "Colocá el Ordenador de base en otro planeta o sistema.",
+   "requires": [
+    "build_second_base"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_five_bases",
+   "name": "Fundar cinco bases en total",
+   "description": "Una red de bases cubriendo planetas con distintos recursos y biomas.",
+   "how": "Fundá bases adicionales; conectalas con Teletransportadores de base.",
+   "requires": [
+    "build_third_base"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_underwater_base",
+   "name": "Construir una base submarina",
+   "description": "Los Ordenadores de base pueden colocarse bajo el agua; la base se reclama bajo la superficie.",
+   "how": "Sumergite en un planeta con océano, colocá el Ordenador de base y construí con piezas aptas bajo el agua (cámara de aguas profundas).",
+   "requires": [
+    "build_base_computer",
+    "tech_aeration_membrane"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Underwater_base"
+  },
+  {
+   "id": "build_nautilon_chamber",
+   "name": "Construir una Cámara del Nautilon",
+   "description": "Muelle con compuertas para el submarino Nautilon.",
+   "how": "Obtené el plano con la misión secundaria 'Dreams of the Deep' o comprálo por 10 Datos recuperados en el Analizador de planos; luego construila en tu base.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "underwater",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon_Chamber"
+  },
+  {
+   "id": "recover_base_salvage_capsule",
+   "name": "Recuperar materiales de una base eliminada",
+   "description": "Si borrás una base, sus componentes van a una Cápsula de rescate de base de la que podés recuperar un porcentaje.",
+   "how": "Elegí 'Eliminar base' en el Ordenador de base y luego reclamá la cápsula.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_building"
+  },
+  {
+   "id": "build_construction_terminal",
+   "name": "Colocar una Terminal de construcción",
+   "description": "Inicia la serie de misiones de empleados que desbloquea muchos planos.",
+   "how": "Construí la Terminal de construcción en tu base y seguí la misión 'Expanding the Base'.",
+   "requires": [
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Expanding_the_Base"
+  },
+  {
+   "id": "hire_overseer",
+   "name": "Contratar a un Supervisor (Overseer)",
+   "description": "El Supervisor es un gek que da las misiones de 'Expanding the Base' y planos como almacén, terminal científica, de armas, agrícola, de comercio y de exovehículos.",
+   "how": "Volá a una estación espacial, hablá con el Supervisor gek y contratalo; aparecerá en tu terminal.",
+   "requires": [
+    "build_construction_terminal",
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Overseer_(NPC)"
+  },
+  {
+   "id": "hire_scientist",
+   "name": "Contratar a un Científico",
+   "description": "NPC korvax que da planos como refinador grande, baliza de guardado, Cosechador atmosférico y Unidad minera autónoma.",
+   "how": "Construí la Terminal científica y contratá al Científico en una estación (suele estar en sistemas korvax).",
+   "requires": [
+    "hire_overseer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scientist"
+  },
+  {
+   "id": "hire_armourer",
+   "name": "Contratar a un Armero",
+   "description": "NPC vy'keen de la Terminal de armas: da, entre otros, el Guantelete anti-peligros (Haz-Mat) para cosechar plantas.",
+   "how": "Construí la Terminal de armas y contratá al Armero en una estación.",
+   "requires": [
+    "hire_overseer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Armourer"
+  },
+  {
+   "id": "hire_farmer",
+   "name": "Contratar a un Granjero",
+   "description": "NPC que da los planos de bandeja hidropónica y de los cultivos agrícolas.",
+   "how": "Construí la Terminal agrícola y contratá al Granjero en una estación (sistemas gek).",
+   "requires": [
+    "hire_overseer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Agricultural_Terminal"
+  },
+  {
+   "id": "hire_technician",
+   "name": "Contratar a un Técnico de exovehículos",
+   "description": "NPC vy'keen que desbloquea los geobays de Roamer, Colossus y Nomad.",
+   "how": "Exige haber contratado y avanzado con Supervisor, Científico, Armero y Granjero hasta desbloquear la Terminal de exovehículos.",
+   "requires": [
+    "hire_scientist",
+    "hire_armourer",
+    "hire_farmer"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "building",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Technician"
+  },
+  {
+   "id": "learn_haz_mat_gauntlet",
+   "name": "Obtener el Guantelete anti-peligros (Haz-Mat)",
+   "description": "Necesario para cosechar la mayoría de los cultivos (no el Echinocactus).",
+   "how": "Completá la misión de investigación de armas con el Armero.",
+   "requires": [
+    "hire_armourer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Haz-Mat_Gauntlet"
+  },
+  {
+   "id": "complete_overseers_tour",
+   "name": "Hacer 'La gira del Supervisor' (misión repetible)",
+   "description": "Tras completar las misiones del Supervisor aparece una misión repetible.",
+   "how": "Hablá con el Supervisor en tu base una vez terminadas sus misiones.",
+   "requires": [
+    "hire_overseer"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Overseer_(NPC)"
+  },
+  {
+   "id": "build_biofuel_reactor",
+   "name": "Construir un Reactor de biocombustible",
+   "description": "El generador más básico: 50 kP con combustible (Carbono, Carbono condensado u Oxígeno).",
+   "how": "Obtené el plano en la Unidad de investigación de construcción, colocalo y cargalo.",
+   "requires": [
+    "build_construction_research_unit"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "power"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biofuel_Reactor"
+  },
+  {
+   "id": "build_solar_panel",
+   "name": "Construir un Panel solar",
+   "description": "Genera energía de día (sin producción de noche). Plano: 8 Datos recuperados.",
+   "how": "Comprá el plano y colocá el panel; unilo con cableado eléctrico.",
+   "requires": [
+    "use_construction_research_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "power"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Panel"
+  },
+  {
+   "id": "build_battery",
+   "name": "Construir una Batería de base",
+   "description": "Almacena el exceso de energía y alimenta la red cuando los generadores no producen. Plano: 3 Datos recuperados.",
+   "how": "Comprá el plano y conectá baterías a los paneles solares.",
+   "requires": [
+    "use_construction_research_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "power"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Battery"
+  },
+  {
+   "id": "power_base_solar_battery",
+   "name": "Alimentar tu base con paneles solares y baterías",
+   "description": "Una red solar con baterías cubre la noche sin combustible.",
+   "how": "Combiná varios paneles solares con baterías y conectá cables a las piezas que consumen energía.",
+   "requires": [
+    "build_solar_panel",
+    "build_battery"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "power"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Panel"
+  },
+  {
+   "id": "find_em_hotspot",
+   "name": "Hallar un punto caliente de energía electromagnética",
+   "description": "Los Electromagnetic Power Hotspots permiten generadores muy eficientes (clases C, B, A, S).",
+   "how": "Instalá el Dispositivo de sondeo (Survey Device) en el Visor de análisis, activá el modo sondeo y barré el terreno.",
+   "requires": [
+    "tech_survey_device"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "power",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hotspot"
+  },
+  {
+   "id": "build_electromagnetic_generator",
+   "name": "Construir un Generador electromagnético",
+   "description": "Produce energía continua sin combustible sobre un punto caliente. Plano: 10 Datos recuperados.",
+   "how": "Comprá el plano en la Estación de investigación de construcción y colocalo sobre un punto caliente electromagnético.",
+   "requires": [
+    "use_construction_research_station",
+    "find_em_hotspot"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "power"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Electromagnetic_Generator"
+  },
+  {
+   "id": "claim_s_class_hotspot",
+   "name": "Reclamar un punto caliente de clase S",
+   "description": "Las clases C, B, A y S determinan lo que rinde cada punto caliente; los de clase S son los mejores.",
+   "how": "Sondeá varios planetas y moons hasta hallar un punto de clase S cerca de tu base (hasta 1000u si ampliás el radio).",
+   "requires": [
+    "find_em_hotspot"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "building",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hotspot"
+  },
+  {
+   "id": "find_mineral_hotspot",
+   "name": "Hallar un depósito mineral profundo",
+   "description": "Punto caliente de minerales para extractores.",
+   "how": "Con el Dispositivo de sondeo en modo sondeo, buscá un Deep-Level Mineral Deposit.",
+   "requires": [
+    "build_base_computer",
+    "tech_survey_device"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hotspot"
+  },
+  {
+   "id": "find_gas_hotspot",
+   "name": "Hallar una nube de gas concentrado",
+   "description": "Punto caliente de gas para extractores.",
+   "how": "Con el Dispositivo de sondeo, buscá una Concentrated Gas Cloud.",
+   "requires": [
+    "build_base_computer",
+    "tech_survey_device"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hotspot"
+  },
+  {
+   "id": "build_mineral_extractor",
+   "name": "Construir un Extractor de minerales",
+   "description": "Recolecta minerales de un depósito profundo de forma continua con energía. Plano: 10 Datos recuperados.",
+   "how": "Comprá el plano, colocalo sobre el depósito, alimentalo con energía y conectalo a un depósito de suministros.",
+   "requires": [
+    "use_construction_research_station",
+    "find_mineral_hotspot",
+    "build_biofuel_reactor"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "industry"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mineral_Extractor"
+  },
+  {
+   "id": "build_gas_extractor",
+   "name": "Construir un Extractor de gas",
+   "description": "Extrae gases atmosféricos de una nube concentrada. Plano: 10 Datos recuperados.",
+   "how": "Comprá el plano, colocalo sobre la nube de gas y alimentalo con energía.",
+   "requires": [
+    "use_construction_research_station",
+    "find_gas_hotspot",
+    "build_biofuel_reactor"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "industry"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gas_Extractor"
+  },
+  {
+   "id": "build_supply_depot",
+   "name": "Construir un Depósito de suministros",
+   "description": "Almacena la salida de extractores (1000 unidades cada uno) y se conecta con tuberías.",
+   "how": "Construilo y unilo a los extractores con Tuberías de suministro; interactuá para transferir.",
+   "requires": [
+    "build_mineral_extractor"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "industry"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Supply_Depot"
+  },
+  {
+   "id": "build_supply_network",
+   "name": "Montar una red de extractores y depósitos",
+   "description": "Varios extractores en los mejores puntos calientes alimentando depósitos con tuberías.",
+   "how": "Colocá extractores en puntos de clase alta, conectalos con tuberías y centralizá en depósitos. Ojo: desde Origins hay rendimientos decrecientes si apilás muchos iguales.",
+   "requires": [
+    "build_supply_depot",
+    "build_gas_extractor"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "building",
+    "industry"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hotspot"
+  },
+  {
+   "id": "build_autonomous_mining_unit",
+   "name": "Construir una Unidad minera autónoma",
+   "description": "Extrae recursos de depósitos sin supervisión; se recarga con 100 Carbono o 34 Carbono condensado.",
+   "how": "Obtené el plano con el Científico y colocala sobre un depósito de recursos.",
+   "requires": [
+    "hire_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "industry"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Autonomous_Mining_Unit"
+  },
+  {
+   "id": "build_atmosphere_harvester",
+   "name": "Construir un Cosechador atmosférico",
+   "description": "Extrae gases de la atmósfera sin supervisión; se carga con 80 Carbono o 27 Carbono condensado.",
+   "how": "Su plano se obtiene al construir la Terminal científica y avanzar con el Científico.",
+   "requires": [
+    "hire_scientist"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "industry"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Atmosphere_Harvester"
+  },
+  {
+   "id": "build_hydroponic_tray",
+   "name": "Construir una Bandeja hidropónica",
+   "description": "Plataforma de cultivo interior, necesaria para plantas que solo crecen bajo techo.",
+   "how": "Obtené el plano con el Granjero y colocala en un cuarto cerrado (flechas rojas en el suelo señalan los puntos válidos).",
+   "requires": [
+    "hire_farmer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hydroponic_Tray"
+  },
+  {
+   "id": "build_large_hydroponic_tray",
+   "name": "Construir una Bandeja hidropónica grande",
+   "description": "Cultiva hasta cuatro plantas a la vez; menos mantenimiento en granjas grandes.",
+   "how": "Colocala en un suelo o en el centro de una sala cuboide grande.",
+   "requires": [
+    "build_hydroponic_tray"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Large_Hydroponic_Tray"
+  },
+  {
+   "id": "build_bio_dome",
+   "name": "Construir una Biodomo",
+   "description": "Invernadero con espacio para hasta 16 plantas interiores (no se puede construir en bases de carguero).",
+   "how": "Compralo en la Estación de investigación de construcción de la Anomalía.",
+   "requires": [
+    "use_construction_research_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Bio-Dome"
+  },
+  {
+   "id": "build_cultivation_chamber",
+   "name": "Construir una Cámara de cultivo en el carguero",
+   "description": "Sala dedicada de agricultura para cargueros, con unidades funcionales preinstaladas.",
+   "how": "Construila en el espacio de construcción de tu carguero (añadida en Endurance).",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "farming",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cultivation_Chamber"
+  },
+  {
+   "id": "farm_gutrot_flower",
+   "name": "Cultivar Gutrot Flower",
+   "description": "Planta agrícola que produce Faecium; se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gutrot_Flower"
+  },
+  {
+   "id": "farm_frostwort",
+   "name": "Cultivar Frostwort",
+   "description": "Planta agrícola que produce Cristal de escarcha (Frost Crystal); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frostwort"
+  },
+  {
+   "id": "farm_solar_vine",
+   "name": "Cultivar Solar Vine",
+   "description": "Planta agrícola que produce Solanium; se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Solar_Vine"
+  },
+  {
+   "id": "farm_fungal_cluster",
+   "name": "Cultivar Fungal Cluster",
+   "description": "Planta agrícola que produce Moho fúngico (Fungal Mould); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Fungal_Cluster"
+  },
+  {
+   "id": "farm_gamma_weed",
+   "name": "Cultivar Gamma Weed",
+   "description": "Planta agrícola que produce Raíz gamma (Gamma Root); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gamma_Weed"
+  },
+  {
+   "id": "farm_gravitino_host",
+   "name": "Cultivar Gravitino Host",
+   "description": "Planta agrícola que produce Bolas de gravitino (Gravitino Ball); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gravitino_Host"
+  },
+  {
+   "id": "farm_venom_urchin",
+   "name": "Cultivar Venom Urchin",
+   "description": "Planta agrícola que produce Veneno de saco (Sac Venom); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Venom_Urchin"
+  },
+  {
+   "id": "farm_albumen_pearl_orb",
+   "name": "Cultivar Albumen Pearl Orb",
+   "description": "Planta agrícola que produce Perlas de albumen (Albumen Pearl); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Albumen_Pearl_Orb"
+  },
+  {
+   "id": "farm_echinocactus",
+   "name": "Cultivar Echinocactus",
+   "description": "Planta agrícola que produce Carne de cactus (Cactus Flesh); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Echinocactus"
+  },
+  {
+   "id": "farm_star_bramble",
+   "name": "Cultivar Star Bramble",
+   "description": "Planta agrícola que produce Bulbo estelar (Star Bulb); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Star_Bramble"
+  },
+  {
+   "id": "farm_mordite_root",
+   "name": "Cultivar Mordite Root",
+   "description": "Planta agrícola que produce Mordita (Mordite); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (con las misiones del Granjero o por 3 Datos recuperados en la Estación de investigación de construcción), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    [
+     "hire_farmer",
+     "use_construction_research_station"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mordite_Root"
+  },
+  {
+   "id": "farm_nipnip",
+   "name": "Cultivar NipNip",
+   "description": "Planta agrícola que produce Brotes de NipNip (NipNip Buds, para GekNip); se puede vender o usar en recetas de productos avanzados.",
+   "how": "Conseguí el plano (solo con las misiones del Granjero), plantala en una bandeja hidropónica o en el bioma adecuado y cosechá tras el tiempo de crecimiento.",
+   "requires": [
+    "hire_farmer"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/NipNip"
+  },
+  {
+   "id": "farm_haz_mat_harvest",
+   "name": "Cosechar con Guantelete Haz-Mat una planta peligrosa",
+   "description": "Frostwort, Venom Urchin y otras necesitan Guantelete anti-peligros para cosechar.",
+   "how": "Equipate el Guantelete y cosechá una planta madura.",
+   "requires": [
+    "learn_haz_mat_gauntlet",
+    "farm_venom_urchin"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Farming"
+  },
+  {
+   "id": "farm_all_crops",
+   "name": "Aprender los 12 cultivos agrícolas",
+   "description": "Tener todos los planos de cultivo da libertad para armar cualquier receta.",
+   "how": "Reuní todos los planos de cultivo (misiones del Granjero y/o 3 Datos recuperados cada uno).",
+   "requires": [
+    "farm_gutrot_flower",
+    "farm_frostwort",
+    "farm_solar_vine",
+    "farm_fungal_cluster",
+    "farm_gamma_weed",
+    "farm_gravitino_host",
+    "farm_venom_urchin",
+    "farm_albumen_pearl_orb",
+    "farm_echinocactus",
+    "farm_star_bramble",
+    "farm_mordite_root",
+    "farm_nipnip"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Farming"
+  },
+  {
+   "id": "build_large_scale_farm",
+   "name": "Montar una granja a gran escala",
+   "description": "Varias biodomos o bandejas grandes con muchos cultivos; es de lo más rentable del juego.",
+   "how": "Combiná biodomos con bandejas hidropónicas y planificá cantidades de cada cultivo para tus recetas.",
+   "requires": [
+    "build_bio_dome",
+    "build_large_hydroponic_tray"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "farming",
+    "building",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Farming"
+  },
+  {
+   "id": "build_depot_farm",
+   "name": "Montar una granja de depósito (un solo cultivo)",
+   "description": "Granjas dedicadas a un único cultivo, a menudo aprovechando el bioma al aire libre para mayor rendimiento.",
+   "how": "Elegí un bioma que coincida con un cultivo (por ej. Frostwort en helado) y plantá muchas unidades.",
+   "requires": [
+    "hire_farmer"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "farming",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Depot_Farm"
+  },
+  {
+   "id": "farm_living_glass",
+   "name": "Montar una granja para producir Vidrio vivo",
+   "description": "Según la wiki, Vidrio vivo se produce con Raíz gamma, Uranio, Cristal de escarcha, Dioxita y Faecium: cultivos Gamma Weed, Frostwort y Gutrot Flower.",
+   "how": "Plantá Gamma Weed, Frostwort y Gutrot Flower, cosechá y fabricá Vidrio vivo.",
+   "requires": [
+    "farm_gamma_weed",
+    "farm_frostwort",
+    "farm_gutrot_flower"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "farming",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Farming"
+  },
+  {
+   "id": "farm_liquid_explosive",
+   "name": "Montar una granja para producir Explosivo líquido",
+   "description": "Se crea con Moho fúngico, Amoníaco, Carne de cactus, Pirita y Mordita (Fungal Cluster, Echinocactus, Mordite Root).",
+   "how": "Plantá Fungal Cluster, Echinocactus y Mordite Root y fabricá el explosivo.",
+   "requires": [
+    "farm_fungal_cluster",
+    "farm_echinocactus",
+    "farm_mordite_root"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "farming",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Farming"
+  },
+  {
+   "id": "farm_circuit_board",
+   "name": "Montar una granja para producir Placas de circuito",
+   "description": "Se crean con Bulbo estelar, Solanium, Cristal de escarcha, Carne de cactus y otros (Star Bramble, Solar Vine, Frostwort, Echinocactus).",
+   "how": "Plantá Solar Vine, Star Bramble, Frostwort y Echinocactus y fabricá Placas de circuito.",
+   "requires": [
+    "farm_solar_vine",
+    "farm_star_bramble",
+    "farm_frostwort",
+    "farm_echinocactus"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "farming",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Farming"
+  },
+  {
+   "id": "build_base_teleport_module",
+   "name": "Construir un Módulo de teletransporte de base",
+   "description": "Te lleva al instante entre tus bases y estaciones espaciales ya visitadas; necesita energía.",
+   "how": "Comprá el plano en la Unidad de investigación de construcción, colocalo y conectalo a la red eléctrica.",
+   "requires": [
+    "build_construction_research_unit",
+    "build_biofuel_reactor"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "travel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_Teleport_Module"
+  },
+  {
+   "id": "teleport_to_space_station",
+   "name": "Teletransportarte a una estación espacial desde tu base",
+   "description": "Cada estación tiene una terminal terminus conectada a tu red.",
+   "how": "Usá el módulo de teletransporte y elegí una estación ya visitada.",
+   "requires": [
+    "build_base_teleport_module",
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "travel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Teleportation_Terminal"
+  },
+  {
+   "id": "teleport_between_bases",
+   "name": "Viajar entre dos de tus bases con el teletransportador",
+   "description": "Un módulo en cada base crea tu red personal.",
+   "how": "Construí un teletransportador en cada base y elegí el destino en la lista (filtro 'Tus bases').",
+   "requires": [
+    "build_second_base",
+    "build_base_teleport_module"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "travel",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Teleportation_Terminal"
+  },
+  {
+   "id": "build_freighter_teleporter",
+   "name": "Construir un teletransportador en tu carguero",
+   "description": "Permite volver a tus bases y estaciones desde el carguero sin saltar.",
+   "how": "Colocá un Módulo de teletransporte en tu base del carguero (el carguero debe haber sido invocado al menos una vez en cada sistema destino).",
+   "requires": [
+    "own_freighter",
+    "build_base_teleport_module"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building",
+    "travel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Teleportation_Terminal"
+  },
+  {
+   "id": "build_freighter_base",
+   "name": "Empezar a construir en tu carguero",
+   "description": "El carguero es una base móvil: hasta 14-15 pisos de 21x21 (capital) o 19x21 (sistema) y las mismas piezas de construcción.",
+   "how": "Subí al puente y salí al área de construcción detrás del pasillo; colocá piezas desde el menú de construcción.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter_Base_Building"
+  },
+  {
+   "id": "build_freighter_storage_room",
+   "name": "Construir una Sala de almacenamiento en el carguero",
+   "description": "Cada sala suma 50 casillas y se comparte con los contenedores de tus bases (máximo 10).",
+   "how": "Construí la sala en el área de construcción de tu carguero.",
+   "requires": [
+    "build_freighter_base",
+    "build_storage_container"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "build_fleet_command_room",
+   "name": "Construir una Sala de mando de flota",
+   "description": "Necesaria para enviar expediciones de fragatas (una por expedición simultánea).",
+   "how": "Construila en el carguero y hablá con el Navegante en el puente.",
+   "requires": [
+    "build_freighter_base",
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "build_freighter_trade_terminal",
+   "name": "Construir una Terminal de comercio galáctico en tu carguero",
+   "description": "Vendé y comprá sin ir a una estación.",
+   "how": "Con el plano de la Terminal de comercio (misiones del Supervisor o compra en la Anomalía), colocala en el carguero.",
+   "requires": [
+    "build_freighter_base",
+    "build_galactic_trade_terminal"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter",
+    "building",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galactic_Trade_Terminal"
+  },
+  {
+   "id": "build_galactic_trade_terminal",
+   "name": "Construir una Terminal de comercio galáctico en tu base",
+   "description": "Comerciá con el mercado galáctico desde casa (hasta 10 por base).",
+   "how": "Obtené el plano con el Supervisor o comprálo en la Estación de investigación de construcción; encontrala en Tecnología avanzada > Terminales de especialista.",
+   "requires": [
+    "use_construction_research_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galactic_Trade_Terminal"
+  },
+  {
+   "id": "buy_settlement_chart",
+   "name": "Comprar una Carta de asentamiento",
+   "description": "Mapa que revela un asentamiento planetario; también existe la misión 'The Settlers' (Frontiers).",
+   "how": "Comprala al Cartógrafo en una estación espacial por 5 Datos de navegación.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Settlement_Chart"
+  },
+  {
+   "id": "build_overseers_office",
+   "name": "Construir la Oficina del Supervisor",
+   "description": "Se construye en tres etapas con materiales: unos 210 Polvo de silicato o Polvo de ferrita, 5 Chapas metálicas y 3 Microprocesadores; trae la Terminal de administración y un Módulo de teletransporte.",
+   "how": "En la Terminal de construcción del asentamiento aportá los materiales y esperá (unos 90 s por etapa).",
+   "requires": [
+    "own_settlement"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "use_settlement_terminal",
+   "name": "Usar la Terminal de administración del asentamiento",
+   "description": "Desde ahí revisás el estado, fijás prioridades de construcción, recibís visitantes, resolvés disputas y aprobás peticiones.",
+   "how": "Entrá a la Oficina del Supervisor una vez construida.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "make_settlement_decision",
+   "name": "Tomar decisiones de gestión del asentamiento",
+   "description": "Cada 15 minutos a 2 horas aparece una decisión (política, construcción, llegadas, peticiones, disputas) que cambia población, productividad, felicidad o mantenimiento.",
+   "how": "Abrí la Terminal de administración y elegí entre las opciones.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "resolve_citizen_dispute",
+   "name": "Resolver una disputa entre ciudadanos",
+   "description": "Juzgás casos como propiedad en disputa, empresas criminales, productos defectuosos o robos, con consecuencias en felicidad, deuda o población.",
+   "how": "Atendé la decisión 'Disputa ciudadana' en la Terminal de administración.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Citizen_Disputes"
+  },
+  {
+   "id": "endorse_citizen_request",
+   "name": "Aprobar o rechazar una petición ciudadana",
+   "description": "Las peticiones de los ciudadanos pueden añadir rasgos al asentamiento.",
+   "how": "Respondé la decisión 'Petición ciudadana' en la Terminal.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Citizen_Requests"
+  },
+  {
+   "id": "welcome_new_arrival",
+   "name": "Recibir a un visitante nuevo en el asentamiento",
+   "description": "Los recién llegados pueden aportar rasgos positivos (tecnología, bendiciones) o negativos (maldiciones) y regalos.",
+   "how": "Aceptá o rechazá la visita en la Terminal de administración.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "settlement",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_New_Arrivals"
+  },
+  {
+   "id": "settlement_wanted_citizen_quicksilver",
+   "name": "Entregar a un ciudadano buscado y cobrar Quicksilver",
+   "description": "Si dejaste quedarse a un invitado inesperado, más tarde puede aparecer 'Un ciudadano buscado': entregarlo da unos 450 Quicksilver (y quita el rasgo positivo que había traído).",
+   "how": "Aceptá a 'An Unexpected Guest' en una decisión de llegada y, si aparece el evento, elegí entregarlo.",
+   "requires": [
+    "welcome_new_arrival"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_New_Arrivals"
+  },
+  {
+   "id": "build_settlement_farm",
+   "name": "Construir/mejorar: Módulo agrícola (Farm Module)",
+   "description": "Aumenta la productividad con cultivos. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_factory",
+   "name": "Construir/mejorar: Módulo de fábrica (Factory Module)",
+   "description": "Suma productividad industrial. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_distribution_centre",
+   "name": "Construir/mejorar: Centro de distribución",
+   "description": "Suma productividad. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_marketplace",
+   "name": "Construir/mejorar: Mercado (Marketplace)",
+   "description": "Suma productividad comercial. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_residence",
+   "name": "Construir/mejorar: Residencia",
+   "description": "Residencias pequeñas, medianas y grandes suman entre +2 y +5 de población. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_saloon",
+   "name": "Construir/mejorar: Salón/cantina (Saloon)",
+   "description": "Mejora la felicidad a costa de algo de productividad. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_starship_dock",
+   "name": "Construir/mejorar: Muelle de naves (Starship Dock)",
+   "description": "Suma productividad y actúa como puerto de naves. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_tower",
+   "name": "Construir/mejorar: Torre (Tower)",
+   "description": "Edificio de tipo torre del asentamiento. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_utility",
+   "name": "Construir/mejorar: Módulo de utilidad (Utility Module)",
+   "description": "Edificio industrial/utilitario. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_warehouse",
+   "name": "Construir/mejorar: Almacén (Warehouse)",
+   "description": "Almacenaje; una mejora a clase A ayuda a salir de la deuda inicial. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "build_settlement_fishing_pond",
+   "name": "Construir/mejorar: Estanque de pesca (Fishing Pond)",
+   "description": "Suma productividad. Los edificios se construyen en 4 etapas: estructura básica, pisos superiores, techo y acabado.",
+   "how": "Elegí la oportunidad de construcción en la Terminal de administración y aportá los materiales en la terminal junto al edificio; luego volvé a abrir el edificio.",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "upgrade_settlement_farm_s",
+   "name": "Mejorar dos granjas del asentamiento a clase S",
+   "description": "Según la wiki, dos granjas a S y un almacén a A es una vía directa para tener productividad positiva en un asentamiento nuevo.",
+   "how": "Mejorá los edificios paso a paso (las mejoras tardan horas en tiempo real).",
+   "requires": [
+    "build_settlement_farm",
+    "build_settlement_warehouse"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "upgrade_overseers_office_s",
+   "name": "Mejorar la Oficina del Supervisor a clase S",
+   "description": "La Oficina tiene clases C, B, A y S.",
+   "how": "Mejorala desde la Terminal de administración (desde afuera a través de la pared durante la mejora).",
+   "requires": [
+    "build_overseers_office"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Construction_Opportunities"
+  },
+  {
+   "id": "unlock_all_settlement_products",
+   "name": "Desbloquear todos los productos del asentamiento",
+   "description": "Hay que construir y subir a clase S cinco tipos: agricultura (granja), industrial (almacén o módulo de utilidad), ocio (salón), comercial (mercado) y puerto de naves.",
+   "how": "Mejorá esos cinco edificios a clase S.",
+   "requires": [
+    "build_settlement_farm",
+    "build_settlement_utility",
+    "build_settlement_saloon",
+    "build_settlement_marketplace",
+    "build_settlement_starship_dock"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement",
+    "building",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "claim_settlement_production",
+   "name": "Reclamar la producción diaria del asentamiento",
+   "description": "Cada 20 horas reales podés reclamar dos recursos producidos (uno es un bien de comercio); si hay deuda, primero hay que pagarla.",
+   "how": "Abrí el resumen del asentamiento y reclamá en 'Estado de producción'.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "settlement",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "clear_settlement_debt",
+   "name": "Salir de la deuda del asentamiento",
+   "description": "Los asentamientos improductivos entran en deuda; mejorar edificios y política los saca de ahí (tu dinero personal no cambia).",
+   "how": "Construí edificios productivos y tomá decisiones que bajen el mantenimiento.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "reach_settlement_class_a",
+   "name": "Llevar un asentamiento a clase A",
+   "description": "La clase (C a S) depende de población, productividad, felicidad y mantenimiento.",
+   "how": "Mejorá edificios y decisiones; revisá la clase en la Terminal.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "reach_settlement_class_s",
+   "name": "Llevar un asentamiento a clase S",
+   "description": "La mejor clase posible, tras mucha gestión y mejoras.",
+   "how": "Seguí mejorando hasta alcanzar clase S.",
+   "requires": [
+    "reach_settlement_class_a"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "reduce_sentinel_alert_settlement",
+   "name": "Reducir la atención de los Centinelas sobre el asentamiento",
+   "description": "El indicador de alerta centinela (%) sube con la actividad; rasgos como supresores o deflectores lo bajan.",
+   "how": "Financiá 'supresión centinela' en 'Mejorar el asentamiento' y aceptá rasgos que la reduzcan.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement_-_Sentinel_Alert_Level"
+  },
+  {
+   "id": "defend_settlement_sentinel_attack",
+   "name": "Defender tu asentamiento de un ataque centinela",
+   "description": "Al llegar la alerta al 100% los Centinelas atacan; el historial muestra los ataques repelidos.",
+   "how": "Cuando suene la alarma, combatí a los drones y unidades que lleguen (incluso Centinelas corruptos) hasta repeler el asalto.",
+   "requires": [
+    "use_settlement_terminal"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "own_second_settlement",
+   "name": "Ser supervisor de dos asentamientos",
+   "description": "Se puede ser supervisor de hasta cuatro asentamientos a la vez.",
+   "how": "Reclamá otro asentamiento (con las ofrendas de su raza); asegurate de que no haya una construcción en curso al reclamar el nuevo.",
+   "requires": [
+    "own_settlement"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "own_four_settlements",
+   "name": "Ser supervisor de cuatro asentamientos",
+   "description": "El máximo simultáneo según la wiki.",
+   "how": "Repetí el proceso en otros asentamientos.",
+   "requires": [
+    "own_second_settlement"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "settlement",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "visit_autophage_settlement",
+   "name": "Visitar un asentamiento Autófago",
+   "description": "Habitado por los Autófagos (usan Void Mote como moneda); sus edificios usan materiales recuperados.",
+   "how": "Tras completar 'They Who Returned', recibís una invitación en la Terminal de administración, o comprá una carta por 1.499 Void Mote en la Terminal de síntesis autófaga.",
+   "requires": [
+    "own_settlement",
+    "complete_they_who_returned"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "settlement",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Settlement"
+  },
+  {
+   "id": "earn_units_1000000",
+   "name": "Acumular 1 millón de unidades",
+   "description": "Hito de dinero principal del juego (tope de 4.294.967.295).",
+   "how": "Combiná granjas, comercio, minería, misiones y venta de reliquias.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Units"
+  },
+  {
+   "id": "earn_units_10000000",
+   "name": "Acumular 10 millones de unidades",
+   "description": "Hito de dinero principal del juego (tope de 4.294.967.295).",
+   "how": "Combiná granjas, comercio, minería, misiones y venta de reliquias.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Units"
+  },
+  {
+   "id": "earn_units_100000000",
+   "name": "Acumular 100 millones de unidades",
+   "description": "Hito de dinero principal del juego (tope de 4.294.967.295).",
+   "how": "Combiná granjas, comercio, minería, misiones y venta de reliquias.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Units"
+  },
+  {
+   "id": "earn_units_1000000000",
+   "name": "Acumular 1.000 millones de unidades",
+   "description": "Hito de dinero principal del juego (tope de 4.294.967.295).",
+   "how": "Combiná granjas, comercio, minería, misiones y venta de reliquias.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Units"
+  },
+  {
+   "id": "earn_units_4294967295",
+   "name": "Acumular el máximo (4.294.967.295) de unidades",
+   "description": "Hito de dinero principal del juego (tope de 4.294.967.295).",
+   "how": "Combiná granjas, comercio, minería, misiones y venta de reliquias.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Units"
+  },
+  {
+   "id": "earn_nanites_10000",
+   "name": "Acumular 10.000 de cúmulos de nanites",
+   "description": "Moneda secundaria para planos, módulos de mejora, mascotas y escuadrón.",
+   "how": "Subí descubrimientos, completá misiones, refiná Datos recuperados (15 nanites c/u), desguazá naves o cociná para Iteration: Cronus.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "earn_nanites_100000",
+   "name": "Acumular 100.000 de cúmulos de nanites",
+   "description": "Moneda secundaria para planos, módulos de mejora, mascotas y escuadrón.",
+   "how": "Subí descubrimientos, completá misiones, refiná Datos recuperados (15 nanites c/u), desguazá naves o cociná para Iteration: Cronus.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "earn_nanites_1000000",
+   "name": "Acumular 1 millón de cúmulos de nanites",
+   "description": "Moneda secundaria para planos, módulos de mejora, mascotas y escuadrón.",
+   "how": "Subí descubrimientos, completá misiones, refiná Datos recuperados (15 nanites c/u), desguazá naves o cociná para Iteration: Cronus.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "earn_quicksilver_1000",
+   "name": "Acumular 1.000 de Quicksilver",
+   "description": "Moneda terciaria permanente: se gana con el Nexus y otras fuentes y se gasta en la Anomalía.",
+   "how": "Hacé las misiones diarias y de fin de semana del Nexus y las demás fuentes.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "quicksilver",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver"
+  },
+  {
+   "id": "earn_quicksilver_5000",
+   "name": "Acumular 5.000 de Quicksilver",
+   "description": "Moneda terciaria permanente: se gana con el Nexus y otras fuentes y se gasta en la Anomalía.",
+   "how": "Hacé las misiones diarias y de fin de semana del Nexus y las demás fuentes.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "quicksilver",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver"
+  },
+  {
+   "id": "earn_quicksilver_20000",
+   "name": "Acumular 20.000 de Quicksilver",
+   "description": "Moneda terciaria permanente: se gana con el Nexus y otras fuentes y se gasta en la Anomalía.",
+   "how": "Hacé las misiones diarias y de fin de semana del Nexus y las demás fuentes.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "quicksilver",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver"
+  },
+  {
+   "id": "earn_quicksilver_100000",
+   "name": "Acumular 100.000 de Quicksilver",
+   "description": "Moneda terciaria permanente: se gana con el Nexus y otras fuentes y se gasta en la Anomalía.",
+   "how": "Hacé las misiones diarias y de fin de semana del Nexus y las demás fuentes.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "quicksilver",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver"
+  },
+  {
+   "id": "sell_at_galactic_trade_terminal",
+   "name": "Vender recursos en una Terminal de comercio galáctico",
+   "description": "Las terminales de las estaciones y puestos compran todo; vender en lotes grandes rinde más.",
+   "how": "Abrí la terminal, elegí Vender y fijá las cantidades.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galactic_Trade_Terminal"
+  },
+  {
+   "id": "trade_route_between_economies",
+   "name": "Hacer una ruta comercial entre economías complementarias",
+   "description": "Los bienes comercializables se venden mejor en sistemas de economía distinta a la que los produce.",
+   "how": "Instalá el Escáner de economía, mirá el mapa galáctico y llevá mercancías de un sistema a su complemento.",
+   "requires": [
+    "visit_space_station",
+    "tech_economy_scanner"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "economy",
+    "trading"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Trade_route"
+  },
+  {
+   "id": "use_economy_scanner_map",
+   "name": "Planificar una ruta con el Escáner de economía",
+   "description": "El escáner muestra datos de economía en el mapa galáctico.",
+   "how": "Instalalo en tu nave, abrí el mapa y expandí la descripción del sistema (R en PC).",
+   "requires": [
+    "tech_economy_scanner"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "trading"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Making_Money"
+  },
+  {
+   "id": "crash_market_cobalt",
+   "name": "Probar la técnica de 'hundir el mercado' con Cobalto",
+   "description": "Vender grandes cantidades en una terminal baja el precio hasta un 80%; recomprar barato y repetir rinde unidades (técnica comunitaria descrita en la wiki).",
+   "how": "Vendé decenas de miles de Cobalto, recomprá a precio bajo y saltá al siguiente sistema.",
+   "requires": [
+    "sell_at_galactic_trade_terminal"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Galactic_Trade_Terminal"
+  },
+  {
+   "id": "complete_mission_board_missions",
+   "name": "Completar misiones del Tablero de misiones",
+   "description": "Buena fuente de unidades, nanites y reputación en estaciones espaciales.",
+   "how": "Hablá con el agente del tablero de misiones en la estación; muchas misiones se acumulan unas con otras.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mission_Board"
+  },
+  {
+   "id": "sell_artifacts_ruins",
+   "name": "Vender artefactos y reliquias",
+   "description": "Los artefactos de ruinas pueden venderse por millones y casi no varían de precio entre sistemas.",
+   "how": "Buscá artefactos con el Visor de análisis y vendé los de mayor valor.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Units"
+  },
+  {
+   "id": "salvage_ships_for_nanites",
+   "name": "Desguazar naves para conseguir nanites",
+   "description": "Comprar naves baratas y desguazarlas da módulos de mejora que se venden por nanites.",
+   "how": "En la terminal de naves de la estación elegí desguazar la nave comprada; vendé los módulos.",
+   "requires": [
+    "visit_space_station",
+    "units>=75000000"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "nanites",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "refine_salvaged_data_nanites",
+   "name": "Refinar Datos recuperados en nanites",
+   "description": "Cada Dato recuperado se refina en 15 cúmulos de nanites.",
+   "how": "Desenterrá Tecnología enterrada y refiná los datos.",
+   "requires": [
+    "collect_salvaged_data"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "nanites"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "discover_all_creatures_planet",
+   "name": "Descubrir toda la fauna de un planeta y cobrar nanites",
+   "description": "Aporta unos 250 nanites por criatura una vez descubierta toda la fauna del planeta (hasta unos 4.750).",
+   "how": "Escaneá cada criatura con el Visor de análisis, incluso bajo tierra y bajo el agua; subí los descubrimientos.",
+   "requires": [],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "economy",
+    "nanites",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "upload_discoveries_nanites",
+   "name": "Subir descubrimientos para ganar nanites",
+   "description": "Cada descubrimiento subido da unidades y nanites.",
+   "how": "Subí tus hallazgos desde la pestaña de Descubrimientos.",
+   "requires": [],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster"
+  },
+  {
+   "id": "use_scrap_dealer",
+   "name": "Visitar al Chatarrero (Scrap Dealer) de una estación",
+   "description": "Vende paquetes sospechosos y decoraciones a cambio de Metal contaminado, y el Receptor de emergencia por 5M-10M unidades.",
+   "how": "Buscá el puesto del Chatarrero en la estación espacial.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scrap_Dealer"
+  },
+  {
+   "id": "buy_scrap_dealer_decorations",
+   "name": "Comprar decoraciones del Chatarrero",
+   "description": "Banners, calcomanías y decoraciones extrañas con Metal contaminado (ej. calcomanía 400, banner 220, decoración 500-800).",
+   "how": "Conseguí Metal contaminado en fragatas abandonadas y gastalo con el Chatarrero.",
+   "requires": [
+    "use_scrap_dealer",
+    "complete_derelict_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "economy",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Scrap_Dealer"
+  },
+  {
+   "id": "use_defence_chit",
+   "name": "Usar una Ficha de defensa contra piratas",
+   "description": "Convoca a las autoridades del sistema durante una amenaza pirata; la compran en comerciantes de estación.",
+   "how": "Durante la comunicación con los piratas elegí 'Informar a las autoridades'.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Defence_Chit"
+  },
+  {
+   "id": "quicksilver_nada_story",
+   "name": "Cobrar Quicksilver de Nada en la historia",
+   "description": "En la misión de la Anomalía, Nada entrega 150 Quicksilver repetidamente durante la historia.",
+   "how": "Hablá con Nada cuando la misión 'La Anomalía Espacial' lo indique.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver"
+  },
+  {
+   "id": "quicksilver_nexus_daily",
+   "name": "Completar una misión diaria del Nexus (400 Quicksilver)",
+   "description": "Una por día; podés acumular hasta 3 pendientes por partida.",
+   "how": "En el Nexus buscá la misión marcada con gotas doradas / marca amarilla de Quicksilver, aceptala (sola o con grupo) y completala.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "quicksilver_nexus_weekend",
+   "name": "Completar la misión de fin de semana del Nexus (1.800 Quicksilver)",
+   "description": "Una vez por semana y por partida; destino igual para todos los jugadores (región anómala).",
+   "how": "Con conexión al servicio de descubrimiento en línea, aceptá la misión marcada con un hexágono turquesa sobre el Nexus entre viernes y lunes.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "quicksilver",
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "quicksilver_stellar_ice",
+   "name": "Destruir Hielo estelar condensado en el espacio",
+   "description": "Evento de motor de pulso que puede dar 100 Quicksilver.",
+   "how": "Mientras usás el motor de pulso, buscá el encuentro espacial 'Hielo estelar condensado' y destruilo.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver"
+  },
+  {
+   "id": "buy_qs_statue_astronauta",
+   "name": "Comprar las estatuas de Astronauta (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_statue_blob",
+   "name": "Comprar las estatuas de Blob (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_statue_gek",
+   "name": "Comprar las estatuas de Gek (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_statue_caminante",
+   "name": "Comprar las estatuas de Caminante (Walker) (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_statue_diplo",
+   "name": "Comprar las estatuas de Diplo (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_statue_caza",
+   "name": "Comprar las estatuas de Caza (Fighter) (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_statue_atlas",
+   "name": "Comprar las estatuas de Atlas (bronce, plata y oro)",
+   "description": "Estatuas decorativas para tu base: bronce 300, plata 400, oro 500 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 3 estatuas (300 + 400 + 500).",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_decals_travellers",
+   "name": "Comprar calcomanías de personajes de la Anomalía",
+   "description": "Calcomanías de 400 Quicksilver cada una (Mano de aprobación, Galactic Hub, Anomalía, Polo, Nada, Apolo, Null, Artemisa...).",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: una calcomanía a 400 cada una.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=400"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_trees",
+   "name": "Comprar árboles decorativos (Evergreen, Spindle, Fruit)",
+   "description": "Plantas de 500 Quicksilver cada una para tu base.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Evergreen Tree, Spindle Tree, Fruit Tree.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_desert_plants",
+   "name": "Comprar plantas decorativas (Curious Corn, Dwarf Palm, Carnivorous Bush)",
+   "description": "Decoraciones de 500 Quicksilver cada una.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Curious Corn, Dwarf Palm, Carnivorous Bush.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_aquatic_plants",
+   "name": "Comprar plantas decorativas acuáticas",
+   "description": "Decoraciones de 500 Quicksilver cada una.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Barnacle, Candelabra Bloom, Aquatic Crystal, Curly Coral.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=2000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_garden_set",
+   "name": "Comprar jardín: Rock Garden, Globe Tree y Sail Palm",
+   "description": "Decoraciones de 500 Quicksilver cada una (añadidas en Visions).",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Rock Garden, Globe Tree, Sail Palm.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_rocks_set",
+   "name": "Comprar rocas decorativas (Gem-Encrusted Rock, Mineral Arch, Marine Rock)",
+   "description": "Decoraciones de 500 Quicksilver cada una.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Gem-Encrusted Rock, Mineral Arch, Marine Rock.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_trees_set2",
+   "name": "Comprar más árboles (Entwining Tree, Umbrella Tree, Writhing Bush)",
+   "description": "Decoraciones de 500 Quicksilver cada una.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Entwining Tree, Umbrella Tree, Writhing Bush.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_emotes",
+   "name": "Comprar emoticonos de gesto (Celebrate!, Ha!, Mind Blown, No Problem, Wonder)",
+   "description": "Gestos que se compran a 1.500 Quicksilver cada uno.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: un gesto a 1.500 cada uno.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_helmets",
+   "name": "Comprar un casco de Quicksilver",
+   "description": "Cascos (Sparse Horizon, Blazing Orbit, Eye of the Korvax, First Spawn Battle Mask) a 3.000 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: cascos a 3.000.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_armoured_suit",
+   "name": "Comprar el conjunto Blindado (Armoured Suit)",
+   "description": "Cinco piezas: botas 1.000, guantes 1.000, perneras 750, peto 750 y hombreras 3.000.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: 5 piezas, 6.500 en total.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=6500"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_gadgets",
+   "name": "Comprar gadgets decorativos (800 c/u)",
+   "description": "Globo holográfico, cubo expansible, generador de bolsillo, compañero robótico, mini acuario, terrario, etc.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: un gadget a 800.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=800"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_jetpack_trails",
+   "name": "Comprar una estela de mochila a reacción",
+   "description": "Estelas roja, verde y azul cuestan 800; antimateria y arcoíris 2.100.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: estelas de 800 o 2.100.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=800"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_figurines",
+   "name": "Comprar una figurita de Polo o de Nada",
+   "description": "Figuritas de 3.200 Quicksilver: Polo da +5% de maniobrabilidad y Nada -10% de coste de despegue.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Polo Figurine / Nada Figurine.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_visages",
+   "name": "Comprar un visaje de Iteración",
+   "description": "Rostros de 3.200 Quicksilver (Géminis, Mercurio, Ares, Helios, Hiperión, Eos, Tetis, Selene...).",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: visajes de 3.200.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3200"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_banners_posters",
+   "name": "Comprar banners y pósteres",
+   "description": "Banners a 220 y pósteres a 400 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: banners 220 / pósteres 400.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=220"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_titles",
+   "name": "Comprar un título de jugador",
+   "description": "Títulos de 800 Quicksilver (ej. 'Swamp-Dweller', 'Volcanic', 'Exotic').",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: títulos a 800.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=800"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_fireworks",
+   "name": "Comprar fuegos artificiales",
+   "description": "Cohetes consumibles a 50-60 Quicksilver; también hay una baliza mítica a 80.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: fuegos artificiales a 50-60.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=50"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_bytebeat",
+   "name": "Comprar un chip de ByteBeat",
+   "description": "Pistas musicales para el reproductor de 800 Quicksilver.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: chips ByteBeat a 800.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=800"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_pet_accessories",
+   "name": "Comprar accesorios para mascotas",
+   "description": "Accesorios de 1.600 Quicksilver (Energy Coil, Movement Tracker, Rounded Laser).",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: accesorios de 1.600.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=1600"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_capes_backpack",
+   "name": "Comprar una capa o mochila de Quicksilver",
+   "description": "Capas (3.000) y mochilas (3.500) cosméticas.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: capas 3.000 / mochila 3.500.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=3000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "buy_qs_bubble_duct",
+   "name": "Comprar Bubble Duct",
+   "description": "Conducto decorativo de 2.000 Quicksilver (versión actual) para bases.",
+   "how": "Hablá con el Compañero de síntesis de Quicksilver ('Quincy') en la Anomalía, junto al Nexus. Incluye: Bubble Duct.",
+   "requires": [
+    "access_space_anomaly",
+    "quicksilver>=2000"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "quicksilver",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion"
+  },
+  {
+   "id": "meet_explorers_envoy",
+   "name": "Conocer al Enviado del Gremio de Exploradores (Explorers Guild)",
+   "description": "El enviado del gremio de tu región está en la estación; la primera misión que ofrece da +5 de reputación.",
+   "how": "Subí a la planta alta de una estación y buscá el puesto del Enviado de gremio (los gremios dependen de la región de la galaxia).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "guild",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild_Envoy"
+  },
+  {
+   "id": "guild_explorers_initiate",
+   "name": "Alcanzar el rango Iniciado (Initiate) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 3 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "meet_explorers_envoy"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_apprentice",
+   "name": "Alcanzar el rango Aprendiz (Apprentice) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 8 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_initiate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_journeyman",
+   "name": "Alcanzar el rango Oficial (Journeyman) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 14 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_apprentice"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_associate",
+   "name": "Alcanzar el rango Asociado (Associate) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 21 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_journeyman"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_senior",
+   "name": "Alcanzar el rango Senior en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 30 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_associate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_master",
+   "name": "Alcanzar el rango Maestro (Master) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 40 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_senior"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_elder",
+   "name": "Alcanzar el rango Anciano (Elder) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 60 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_master"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_exalted",
+   "name": "Alcanzar el rango Exaltado (Exalted) en el Gremio de Exploradores (Explorers Guild)",
+   "description": "Requiere 100 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_explorers_elder"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Explorers_Guild"
+  },
+  {
+   "id": "guild_explorers_donate_daily",
+   "name": "Donar objetos al Enviado del gremio de Exploradores",
+   "description": "Cada objeto donado suma +1 de reputación (3 por estación por día).",
+   "how": "Entregá al Enviado objetos de su lista de donación.",
+   "requires": [
+    "meet_explorers_envoy"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild_Envoy"
+  },
+  {
+   "id": "meet_merchants_envoy",
+   "name": "Conocer al Enviado del Gremio de Comerciantes (Merchants Guild)",
+   "description": "El enviado del gremio de tu región está en la estación; la primera misión que ofrece da +5 de reputación.",
+   "how": "Subí a la planta alta de una estación y buscá el puesto del Enviado de gremio (los gremios dependen de la región de la galaxia).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "guild",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild_Envoy"
+  },
+  {
+   "id": "guild_merchants_initiate",
+   "name": "Alcanzar el rango Iniciado (Initiate) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 3 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "meet_merchants_envoy"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_apprentice",
+   "name": "Alcanzar el rango Aprendiz (Apprentice) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 8 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_initiate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_journeyman",
+   "name": "Alcanzar el rango Oficial (Journeyman) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 14 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_apprentice"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_associate",
+   "name": "Alcanzar el rango Asociado (Associate) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 21 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_journeyman"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_senior",
+   "name": "Alcanzar el rango Senior en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 30 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_associate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_master",
+   "name": "Alcanzar el rango Maestro (Master) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 40 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_senior"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_elder",
+   "name": "Alcanzar el rango Anciano (Elder) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 60 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_master"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_exalted",
+   "name": "Alcanzar el rango Exaltado (Exalted) en el Gremio de Comerciantes (Merchants Guild)",
+   "description": "Requiere 100 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_merchants_elder"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Merchants_Guild"
+  },
+  {
+   "id": "guild_merchants_donate_daily",
+   "name": "Donar objetos al Enviado del gremio de Comerciantes",
+   "description": "Cada objeto donado suma +1 de reputación (3 por estación por día).",
+   "how": "Entregá al Enviado objetos de su lista de donación.",
+   "requires": [
+    "meet_merchants_envoy"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild_Envoy"
+  },
+  {
+   "id": "meet_mercenaries_envoy",
+   "name": "Conocer al Enviado del Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "El enviado del gremio de tu región está en la estación; la primera misión que ofrece da +5 de reputación.",
+   "how": "Subí a la planta alta de una estación y buscá el puesto del Enviado de gremio (los gremios dependen de la región de la galaxia).",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "guild",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild_Envoy"
+  },
+  {
+   "id": "guild_mercenaries_initiate",
+   "name": "Alcanzar el rango Iniciado (Initiate) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 3 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "meet_mercenaries_envoy"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_apprentice",
+   "name": "Alcanzar el rango Aprendiz (Apprentice) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 8 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_initiate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_journeyman",
+   "name": "Alcanzar el rango Oficial (Journeyman) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 14 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_apprentice"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_associate",
+   "name": "Alcanzar el rango Asociado (Associate) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 21 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_journeyman"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_senior",
+   "name": "Alcanzar el rango Senior en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 30 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_associate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_master",
+   "name": "Alcanzar el rango Maestro (Master) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 40 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_senior"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_elder",
+   "name": "Alcanzar el rango Anciano (Elder) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 60 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_master"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_exalted",
+   "name": "Alcanzar el rango Exaltado (Exalted) en el Gremio de Mercenarios (Mercenaries Guild)",
+   "description": "Requiere 100 puntos de reputación con el gremio. Mejora las recompensas gratuitas o con descuento del Enviado.",
+   "how": "Completá misiones del gremio (+1 o +2 las normales, +5 las del Enviado) y donale objetos al Enviado (+1 por objeto, hasta 3 por estación por día).",
+   "requires": [
+    "guild_mercenaries_elder"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Mercenaries_Guild"
+  },
+  {
+   "id": "guild_mercenaries_donate_daily",
+   "name": "Donar objetos al Enviado del gremio de Mercenarios",
+   "description": "Cada objeto donado suma +1 de reputación (3 por estación por día).",
+   "how": "Entregá al Enviado objetos de su lista de donación.",
+   "requires": [
+    "meet_mercenaries_envoy"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "guild",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild_Envoy"
+  },
+  {
+   "id": "guild_other_region",
+   "name": "Descubrir el gremio de otra región de la galaxia",
+   "description": "Los gremios son específicos de cada región y su reputación es independiente.",
+   "how": "Viajá a una región lejana (mirá 'Región' al expandir el sistema en el mapa galáctico) y visitá su estación.",
+   "requires": [
+    "meet_explorers_envoy"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "guild",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Guild"
+  },
+  {
+   "id": "gift_gek_npc",
+   "name": "Regalar objetos de su raza a un NPC Gek",
+   "description": "Los regalos específicos (GekNip o Reliquias gek) dan reputación, recursos, unidades o ubicaciones de naves estrelladas.",
+   "how": "Acercate a un NPC de la raza en una estación o puesto y ofrecele el regalo.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "faction",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "raise_gek_standing",
+   "name": "Mejorar la reputación con los Gek",
+   "description": "La reputación racial da planos, diálogos exclusivos, ayuda contra piratas y descuentos en módulos.",
+   "how": "Completá misiones del Tablero, resolvé problemas en puntos de referencia, matá piratas en su territorio, rescatá cargueros y entregá regalos.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "faction",
+    "social",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "gift_korvax_npc",
+   "name": "Regalar objetos de su raza a un NPC Korvax",
+   "description": "Los regalos específicos (Carcasas korvax o Cubos de convergencia) dan reputación, recursos, unidades o ubicaciones de naves estrelladas.",
+   "how": "Acercate a un NPC de la raza en una estación o puesto y ofrecele el regalo.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "faction",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "raise_korvax_standing",
+   "name": "Mejorar la reputación con los Korvax",
+   "description": "La reputación racial da planos, diálogos exclusivos, ayuda contra piratas y descuentos en módulos.",
+   "how": "Completá misiones del Tablero, resolvé problemas en puntos de referencia, matá piratas en su territorio, rescatá cargueros y entregá regalos.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "faction",
+    "social",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "gift_vykeen_npc",
+   "name": "Regalar objetos de su raza a un NPC Vy'keen",
+   "description": "Los regalos específicos (Dagas o Efigies vy'keen) dan reputación, recursos, unidades o ubicaciones de naves estrelladas.",
+   "how": "Acercate a un NPC de la raza en una estación o puesto y ofrecele el regalo.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "faction",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "raise_vykeen_standing",
+   "name": "Mejorar la reputación con los Vy'keen",
+   "description": "La reputación racial da planos, diálogos exclusivos, ayuda contra piratas y descuentos en módulos.",
+   "how": "Completá misiones del Tablero, resolvé problemas en puntos de referencia, matá piratas en su territorio, rescatá cargueros y entregá regalos.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "faction",
+    "social",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "raise_autophage_standing",
+   "name": "Mejorar la reputación con los Autófagos",
+   "description": "Se logra con contratos locales, regalos conversando, purgando monolitos korvax corruptos y ayudando a autófagos varados.",
+   "how": "Hablá con los autófagos en los campamentos (visibles con Armonizador de escaneo).",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "faction",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Faction"
+  },
+  {
+   "id": "fight_sentinel_drones",
+   "name": "Derrotar drones centinela",
+   "description": "Con búsqueda 1, la unidad que te vio atacará; con 2 llegan unos 5 drones de refuerzo. Los drones reparadores y invocadores conviene eliminarlos primero.",
+   "how": "Provocá la alerta (por ej. minando de más o dañando a un centinela) o luchá donde hay centinelas; apuntá al ojo de los acorazados.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Drone"
+  },
+  {
+   "id": "defeat_sentinel_quad",
+   "name": "Derrotar a un Quad centinela",
+   "description": "Aparecen con nivel de búsqueda 3 (dos Quads). Atacan con láser cargado y embestida; el punto débil está en el lomo. Suelta Servos de Quad.",
+   "how": "Con búsqueda 3, mantené distancia, esquivá lateralmente y disparale al punto débil trasero.",
+   "requires": [
+    "fight_sentinel_drones"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Quad"
+  },
+  {
+   "id": "defeat_sentinel_hardframe",
+   "name": "Derrotar a un Hardframe centinela y conseguir el Motor Hardframe",
+   "description": "Mecha acorazado con mochila a reacción y lanzallamas de plasma que llega con búsqueda 4. Al destruirlo suelta suministros de combate que contienen un Motor Hardframe.",
+   "how": "Aguantá la búsqueda 4; interactuá con los suministros sin destruirlos para cobrar el motor (se puede donar al Gremio de Mercenarios).",
+   "requires": [
+    "defeat_sentinel_quad"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Hardframe_Battle_Mech"
+  },
+  {
+   "id": "defeat_sentinel_walker",
+   "name": "Derrotar a un Caminante centinela",
+   "description": "El centinela terrestre más avanzado: aparece con búsqueda 4-5. Tiene casquete cerebral, núcleo y armadura de patas; el Lanzaplasma y el Disparador de dispersión son muy eficaces. Suelta un Cerebro de Caminante.",
+   "how": "Rompé la armadura de las patas, evitá el láser tras una columna de terreno y destruí el núcleo.",
+   "requires": [
+    "defeat_sentinel_quad"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Walker"
+  },
+  {
+   "id": "clear_wanted_level_5",
+   "name": "Superar el nivel de búsqueda 5 de los Centinelas",
+   "description": "Con búsqueda 5 acuden dos Quads, muchos drones, un mecha y un Caminante. Al derrotar a todos, el nivel se reinicia y se revela la ubicación de un Pilar centinela.",
+   "how": "Combatí hasta eliminar todas las oleadas con buen escudo y armas mejoradas.",
+   "requires": [
+    "defeat_sentinel_walker",
+    "defeat_sentinel_hardframe"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Wanted_level"
+  },
+  {
+   "id": "hide_to_lower_wanted",
+   "name": "Reducir el nivel de búsqueda escondiéndote",
+   "description": "El nivel baja con el tiempo y entrando a un edificio o cueva; despegar lo convierte en búsqueda espacial 1.",
+   "how": "Dejá de cometer infracciones y refugiate en una estructura cerrada.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Wanted_level"
+  },
+  {
+   "id": "find_sentinel_pillar",
+   "name": "Encontrar un Pilar centinela",
+   "description": "Puesto de control de los centinelas; revela historias, desactiva centinelas o da armas.",
+   "how": "Derrotá a todos en búsqueda 5, usá Mapas límite centinela (Gremio de Mercenarios / Vidrio recuperado) o explorá.",
+   "requires": [
+    "clear_wanted_level_5"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "sentinel",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "sentinel_pillar_shutdown",
+   "name": "Apagar a los Centinelas de un planeta con un Pilar",
+   "description": "El Pilar permite acceder a registros, apagar centinelas un tiempo o extraer tecnología de arma (un multiherramienta Real con casi todas las ranuras dañadas).",
+   "how": "Interactuá con el Pilar y elegí 'Apagar fuerzas centinela'.",
+   "requires": [
+    "find_sentinel_pillar"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "sentinel_pillar_extract_weapon",
+   "name": "Extraer tecnología de arma de un Pilar centinela",
+   "description": "Es la única forma conocida de conseguir un multiherramienta de tipo Real (con la mayoría de ranuras rotas).",
+   "how": "En el Pilar elegí 'Extraer tecnología armamentística' y comprala o canjeala por tu arma.",
+   "requires": [
+    "find_sentinel_pillar"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "sentinel",
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Pillar"
+  },
+  {
+   "id": "fight_corrupted_sentinels",
+   "name": "Combatir Centinelas corruptos en un planeta disonante",
+   "description": "Los planetas disonantes tienen drones corruptos, arácnidos y Resonadores de disonancia.",
+   "how": "Viajá a un sistema marcado como 'Disonante' y enfrentá a los corruptos (escanean al minar atlantideum o fragmentos radiantes).",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corrupted_Sentinel_Drone"
+  },
+  {
+   "id": "destroy_dissonance_resonator",
+   "name": "Destruir un Resonador de disonancia",
+   "description": "Máquina maldita de ~4.500 de vida que está en planetas disonantes; da un Localizador de eco o un Espejo invertido.",
+   "how": "Atacalo cuando los corruptos lo rodeen; mirá de cerca para saber qué suelta.",
+   "requires": [
+    "fight_corrupted_sentinels"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dissonance_Resonator"
+  },
+  {
+   "id": "fight_sentinel_interceptors",
+   "name": "Combatir Interceptores centinela en el espacio",
+   "description": "En el espacio la búsqueda llega a 5: 1, 2, 4 y 6 naves en los niveles 1 a 4.",
+   "how": "Dañá un convoy o carguero, o despegá con búsqueda activa; usá escudos y armas potentes.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "space",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "defeat_sentinel_capital_ship",
+   "name": "Destruir un Carguero centinela (Capital)",
+   "description": "Con búsqueda espacial 5 llega este portanaves con torretas que lanza 3-5 interceptores continuamente; al destruirlo deja un Fragmento de IA de portanaves.",
+   "how": "Rompé las torretas, dañá el casco y no te quedes frente al punto de salida del salto.",
+   "requires": [
+    "fight_sentinel_interceptors"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "combat",
+    "space",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Capital_Ship"
+  },
+  {
+   "id": "use_carrier_ai_fragment",
+   "name": "Usar un Fragmento de IA para hallar un interceptor estrellado",
+   "description": "El fragmento revela el lugar de caída de un interceptor centinela reparable.",
+   "how": "Destruí el carguero centinela y seguí el marcador.",
+   "requires": [
+    "defeat_sentinel_capital_ship"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "ship",
+    "sentinel"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "survive_pirate_scan",
+   "name": "Negociar o enfrentar un escaneo pirata",
+   "description": "Un medidor en la cabina avisa de un ataque pirata; podés sobornar, obedecer, pedir ayuda con Ficha de defensa o pelear.",
+   "how": "Usá la Comunicación de nave desde el Menú rápido dentro de los 6 segundos, o llegá a una estación/Anomalía antes de que termine el escaneo.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "space",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pirate"
+  },
+  {
+   "id": "defeat_pirates_space",
+   "name": "Derrotar piratas espaciales",
+   "description": "Dan unidades, recursos como Lemmium o Herox, contrabando y reputación; el escudo se recarga al terminar.",
+   "how": "Aceptá el combate, atacá por detrás, rompé escudos y recogé el botín que sueltan al explotar.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "space",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_battle"
+  },
+  {
+   "id": "space_rescue_freighter",
+   "name": "Rescatar un carguero atacado por piratas",
+   "description": "Al salvarlo el capitán te invita a bordo y te ofrece comprarlo (el primero es gratis) o pagarte; los cargueros salvados dan además un Mamparo de carga.",
+   "how": "Seguí la señal de socorro (aparece tras algunos saltos) y eliminá a todos los piratas sin dañar al carguero.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "space",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "defeat_pirate_dreadnought",
+   "name": "Destruir un Acorazado pirata (Dreadnought)",
+   "description": "Batalla de gran escala al entrar a un sistema (requiere tener carguero). Destruí sus 10 generadores de escudo y varillas de combustible, luego dañá el casco; da una Unidad de flota recuperada de clase S.",
+   "how": "Volá por las zanjas laterales, destruí los generadores y las varillas rojas, no dejes que escape (cuatro motores de salto).",
+   "requires": [
+    "own_freighter",
+    "defeat_pirates_space"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "combat",
+    "space",
+    "pirates",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pirate_Dreadnought"
+  },
+  {
+   "id": "force_dreadnought_surrender",
+   "name": "Forzar la rendición de un Acorazado pirata",
+   "description": "Destruir los cuatro motores de salto lo obliga a rendirse; ganás un Mamparo de carga y la opción de capturar la nave.",
+   "how": "Priorizá los motores de salto bajo los escudos traseros y las armas anti-cargueros.",
+   "requires": [
+    "defeat_pirate_dreadnought"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "combat",
+    "space",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pirate_Dreadnought"
+  },
+  {
+   "id": "recruit_pirate_frigate",
+   "name": "Reclutar una Fragata pirata",
+   "description": "Tras vencer o rendir al Acorazado se puede comprar una fragata pirata (especialista en incursiones).",
+   "how": "Hablá con su capitán antes de saltar; si capturás el carguero rendido, la oferta desaparece.",
+   "requires": [
+    "defeat_pirate_dreadnought",
+    "own_frigate"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "freighter",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pirate_Dreadnought"
+  },
+  {
+   "id": "defend_planetary_pirate_raid",
+   "name": "Defender una estructura de una incursión pirata planetaria",
+   "description": "Alerta 'Vector de ataque pirata detectado': hasta 3 naves atacan un puesto; recompensa como Batería de escudo estelar o reputación.",
+   "how": "Despegá y destruí a las naves; ocurre más seguido en sistemas de alto conflicto.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Planetary_Pirate_Raid"
+  },
+  {
+   "id": "pirate_freighter_cargo",
+   "name": "Piratear el cargamento de un convoy",
+   "description": "Podés destruir contenedores o naves-cápsula de un carguero para robar su carga, a costa de reputación con la raza (y de interceptores centinela fuera de sistemas fuera de la ley).",
+   "how": "Apuntá a los contenedores, que muestran su contenido al acercarte.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "space",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_battle"
+  },
+  {
+   "id": "find_outlaw_system",
+   "name": "Encontrar un sistema fuera de la ley",
+   "description": "Sistemas controlados por piratas con mercado negro y estación pirata propia.",
+   "how": "Instalá el Escáner de conflicto y buscá el icono de calavera en el mapa galáctico, o el Escáner de economía y buscá economía 'Mercado negro'.",
+   "requires": [
+    "first_warp",
+    "tech_conflict_scanner"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "exploration",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Outlaw_System"
+  },
+  {
+   "id": "visit_outlaw_station",
+   "name": "Visitar una estación de fuera de la ley",
+   "description": "Tiene Chatarrero, Agente de contrabando, Maestro de recompensas (Bounty Master), Distribuidor de salvamento, Terminal de naves y un teletransportador Terminus propio.",
+   "how": "Aterrizá en la estación con tractor rojo y escombros flotando alrededor.",
+   "requires": [
+    "find_outlaw_system"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "pirates",
+    "space",
+    "economy"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Outlaw_System"
+  },
+  {
+   "id": "bounty_master_missions",
+   "name": "Hacer misiones del Maestro de recompensas",
+   "description": "Ofrece 'Smuggled Goods', 'Deep Space Plunder', 'Eliminate Rivals' y 'Freighter Assault' a cambio de unidades, bienes prohibidos y Pasaportes falsos; hacerlas baja tu reputación local.",
+   "how": "Hablá con el Maestro de recompensas en una estación pirata.",
+   "requires": [
+    "visit_outlaw_station"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "pirates"
+   ],
+   "source": "https://www.nomansskyresources.com/outlaw-systems"
+  },
+  {
+   "id": "use_forged_passport",
+   "name": "Usar un Pasaporte falso para limpiar tu reputación",
+   "description": "Restablece la reputación negativa tras piratear; se obtiene en misiones de bandidos.",
+   "how": "Usalo en el núcleo de una estación de un sistema normal.",
+   "requires": [
+    "visit_outlaw_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Forged_Passport"
+  },
+  {
+   "id": "recruit_squadron_ship",
+   "name": "Desbloquear una plaza de escuadrón en tu carguero",
+   "description": "Hasta cuatro naves NPC te siguen a combates contra piratas; cada plaza cuesta entre 800 y 10.000 nanites.",
+   "how": "Abrí 'Gestionar flota' > 'Gestionar escuadrón' en el puente.",
+   "requires": [
+    "own_freighter",
+    "nanites>=800"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "buy_emergency_broadcast_receiver",
+   "name": "Comprar un Receptor de emergencia al Chatarrero",
+   "description": "Fuerza la aparición de un carguero abandonado: 5M la primera vez al día, 10M después (tope), se reinicia a diario.",
+   "how": "Comprálo en el puesto del Chatarrero de una estación.",
+   "requires": [
+    "use_scrap_dealer",
+    "units>=5000000"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "complete_derelict_freighter",
+   "name": "Completar un Carguero abandonado",
+   "description": "Abordá, reuní credenciales, obtené el Manifiesto de tripulación y el Diario del capitán y reclamá en Control de ingeniería: nanites (~500-600), un Mamparo de carga o una Unidad de flota recuperada.",
+   "how": "Lleva Dioxita/Oxígeno y Sodio; no se puede guardar dentro; el interior puede estar infestado de Horrores, torretas o drones de seguridad.",
+   "requires": [
+    "buy_emergency_broadcast_receiver"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "space",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "sell_derelict_logs",
+   "name": "Vender el Manifiesto y el Diario del capitán",
+   "description": "El Enviado del gremio da reputación o nanites; el Chatarrero paga Metal contaminado.",
+   "how": "Entregálos en una estación espacial.",
+   "requires": [
+    "complete_derelict_freighter"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "economy",
+    "guild"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Derelict_Freighter"
+  },
+  {
+   "id": "defeat_biological_horror",
+   "name": "Derrotar a un Horror biológico",
+   "description": "Criaturas excavadoras que salen de los Huevos susurrantes en edificios abandonados; sueltan Carne rancia.",
+   "how": "Atacá los huevos desde el techo o con exovehículo; con escudos mejorados y el Cañón de neutrones o el Lanzaplasma.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Biological_Horror"
+  },
+  {
+   "id": "defeat_brood_mother",
+   "name": "Invocar y derrotar a una Madre de la nidada (Vile Brood)",
+   "description": "En planetas con 'Vile Brood' hay Larvas jugosas que, al aplastarlas, invocan a un miniboss.",
+   "how": "Buscá un planeta que muestre 'Vile Brood Detected' en su descubrimiento.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "combat",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Vile_Brood"
+  },
+  {
+   "id": "destroy_hazardous_flora",
+   "name": "Eliminar flora peligrosa (planta tentacular)",
+   "description": "Revelada con el Visor; destruirla no alerta a los centinelas y da Oxígeno.",
+   "how": "Destruila con el multiherramienta desde la distancia (alcance ~2 m).",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "combat",
+    "flora"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hazardous_Flora"
+  },
+  {
+   "id": "complete_nexus_mission_solo",
+   "name": "Completar una misión del Nexus en solitario",
+   "description": "Todas las misiones se pueden terminar solo, incluso sin conexión; dan productos, unidades, nanites o Quicksilver.",
+   "how": "Aceptá una misión en el Nexus, completá el inicio, salí de la Anomalía en menos de 1 min 30 y volvé a informar.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "social",
+    "nexus"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "complete_nexus_mission_group",
+   "name": "Completar una misión del Nexus en grupo",
+   "description": "Hasta 4 jugadores por misión y 8 en la Anomalía en consola (32 en PC); cada uno cobra su recompensa por separado.",
+   "how": "Unite a una misión con tripulantes esperando, esperá a que todos estén listos y completala; avanzar en equipo es más eficiente.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "social",
+    "nexus",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_collect_item",
+   "name": "Nexus: misión 'Recolectar un objeto'",
+   "description": "Reunir productos exóticos, regalos o materias primas pedidos.",
+   "how": "Aceptá la misión de recolección en el Nexus.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "nexus",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_construct_outpost",
+   "name": "Nexus: construir un puesto avanzado (o submarino)",
+   "description": "Construí una base en un planeta o bajo el agua, incluso semillas sobre mundos civilizados.",
+   "how": "Aceptá 'Construir un puesto avanzado' o 'Construir un puesto submarino' en el Nexus.",
+   "requires": [
+    "unlock_nexus",
+    "build_base_computer"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_raid_depot",
+   "name": "Nexus: asaltar un depósito planetario",
+   "description": "Hackeá una terminal vulnerable para localizar y destruir un depósito de Centinelas.",
+   "how": "Aceptá 'Asaltar un depósito planetario'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_unearth_bones",
+   "name": "Nexus: desenterrar huesos antiguos",
+   "description": "Hallá y excavá unos 12 huesos con el Visor y el Manipulador de terreno; los huesos se pueden vender.",
+   "how": "Aceptá 'Desenterrar huesos antiguos'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "nexus",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_survey_planet",
+   "name": "Nexus: prospectar un planeta",
+   "description": "Escaneá especies, hallá puntos calientes y examiná un observatorio.",
+   "how": "Aceptá 'Prospectar un planeta' / 'Investigar un planeta'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_tame_creatures",
+   "name": "Nexus: domesticar criaturas salvajes",
+   "description": "Ganá la confianza de criaturas, estudiá sus hábitos o domesticalas.",
+   "how": "Aceptá 'Domesticar criaturas salvajes'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_eliminate_monstrosities",
+   "name": "Nexus: eliminar monstruosidades planetarias",
+   "description": "Derrotá un número fijo de Horrores biológicos (entre ~50 en un solo edificio o por oleadas).",
+   "how": "Aceptá 'Eliminar monstruosidades planetarias'.",
+   "requires": [
+    "unlock_nexus",
+    "defeat_biological_horror"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_eliminate_hazardous_flora",
+   "name": "Nexus: eliminar flora peligrosa",
+   "description": "Eliminá plantas hostiles que atacan a exploradores.",
+   "how": "Aceptá 'Eliminar flora peligrosa'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "nexus",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_rescue_stranded",
+   "name": "Nexus: rescatar a un náufrago",
+   "description": "Rastreá la señal, desenterrá módulos de reemplazo y enfrentá Centinelas corruptos para reparar una nave.",
+   "how": "Aceptá 'Rescatar a un náufrago'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_hunt_pirates",
+   "name": "Nexus: cazar piratas peligrosos",
+   "description": "Combate espacial contra un escuadrón fuera de la ley.",
+   "how": "Aceptá 'Cazar piratas peligrosos', escaneá en el destino y empezá el combate cuando tu grupo esté cerca.",
+   "requires": [
+    "unlock_nexus",
+    "defeat_pirates_space"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat",
+    "pirates"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_hack_sentinel_pillar",
+   "name": "Nexus: hackear un Pilar centinela",
+   "description": "Localizá un Pilar y subí sus datos mientras los Centinelas responden con dureza.",
+   "how": "Aceptá 'Hackear un Pilar centinela'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://www.nomansskyresources.com/nexus-missions"
+  },
+  {
+   "id": "nexus_root_out_corrupted",
+   "name": "Nexus: erradicar centinelas corruptos",
+   "description": "Hallá un mundo corrupto y destruí sus resonadores de disonancia.",
+   "how": "Aceptá 'Erradicar centinelas corruptos'.",
+   "requires": [
+    "unlock_nexus",
+    "destroy_dissonance_resonator"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat",
+    "sentinel"
+   ],
+   "source": "https://www.nomansskyresources.com/nexus-missions"
+  },
+  {
+   "id": "nexus_vile_broods",
+   "name": "Nexus: exterminar nidadas viles",
+   "description": "Eliminá infestaciones en planetas no corrompidos.",
+   "how": "Aceptá 'Exterminar nidadas viles'.",
+   "requires": [
+    "unlock_nexus",
+    "defeat_brood_mother"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat",
+    "fauna"
+   ],
+   "source": "https://www.nomansskyresources.com/nexus-missions"
+  },
+  {
+   "id": "nexus_catch_fish",
+   "name": "Nexus: atrapar peces poco comunes",
+   "description": "Con atraparlos alcanza para que los escaneos remotos se ejecuten.",
+   "how": "Aceptá 'Atrapar peces poco comunes'.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "nexus",
+    "fishing"
+   ],
+   "source": "https://www.nomansskyresources.com/nexus-missions"
+  },
+  {
+   "id": "nexus_eliminate_swarms",
+   "name": "Nexus: eliminar enjambres",
+   "description": "Misión de la actualización Swarm: combatí enjambres en el espacio y recuperá datos del enjambre.",
+   "how": "Aceptá 'Eliminar enjambres' en el Nexus.",
+   "requires": [
+    "unlock_nexus",
+    "defeat_pirates_space"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "combat",
+    "space"
+   ],
+   "source": "https://www.nomansskyresources.com/nexus-missions"
+  },
+  {
+   "id": "nexus_encrypted_mission",
+   "name": "Nexus: aceptar una misión cifrada",
+   "description": "Aparece con un signo de interrogación morado a la izquierda del Nexus; el título está cifrado y la recompensa es algo mejor.",
+   "how": "Aceptala cuando aparezca (ocurre de forma poco frecuente).",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "nexus",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "nexus_weekend_anomalous_region",
+   "name": "Nexus: investigar una región anómala (misión de fin de semana)",
+   "description": "Misión semanal con destino común para todos los jugadores; da 1.800 Quicksilver.",
+   "how": "Aceptala de viernes a lunes con conexión en línea; los pods de objetivos son los mismos para todos.",
+   "requires": [
+    "unlock_nexus"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "nexus",
+    "social",
+    "multiplayer",
+    "quicksilver"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nexus"
+  },
+  {
+   "id": "join_multiplayer_party",
+   "name": "Jugar en grupo con otros viajeros",
+   "description": "Grupos de 2 a 4 jugadores en línea; podés compartir descubrimientos, construcción de bases y misiones del Nexus.",
+   "how": "En consola necesitás suscripción en línea y la opción 'Aparecer en línea'; invitá amigos desde Ajustes > Red.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multiplayer"
+  },
+  {
+   "id": "leave_message_comm_station",
+   "name": "Dejar un mensaje a otros jugadores en una Estación de comunicaciones",
+   "description": "Las Estaciones de comunicaciones permiten dejar mensajes cortos para otros viajeros.",
+   "how": "Usá una Estación de comunicaciones planetaria.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multiplayer"
+  },
+  {
+   "id": "create_monument_with_player",
+   "name": "Crear un Monumento con otro jugador",
+   "description": "Dos jugadores pueden crear un Monumento interactuando entre sí (solo uno por planeta).",
+   "how": "Coincidí con otro viajero en el mismo planeta e interactúen.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social",
+    "multiplayer"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multiplayer"
+  },
+  {
+   "id": "battle_holo_arena_wild",
+   "name": "Jugar tu primera batalla en una Mesa Holo-Arena",
+   "description": "Combate por turnos con criaturas adoptadas; las mesas están en edificios planetarios, estaciones, algunos asentamientos y la Anomalía.",
+   "how": "Armá un equipo con tus mascotas y usá una mesa Holo-Arena; los rivales en planetas y asentamientos son seres de la zona.",
+   "requires": [
+    "adopt_companion"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social",
+    "combat",
+    "fauna"
+   ],
+   "source": "https://www.nomanssky.com/xeno-arena-update/"
+  },
+  {
+   "id": "battle_station_champion",
+   "name": "Vencer al campeón de sistema de una estación",
+   "description": "Los campeones de las estaciones son más difíciles y dan mejores recompensas (nanites, pellets retrovirales, invitaciones).",
+   "how": "Jugá en la mesa Holo-Arena de una estación con un equipo variado según afinidades (8 afinidades).",
+   "requires": [
+    "battle_holo_arena_wild"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "social",
+    "combat",
+    "fauna"
+   ],
+   "source": "https://www.nomanssky.com/xeno-arena-update/"
+  },
+  {
+   "id": "battle_arena_pvp_anomaly",
+   "name": "Retar a otro viajero en la Anomalía (PvP)",
+   "description": "Las mesas de la Anomalía son para jugador contra jugador: ganás si noqueás a todo su equipo.",
+   "how": "Visitá la Anomalía con otros viajeros presentes y desafiá desde la mesa Holo-Arena.",
+   "requires": [
+    "battle_holo_arena_wild",
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "social",
+    "combat",
+    "multiplayer",
+    "pvp"
+   ],
+   "source": "https://www.nomanssky.com/xeno-arena-update/"
+  },
+  {
+   "id": "arena_league_medals",
+   "name": "Subir de rango en la Liga de Arena (medallas)",
+   "description": "Nueva facción del Catálogo con 5 tipos de medallas por combate y cría; abre títulos y compañeros especiales de Iteration: Oceanus.",
+   "how": "Fijá medallas en el Registro de misiones para ver las guías paso a paso.",
+   "requires": [
+    "battle_holo_arena_wild"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "social",
+    "combat",
+    "fauna",
+    "grind"
+   ],
+   "source": "https://www.nomanssky.com/xeno-arena-update/"
+  },
+  {
+   "id": "arena_daily_challenge",
+   "name": "Completar el desafío diario de Oceanus",
+   "description": "Desafío de semilla fija, igual para todos los jugadores.",
+   "how": "Hablá con Iteration: Oceanus en la Anomalía.",
+   "requires": [
+    "battle_holo_arena_wild",
+    "access_space_anomaly"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "social",
+    "combat",
+    "fauna"
+   ],
+   "source": "https://www.nomanssky.com/xeno-arena-update/"
+  }
+ ],
+ "needs": [
+  {
+   "id": "tech_survey_device",
+   "name": "Instalar el Dispositivo de sondeo (Survey Device) en el Visor de análisis",
+   "why": "Necesario para hallar puntos calientes de energía, minerales y gas."
+  },
+  {
+   "id": "tech_economy_scanner",
+   "name": "Instalar el Escáner de economía en la nave",
+   "why": "Muestra datos de economía de cada sistema en el mapa galáctico."
+  },
+  {
+   "id": "tech_conflict_scanner",
+   "name": "Instalar el Escáner de conflicto en la nave",
+   "why": "Muestra el nivel de conflicto (calavera = sistema fuera de la ley)."
+  },
+  {
+   "id": "complete_they_who_returned",
+   "name": "Completar 'They Who Returned'",
+   "why": "Misión que da acceso a los asentamientos Autófagos."
+  }
+ ]
+}

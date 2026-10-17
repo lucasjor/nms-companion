@@ -1,0 +1,651 @@
+{
+ "objectives": [
+  {
+   "id": "repair_launch_thruster",
+   "name": "Reparar el propulsor de despegue",
+   "description": "Primer paso para volver a volar tu nave estrellada.",
+   "how": "Seguí 'Despertares': con el motor de pulso reparado (50 % de combustible), repará el propulsor de despegue con 50 Ferrita pura (refinada de Polvo de ferrita 1:1 en el Refinador portátil) y Gelatina de dihidrógeno (se fabrica con 40 Dihidrógeno).",
+   "requires": [
+    "repair_pulse_engine"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Repair:_Critical_Maintenance"
+  },
+  {
+   "id": "repair_pulse_engine",
+   "name": "Reparar el motor de pulso",
+   "description": "Te permite volar entre planetas del sistema.",
+   "how": "Seguí 'Despertares' (Reparación de la nave: Mantenimiento crítico): fabricá una Placa de metal (50 Polvo de ferrita) para empezar la reparación; luego, con la Carta planetaria de la baliza de socorro, buscá el Sello hermético en un refugio y aprendé su plano (no se consigue en ningún otro lado). Con el Sello hermético y la Placa de metal terminá de reparar el motor de pulso.",
+   "requires": [
+    "find_hermetic_seal_and_visor"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starship_Repair:_Critical_Maintenance"
+  },
+  {
+   "id": "leave_first_planet",
+   "name": "Salir al espacio por primera vez",
+   "description": "Despegá y salí de la atmósfera de tu planeta inicial.",
+   "how": "Con el motor de pulso y el propulsor reparados (cada uno al 50 % de combustible), despegá y salí de la atmósfera. En el espacio practicás el avance, el impulso y el salto de pulso hasta que una transmisión misteriosa interrumpe las comunicaciones.",
+   "requires": [
+    "repair_launch_thruster"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "visit_space_station",
+   "name": "Visitar una estación espacial",
+   "description": "Centro de comercio, misiones y mejoras de cada sistema.",
+   "how": "Volá hacia la estación del sistema y aterrizá en el hangar.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Station"
+  },
+  {
+   "id": "build_hyperdrive",
+   "name": "Construir el hiperimpulsor",
+   "description": "Desbloquea los saltos entre sistemas.",
+   "how": "El plano está en la baliza del Carguero estrellado cuyas coordenadas decodificás en tu Ordenador de base (Despertares). Fabricalo con 125 Metal cromático (refinado de Cobre 2:1) y 5 Microprocesadores (se compran en la terminal de comercio de la estación o salen de Maquinaria dañada) e instalalo en la nave.",
+   "requires": [
+    "get_hyperdrive_blueprint_freighter"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Hyperdrive"
+  },
+  {
+   "id": "first_warp",
+   "name": "Hacer tu primer salto hiperespacial",
+   "description": "Viajá a otro sistema estelar.",
+   "how": "Con el hiperimpulsor instalado, conseguí Antimateria en el Edificio abandonado de tu planeta, fabricá la Carcasa de antimateria (30 Oxígeno + 50 Polvo de ferrita) y combinalas en una Célula de curvatura. Cargá el hiperimpulsor (20 %), abrí el Mapa galáctico desde el Menú rápido y saltá a un sistema de estrella amarilla.",
+   "requires": [
+    "build_hyperdrive",
+    "craft_warp_cell_from_antimatter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Awakenings"
+  },
+  {
+   "id": "build_base_computer",
+   "name": "Reclamar una base",
+   "description": "Colocá un Ordenador de base para fundar tu primera base.",
+   "how": "El plano se obtiene gratis en 'Despertares' al examinar la Maquinaria dañada del segundo planeta (junto con el Manipulador de terreno; no se consigue en otro lado). Extraé Cobre con el Manipulador de terreno, refinalo a Metal cromático, fabricá el Ordenador de base (30 Metal cromático) y colocalo.",
+   "requires": [
+    "follow_signal_to_second_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Base_Computer"
+  },
+  {
+   "id": "access_space_anomaly",
+   "name": "Acceder a la Anomalía Espacial",
+   "description": "Centro social y de investigación (Nada y Polo, Investigación de construcción).",
+   "how": "Al terminar 'Despertares' (segundo salto y baliza de la nave estrellada), al salir del planeta Nada te llama y la Anomalía aparece frente a tu nave; abordala y completá la primera visita (misión 'La Anomalía Espacial'). Desde entonces podés invocarla desde el Menú rápido.",
+   "requires": [
+    "complete_awakenings"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Space_Anomaly"
+  },
+  {
+   "id": "unlock_nexus",
+   "name": "Desbloquear el Nexus",
+   "description": "Acceso a misiones comunitarias del Nexus en la Anomalía.",
+   "how": "En la Anomalía Espacial, usá el tablero de misiones del Nexus. Las misiones son multijugador pero se pueden completar en solitario.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/The_Nexus"
+  },
+  {
+   "id": "tech_aeration_membrane",
+   "name": "Instalar la Membrana de aireación",
+   "description": "Permite respirar más tiempo bajo el agua.",
+   "how": "Aprendé el plano con Iteration: Selene en la Anomalía Espacial (la wiki no indica el precio). Fabricala con 150 Oxígeno, 60 Plata y 75 Cobre e instalala en el inventario del exotraje.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Aeration_Membrane"
+  },
+  {
+   "id": "build_exocraft_geobay",
+   "name": "Construir un geobay de exovehículo",
+   "description": "Plataforma para invocar exovehículos terrestres.",
+   "how": "Plano del primer geobay (Roamer): lo da el Técnico de exovehículos al contratarlo, es recompensa de 'Archivos del Ordenador de base' (parte I) o se compra por 10 Datos recuperados en la Estación de investigación de construcción (Anomalía). Cuesta 5 Placas de metal, 2 Baterías de iones y 100 Parafinio.",
+   "requires": [
+    [
+     "hire_base_technician",
+     "complete_base_computer_archives_part1",
+     "unlock_construction_research"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "building",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Geobay"
+  },
+  {
+   "id": "own_nomad",
+   "name": "Conseguir el Nomad",
+   "description": "Exovehículo terrestre ligero y rápido.",
+   "how": "Plano del Nomad Geobay: lo da el Técnico de exovehículos al fabricar el Láser de minería de exovehículo, o se compra por 10 Datos recuperados en la Anomalía. Cuesta 5 Placas de metal, 2 Baterías de iones y 50 Parafinio; al construir el geobay por primera vez se fabrica el Nomad.",
+   "requires": [
+    [
+     "technician_mining_laser_nomad_geobay",
+     "unlock_construction_research"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nomad_Geobay"
+  },
+  {
+   "id": "own_roamer",
+   "name": "Conseguir el Roamer",
+   "description": "Exovehículo terrestre todoterreno.",
+   "how": "Construí el Roamer Geobay (5 Placas de metal, 2 Baterías de iones, 100 Parafinio) en una base; el plano viene del Técnico de exovehículos, de 'Archivos del Ordenador de base' o de la Estación de investigación de construcción (10 Datos recuperados).",
+   "requires": [
+    "build_exocraft_geobay"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Roamer_Geobay"
+  },
+  {
+   "id": "own_pilgrim",
+   "name": "Conseguir el Pilgrim",
+   "description": "Moto exovehículo veloz.",
+   "how": "Comprá el plano del Pilgrim Geobay por 10 Datos recuperados (Estación de investigación de construcción o Terminal de exovehículos) y construilo: 5 Placas de metal, 5 Gelatina de dihidrógeno y 100 Plata.",
+   "requires": [
+    "unlock_construction_research"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Pilgrim_Geobay"
+  },
+  {
+   "id": "own_colossus",
+   "name": "Conseguir el Colossus",
+   "description": "Exovehículo pesado con gran inventario.",
+   "how": "Plano del Colossus Geobay: lo da el Técnico de exovehículos tras el viaje al Monolito, o se compra por 10 Datos recuperados en la Estación de investigación de construcción de la Anomalía. Cuesta 5 Placas de metal, 4 Baterías de iones y 100 Parafinio.",
+   "requires": [
+    [
+     "technician_monolith_nal_trip",
+     "unlock_construction_research"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Colossus_Geobay"
+  },
+  {
+   "id": "own_minotaur",
+   "name": "Conseguir el Minotaur",
+   "description": "Mech exovehículo capaz de escalar y minar.",
+   "how": "Comprá el plano del Minotaur Geobay por 10 Datos recuperados (Estación de investigación de construcción en la Anomalía o Terminal de exovehículos) y construilo: 5 Placas de metal, 4 Baterías de iones y 100 Oro.",
+   "requires": [
+    "unlock_construction_research"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minotaur_Geobay"
+  },
+  {
+   "id": "own_nautilon",
+   "name": "Conseguir el Nautilon",
+   "description": "Submarino exovehículo para explorar el fondo del mar.",
+   "how": "Construí una Cámara del Nautilon (5 Placas de metal, 4 Sulfuro cristalino, 100 Sal). El plano viene de la misión 'Sueños de las profundidades' o se compra por 10 Datos recuperados. Alimentalo con Células de combustible hidrotérmicas.",
+   "requires": [
+    [
+     "complete_dreams_of_the_deep",
+     "unlock_construction_research"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "exocraft",
+    "underwater"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nautilon_Chamber"
+  },
+  {
+   "id": "own_freighter",
+   "name": "Conseguir tu primer carguero",
+   "description": "Base espacial móvil con flota.",
+   "how": "Al llegar al sistema de la forma de vida que te indica Apolo (misión 'Fantasmas en la Máquina') aparecen las flotas espaciales y se dispara una batalla: defendé el carguero de los piratas y el capitán te lo regala si no tenés uno. Después hay un enfriamiento de 3 h y 5 saltos entre batallas. También podés comprar un carguero que no esté bajo ataque con Unidades.",
+   "requires": [
+    "visit_apollo_contact_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ghosts_in_the_Machine"
+  },
+  {
+   "id": "own_capital_freighter",
+   "name": "Conseguir un carguero capital",
+   "description": "Carguero de clase superior, más grande.",
+   "how": "Los cargueros capitales aparecen en batallas contra piratas tras un salto, a partir del tercer carguero rescatado (los dos primeros son comunes); ganá la batalla y comprale el carguero al capitán (26-180 millones de Unidades, con descuento por entregar el tuyo).",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "freighter",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter"
+  },
+  {
+   "id": "own_frigate",
+   "name": "Conseguir tu primera fragata",
+   "description": "Nave de flota para expediciones de carguero.",
+   "how": "Acercate a una fragata con icono verde cerca de un carguero, abrí el intercomunicador (Menú rápido) y contratá a su capitán. Podés tener hasta 30 una vez que comandás un carguero.",
+   "requires": [
+    "own_freighter"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Frigate"
+  },
+  {
+   "id": "own_living_ship",
+   "name": "Conseguir una nave viviente",
+   "description": "Nave orgánica criada desde un huevo.",
+   "how": "Comprá un Huevo del Vacío (3.200 quicksilver) en el Compañero de síntesis de quicksilver de la Anomalía, volá con el motor de pulso hasta el encuentro espacial y completá toda la misión Starbirth (hay esperas de maduración de ~1 día por órgano).",
+   "requires": [
+    "complete_starbirth_biogenesis"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Starbirth"
+  },
+  {
+   "id": "own_sentinel_interceptor",
+   "name": "Conseguir una nave interceptora centinela",
+   "description": "Nave centinela restaurada.",
+   "how": "Usá un Fragmento de IA de transportista (de una nave capital centinela) para localizar una interceptora estrellada en un planeta disonante y repárala (incluida la cabina).",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "combat"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Sentinel_Interceptor"
+  },
+  {
+   "id": "own_corvette",
+   "name": "Construir una corbeta",
+   "description": "Nave grande y personalizable con interior caminable.",
+   "how": "Usá el Taller de corbetas de cualquier estación espacial poblada; hacen falta al menos siete piezas mínimas.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "ship",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Corvette"
+  },
+  {
+   "id": "adopt_companion",
+   "name": "Adoptar una mascota",
+   "description": "Domesticá una criatura como compañera.",
+   "how": "Alimentá y adoptá una criatura con la interfaz de adopción.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "fauna"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Companions"
+  },
+  {
+   "id": "own_settlement",
+   "name": "Convertirte en supervisor de un asentamiento",
+   "description": "Administrá un pueblo y sus decisiones.",
+   "how": "Visitá un asentamiento, conseguí la reputación con la raza y entregá 3 ofrendas raciales (Cubo de convergencia, Daga Vy'keen o GekNip) para reclamarlo. Máximo 4 asentamientos.",
+   "requires": [
+    "first_warp"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "social"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Settlement"
+  },
+  {
+   "id": "warp_red",
+   "name": "Poder saltar a estrellas rojas",
+   "description": "Permite saltar a sistemas de estrella roja.",
+   "how": "Comprá el plano del Motor de cadmio a Iteration: Hyperion en la Anomalía (80 nanites). Fabricalo con 250 Metal cromático y 3 Telares de cableado e instalalo junto al hiperimpulsor.",
+   "requires": [
+    "build_hyperdrive",
+    "access_space_anomaly",
+    "nanites>=80"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cadmium_Drive"
+  },
+  {
+   "id": "warp_green",
+   "name": "Poder saltar a estrellas verdes",
+   "description": "Permite saltar a sistemas de estrella verde.",
+   "how": "Comprá el plano del Motor de Emeril a Iteration: Hyperion en la Anomalía (120 nanites). Fabricalo con 250 Cadmio (se mina en sistemas rojos o sale de desarmar mejoras de nave) y 4 Telares de cableado.",
+   "requires": [
+    "warp_red",
+    "nanites>=120"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Emeril_Drive"
+  },
+  {
+   "id": "warp_blue",
+   "name": "Poder saltar a estrellas azules",
+   "description": "Permite saltar a sistemas de estrella azul.",
+   "how": "Comprá el plano del Motor de indio a Iteration: Hyperion en la Anomalía (200 nanites). Fabricalo con 250 Emeril y 5 Telares de cableado e instalalo en la nave; no necesita tener instalados los motores de cadmio ni de Emeril.",
+   "requires": [
+    "access_space_anomaly",
+    "nanites>=200"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Indium_Drive"
+  },
+  {
+   "id": "warp_purple",
+   "name": "Poder saltar a sistemas púrpura",
+   "description": "Sistemas especiales con planetas exclusivos.",
+   "how": "Completá 'In Stellar Multitudes' (tras They Who Returned y el Camino del Atlas): el Constructo Ensamblado te da el plano del Motor Atlantid (250 Indio, 200 Atlantideum y 1 Vidrio vivo). Desbloquea el acceso a sistemas púrpura.",
+   "requires": [
+    "warp_blue",
+    "complete_in_stellar_multitudes"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "space",
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Atlantid_Drive"
+  },
+  {
+   "id": "unlock_portals",
+   "name": "Usar un portal",
+   "description": "Viajá entre planetas usando glifos.",
+   "how": "Se enseña en 'Un salto en la oscuridad'. Después podés cargar un Portal (16 glifos: 4 de elementos terrestres, 4 de combustible, 4 de catalizadores y 4 estelares) e ingresar una dirección con los glifos que ya aprendiste (se consiguen en Tumbas de viajeros y en La Purga).",
+   "requires": [
+    "complete_a_leap_in_the_dark"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Portal"
+  },
+  {
+   "id": "complete_artemis_path",
+   "name": "Completar la historia de Artemis",
+   "description": "Hilo principal de la historia.",
+   "how": "Completá la ruta de Artemis en orden: Despertares, Solo entre las estrellas, Fantasmas en la máquina, Un salto en la oscuridad, El primer viajero, Patrones en el tiempo, 16/16 y La Purga (después aparece 'Nuevos comienzos').",
+   "requires": [
+    "complete_the_purge"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "story"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Artemis_Path"
+  },
+  {
+   "id": "reach_journey_milestones_5",
+   "name": "Completar 5 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 5 hitos totales obtenés el título 'Pathfinder', requisito de la Semilla del Atlas 'Captured Nanode'.",
+   "requires": [],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_10",
+   "name": "Completar 10 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 10 hitos totales obtenés el título 'Juno', requisito de la Semilla del Atlas 'Englobed Shade'.",
+   "requires": [
+    "reach_journey_milestones_5"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_15",
+   "name": "Completar 15 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 15 hitos totales obtenés el título 'Rosetta', requisito de la Semilla del Atlas 'Noospheric Orb'.",
+   "requires": [
+    "reach_journey_milestones_10"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_20",
+   "name": "Completar 20 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 20 hitos totales obtenés el título 'Cassini', requisito de la Semilla del Atlas 'Dark Matter'.",
+   "requires": [
+    "reach_journey_milestones_15"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_25",
+   "name": "Completar 25 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 25 hitos totales obtenés el título 'Kepler', requisito de la Semilla del Atlas 'Dawn's End'.",
+   "requires": [
+    "reach_journey_milestones_20"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_30",
+   "name": "Completar 30 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 30 hitos totales obtenés el título 'Dawn', requisito de la Semilla del Atlas 'Photic Jade'.",
+   "requires": [
+    "reach_journey_milestones_25"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_35",
+   "name": "Completar 35 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 35 hitos totales obtenés el título 'Curiosity', requisito de la Semilla del Atlas 'State Phasure'.",
+   "requires": [
+    "reach_journey_milestones_30"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_40",
+   "name": "Completar 40 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 40 hitos totales obtenés el título 'Hubble', requisito de la Semilla del Atlas 'Novae Reclaiment'.",
+   "requires": [
+    "reach_journey_milestones_35"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_45",
+   "name": "Completar 45 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 45 hitos totales obtenés el título 'Viking', requisito de la Semilla del Atlas 'Modified Quanta'.",
+   "requires": [
+    "reach_journey_milestones_40"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  },
+  {
+   "id": "reach_journey_milestones_50",
+   "name": "Completar 50 Hitos del viaje",
+   "description": "Hitos totales que muestra la pestaña Hitos del registro del viaje.",
+   "how": "Sumá niveles de hito en las 9 categorías del registro del viaje (distancia a pie, encuentros, palabras, unidades, centinelas, supervivencia, saltos, zoología, piratas). Con 50 hitos totales obtenés el título 'Magellan', requisito de la Semilla del Atlas 'Heart of the Sun'.",
+   "requires": [
+    "reach_journey_milestones_45"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "milestone"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Journey_Milestones"
+  }
+ ],
+ "needs": []
+}

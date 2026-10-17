@@ -30,17 +30,22 @@ export function markDone(byId, state, id) {
   }
 }
 
+// ~1 in 4 suggestions comes from "growth" objectives (earning money, expanding inventory).
+export const GROWTH_RATE = 0.25;
+
 // Two-stage random pick: category first, then objective, so the ~300 cooking
 // recipes don't drown everything else. One-shots weigh 3x repeatables.
 export function pick(objectives, state, { effort = "", category = "" } = {}, rng = Math.random) {
-  const pool = objectives.filter(
+  const all = objectives.filter(
     (o) =>
       isAvailable(o, state) &&
       (!effort || o.effort === effort) &&
       (!category || o.category === category) &&
       !state.skipped.includes(o.id),
   );
-  if (!pool.length) return null;
+  if (!all.length) return null;
+  const growth = all.filter((o) => o.tags?.includes("growth"));
+  const pool = growth.length && rng() < GROWTH_RATE ? growth : all;
   const cats = [...new Set(pool.map((o) => o.category))];
   const fresh = cats.length > 1 ? cats.filter((c) => c !== state.lastCategory) : cats;
   const cat = fresh[Math.floor(rng() * fresh.length)];

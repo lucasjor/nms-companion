@@ -1105,7 +1105,7 @@
    "id": "equip_tractor_beam",
    "name": "Instalar un rayo tractor en una corbeta",
    "description": "Necesario para recoger botín de chatarra espacial profunda (Cosmos).",
-   "how": "Construí/instalá el componente Rayo tractor en el Taller de corbetas.",
+   "how": "Comprá el Rayo tractor en el Taller de corbetas de una estación e instalalo en tu corbeta.",
    "requires": [
     "finalise_first_corvette"
    ],
@@ -1121,9 +1121,11 @@
    "id": "salvage_space_hulk",
    "name": "Recoger chatarra de un casco espacial",
    "description": "Con Bobina de gravitino y corbeta con rayo tractor; tenés 3 min 30 s tras salir del asiento.",
-   "how": "Hallalo en el mapa del sistema, bajá de la nave y recogé materiales de contratos de salvamento.",
+   "how": "Hallá un casco espacial en el mapa del sistema y recuperalo con el Rayo tractor de la corbeta y la Bobina de gravitino (hacen falta los dos). El casco se funde 3 min 30 s después de que dejás el asiento del piloto.",
    "requires": [
-    "equip_tractor_beam"
+    "equip_tractor_beam",
+    "own_gravitino_coil",
+    "complete_signals_tutorial_cosmos"
    ],
    "repeatable": true,
    "effort": "medium",

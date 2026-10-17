@@ -5,7 +5,7 @@ Usage: python3 merge.py && python3 validate.py library.json
 import json
 
 # Earlier file wins on duplicate ids.
-FILES = ["core", "story", "vessels", "world", "exploration", "crafting"]
+FILES = ["core", "story", "vessels", "world", "exploration", "crafting", "growth", "cosmos"]
 
 # Duplicate concepts under different ids: old -> kept id (None = drop the requirement).
 ALIAS = {
@@ -20,6 +20,7 @@ ALIAS = {
     "starbirth_neural_stem": "starbirth_mature_neural_stem",
     "starbirth_heart_node": "starbirth_mature_heart_node",
     "starbirth_fallen_host": "complete_starbirth_biogenesis",
+    "salvage_derelict_hulk": "salvage_space_hulk",
     # unresolved `needs`
     "tech_radiation_deflector": "install_radiation_deflector",
     "tech_coolant_network": "install_coolant_network",
@@ -53,18 +54,23 @@ def remap(req, self_id):
 
 
 def merge():
-    library = {}
+    library, extra_tags = {}, []
     for name in FILES:
         with open(f"data/{name}.json", encoding="utf-8") as f:
-            for o in json.load(f)["objectives"]:
-                if o["id"] in ALIAS or o["id"] in library:
-                    continue
-                reqs = []
-                for r in o["requires"]:
-                    r = remap(r, o["id"])
-                    if r and r not in reqs:
-                        reqs.append(r)
-                library[o["id"]] = {**o, "requires": reqs, "category": name}
+            data = json.load(f)
+        extra_tags += [(ALIAS.get(i, i), tag) for tag, ids in data.get("tag_existing", {}).items() for i in ids]
+        for o in data["objectives"]:
+            if o["id"] in ALIAS or o["id"] in library:
+                continue
+            reqs = []
+            for r in o["requires"]:
+                r = remap(r, o["id"])
+                if r and r not in reqs:
+                    reqs.append(r)
+            library[o["id"]] = {**o, "requires": reqs, "category": o.get("category", name)}
+    for i, tag in extra_tags:
+        if i in library and tag not in library[i]["tags"]:
+            library[i]["tags"].append(tag)
     return list(library.values())
 
 

@@ -4213,7 +4213,7 @@
    "id": "complete_signals_tutorial_cosmos",
    "name": "Tutorial 'Signals' (Cosmos 7.0)",
    "description": "Misión ligera que presenta el nuevo mapa del sistema local y los puntos de interés de espacio profundo.",
-   "how": "Los POI aparecen en el mapa cuando tu partida llegó a la Anomalía. Fuente: reseña de la 7.0 (verificar disponibilidad en tu consola).",
+   "how": "Los puntos de interés aparecen en el mapa del sistema cuando tu partida ya llegó a la Anomalía.",
    "requires": [
     "access_space_anomaly"
    ],
@@ -4230,7 +4230,7 @@
    "id": "do_deep_space_outpost_contracts",
    "name": "Contratos en puestos avanzados de espacio profundo",
    "description": "Puestos alienígenas con intendente, intercambio de mapas y materiales y terminal de salvamento y entregas.",
-   "how": "Volá a un puesto de espacio profundo (marcado en el mapa del sistema).",
+   "how": "Tomá contratos en la Terminal de salvamento y entrega de un puesto de espacio profundo (marcado en el mapa del sistema) y entregá lo recuperado con la Bobina de gravitino en el Depósito de salvamento.",
    "requires": [
     "complete_signals_tutorial_cosmos"
    ],
@@ -4266,9 +4266,10 @@
    "id": "become_station_director",
    "name": "Convertirte en director de una estación espacial",
    "description": "Cosmos 7.0: director con derechos para decorar la estación.",
-   "how": "La fuente dice 'demostrar tu valía ante las autoridades locales'; el requisito exacto no está confirmado.",
+   "how": "En una estación reclamable usá el Núcleo de la estación > 'Reclamar estación' (≈1.000 millones de units según la wiki). No se pueden reclamar estaciones Atlas, la Anomalía, abandonadas ni de forajidos. Guías de la comunidad mencionan además reputación y contratos de salvamento (sin confirmar).",
    "requires": [
-    "visit_space_station"
+    "visit_space_station",
+    "units>=1000000000"
    ],
    "repeatable": false,
    "effort": "long",

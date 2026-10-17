@@ -32,6 +32,8 @@ function sanitize(d) {
     current: byId.has(d.current) ? d.current : null,
     reports: Array.isArray(d.reports) ? d.reports.filter((r) => r && typeof r.text === "string").map((r) => ({ id: str(r.id), text: r.text, date: str(r.date) })) : [],
     filters: { effort: str(d.filters?.effort), category: str(d.filters?.category) },
+    moneyAt: Number.isFinite(d.moneyAt) ? d.moneyAt : 0,
+    sinceMoney: Number.isInteger(d.sinceMoney) ? d.sinceMoney : 0,
   };
 }
 
@@ -80,6 +82,7 @@ function next() {
   state.current = o?.id ?? null;
   if (o) state.lastCategory = o.category;
   save();
+  renderMoneyPrompt(); // "Otro" and filter changes also check whether the wallet is stale
   renderNow();
 }
 
@@ -103,6 +106,7 @@ function renderNow() {
   $("btnDone").onclick = () => {
     markDone(byId, state, o.id);
     state.current = null; // repeatables stay available, so move on explicitly
+    state.sinceMoney++;
     renderAll();
     next();
   };
@@ -148,7 +152,10 @@ $("libList").addEventListener("click", (e) => {
   if (!e.target.matches("[data-toggle]")) return;
   const id = e.target.closest("details").dataset.id;
   if (isDone(byId.get(id), state)) delete state.done[id];
-  else markDone(byId, state, id);
+  else {
+    markDone(byId, state, id);
+    state.sinceMoney++;
+  }
   save();
   renderAll();
 });
@@ -169,12 +176,50 @@ function renderMe() {
     : "Ninguno todavía.";
 }
 
+function setMoney(k, value) {
+  state.money[k] = Math.max(0, Number(value) || 0);
+  state.moneyAt = Date.now();
+  state.sinceMoney = 0;
+}
+
 for (const k of MONEY) {
   $(`m-${k}`).addEventListener("change", (e) => {
-    state.money[k] = Math.max(0, Number(e.target.value) || 0);
+    setMoney(k, e.target.value);
     save();
     renderAll();
   });
+}
+
+// Ask for the wallet again every few days or after a handful of completed objectives.
+const MONEY_EVERY_DAYS = 3;
+const MONEY_EVERY_DONE = 8;
+
+function renderMoneyPrompt() {
+  const stale = Date.now() - state.moneyAt > MONEY_EVERY_DAYS * 864e5 || state.sinceMoney >= MONEY_EVERY_DONE;
+  if (!stale) return ($("moneyPrompt").innerHTML = "");
+  $("moneyPrompt").innerHTML = `
+    <div class="card">
+      <h2>¿Cuánto tenés ahora?</h2>
+      <p class="small">Con tu billetera al día te propongo objetivos que ya podés pagar.</p>
+      <div class="grid">
+        ${MONEY.map((k) => `<label for="p-${k}">${k[0].toUpperCase()}${k.slice(1)}</label><input id="p-${k}" type="number" min="0" inputmode="numeric" value="${state.money[k] || ""}">`).join("")}
+      </div>
+      <div class="row" style="margin-top:8px">
+        <button class="primary" id="pSave">Guardar</button>
+        <button id="pLater">Ahora no</button>
+      </div>
+    </div>`;
+  $("pSave").onclick = () => {
+    for (const k of MONEY) setMoney(k, $(`p-${k}`).value);
+    save();
+    renderAll();
+  };
+  $("pLater").onclick = () => {
+    state.moneyAt = Date.now(); // snooze: ask again after the next interval
+    state.sinceMoney = 0;
+    save();
+    renderMoneyPrompt();
+  };
 }
 
 $("onboarding").addEventListener("change", (e) => {
@@ -217,6 +262,7 @@ function renderTotal() {
 }
 
 function renderAll() {
+  renderMoneyPrompt();
   renderNow();
   renderTotal();
   renderLibrary();
@@ -245,4 +291,6 @@ document.querySelector("nav").addEventListener("click", (e) => {
 
 renderAll();
 if (!state.current) next();
+// The app can stay open for days on a phone: re-check the wallet when it comes back to the foreground.
+document.addEventListener("visibilitychange", () => document.hidden || renderMoneyPrompt());
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");

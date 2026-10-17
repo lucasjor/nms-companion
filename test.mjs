@@ -39,6 +39,13 @@ assert.equal(pick(objs, s, {}, () => 0).id, "r"); // avoids repeating last categ
 s.skipped = ["r"];
 assert.equal(pick(objs, s, {}, () => 0).id, "a");
 
+// growth bias: low roll picks from growth objectives, high roll from everything
+const g = [o("plain"), o("money", [], { tags: ["growth"] })];
+s = fresh();
+assert.equal(pick(g, s, {}, () => 0).id, "money");
+assert.equal(pick(g, s, {}, () => 0.99).id, "money"); // rng 0.99 -> last of the pool
+assert.equal(pick(g, s, {}, ((xs) => () => xs.shift())([0.5, 0, 0])).id, "plain");
+
 // smoke test on the real library: a new player always has something to do
 const lib = JSON.parse(readFileSync(new URL("./library.json", import.meta.url))).objectives;
 const libById = new Map(lib.map((x) => [x.id, x]));

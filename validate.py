@@ -5,8 +5,10 @@ Usage: python3 validate.py data/*.json
 import json
 import re
 import sys
+from pathlib import Path
 
 FIELDS = {"id", "name", "description", "how", "requires", "repeatable", "effort", "tags", "source"}
+CATEGORIES = {"core", "story", "vessels", "world", "exploration", "crafting"}
 CURRENCY = re.compile(r"^(units|nanites|quicksilver)>=\d+$")
 
 
@@ -23,6 +25,9 @@ def validate(files):
             missing = FIELDS - o.keys()
             if missing:
                 errors.append(f"{path}: {o.get('id')} missing {sorted(missing)}")
+            category = o.get("category", Path(path).stem)  # merge.py defaults to the file name
+            if category not in CATEGORIES:
+                errors.append(f"{path}: {o.get('id')} bad category {category!r}")
             if o.get("effort") not in ("short", "medium", "long"):
                 errors.append(f"{path}: {o.get('id')} bad effort {o.get('effort')!r}")
             objectives[o.get("id")] = o

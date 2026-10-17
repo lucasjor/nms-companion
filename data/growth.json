@@ -1,0 +1,617 @@
+{
+ "objectives": [
+  {
+   "id": "sell_storm_crystals",
+   "name": "Vender Cristales de tormenta",
+   "description": "Los Cristales de tormenta son de lo más valioso que se puede recoger a pie: cada uno vale unas 211.150 unidades según la wiki.",
+   "how": "Buscá un planeta con clima extremo y, durante la tormenta, recogé los cristales que aparecen (se apilan hasta 10). Un Minotaur te permite recogerlos sin bajar y llegar rápido al siguiente antes de que acabe la tormenta. Vendelos en una Terminal de comercio galáctico. Valor de referencia de la wiki; puede haber cambiado con parches.",
+   "requires": [
+    "find_storm_crystal",
+    "sell_at_galactic_trade_terminal"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "units",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storm_Crystal",
+   "category": "world"
+  },
+  {
+   "id": "sell_salvaged_data_units",
+   "name": "Vender Datos recuperados por unidades",
+   "description": "Cada Dato recuperado se vende por unas 52.000 unidades, una vía rápida de dinero si ya tenés los planos que necesitás.",
+   "how": "Buscá Tecnología enterrada (cerca de maquinaria dañada) con el Visor de análisis y desenterrala: suelen salir de 1 a 4 Datos recuperados. Vendelos en una terminal de comercio o decidí refinarlos en nanitas (15 nanitas cada uno) según lo que te falte.",
+   "requires": [
+    "obtain_salvaged_data",
+    "sell_at_galactic_trade_terminal"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "money",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Salvaged_Data",
+   "category": "world"
+  },
+  {
+   "id": "sell_stasis_fusion_batch",
+   "name": "Vender Dispositivos de estasis y Cebadores de fusión",
+   "description": "Son los objetos individuales más caros del juego: 15.600.000 unidades cada uno. Montar la producción es una de las inversiones más rentables.",
+   "how": "Con los planos (Laboratorio de síntesis por 250 nanitas, o Instalaciones de manufactura) fabricá Dispositivo de estasis (Procesador cuántico + Cámara criogénica + Iridesita) y Cebador de fusión (Reactor portátil + Procesador cuántico + Geodesita). Necesitás cientos de plantas de cultivo y recursos por unidad, así que conviene una granja a gran escala. Vendelos en una terminal en un sistema donde el precio sea favorable.",
+   "requires": [
+    "craft_stasis_device",
+    "craft_fusion_ignitor",
+    "build_large_scale_farm",
+    "sell_at_galactic_trade_terminal"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "money",
+    "units",
+    "crafting",
+    "farming"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Stasis_Device",
+   "category": "crafting"
+  },
+  {
+   "id": "run_trading_economy_loop",
+   "name": "Recorrer el bucle Comercio, Materiales avanzados y Científico",
+   "description": "Una de las dos rutas comerciales clásicas: llevás mercancías de mercado a la economía que más las demanda y vendés caro.",
+   "how": "Con el Escáner de economía, mirá el mapa galáctico y encadená sistemas en el orden Comercio, Materiales avanzados, Científico y de nuevo Comercio. Buscá economías Fuertes y modificadores de compra/venta cercanos a -30 % y +80 %. Los Puestos de comercio planetarios dan mejores precios que las estaciones.",
+   "requires": [
+    "trade_route_between_economies"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "units",
+    "trading"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Trade_route",
+   "category": "world"
+  },
+  {
+   "id": "run_mining_economy_loop",
+   "name": "Recorrer el bucle Minería, Manufactura, Tecnología y Generación de energía",
+   "description": "La segunda ruta comercial cíclica: cuatro economías encadenadas para comprar barato y vender caro sin parar.",
+   "how": "Con el Escáner de economía, visitá sistemas en el orden Minería, Manufactura, Tecnología, Generación de energía y vuelta a Minería. Entre cada parada conviene dejar pasar tiempo o saltar varios sistemas, porque el inventario de cada mercado se repone con retraso.",
+   "requires": [
+    "trade_route_between_economies"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "units",
+    "trading"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Trade_route",
+   "category": "world"
+  },
+  {
+   "id": "build_base_at_trade_outpost",
+   "name": "Montar una base junto a un Puesto de comercio de tu ruta",
+   "description": "Los Puestos de comercio planetarios pagan mejor que las estaciones, y comparten inventario en todo el sistema.",
+   "how": "Usá el Escáner de economía para localizar un Puesto de comercio en un sistema fuerte de tu ruta, aterrizá, y construí allí una base (opcionalmente con un portal) para entrar y salir rápido entre sistemas de la ruta.",
+   "requires": [
+    "trade_route_between_economies",
+    "find_trade_outpost",
+    "build_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "units",
+    "trading",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Trade_route",
+   "category": "world"
+  },
+  {
+   "id": "cook_cronus_in_bulk",
+   "name": "Cocinar en serie para Cronos y ganar nanitas",
+   "description": "Cocinar para Iteración: Cronos es una forma muy fiable de convertir comida en nanitas.",
+   "how": "Con Salsa sabrosa y Estofado de carne misteriosa podés hacer Carne con hierbas, el plato mejor pagado (50 a 320 nanitas por unidad según la wiki). La wiki estima unas 25.000 nanitas con 250 platos (500 Trozos de carne + 500 Verduras al vapor). Cada plato se presenta por separado, así que cuenta con unos 20 minutos de menús.",
+   "requires": [
+    "sell_dish_cronus"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "money",
+    "nanites",
+    "cooking",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster",
+   "category": "crafting"
+  },
+  {
+   "id": "farm_runaway_mould_nanites",
+   "name": "Explotar un depósito curioso de Moho desenfrenado",
+   "description": "Un Depósito curioso de Moho desenfrenado refinado en nanitas es de las vías más rápidas: más de 40.000 nanitas por hora según la wiki.",
+   "how": "Encontrá el depósito, marcalo con una base y poné varios refinadores y, mejor, un teletransportador al lado. Una pila de Moho desenfrenado tarda unos 20 minutos en dar cerca de 2.000 nanitas; usá muchos refinadores a la vez. Si te teletransportás fuera del planeta y volvés, el depósito reaparece. Cifras de la wiki, no verificadas en la versión actual.",
+   "requires": [
+    "refine_runaway_mould",
+    "build_base_computer"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "money",
+    "nanites",
+    "grind",
+    "base"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster",
+   "category": "world"
+  },
+  {
+   "id": "farm_sentinels_nanites",
+   "name": "Cazar Centinelas en cadena para conseguir nanitas",
+   "description": "Matar muchos drones centinela rinde Suministros de combate, nanitas y Vidrio recuperado (que da módulos de mejora vendibles por nanitas).",
+   "how": "En un planeta con centinelas agresivos y nivel de búsqueda 3 suelen aparecer dos Drones invocadores; mantenelos vivos y matá los demás mientras recogés suministros a distancia. También se puede pelear con Interceptores centinela alrededor de una estación espacial. La wiki lo compara con desguazar naves.",
+   "requires": [],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "nanites",
+    "combat",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Nanite_Cluster",
+   "category": "world"
+  },
+  {
+   "id": "queue_three_daily_nexus",
+   "name": "Acumular y completar 3 misiones diarias del Nexus",
+   "description": "Las misiones diarias de Quicksilver se acumulan hasta 3 días, así que podés cobrar 1.200 Quicksilver de una vez.",
+   "how": "Cada día aparece una misión del Nexus con 400 Quicksilver; si te saltás días se acumulan hasta 3. Entrá al Nexus, aceptá y completá las misiones acumuladas (se pueden hacer en cualquier planeta o sistema). Aparte, hay una misión de fin de semana de 1.800.",
+   "requires": [
+    "quicksilver_nexus_daily"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "quicksilver",
+    "nexus"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Quicksilver",
+   "category": "world"
+  },
+  {
+   "id": "process_outpost_salvage_for_sale",
+   "name": "Procesar material de espacio profundo y venderlo",
+   "description": "En Cosmos, los puestos avanzados de espacio profundo convierten material en bruto en objetos rentables para la Red comercial galáctica.",
+   "how": "Extraé polvo de cometa, fibras gelatinosas y metal contaminado de asteroides o cascos espaciales, llevalos a un puesto avanzado de espacio profundo y procesalos. Los parches de Cosmos describen el material como lucrativo; no hay rendimientos oficiales publicados, así que probá y mirá el precio en la terminal.",
+   "requires": [
+    "salvage_space_hulk",
+    "do_deep_space_outpost_contracts"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "money",
+    "units",
+    "space",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "exosuit_general_30",
+   "name": "Ampliar el inventario del exotraje a 30 ranuras",
+   "description": "Primeros pasos para dejar de tirar recursos: las primeras ranuras generales son baratas.",
+   "how": "En la Estación de mejoras del exotraje (estación espacial o Anomalía) comprá una ranura por sistema estelar. Según la wiki, el exotraje parte con 24 ranuras de inventario y las seis siguientes cuestan 5.000, 10.000, 20.000, 30.000, 40.000 y 50.000 unidades (155.000 en total). Valores de la wiki, pueden haber cambiado.",
+   "requires": [
+    "exosuit_upgrade_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "inventory",
+    "exosuit",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Inventory",
+   "category": "core"
+  },
+  {
+   "id": "exosuit_general_48",
+   "name": "Ampliar el inventario general del exotraje a 48 ranuras",
+   "description": "El máximo de ranuras generales del exotraje se compra con unidades; la ampliación completa cuesta unos 2,7 millones según la wiki.",
+   "how": "Seguí comprando una ranura general por sistema en la Estación de mejoras (estación o Anomalía): saltá a un sistema nuevo y alterná entre ambos lugares. También podés conseguir ranuras gratis reparando cápsulas de descenso. Costes de la wiki (la tabla indica que podría estar desactualizada).",
+   "requires": [
+    "exosuit_general_30",
+    "units>=2000000"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "inventory",
+    "exosuit",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Inventory",
+   "category": "core"
+  },
+  {
+   "id": "exosuit_first_cargo_slot",
+   "name": "Comprar la primera ranura de carga del exotraje",
+   "description": "La ranura de carga apila más (500 por pila en vez de 250), por eso la primera compensa especialmente.",
+   "how": "En la Estación de mejoras del exotraje elegí la pestaña de Carga y pagá el coste. Solo se permite una mejora por sistema estelar: si aparece \"No hay mejora disponible\", saltá a otro sistema.",
+   "requires": [
+    "exosuit_upgrade_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "inventory",
+    "exosuit",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exosuit_Upgrade_Station",
+   "category": "core"
+  },
+  {
+   "id": "exosuit_tech_30",
+   "name": "Ampliar la tecnología del exotraje a 30 ranuras",
+   "description": "Las ranuras de tecnología son las más baratas del exotraje y te dejan instalar más mejoras.",
+   "how": "Según la wiki empiezas con 10 y la primera mejora cuesta 1.000 unidades; el precio tope es 125.000. Compralas en la Estación de mejoras (una por sistema) o ganalas en cápsulas de descenso.",
+   "requires": [
+    "exosuit_upgrade_station"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "inventory",
+    "exosuit",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Inventory",
+   "category": "core"
+  },
+  {
+   "id": "exosuit_upgrade_each_system",
+   "name": "Comprar una ranura del exotraje en cada sistema nuevo",
+   "description": "Como solo se vende una mejora por sistema, una rutina de salto, mejora y vuelta convierte el dinero en espacio.",
+   "how": "En cada sistema estelar nuevo, usá la Estación de mejoras de la estación espacial o de la Anomalía (no ambas) y comprá la ranura que más te falte (general, tecnología o carga).",
+   "requires": [
+    "exosuit_upgrade_station"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "inventory",
+    "exosuit",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exosuit_Upgrade_Station",
+   "category": "core"
+  },
+  {
+   "id": "repair_more_drop_pods",
+   "name": "Reparar más cápsulas de descenso para ranuras gratis",
+   "description": "Cada cápsula de descenso reparada da una ranura de exotraje gratis, a elegir entre general, carga y tecnología; cada una solo se usa una vez.",
+   "how": "Reparala con una Carta de mejora del exotraje y los componentes que pida (con el Amplificador de señal localizás cápsulas cercanas). Elegí el tipo de ranura que te falte.",
+   "requires": [
+    "repair_drop_pod"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "inventory",
+    "exosuit",
+    "exploration"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Drop_Pod",
+   "category": "exploration"
+  },
+  {
+   "id": "mt_slots_30",
+   "name": "Ampliar un multiherramienta a 30 ranuras",
+   "description": "El tope de un multiherramienta de clase C o B es 30 ranuras (A tiene 45 y S tiene 60).",
+   "how": "El multiherramienta inicial tiene 8 ranuras. En la Estación de mejoras del multiherramienta de cualquier estación pagá unidades (empezando en 100.000) o canjeá Ranuras de expansión. Para más de 30 necesitás uno de clase A o S.",
+   "requires": [
+    "mt_buy_slot_units"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "inventory",
+    "multitool",
+    "units"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Inventory",
+   "category": "core"
+  },
+  {
+   "id": "mt_scrap_for_expansion",
+   "name": "Desguazar multiherramientas para conseguir Ranuras de expansión",
+   "description": "Las Ranuras de expansión son valiosas: la del puesto 60 ahorra unos 600 millones de unidades.",
+   "how": "Desguazá multiherramientas en la Anomalía; cuanto mayor la clase, más probabilidad de recibir una Ranura de expansión. También se pueden elegir como recompensa tras resolver el puzle de una Instalación de manufactura (100 %).",
+   "requires": [
+    "mt_slot_expansion_item",
+    "access_space_anomaly"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "growth",
+    "inventory",
+    "multitool"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Multi-Tool_Expansion_Slot",
+   "category": "vessels"
+  },
+  {
+   "id": "farm_storage_augmentation_scrap",
+   "name": "Desguazar naves de alta clase buscando Aumentos de almacenamiento",
+   "description": "Cada Aumento de almacenamiento da una ranura de nave gratis; las naves de clase alta y los Haulers los dan con más probabilidad.",
+   "how": "En la Terminal de equipamiento de naves de una estación, comprá y desguazá naves y revisá si el botín incluye el Aumento de almacenamiento. Otras fuentes: cargueros estrellados o a la deriva, observatorios, chatarra armónica, expediciones de fragatas y el agente de misiones de la estación.",
+   "requires": [
+    "scrap_ship",
+    "use_storage_augmentation"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "inventory",
+    "starship",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storage_Augmentation",
+   "category": "vessels"
+  },
+  {
+   "id": "claim_free_storage_augmentation_envoys",
+   "name": "Reclamar Aumentos de almacenamiento gratis de Enviados",
+   "description": "Los Enviados de los gremios regalan Aumentos de almacenamiento a rangos altos: Maestro en Exploradores y Exaltado en Comerciantes.",
+   "how": "Subí tu reputación con los gremios hasta esos rangos y hablá con un Enviado en una estación o en la Anomalía. Aparece según la wiki en algunos Enviados.",
+   "requires": [
+    "use_storage_augmentation",
+    [
+     "guild_explorers_master",
+     "guild_merchants_exalted"
+    ]
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "inventory",
+    "starship",
+    "reputation"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Storage_Augmentation",
+   "category": "vessels"
+  },
+  {
+   "id": "freighter_collect_five_bulkheads",
+   "name": "Reunir 5 Mamparos de carga",
+   "description": "Los Mamparos de carga son la única forma de ampliar la bodega del carguero; la mayoría llega de los cargueros a la deriva.",
+   "how": "Completá cargueros a la deriva (premio 100 %), destruí cargueros no jugables (30 %) y abrí contenedores de cargueros estrellados (~4 %), o pedí uno al Enviado de Comerciantes con rango Exaltado. También se puede conseguir con el Maestro de recompensas de estaciones sin ley (~2,5 %). Canjealos en el Control de mejoras del carguero.",
+   "requires": [
+    "use_cargo_bulkhead"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "inventory",
+    "freighter",
+    "grind"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Cargo_Bulkhead",
+   "category": "vessels"
+  },
+  {
+   "id": "freighter_cargo_max_class",
+   "name": "Llevar el carguero a su límite de ranuras según su clase",
+   "description": "La expansión del carguero con mamparos tiene un tope según su clase.",
+   "how": "Según la wiki, los límites de carga son 120 (S), 100 (A), 72 (B) y 48 (C); y de tecnología, 60, 50, 30 y 27. Los cargueros de clase A o superior tienen más margen. Un carguero normal pequeño necesita más mamparos que un capital para llegar al mismo límite. Cifras de las versiones 4.0 a 4.12; pueden haber cambiado.",
+   "requires": [
+    "freighter_collect_five_bulkheads"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "growth",
+    "inventory",
+    "freighter"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Freighter",
+   "category": "vessels"
+  },
+  {
+   "id": "use_colossus_mobile_storage",
+   "name": "Usar el Colossus como almacén móvil",
+   "description": "El Colossus tiene el inventario más grande de los exovehículos: 50 ranuras de carga según la wiki.",
+   "how": "Convocalo con el Materializador orbital o la unidad de convocatoria y guardá recursos en su inventario (alcanza hasta 50 u de distancia). Para comparar: Roamer 40, Nautilon 40, Minotaur 40, Nomad 30 y Pilgrim 30. El inventario de los exovehículos no se compra, solo cambia con parches.",
+   "requires": [
+    "own_colossus"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "inventory",
+    "exocraft"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Exocraft",
+   "category": "vessels"
+  },
+  {
+   "id": "share_storage_containers_between_bases",
+   "name": "Compartir contenedores de almacenamiento entre bases y carguero",
+   "description": "La wiki indica que los Contenedores de almacenamiento numerados se comparten con los del mismo número en otras bases y en el carguero.",
+   "how": "Construí hasta 10 contenedores (50 ranuras cada uno) en una base y guardá recursos; luego comprobá si el contenido aparece en otra base o en el carguero con los mismos números. Dato de la wiki sin verificar en la versión actual.",
+   "requires": [
+    "build_storage_container"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "growth",
+    "inventory",
+    "storage",
+    "building"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Inventory",
+   "category": "world"
+  }
+ ],
+ "tag_existing": {
+  "growth": [
+   "quicksilver_nexus_daily",
+   "quicksilver_nexus_weekend",
+   "quicksilver_stellar_ice",
+   "quicksilver_nada_story",
+   "do_nexus_daily_quicksilver_mission",
+   "do_nexus_weekend_mission",
+   "complete_first_nexus_mission",
+   "settlement_wanted_citizen_quicksilver",
+   "sell_at_galactic_trade_terminal",
+   "trade_route_between_economies",
+   "use_economy_scanner_map",
+   "install_economy_scanner",
+   "build_galactic_trade_terminal",
+   "build_freighter_trade_terminal",
+   "build_galactic_trade_room",
+   "sell_artifacts_ruins",
+   "salvage_ships_for_nanites",
+   "refine_salvaged_data_nanites",
+   "discover_all_creatures_planet",
+   "upload_discoveries_nanites",
+   "sell_dish_cronus",
+   "refine_nanite_cluster",
+   "deliver_waste_processing_plant",
+   "scrap_ship",
+   "use_scrap_dealer",
+   "sell_derelict_logs",
+   "complete_derelict_freighter",
+   "salvage_derelict_hulk",
+   "salvage_space_hulk",
+   "do_deep_space_outpost_contracts",
+   "obtain_salvaged_data",
+   "farm_albumen_pearl_orb",
+   "farm_gravitino_host",
+   "farm_venom_urchin",
+   "farm_nipnip",
+   "farm_living_glass",
+   "farm_liquid_explosive",
+   "farm_circuit_board",
+   "build_large_scale_farm",
+   "build_depot_farm",
+   "hire_farmer",
+   "build_cultivation_chamber",
+   "craft_stasis_device",
+   "craft_fusion_ignitor",
+   "craft_living_glass",
+   "craft_circuit_board",
+   "craft_5_stasis_device",
+   "craft_5_fusion_ignitor",
+   "build_mineral_extractor",
+   "build_gas_extractor",
+   "build_supply_network",
+   "build_autonomous_mining_unit",
+   "build_stellar_extractor_room",
+   "hire_trade_frigate",
+   "collect_trade_frigate_output",
+   "send_trade_expedition",
+   "send_exploration_expedition",
+   "send_industrial_expedition",
+   "collect_industrial_frigate_output",
+   "use_mind_control_device",
+   "claim_settlement_production",
+   "build_settlement_marketplace",
+   "build_settlement_farm",
+   "build_settlement_factory",
+   "unlock_all_settlement_products",
+   "technician_terminal_hack_units",
+   "bounty_master_missions",
+   "pirate_freighter_cargo",
+   "guild_merchants_donate_daily",
+   "do_mission_board_delivery",
+   "do_mission_board_collect_item",
+   "find_storm_crystal",
+   "catch_fish",
+   "do_nexus_unearth_ancient_bones",
+   "nexus_unearth_bones",
+   "recruit_pirate_frigate",
+   "exosuit_upgrade_station",
+   "exosuit_120_cargo",
+   "exosuit_60_tech",
+   "repair_drop_pod",
+   "buy_ship_slot_units",
+   "use_storage_augmentation",
+   "max_shuttle_inventory",
+   "max_fighter_inventory",
+   "max_explorer_inventory",
+   "max_hauler_inventory",
+   "max_solar_inventory",
+   "max_exotic_inventory",
+   "max_interceptor_inventory",
+   "max_living_inventory",
+   "max_corvette_inventory",
+   "mt_slot_expansion_item",
+   "mt_buy_slot_units",
+   "mt_max_slots",
+   "use_cargo_bulkhead",
+   "cargo_bulkhead_derelict",
+   "cargo_bulkhead_envoy",
+   "destroy_npc_freighter",
+   "build_freighter_storage_room",
+   "build_ten_freighter_storage",
+   "build_storage_container",
+   "build_ten_storage_containers",
+   "install_matter_beam",
+   "trade_in_freighter",
+   "own_capital_freighter",
+   "find_s_class_freighter",
+   "upgrade_ship_to_s",
+   "upgrade_ship_to_a",
+   "buy_roaming_freighter",
+   "equip_tractor_beam",
+   "build_orbital_exocraft_materialiser",
+   "own_colossus",
+   "monolith_multitool_reward",
+   "trade_multitool",
+   "collect_harmonic_scrap",
+   "install_salvaged_fleet_unit",
+   "own_corvette"
+  ]
+ },
+ "needs": []
+}

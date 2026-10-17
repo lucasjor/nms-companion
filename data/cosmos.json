@@ -1,0 +1,805 @@
+{
+ "objectives": [
+  {
+   "id": "open_star_system_map",
+   "name": "Abrir el Mapa del sistema estelar",
+   "description": "Nuevo mapa del sistema local que muestra planetas, la estación espacial y los puntos de interés de espacio profundo (cinturones, puestos, cascos, etc.).",
+   "how": "Desde la nave, corbeta, carguero o estación, abrí el Menú rápido y elegí 'Mapa del sistema estelar' (Star System Map). Los puntos de interés solo aparecen si tu partida ya llegó a la Anomalía Espacial; si no ves nada, invocala primero. Se confirmó para todas las plataformas, incluidas PS4/PS5 y Xbox.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "navigation",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "mark_star_system_map_destination",
+   "name": "Marcar un planeta o punto de interés en el mapa del sistema",
+   "description": "Fijar un destino en el mapa activa la ayuda de navegación de la nave.",
+   "how": "En el Mapa del sistema estelar, seleccioná un planeta o punto de interés y marcalo; luego seguí el marcador con el motor de pulso. Desde el parche 7.01 el icono es el mismo que al marcar desde la página de descubrimientos.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "navigation",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/cosmos-update/",
+   "category": "exploration"
+  },
+  {
+   "id": "visit_deep_space_outpost",
+   "name": "Visitar un puesto avanzado de espacio profundo",
+   "description": "Estructura alienígena en órbita presente en casi todos los sistemas (no en sistemas sin cartografiar), con comercio y contratos.",
+   "how": "Marcá un icono de 'Puesto avanzado' en el Mapa del sistema estelar y acoplá con una nave o corbeta. Dentro hay un intendente (quartermaster), una Terminal de comercio galáctico (añadida en 7.01) y la terminal de salvamento y entregas.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "outpost",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep_Space_Outpost",
+   "category": "exploration"
+  },
+  {
+   "id": "complete_deep_space_outpost_tutorial",
+   "name": "Completar la misión introductoria del puesto avanzado",
+   "description": "Misión corta que enseña la terminal de contratos del puesto avanzado.",
+   "how": "Se ofrece al visitar un puesto avanzado; usa el tablón de misiones. El nombre exacto de la misión no pudo confirmarse; el parche 7.05 menciona que muestra un aviso si el tablón no está disponible.",
+   "requires": [
+    "visit_deep_space_outpost"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "story",
+    "tutorial",
+    "outpost",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/2026/09/cosmos-7-05/",
+   "category": "story"
+  },
+  {
+   "id": "buy_outpost_charts",
+   "name": "Comprar cartas del intendente del puesto avanzado",
+   "description": "El intendente vende mapas, reclamos de salvamento y cartas de asteroides habitables, y compra materiales recuperados.",
+   "how": "Hablá con el intendente (Quartermaster) del puesto avanzado. Los precios y existencias no se pudieron confirmar. Dentro de su sala también hay una Terminal de comercio galáctico.",
+   "requires": [
+    "visit_deep_space_outpost"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "outpost",
+    "trading",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep_Space_Outpost",
+   "category": "exploration"
+  },
+  {
+   "id": "dock_corvette_deep_space_outpost",
+   "name": "Aterrizar una corbeta en un puesto avanzado",
+   "description": "Los puestos tienen plataformas para corbetas, necesarias para cargar la chatarra.",
+   "how": "Pilotá tu corbeta hasta un puesto avanzado y acoplá en sus plataformas de aterrizaje de corbeta.",
+   "requires": [
+    "visit_deep_space_outpost",
+    "finalise_first_corvette"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "corvette",
+    "outpost",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/2026/09/cosmos-7-01/",
+   "category": "vessels"
+  },
+  {
+   "id": "own_gravitino_coil",
+   "name": "Obtener la Bobina de gravitino",
+   "description": "Accesorio del multiherramienta imprescindible para recoger chatarra en el espacio; desde Cosmos también puede equiparse dentro de las estaciones espaciales.",
+   "how": "Comprá el plano en la Anomalía Espacial y fabricala con 3 Resonador magnético, 1 Bola de gravitino y 50 Metal cromático.",
+   "requires": [
+    "access_space_anomaly"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "multitool",
+    "salvage",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Gravitino_Coil",
+   "category": "vessels"
+  },
+  {
+   "id": "vent_corvette_cargo",
+   "name": "Expulsar la carga de la corbeta con el rayo tractor",
+   "description": "El rayo tractor puede vaciar de golpe toda la carga recogida.",
+   "how": "Con un rayo tractor instalado, usá el botón 'Vent Cargo' (expulsar carga) de la interfaz del rayo tractor en la corbeta. Se corrigió un fallo del botón en 7.01.",
+   "requires": [
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "corvette",
+    "salvage",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/cosmos-update/",
+   "category": "vessels"
+  },
+  {
+   "id": "eject_from_starship_space",
+   "name": "Salir de la nave en el espacio (EVA)",
+   "description": "Cualquier nave, no solo las corbetas, permite ahora caminar por el espacio.",
+   "how": "Estando en el espacio, abrí el Menú rápido y elegí el botón de eyectar/salir de la nave. Ten en cuenta que caminar en el espacio consume la protección contra el frío del traje salvo que haya otro peligro cerca.",
+   "requires": [
+    "leave_first_planet"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "spacewalk",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "vessels"
+  },
+  {
+   "id": "spacewalk_six_degrees",
+   "name": "Moverte con seis grados de libertad en el espacio",
+   "description": "Con la mochila a reacción puedes desplazarte y rodar libremente en gravedad cero.",
+   "how": "Después de salir de la nave en el espacio, muévete con el jetpack usando también el control de balanceo (roll). Las explosiones cercanas te empujan.",
+   "requires": [
+    "eject_from_starship_space"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "spacewalk",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "land_on_space_object",
+   "name": "Aterrizar en un objeto con gravedad en el espacio",
+   "description": "Mejoró la transición al aterrizar y despegar de objetos con gravedad (asteroides, cascos, bases orbitales).",
+   "how": "Acercate con la nave o a pie a un objeto del mapa del sistema (por ejemplo un asteroide habitable) y aterrizá sobre él.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "reach_system_star",
+   "name": "Llegar hasta la estrella del sistema",
+   "description": "Las estrellas son ahora un punto de interés alcanzable en vuelo largo; es letal.",
+   "how": "Marcá la estrella en el Mapa del sistema estelar y volá hasta ella con motor de pulso. El propio parche advierte del riesgo: hacelo bajo tu responsabilidad.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "hazard",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/cosmos-update/",
+   "category": "exploration"
+  },
+  {
+   "id": "visit_asteroid_belt",
+   "name": "Visitar un cinturón de asteroides",
+   "description": "Cinturones rocosos densos con minerales raros y cristales extraños; atraen prospectores, comerciantes y forajidos.",
+   "how": "Marcá un cinturón en el Mapa del sistema estelar, volá hasta allí y salí de la nave para minar. Para llevarte el botín necesitás Bobina de gravitino y una corbeta con rayo tractor.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "mining",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Asteroid_Belt",
+   "category": "exploration"
+  },
+  {
+   "id": "harvest_comet_dust",
+   "name": "Obtener polvo de cometa en un cinturón de asteroides",
+   "description": "El polvo de cometa se recoge de fragmentos de cometa y se usa en la construcción de estaciones o se vende.",
+   "how": "Acércate a un fragmento de cometa, abre la escotilla y vuela con el jetpack; rompelo con el láser de minería, agarrá los cristales que salen con la Bobina de gravitino hasta que los jale el rayo tractor, y rompé los cristales con el láser para obtener polvo de cometa o llevalos a un puesto avanzado.",
+   "requires": [
+    "visit_asteroid_belt",
+    "own_gravitino_coil",
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "salvage",
+    "grind",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Asteroid_Belt",
+   "category": "crafting"
+  },
+  {
+   "id": "visit_ice_field",
+   "name": "Visitar un campo de hielo",
+   "description": "Campos de hielo estelar con recursos valiosos y mineros, comerciantes y piratas errantes.",
+   "how": "Marcá un campo de hielo en el Mapa del sistema estelar y salí de la nave. Recoger material exige Bobina de gravitino y corbeta con rayo tractor.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "mining",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Ice_Field",
+   "category": "exploration"
+  },
+  {
+   "id": "harvest_stellar_ice",
+   "name": "Cosechar Hielo estelar condensado",
+   "description": "El hielo estelar condensado es ingrediente de la Computadora de base de espacio profundo.",
+   "how": "En un campo de hielo, rompé el hielo y recogelo con la Bobina de gravitino y el rayo tractor. La receta de la computadora de base pide 'Condensed Stellar Ice'; la tasa de obtención y el objeto exacto no se confirmaron.",
+   "requires": [
+    "visit_ice_field",
+    "own_gravitino_coil",
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "salvage",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep-Space_Base_Computer",
+   "category": "crafting"
+  },
+  {
+   "id": "salvage_minor_wreckage",
+   "name": "Recuperar chatarra de restos menores",
+   "description": "Escombros pequeños con plasma comprimido, taquillas de estasis y salvamento industrial.",
+   "how": "Marcá 'Restos menores' (Minor Wreckage) en el mapa del sistema, salí de la nave y recogé objetos con la Bobina de gravitino y la corbeta con rayo tractor. Destruir piezas da Metal contaminado.",
+   "requires": [
+    "open_star_system_map",
+    "own_gravitino_coil",
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "salvage",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Minor_Wreckage",
+   "category": "exploration"
+  },
+  {
+   "id": "collect_hulk_rare_items",
+   "name": "Recoger objetos raros de un casco espacial antes de la fusión",
+   "description": "Núcleo de reactor, paquete de datos, barra de combustible y carga sospechosa son lo más valioso; el casco explota si lo desarmás de más.",
+   "how": "En un casco espacial tenés 3 min 30 s desde que salís del asiento. Priorizá los objetos raros (marcados) con la Bobina de gravitino y llevalos al rayo tractor. En multijugador, ambos jugadores reclaman los raros. Desde 7.02 se puede volver a los restos de un casco completado.",
+   "requires": [
+    "salvage_space_hulk"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "salvage",
+    "hazard",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Hulk",
+   "category": "exploration"
+  },
+  {
+   "id": "clear_infested_outpost",
+   "name": "Limpiar un puesto avanzado infestado",
+   "description": "Puestos cubiertos de un limo biológico invasor; contienen muestras raras y valiosas.",
+   "how": "Marcá un 'Puesto infestado' en el Mapa del sistema estelar, salí de la nave y abrite paso con la Bobina de gravitino apartando la masa viral; llevá las muestras a tu corbeta con rayo tractor. Cuidado con el Macro Virus, que explota al impactar.",
+   "requires": [
+    "open_star_system_map",
+    "own_gravitino_coil",
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "salvage",
+    "hazard",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Infested_Outpost",
+   "category": "exploration"
+  },
+  {
+   "id": "collect_pathogen_sac_viral_heart",
+   "name": "Conseguir un Saco patógeno y un Corazón viral",
+   "description": "Las muestras raras de los puestos infestados (Pathogen Sac, Viral Heart).",
+   "how": "Dentro de un puesto infestado buscá los objetos raros con icono de limo raro y recogelos con la Bobina de gravitino. El Corazón viral es ingrediente de la Computadora de base de espacio profundo.",
+   "requires": [
+    "clear_infested_outpost"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "salvage",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Infested_Outpost",
+   "category": "exploration"
+  },
+  {
+   "id": "earn_deep_space_player_title",
+   "name": "Conseguir un título de jugador en puntos de interés de espacio profundo",
+   "description": "Cosmos añade títulos por logros en estos puntos de interés.",
+   "how": "Completá distintos puntos de interés de espacio profundo y revisá tus títulos de jugador. Los títulos exactos y sus requisitos no se pudieron confirmar.",
+   "requires": [
+    "salvage_space_hulk"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "titles",
+    "space",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "find_deep_space_anomaly_blueprint",
+   "name": "Hallar una anomalía de espacio profundo con plano de decoración",
+   "description": "Algunas anomalías de espacio profundo pueden otorgar al azar planos raros de decoración de estación.",
+   "how": "Explorá puntos de interés de espacio profundo; el parche indica que varias anomalías tienen probabilidad de dar un plano de decoración. No se confirmó qué anomalías ni su probabilidad.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "space",
+    "blueprint",
+    "grind",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "accept_salvage_contract",
+   "name": "Aceptar un contrato de salvamento",
+   "description": "Contratos de recuperación de materiales en puntos de interés de espacio profundo; dan reputación y recompensas.",
+   "how": "Usá la Terminal de salvamento y entregas en un puesto avanzado y aceptá un contrato (por ejemplo 'Recoge un Núcleo de reactor'). Podés llevar varios activos a la vez (arreglado en 7.04).",
+   "requires": [
+    "visit_deep_space_outpost",
+    "own_gravitino_coil",
+    "equip_tractor_beam"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "salvage",
+    "contracts",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep_Space_Outpost",
+   "category": "exploration"
+  },
+  {
+   "id": "deliver_salvage_to_depot",
+   "name": "Entregar el salvamento en el Depósito industrial del puesto",
+   "description": "Completa el contrato: se deposita lo recogido con la Bobina de gravitino.",
+   "how": "Con la carga en la corbeta, aterrizá en el puesto y usá la Bobina de gravitino para lanzar los objetos al Depósito industrial de salvamento (Salvage Depot). También procesa materias primas en artículos vendibles en el Comercio galáctico.",
+   "requires": [
+    "accept_salvage_contract"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "space",
+    "salvage",
+    "contracts",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep_Space_Outpost",
+   "category": "exploration"
+  },
+  {
+   "id": "sell_processed_salvage_gtn",
+   "name": "Vender salvamento refinado en el Comercio galáctico",
+   "description": "El material procesado en el puesto es muy rentable.",
+   "how": "Tras procesar en el puesto avanzado, vende en la Terminal de comercio galáctico del puesto (nueva en 7.01) o de una estación.",
+   "requires": [
+    "deliver_salvage_to_depot"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "trading",
+    "salvage",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "exploration"
+  },
+  {
+   "id": "unlock_station_decor_blueprints",
+   "name": "Desbloquear partes de decoración de estación en la Terminal de investigación de construcción",
+   "description": "Cientos de piezas decorativas monumentales para exteriores de estación.",
+   "how": "En la Anomalía Espacial, usá la Terminal de investigación de construcción y comprá planos con Datos recuperados; desde 7.01 algunas piezas de estación se desbloquean con materiales recuperados (salvamento). Hay más piezas añadidas en 7.03.",
+   "requires": [
+    "use_construction_research_station"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "building",
+    "station",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "crafting"
+  },
+  {
+   "id": "decorate_station_exterior",
+   "name": "Decorar el exterior de tu estación",
+   "description": "Los directores colocan módulos colosales alrededor de la estación, y pueden ajustar o quitar la decoración existente.",
+   "how": "Como director, editá la estación (interfaz del Núcleo de estación; el paso exacto no se confirmó) y colocá piezas de exterior; desde 7.05 muchas piezas se pueden recolorear.",
+   "requires": [
+    "become_station_director",
+    "unlock_station_decor_blueprints"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "building",
+    "station",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/2026/09/cosmos-7-05/",
+   "category": "world"
+  },
+  {
+   "id": "renovate_station_interior",
+   "name": "Reformar el interior de tu estación",
+   "description": "El director puede redistribuir mobiliario y usar todas las piezas de base existentes para el vestíbulo central.",
+   "how": "Siendo director, editá la base de la estación desde dentro y recolocá/añadí piezas del menú de construcción.",
+   "requires": [
+    "become_station_director"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "building",
+    "station",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/cosmos-update/",
+   "category": "world"
+  },
+  {
+   "id": "expand_station_rooms",
+   "name": "Ampliar tu estación con salas auxiliares",
+   "description": "El director puede añadir salas al hangar principal con un área de construcción dedicada y amueblarlas.",
+   "how": "Siendo director, abrí el área de construcción dedicada de tu estación y añadí piezas del tamaño de una sala; luego decoralas.",
+   "requires": [
+    "become_station_director"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "building",
+    "station",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/cosmos-update/",
+   "category": "world"
+  },
+  {
+   "id": "claim_additional_station",
+   "name": "Reclamar otra estación espacial",
+   "description": "Desde 7.04 se eliminó el tope de estaciones por jugador.",
+   "how": "Visitá otra estación de un sistema distinto, hablá con el Núcleo de estación y elegí 'Reclamar estación'. No se pueden reclamar Interfaz del Atlas, Anomalía, estaciones abandonadas ni fuera de la ley. Atención: la wiki avisa de que las piezas cuentan para el límite de construcción de la partida.",
+   "requires": [
+    "become_station_director"
+   ],
+   "repeatable": true,
+   "effort": "long",
+   "tags": [
+    "station",
+    "grind",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Station",
+   "category": "world"
+  },
+  {
+   "id": "reset_station_base",
+   "name": "Reiniciar una estación reclamada",
+   "description": "Libera piezas para editar otras bases.",
+   "how": "Desde el parche 7.05 existe la opción de reiniciar una base de estación espacial en su configuración (ubicación exacta de la opción no confirmada).",
+   "requires": [
+    "become_station_director"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "station",
+    "building",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/2026/09/cosmos-7-05/",
+   "category": "world"
+  },
+  {
+   "id": "join_alliance",
+   "name": "Unirte a una alianza",
+   "description": "Ver las estaciones de una alianza y sumarte para acceder a sus sistemas.",
+   "how": "Visitá cualquier estación espacial perteneciente a una alianza y unite (la forma exacta no se confirmó). Podés estar en hasta tres alianzas.",
+   "requires": [
+    "visit_space_station"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social",
+    "alliance",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "world"
+  },
+  {
+   "id": "teleport_alliance_systems",
+   "name": "Teletransportarte a un sistema de tu alianza",
+   "description": "Acceso rápido por la pestaña de estaciones de alianza del teletransportador.",
+   "how": "En un Terminal de teletransporte, elegí la pestaña de alianzas. Un sistema solo aparece tras haberlo visitado una vez desde su reclamo (salvo el sistema fundador).",
+   "requires": [
+    "join_alliance"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "social",
+    "alliance",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Space_Station",
+   "category": "world"
+  },
+  {
+   "id": "join_three_alliances",
+   "name": "Unirte a tres alianzas",
+   "description": "Límite máximo de alianzas por jugador.",
+   "how": "Repetí la visita a estaciones de alianzas distintas y unite a cada una hasta llegar a tres.",
+   "requires": [
+    "join_alliance"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "social",
+    "alliance",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "world"
+  },
+  {
+   "id": "customize_alliance_banner",
+   "name": "Personalizar el estandarte de tu alianza",
+   "description": "Elegí nombre y estandarte de tu alianza; desde 7.03 hay colores adicionales.",
+   "how": "Tras fundar la alianza (director), editá el nombre y el estandarte en la interfaz de alianza.",
+   "requires": [
+    "found_galactic_alliance"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "social",
+    "alliance",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/2026/09/cosmos-7-03/",
+   "category": "world"
+  },
+  {
+   "id": "check_alliance_leaderboard",
+   "name": "Consultar el ranking de alianzas",
+   "description": "Las alianzas más pobladas, activas y extensas figuran en un ranking.",
+   "how": "Interactuá con el Núcleo de estación y abrí la tabla de clasificación. En 7.05 se equilibró la puntuación para que pocos miembros con muchas estaciones pesen menos.",
+   "requires": [
+    "join_alliance"
+   ],
+   "repeatable": true,
+   "effort": "short",
+   "tags": [
+    "social",
+    "alliance",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/2026/09/cosmos-7-05/",
+   "category": "world"
+  },
+  {
+   "id": "find_habitable_asteroid",
+   "name": "Hallar un asteroide habitable",
+   "description": "Formaciones de roca orbitales donde se puede construir una base.",
+   "how": "En el Mapa del sistema estelar buscá un icono de plataforma de base (también 'Fragmento de cometa habitable'), aterrizá y hablá con la baliza de socorro (Distress Beacon) para recibir el plano de la Computadora de base de espacio profundo.",
+   "requires": [
+    "open_star_system_map"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "building",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Habitable_Asteroid",
+   "category": "exploration"
+  },
+  {
+   "id": "get_deep_space_base_computer_blueprint",
+   "name": "Obtener el plano de la Computadora de base de espacio profundo",
+   "description": "Permite fundar bases en el espacio.",
+   "how": "En un asteroide habitable o fragmento de cometa habitable, interactuá con la Baliza de socorro la primera vez.",
+   "requires": [
+    "find_habitable_asteroid"
+   ],
+   "repeatable": false,
+   "effort": "short",
+   "tags": [
+    "space",
+    "building",
+    "blueprint",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Habitable_Asteroid",
+   "category": "crafting"
+  },
+  {
+   "id": "craft_deep_space_base_computer",
+   "name": "Fabricar una Computadora de base de espacio profundo",
+   "description": "Registro de terreno portátil para el espacio.",
+   "how": "Fabricá con 1 Núcleo de reactor, 1 Corazón viral y 1 Hielo estelar condensado. Desde 7.02 no se puede colocar gratis.",
+   "requires": [
+    "get_deep_space_base_computer_blueprint",
+    "collect_pathogen_sac_viral_heart",
+    "harvest_stellar_ice",
+    "collect_hulk_rare_items"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "building",
+    "crafting",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep-Space_Base_Computer",
+   "category": "crafting"
+  },
+  {
+   "id": "build_orbital_base",
+   "name": "Construir una base orbital",
+   "description": "Cualquier volumen vacío del espacio o una plataforma de asteroide pueden ser tu hogar.",
+   "how": "Desplegá la Computadora de base de espacio profundo y activala (comprueba que no choque con otro reclamo); se habilita el menú de construcción. Para gravedad hay que construir pasarelas exteriores con plataformas de aterrizaje; la energía llega con paneles solares conectados a un consumidor (según la wiki; puede haber fallos).",
+   "requires": [
+    "craft_deep_space_base_computer"
+   ],
+   "repeatable": false,
+   "effort": "long",
+   "tags": [
+    "space",
+    "building",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Deep-Space_Base_Computer",
+   "category": "world"
+  },
+  {
+   "id": "build_orbital_corridor",
+   "name": "Construir con las nuevas partes de corredor en una base orbital",
+   "description": "Se añadieron piezas de corredor para construcciones orbitales.",
+   "how": "En tu base orbital, abrí el menú de construcción y usá las piezas de corredor; unir las pasarelas exteriores con corredores evita fallos de transparencia en las paredes.",
+   "requires": [
+    "build_orbital_base"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "building",
+    "cosmos"
+   ],
+   "source": "https://www.psu.com/news/no-mans-sky-cosmos-update-7-0-allows-you-to-direct-a-space-station-read-the-full-patch-notes/",
+   "category": "world"
+  },
+  {
+   "id": "build_orbital_free_volume",
+   "name": "Fundar una base en un volumen de espacio vacío",
+   "description": "Sin plataforma de roca, en cualquier lugar del espacio.",
+   "how": "Desplegá una Computadora de base de espacio profundo fuera de un asteroide, en espacio abierto, y activala.",
+   "requires": [
+    "build_orbital_base"
+   ],
+   "repeatable": false,
+   "effort": "medium",
+   "tags": [
+    "space",
+    "building",
+    "cosmos"
+   ],
+   "source": "https://www.nomanssky.com/cosmos-update/",
+   "category": "world"
+  },
+  {
+   "id": "locate_living_frigate_dream_aerial",
+   "name": "Localizar fragatas vivas con la Antena de ensueño (reutilizable)",
+   "description": "La antena ahora es consumible y se puede fabricar varias veces; cada sistema tiene una fragata viva.",
+   "how": "Fabricá una Antena de ensueño (3 Cristal vivo + 1 Espejo solar) y úsala en el espacio profundo con Canción de relé (E) para revelar la fragata viva del sistema. Una vez aceptada, ese sistema no ofrece otra.",
+   "requires": [
+    "build_dream_aerial"
+   ],
+   "repeatable": true,
+   "effort": "medium",
+   "tags": [
+    "frigate",
+    "living",
+    "space",
+    "cosmos"
+   ],
+   "source": "https://nomanssky.fandom.com/wiki/Dream_Aerial",
+   "category": "vessels"
+  }
+ ],
+ "needs": []
+}

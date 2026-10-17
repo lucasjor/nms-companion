@@ -37,7 +37,7 @@
   .done { color:var(--ok); } .locked { color:var(--dim); }
   label.check { display:flex; gap:10px; align-items:flex-start; padding:8px 0; border-bottom:1px solid var(--line); }
   label.check input { margin-top:4px; }
-  .grid { display:grid; grid-template-columns: 1fr auto; gap:4px 12px; }
+  .grid { display:grid; grid-template-columns: 1fr auto; gap:4px 12px; align-items:center; }
 </style>
 </head>
 <body>
@@ -57,6 +57,7 @@
       </select>
       <select id="fCategory" aria-label="Categoría"></select>
     </div>
+    <div id="moneyPrompt"></div>
     <div id="current"></div>
   </section>
 

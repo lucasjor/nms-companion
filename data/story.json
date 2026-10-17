@@ -1475,7 +1475,8 @@
    "how": "Al llegar a tu base tras visitar la estación del contacto de Apolo aprendés el plano de la Terminal de construcción; al colocarla, 'Expandiendo la base' te marca una estación. Contratá al Supervisor gek (está en una sala detrás de los comerciantes de tecnología) y volvé a la base; te da el plano de Vidrio y luego pide Metal cromático para la Terminal de ciencia.",
    "requires": [
     "visit_apollo_contact_station",
-    "build_base_computer"
+    "build_base_computer",
+    "craft_construction_terminal"
    ],
    "repeatable": false,
    "effort": "medium",
@@ -1492,7 +1493,8 @@
    "description": "Construir una Terminal de ciencia y contratar a un Científico en un sistema korvax.",
    "how": "Reunir Metal cromático para la Terminal de ciencia, conseguir los planos de Contenedores de almacenamiento 1-9 en la terminal de un Edificio abandonado, colocar la Terminal en una sala y viajar al sistema korvax marcado para contratar al NPC. Al volver a la base el Científico te da los planos de Lubricante y Ácido.",
    "requires": [
-    "hire_base_overseer"
+    "hire_base_overseer",
+    "craft_science_terminal"
    ],
    "repeatable": false,
    "effort": "medium",
@@ -1601,7 +1603,8 @@
    "description": "Construir una Terminal de armas (necesitás Pugneum) y contratar a un vy'keen.",
    "how": "El Supervisor pide 2 Microprocesadores (plano del Científico) y Pugneum para la Terminal de armas. Construila, viajá al sistema vy'keen marcado y contratá al Armero. Desbloquea 'Investigación de armas'.",
    "requires": [
-    "gather_marrow_bulb_cobalt_scientist"
+    "gather_marrow_bulb_cobalt_scientist",
+    "craft_weapons_terminal"
    ],
    "repeatable": false,
    "effort": "medium",
@@ -1729,7 +1732,8 @@
    "description": "Construir una Terminal agrícola (45 Solanio) y contratar a un gek.",
    "how": "Tras contratar al Armero, el Supervisor pide 45 Solanio (aterrizá en un planeta abrasado) y te da el plano de la Terminal agrícola. Construila y viajá al sistema gek marcado para contratar al Granjero.",
    "requires": [
-    "hire_base_armourer"
+    "hire_base_armourer",
+    "craft_agricultural_terminal"
    ],
    "repeatable": false,
    "effort": "medium",
@@ -1858,7 +1862,8 @@
    "how": "Tras la Terminal de comercio galáctico el Supervisor pide una Bola de gravitino (se obtiene de los Gravitino Host de la Granja; da el Escáner de conflictos) y 100 Mordita; a cambio recibís el plano de la Terminal de exovehículos y el Cañón geológico. Construí la terminal y viajá a la estación vy'keen marcada para contratar al Técnico.",
    "requires": [
     "build_galactic_trade_terminal_overseer",
-    "grow_gravitino_albumen_venom"
+    "grow_gravitino_albumen_venom",
+    "craft_exocraft_terminal"
    ],
    "repeatable": false,
    "effort": "medium",

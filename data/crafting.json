@@ -285,8 +285,11 @@
    "id": "craft_construction_terminal",
    "name": "Fabricar: Construction Terminal",
    "description": "Terminal de especialista de construcción; abre la misión del Supervisor.",
-   "how": "Tras desbloquear el plano, construilo desde el menú de construcción/equipo. Materiales: Ferrita pura x25, Metal cromático x40.",
-   "requires": [],
+   "how": "El Supervisor te da el plano durante 'Expandiendo la base', construilo desde el menú de construcción/equipo. Materiales: Ferrita pura x25, Metal cromático x40.",
+   "requires": [
+    "visit_apollo_contact_station",
+    "build_base_computer"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -300,8 +303,11 @@
    "id": "craft_exocraft_terminal",
    "name": "Fabricar: Exocraft Terminal",
    "description": "Terminal de especialista de exovehículos; abre la misión del Técnico.",
-   "how": "Tras desbloquear el plano, construilo desde el menú de construcción/equipo. Materiales: Dihidrógeno x25, Metal cromático x40.",
-   "requires": [],
+   "how": "El Supervisor te da el plano durante 'Expandiendo la base', construilo desde el menú de construcción/equipo. Materiales: Dihidrógeno x25, Metal cromático x40.",
+   "requires": [
+    "build_galactic_trade_terminal_overseer",
+    "grow_gravitino_albumen_venom"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -315,8 +321,10 @@
    "id": "craft_weapons_terminal",
    "name": "Fabricar: Weapons Terminal",
    "description": "Terminal de especialista de armas; abre la misión del Armero.",
-   "how": "Tras desbloquear el plano, construilo desde el menú de construcción/equipo. Materiales: Metal cromático x40, Púgneo x25.",
-   "requires": [],
+   "how": "El Supervisor te da el plano durante 'Expandiendo la base', construilo desde el menú de construcción/equipo. Materiales: Metal cromático x40, Púgneo x25.",
+   "requires": [
+    "gather_marrow_bulb_cobalt_scientist"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -330,8 +338,10 @@
    "id": "craft_science_terminal",
    "name": "Fabricar: Science Terminal",
    "description": "Terminal de especialista científico; abre la misión del Científico.",
-   "how": "Tras desbloquear el plano, construilo desde el menú de construcción/equipo. Materiales: Ferrita imantada x25, Metal cromático x40.",
-   "requires": [],
+   "how": "El Supervisor te da el plano durante 'Expandiendo la base', construilo desde el menú de construcción/equipo. Materiales: Ferrita imantada x25, Metal cromático x40.",
+   "requires": [
+    "hire_base_overseer"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -345,8 +355,10 @@
    "id": "craft_agricultural_terminal",
    "name": "Fabricar: Agricultural Terminal",
    "description": "Terminal de especialista agrícola; abre la misión del Granjero.",
-   "how": "Tras desbloquear el plano, construilo desde el menú de construcción/equipo. Materiales: Carbono condensado x25, Metal cromático x40.",
-   "requires": [],
+   "how": "El Supervisor te da el plano durante 'Expandiendo la base', construilo desde el menú de construcción/equipo. Materiales: Carbono condensado x25, Metal cromático x40.",
+   "requires": [
+    "hire_base_armourer"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -467,8 +479,10 @@
    "id": "craft_antimatter",
    "name": "Fabricar: Antimateria",
    "description": "Contiene materia negativa y antipartículas de bariogénesis. El gran potencial de energía de la antimateria la hace altamente valiosa. El 95 % del consumo de antimateria existente se utiliza para suministrar los hiperturbos de la nave. ATENCIÓN: no es recomendable un uso no contenido.",
-   "how": "Fabricalo desde el menú de fabricación una vez conocida la receta. Materiales: Carbono condensado x20, Metal cromático x25.",
-   "requires": [],
+   "how": "El plano te lo da una terminal en un edificio abandonado al que te lleva 'Despertares' después de construir el hiperimpulsor. Materiales: Carbono condensado x20, Metal cromático x25.",
+   "requires": [
+    "build_hyperdrive"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -480,8 +494,10 @@
    "id": "craft_antimatter_housing",
    "name": "Fabricar: Almacenamiento de antimateria",
    "description": "Dispositivo de almacenamiento seguro de antimateria necesario para que la antimateria pueda ser protegida con seguridad en forma de células de transposición. El oxígeno que rebota forma una bolsa de gas protectora, evitando que la antimateria reaccione con la carcasa que la rodea.",
-   "how": "Fabricalo desde el menú de fabricación una vez conocida la receta. Materiales: Oxígeno x30, Polvo de ferrita x50.",
-   "requires": [],
+   "how": "Lo aprendés en 'Despertares', junto con la antimateria, para fabricar Células de curvatura. Materiales: Oxígeno x30, Polvo de ferrita x50.",
+   "requires": [
+    "build_hyperdrive"
+   ],
    "repeatable": false,
    "effort": "short",
    "tags": [
@@ -1559,19 +1575,6 @@
     "crafting"
    ],
    "source": "https://nomanssky.fandom.com/wiki/Amino_Chamber"
-  },
-  {
-   "id": "craft_deep_space_lure",
-   "name": "Fabricar: Señuelo del espacio sideral",
-   "description": "Un dispositivo de un solo uso que sirve para localizar conciencias gaseosas. El señuelo genera un campo electromagnético de naturaleza enigmática que llama la atención de estas formas de vida avanzadas. Selecciona el señuelo y elige Generar campo (FE_ALT1) para iniciar el proceso de localización.",
-   "how": "Fabricalo desde el menú de fabricación una vez conocida la receta. Materiales: Metal cromático x40, Plata x40, Oro x40.",
-   "requires": [],
-   "repeatable": false,
-   "effort": "short",
-   "tags": [
-    "crafting"
-   ],
-   "source": "https://nomanssky.fandom.com/wiki/Crafting"
   },
   {
    "id": "craft_gamma_weed",
